@@ -1,0 +1,47 @@
+{
+  "workspace_regressions": {
+    "command": [
+      "cargo",
+      "test",
+      "--locked",
+      "--workspace",
+      "--all-targets"
+    ],
+    "exit_code": 0,
+    "passed": 104
+  },
+  "benchmark_clippy": {
+    "command": [
+      "cargo",
+      "clippy",
+      "--locked",
+      "-p",
+      "tls-bench",
+      "--all-targets",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit_code": 0
+  },
+  "format": {
+    "command": [
+      "cargo",
+      "fmt",
+      "--all",
+      "--",
+      "--check"
+    ],
+    "exit_code": 0
+  },
+  "retained_translation": {
+    "command": [
+      "python3",
+      "verification/check_translation.py"
+    ],
+    "exit_code": 0
+  },
+  "canonical_benchmark_processes": 35,
+  "canonical_benchmark_rows": 57000,
+  "library_source_changes": false
+}

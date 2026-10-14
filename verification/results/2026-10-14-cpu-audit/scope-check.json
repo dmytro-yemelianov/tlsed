@@ -1,0 +1,30 @@
+{
+  "runtime_manifests_toolchain_lock_fixture_files_checked": 35,
+  "changed": [],
+  "production_unchanged": true,
+  "timings": {
+    "baseline": {
+      "files": 42,
+      "timed_batches": 68400
+    },
+    "drop-u128": {
+      "files": 36,
+      "timed_batches": 64800
+    },
+    "block8": {
+      "files": 36,
+      "timed_batches": 64800
+    },
+    "micro": {
+      "files": 6,
+      "timed_batches": 29160
+    },
+    "construction": {
+      "files": 6,
+      "timed_batches": 2400
+    }
+  },
+  "total_batches": 229560,
+  "profiling_csv_excluded": true,
+  "no_affinity_frequency_scheduler_lock": true
+}

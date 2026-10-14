@@ -1,0 +1,13 @@
+--- a/crates/tls-client/src/lib.rs
++++ b/crates/tls-client/src/lib.rs
+@@ -30,7 +30,9 @@
+ fn zeroize_secret(bytes: &mut [u8]) {
+     let (head, words, tail) = bytemuck::pod_align_to_mut::<u8, u128>(bytes);
+     head.zeroize();
+-    words.zeroize();
++    let (blocks, remainder) = words.as_chunks_mut::<8>();
++    blocks.iter_mut().zeroize();
++    remainder.zeroize();
+     tail.zeroize();
+ }
+ 

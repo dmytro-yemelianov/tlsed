@@ -1,0 +1,16 @@
+{
+  "production_file": "crates/tls-client/src/lib.rs",
+  "production_function_sha256": "8e38f1fb28abc04f294217d4438b9159923e9ee583877d180cde69e362850ca6",
+  "extraction": "exact function text; isolated dependency-only probe avoids native provider FFI; no stand-in function",
+  "probe_source": "isolated-helper-miri-source.rs.txt",
+  "range_cases_per_target": 2304,
+  "scope": "actual copied helper body, guarded byte partitions; not whole TLS engine or compiler erasure",
+  "probe_source_sha256": "9599427075e06494c7353bd53d586a97d0c6e05317957869d676ce5b8f00c52a",
+  "dependency_manifest": "miri-probe-Cargo.toml",
+  "dependency_lock": "miri-probe-Cargo.lock",
+  "targets": [
+    "aarch64-apple-darwin",
+    "i686-unknown-linux-gnu",
+    "powerpc64-unknown-linux-gnu"
+  ]
+}

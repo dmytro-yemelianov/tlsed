@@ -1,0 +1,115 @@
+--- a/crates/tls-bench/src/bin/client_compare.rs
++++ b/crates/tls-bench/src/bin/client_compare.rs
+@@ -366,6 +366,62 @@
+     fragment: usize,
+     only: &str,
+ ) -> Result<()> {
++    if only == "construction" {
++        let batch = 32;
++        let mut reusable: Vec<Scratch> = (0..batch).map(|_| Scratch::new()).collect();
++        let mut wire = vec![0; RECORD_BUFFER_SIZE];
++        for workload in ["construction_reused_buffers", "construction_fresh_buffers"] {
++            for sample in 0..samples + 5 {
++                let mut fresh;
++                let mut clients = Vec::with_capacity(batch);
++                let start = Instant::now();
++                let storage = if workload.ends_with("fresh_buffers")
++                    && matches!(kind, Implementation::Tlsed)
++                {
++                    fresh = (0..batch).map(|_| Scratch::new()).collect::<Vec<_>>();
++                    &mut fresh
++                } else {
++                    &mut reusable
++                };
++                for scratch in storage.iter_mut() {
++                    clients.push(std::hint::black_box(Client::new(
++                        kind,
++                        config,
++                        scratch,
++                        "localhost",
++                    )?));
++                }
++                let elapsed = start.elapsed().as_nanos();
++                // Check the constructed state and the initial ClientHello outside timing.
++                for client in &mut clients {
++                    if client.established() {
++                        return Err("new client is already established".into());
++                    }
++                    let (consumed, produced, _, ready) = client.step(&[], &mut wire)?;
++                    if consumed != 0 || ready || produced < 9 || wire[0] != 22 || wire[5] != 1 {
++                        return Err("new client did not produce a ClientHello".into());
++                    }
++                    let record = usize::from(u16::from_be_bytes([wire[3], wire[4]])) + 5;
++                    if record != produced {
++                        return Err("initial record size mismatch".into());
++                    }
++                    std::hint::black_box(&wire[..produced]);
++                }
++                std::hint::black_box(&clients);
++                if sample >= 5 {
++                    println!(
++                        "{},{},both,0,{batch},{},{elapsed}",
++                        kind.name(),
++                        workload,
++                        sample - 5
++                    );
++                }
++                // Drop/secret retirement is intentionally outside the construction timer.
++                drop(clients);
++            }
++        }
++        return Ok(());
++    }
+     let mut transport = Transport::new(fragment);
+     let mut scratch = Scratch::new();
+     for _ in 0..10 {
+@@ -378,7 +434,7 @@
+         "full_handshake_reused_buffers",
+         "full_handshake_fresh_buffers",
+     ] {
+-        if only != "all" {
++        if only != "all" && only != workload {
+             continue;
+         }
+         for sample in 0..samples {
+@@ -399,7 +455,11 @@
+             println!("{},{},both,0,1,{sample},{elapsed}", kind.name(), workload);
+         }
+     }
+-    for sample in 0..if only == "all" { samples } else { 0 } {
++    for sample in 0..if only == "all" || only == "lifecycle" {
++        samples
++    } else {
++        0
++    } {
+         transport.clear();
+         let start = Instant::now();
+         {
+@@ -427,7 +487,8 @@
+         let mut received = vec![0; size];
+         for direction in ["client_to_server", "server_to_client"] {
+             if only != "all"
+-                && (size != 16384
++                && (!matches!(only, "bulk-tx-16384" | "bulk-rx-16384")
++                    || size != 16384
+                     || (only == "bulk-tx-16384" && direction != "client_to_server")
+                     || (only == "bulk-rx-16384" && direction != "server_to_client"))
+             {
+@@ -496,7 +557,16 @@
+     let config = configs(suite, initial, group == "hrr")?;
+     // Diagnostic isolation only; the canonical paired run keeps every workload.
+     let only = option("--only", "all")?;
+-    if !matches!(only.as_str(), "all" | "bulk-tx-16384" | "bulk-rx-16384") {
++    if !matches!(
++        only.as_str(),
++        "all"
++            | "bulk-tx-16384"
++            | "bulk-rx-16384"
++            | "lifecycle"
++            | "full_handshake_reused_buffers"
++            | "full_handshake_fresh_buffers"
++            | "construction"
++    ) {
+         return Err("invalid workload filter".into());
+     }
+     let order = option("--order", "tlsed-first")?;

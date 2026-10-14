@@ -1,0 +1,25 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.01s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.01s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.01s
+Build completed successfully (33 jobs).
+{
+  "assurance": "tested against model",
+  "operations": {
+    "count": 306,
+    "reserve": 292,
+    "rotate": 292,
+    "auth": 49,
+    "release": 21,
+    "header": 948,
+    "handshake-total": 320,
+    "inner-check": 1266,
+    "label-size": 553,
+    "client-phase": 876
+  },
+  "seed": "0x71513",
+  "native_pointer_bits": 64,
+  "cases_passed": 4923,
+  "scope": "native usize/u64 arithmetic, record/inner/handshake/label guards, client flight policy, evidence FSM, release gate, rejection paths",
+  "formal_refinement": false
+}

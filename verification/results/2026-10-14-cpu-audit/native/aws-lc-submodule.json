@@ -1,0 +1,17 @@
+{
+  "name": "aws-lc",
+  "path": "aws-lc-sys/aws-lc",
+  "sha": "fa9bc8d6f7cfb2cf849b247fb06bbbfc41ecc9d6",
+  "size": 0,
+  "url": "https://api.github.com/repos/aws/aws-lc-rs/contents/aws-lc-sys/aws-lc?ref=9df497501436596d4da77109217806b3af7f56cb",
+  "html_url": "https://github.com/aws/aws-lc/tree/fa9bc8d6f7cfb2cf849b247fb06bbbfc41ecc9d6",
+  "git_url": "https://api.github.com/repos/aws/aws-lc/git/trees/fa9bc8d6f7cfb2cf849b247fb06bbbfc41ecc9d6",
+  "download_url": null,
+  "type": "submodule",
+  "submodule_git_url": "https://github.com/aws/aws-lc.git",
+  "_links": {
+    "self": "https://api.github.com/repos/aws/aws-lc-rs/contents/aws-lc-sys/aws-lc?ref=9df497501436596d4da77109217806b3af7f56cb",
+    "git": "https://api.github.com/repos/aws/aws-lc/git/trees/fa9bc8d6f7cfb2cf849b247fb06bbbfc41ecc9d6",
+    "html": "https://github.com/aws/aws-lc/tree/fa9bc8d6f7cfb2cf849b247fb06bbbfc41ecc9d6"
+  }
+}

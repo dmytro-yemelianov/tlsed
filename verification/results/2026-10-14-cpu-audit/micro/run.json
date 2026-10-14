@@ -1,0 +1,72 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/verification/experiments/cpu-audit/target/release/tlsed-cpu-audit",
+        "0"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/verification/experiments/cpu-audit/target/release/tlsed-cpu-audit",
+        "1"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/verification/experiments/cpu-audit/target/release/tlsed-cpu-audit",
+        "2"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/verification/experiments/cpu-audit/target/release/tlsed-cpu-audit",
+        "3"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/verification/experiments/cpu-audit/target/release/tlsed-cpu-audit",
+        "4"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/verification/experiments/cpu-audit/target/release/tlsed-cpu-audit",
+        "5"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "repeats": 6,
+  "samples_per_case": 30,
+  "warmups": 5,
+  "order": "rotates variants by repeat+sample+step",
+  "binary_sha256": "5c90d96e4bafcf49ad266558c27b1f284d731f571b43e6ea37df7791d8c4091b",
+  "sources": {
+    "verification/experiments/cpu-audit/Cargo.toml": "4263aca76510b9f649e69dc952331a2dd52ee748f4f528fc4461cc3c994a155e",
+    "verification/experiments/cpu-audit/Cargo.lock": "fee288fb9702dd27cab05dee2e69606a3f1417859c14cea6ad9cc467e8c13b63",
+    "verification/experiments/cpu-audit/src/main.rs": "3f7e4394a0ff96aa0ab84a6a6ee2eed6aed1334e5696e6c5e75bb52f98f152ef",
+    "verification/experiments/cpu-audit/run.py": "05aaf4e93af27e8cd873ac41661513f460091b501c3faa9bd8e498d415b1e511"
+  },
+  "data": {
+    "initial_byte": 165,
+    "initialization": "outside timer; first wipe nonzero, subsequent batch wipes zero; all variants content independent",
+    "validation": "whole buffer compared with independent Vec::fill oracle, offsets0..31, boundary lengths; timed results and guards verified after timer"
+  },
+  "controls": "release1.98.1 thinLTO codegen1; no concurrent build/test/profile; no CPU affinity/frequency lock",
+  "raw_csv_sha256": {
+    "comparison.csv": "a5170e80e445eab50ad180aa540c193c696376b50db17cfb7e9115c0af31744c",
+    "repeat-0.csv": "43a5a29da292cc141f4fba4f9fc5da330e77ad486436b825f50323f287f10964",
+    "repeat-1.csv": "966466643d15a3277eff6113fb4d885026cc9482b2f39e6d1a391c247f83d5bd",
+    "repeat-2.csv": "f94ab259f7c323c6696c362f876a83501a49e960bdedd5538ce070cb95cfa48d",
+    "repeat-3.csv": "1ede7b99d25e343941dc4b56d71d667d205b48d535a28548d07b4d26d3aae0ec",
+    "repeat-4.csv": "651f0e318da5524a6a946dd569574e458ba4f0396410504fa5164d4360f757bd",
+    "repeat-5.csv": "7a4cc6cc18246960b6ed59585ace0e355db3ced65062e7f97c7c827b2c064fe7"
+  }
+}

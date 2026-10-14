@@ -1,0 +1,48 @@
+
+target/cpu-audit/workspace/target/release/client_compare_drop_u128:	file format mach-o arm64
+
+Disassembly of section __TEXT,__text:
+
+00000001000c3f0c <<tls_core::handshake::Reassembler as core::ops::drop::Drop>::drop>:
+1000c3f0c: a942200c    	ldp	x12, x8, [x0, #0x20]
+1000c3f10: 91003d89    	add	x9, x12, #0xf
+1000c3f14: 927ced29    	and	x9, x9, #0xfffffffffffffff0
+1000c3f18: 5280020a    	mov	w10, #0x10              ; =16
+1000c3f1c: cb0c0129    	sub	x9, x9, x12
+1000c3f20: 8b09018b    	add	x11, x12, x9
+1000c3f24: cb09010d    	sub	x13, x8, x9
+1000c3f28: d344fdae    	lsr	x14, x13, #4
+1000c3f2c: 92400daf    	and	x15, x13, #0xf
+1000c3f30: 927ce9ad    	and	x13, x13, #0x7ffffffffffffff0
+1000c3f34: 8b0d0170    	add	x16, x11, x13
+1000c3f38: eb09011f    	cmp	x8, x9
+1000c3f3c: 9a89310d    	csel	x13, x8, x9, lo
+1000c3f40: 9a8b314a    	csel	x10, x10, x11, lo
+1000c3f44: 9a8e33eb    	csel	x11, xzr, x14, lo
+1000c3f48: 9a9f2608    	csinc	x8, x16, xzr, hs
+1000c3f4c: 9a8f33e9    	csel	x9, xzr, x15, lo
+1000c3f50: b400008d    	cbz	x13, 0x1000c3f60 <<tls_core::handshake::Reassembler as core::ops::drop::Drop>::drop+0x54>
+1000c3f54: 3800159f    	strb	wzr, [x12], #0x1
+1000c3f58: f10005ad    	subs	x13, x13, #0x1
+1000c3f5c: 54ffffc1    	b.ne	0x1000c3f54 <<tls_core::handshake::Reassembler as core::ops::drop::Drop>::drop+0x48>
+1000c3f60: b400008b    	cbz	x11, 0x1000c3f70 <<tls_core::handshake::Reassembler as core::ops::drop::Drop>::drop+0x64>
+1000c3f64: a8817d5f    	stp	xzr, xzr, [x10], #0x10
+1000c3f68: f100056b    	subs	x11, x11, #0x1
+1000c3f6c: 54ffffc1    	b.ne	0x1000c3f64 <<tls_core::handshake::Reassembler as core::ops::drop::Drop>::drop+0x58>
+1000c3f70: b4000089    	cbz	x9, 0x1000c3f80 <<tls_core::handshake::Reassembler as core::ops::drop::Drop>::drop+0x74>
+1000c3f74: 3800151f    	strb	wzr, [x8], #0x1
+1000c3f78: f1000529    	subs	x9, x9, #0x1
+1000c3f7c: 54ffffc1    	b.ne	0x1000c3f74 <<tls_core::handshake::Reassembler as core::ops::drop::Drop>::drop+0x68>
+1000c3f80: d65f03c0    	ret
+
+00000001000c3f84 <core::ptr::drop_glue::<aws_lc_rs::hkdf::Prk>>:
+1000c3f84: a9be4ff4    	stp	x20, x19, [sp, #-0x20]!
+1000c3f88: a9017bfd    	stp	x29, x30, [sp, #0x10]
+1000c3f8c: 910043fd    	add	x29, sp, #0x10
+1000c3f90: aa0003f3    	mov	x19, x0
+1000c3f94: 97fd0bb2    	bl	0x100006e5c <<aws_lc_rs::hkdf::Prk as core::ops::drop::Drop>::drop>
+1000c3f98: f9400268    	ldr	x8, [x19]
+1000c3f9c: b4000248    	cbz	x8, 0x1000c3fe4 <core::ptr::drop_glue::<aws_lc_rs::hkdf::Prk>+0x60>
+1000c3fa0: aa1303e0    	mov	x0, x19
+1000c3fa4: f8408c08    	ldr	x8, [x0, #0x8]!
+1000c3fa8: 92800014    	mov	x20, #-0x1              ; =-1

@@ -1,0 +1,44 @@
+[
+  {
+    "argv": [
+      "cargo",
+      "+nightly-2026-09-17",
+      "miri",
+      "test",
+      "--locked",
+      "--lib",
+      "--target",
+      "aarch64-apple-darwin"
+    ],
+    "cwd": "target/wipe-probe",
+    "exit_code": 0
+  },
+  {
+    "argv": [
+      "cargo",
+      "+nightly-2026-09-17",
+      "miri",
+      "test",
+      "--locked",
+      "--lib",
+      "--target",
+      "i686-unknown-linux-gnu"
+    ],
+    "cwd": "target/wipe-probe",
+    "exit_code": 0
+  },
+  {
+    "argv": [
+      "cargo",
+      "+nightly-2026-09-17",
+      "miri",
+      "test",
+      "--locked",
+      "--lib",
+      "--target",
+      "powerpc64-unknown-linux-gnu"
+    ],
+    "cwd": "target/wipe-probe",
+    "exit_code": 0
+  }
+]

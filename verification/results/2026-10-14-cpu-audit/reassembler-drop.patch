@@ -1,0 +1,36 @@
+--- a/crates/tls-core/Cargo.toml
++++ b/crates/tls-core/Cargo.toml
+@@ -7,6 +7,7 @@
+ license.workspace = true
+ 
+ [dependencies]
++bytemuck = { version = "=1.25.2", default-features = false }
+ tls-crypto = { path = "../tls-crypto" }
+ zeroize = { version = "=1.9.1", default-features = false }
+ 
+--- a/crates/tls-core/src/handshake.rs
++++ b/crates/tls-core/src/handshake.rs
+@@ -254,6 +254,10 @@
+ 
+ impl Drop for Reassembler<'_> {
+     fn drop(&mut self) {
+-        self.scratch.zeroize();
+-    }
+-}
++        // Audit-only prototype: preserve full caller-loan erasure.
++        let (head, words, tail) = bytemuck::pod_align_to_mut::<u8, u128>(self.scratch);
++        head.zeroize();
++        words.zeroize();
++        tail.zeroize();
++    }
++}
+--- a/Cargo.lock
++++ b/Cargo.lock
+@@ -514,6 +514,7 @@
+ name = "tls-core"
+ version = "0.1.0"
+ dependencies = [
++ "bytemuck",
+  "tls-crypto",
+  "tls-crypto-awslc",
+  "zeroize",

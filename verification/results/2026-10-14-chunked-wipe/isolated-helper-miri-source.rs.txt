@@ -1,0 +1,19 @@
+use zeroize::Zeroize;
+fn zeroize_secret(bytes: &mut [u8]) {
+    let (head, words, tail) = bytemuck::pod_align_to_mut::<u8, u128>(bytes);
+    head.zeroize();
+    words.zeroize();
+    tail.zeroize();
+}
+#[test]
+fn guarded_ranges() {
+ for start in 0..32 {
+  for len in (0..=65).chain([127,128,129,1023,1024,1025]) {
+   let mut storage=vec![0xa5;start+len+32];
+   zeroize_secret(&mut storage[start..start+len]);
+   assert!(storage[..start].iter().all(|&b|b==0xa5));
+   assert!(storage[start..start+len].iter().all(|&b|b==0));
+   assert!(storage[start+len..].iter().all(|&b|b==0xa5));
+  }
+ }
+}

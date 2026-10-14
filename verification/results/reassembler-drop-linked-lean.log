@@ -1,0 +1,37 @@
+⚠ [1267/1488] Replayed Aeneas.Std.Core.Core
+warning: Aeneas/Std/Core/Core.lean:38:4: The namespace 'core' is duplicated in the declaration 'Aeneas.Std.core.core.clone.CloneGlobal'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Aeneas/Std/Core/Core.lean:59:4: The namespace 'core' is duplicated in the declaration 'Aeneas.Std.core.core.clone.CloneBox'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Aeneas/Std/Core/Core.lean:68:4: The namespace 'core' is duplicated in the declaration 'Aeneas.Std.core.core.marker.CopyBool'
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+ℹ [1713/1728] Replayed Proof
+info: Proof.lean:93:0: 'Tls13.Linked.record_count_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Proof.lean:94:0: 'Tls13.Linked.record_count_refines' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Proof.lean:95:0: 'Tls13.Linked.record_count_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Proof.lean:96:0: 'Tls13.Linked.record_count_cost_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1716/1728] Replayed ReassemblyProof
+info: ReassemblyProof.lean:87:0: 'Tls13.Linked.usize_has_u24_headroom' depends on axioms: [propext, Quot.sound]
+info: ReassemblyProof.lean:88:0: 'Tls13.Linked.checked_add_refines' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ReassemblyProof.lean:89:0: 'Tls13.Linked.handshake_total_refines' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ReassemblyProof.lean:90:0: 'Tls13.Linked.handshake_total_success' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ReassemblyProof.lean:91:0: 'Tls13.Linked.handshake_total_rejects' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1719/1728] Replayed ProtectedProof
+info: ProtectedProof.lean:97:0: 'Tls13.Linked.max_inner_plaintext_evaluates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ProtectedProof.lean:98:0: 'Tls13.Linked.inner_length_refines' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ProtectedProof.lean:99:0: 'Tls13.Linked.valid_content_type_refines' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1724/1728] Replayed KeyScheduleProof
+info: KeyScheduleProof.lean:97:0: 'Tls13.Linked.hkdf_label_size_refines' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KeyScheduleProof.lean:98:0: 'Tls13.Linked.hkdf_label_size_success' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KeyScheduleProof.lean:99:0: 'Tls13.Linked.hkdf_label_size_rejects' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KeyScheduleProof.lean:100:0: 'Tls13.Linked.hkdf_label_size_minimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1727/1728] Replayed ClientProof
+info: ClientProof.lean:124:0: 'Tls13.Linked.client_phase_refines' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ClientProof.lean:125:0: 'Tls13.Linked.client_phase_accepts_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ClientProof.lean:126:0: 'Tls13.Linked.client_phase_unverified_rejects' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ClientProof.lean:127:0: 'Tls13.Linked.client_phase_failed_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ClientProof.lean:128:0: 'Tls13.Linked.client_phase_duplicate_hrr_rejects' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (1728 jobs).

@@ -1,0 +1,48 @@
+{
+  "source_url": "https://www.rfc-editor.org/rfc/rfc8448.txt",
+  "retrieved": "2026-10-14",
+  "source_sha256": "6564d1376d1ec744fc7a9993da15ebc1b9be361908b166091f47ef605c537fba",
+  "extraction": "Named RFC8448 sections3/5 blocks, exact declared octets, page headings excluded, 16-byte lowercase spaced-hex lines with LF; no expected bytes cryptographically generated",
+  "fixtures": {
+    "crates/tls-core/tests/fixtures/rfc8448_client_hello.hex": {
+      "octets": 196,
+      "text_sha256": "30075a112614a741ee03af2979a3de2a479a79c5d89a82fbbe51442571e3314c",
+      "decoded_sha256": "4db255f30da09a407c841720be831a06a5aa9b3662a5f44267d37706b73c2b8c"
+    },
+    "crates/tls-core/tests/fixtures/rfc8448_hrr.hex": {
+      "octets": 176,
+      "text_sha256": "528c96f4c84d88f68cf3ca1dee473c0960586d38b4f92ea13723be8f1ec1aabc",
+      "decoded_sha256": "5e4fd6086b7d68e57a20607e94609d2e604f98d4d42f3b3661e0f55f23c4cd36"
+    },
+    "crates/tls-core/tests/fixtures/rfc8448_hrr_client_hello1.hex": {
+      "octets": 180,
+      "text_sha256": "885f78f63390696e4d8e0ccb35c5b86ede293ba9ed6861ee0faa2278efadfce3",
+      "decoded_sha256": "de7420cc7426d2f6b221edcc9c4bdc9bb0ab048b3ddd2411da7e3a01baea6c7e"
+    },
+    "crates/tls-core/tests/fixtures/rfc8448_hrr_client_hello2.hex": {
+      "octets": 512,
+      "text_sha256": "fd6e2af7f154c5afb6bdfef7af8142a01e653905a511482745792681b997de91",
+      "decoded_sha256": "5c2fe8a843fd18e4498a31f21e5fff77671c1a5c1b9a37ec823b73ffa3a1588d"
+    },
+    "crates/tls-core/tests/fixtures/rfc8448_hrr_server_hello.hex": {
+      "octets": 123,
+      "text_sha256": "2947acd132bf944691b95e397f6681b49292028eda44d3affa72e87714fd2a7c",
+      "decoded_sha256": "11b2f096784fb1de6e40bc92d7171a57ae7078f46220509f05d6d54d84fc4fa0"
+    },
+    "crates/tls-core/tests/fixtures/rfc8448_server_handshake_payload.hex": {
+      "octets": 657,
+      "text_sha256": "321bef4e8d3065cc2860255b3a8a978952f0ee43544d69b038054c85d502e3a3",
+      "decoded_sha256": "31ee5cea40f94ad06555412047dedd9a454948e88ae19306cea03cae541f7361"
+    },
+    "crates/tls-core/tests/fixtures/rfc8448_server_handshake_record.hex": {
+      "octets": 679,
+      "text_sha256": "e2b50cd8a9b3faedb3ad50b6efb7a467198b846546136e58e2ae1f2deb9f45e7",
+      "decoded_sha256": "a073d654259fa22ebda69c8b1207c06498a2619e8176e09575ff769dbe779f1e"
+    },
+    "crates/tls-core/tests/fixtures/rfc8448_server_hello.hex": {
+      "octets": 90,
+      "text_sha256": "5c15022c187aac2e70d571f636114c0163c09d728a0a8a99f669daf24bc4542d",
+      "decoded_sha256": "ed88d69f6adbcad682d3ba8cb92bf5692f0f2e9fb9279bce54673bbd0b08d5f9"
+    }
+  }
+}

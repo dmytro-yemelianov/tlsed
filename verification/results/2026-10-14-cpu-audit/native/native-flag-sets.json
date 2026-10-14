@@ -1,0 +1,724 @@
+{
+  "representatives": {
+    "crypto_c": {
+      "log_line": 1279,
+      "category": "crypto_c",
+      "argv": [
+        "cc",
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-std=c11",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src",
+        "-Wall",
+        "-Wextra",
+        "-Wno-unused-parameter",
+        "-pthread",
+        "-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=",
+        "-Wno-overriding-option",
+        "-DBORINGSSL_IMPLEMENTATION=1",
+        "-DBORINGSSL_PREFIX=aws_lc_0_46_0",
+        "-D_DARWIN_C_SOURCE=1",
+        "-DAWS_LC_STDALIGN_AVAILABLE=1",
+        "-DAWS_LC_BUILTIN_SWAP_SUPPORTED=1",
+        "-DMY_ASSEMBLER_SUPPORTS_NEON_SHA3_EXTENSION=1",
+        "-o",
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/f8e4fd781484bd36-bcm.o",
+        "-c",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/bcm.c"
+      ],
+      "raw_command": "\"cc\" \"-O3\" \"-ffunction-sections\" \"-fdata-sections\" \"-fPIC\" \"--target=arm64-apple-macosx\" \"-mmacosx-version-min=27.0\" \"-std=c11\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src\" \"-Wall\" \"-Wextra\" \"-Wno-unused-parameter\" \"-pthread\" \"-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=\" \"-Wno-overriding-option\" \"-DBORINGSSL_IMPLEMENTATION=1\" \"-DBORINGSSL_PREFIX=aws_lc_0_46_0\" \"-D_DARWIN_C_SOURCE=1\" \"-DAWS_LC_STDALIGN_AVAILABLE=1\" \"-DAWS_LC_BUILTIN_SWAP_SUPPORTED=1\" \"-DMY_ASSEMBLER_SUPPORTS_NEON_SHA3_EXTENSION=1\" \"-o\" \"/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/f8e4fd781484bd36-bcm.o\" \"-c\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/bcm.c\"",
+      "source": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/bcm.c",
+      "defines": [
+        "BORINGSSL_IMPLEMENTATION=1",
+        "BORINGSSL_PREFIX=aws_lc_0_46_0",
+        "_DARWIN_C_SOURCE=1",
+        "AWS_LC_STDALIGN_AVAILABLE=1",
+        "AWS_LC_BUILTIN_SWAP_SUPPORTED=1",
+        "MY_ASSEMBLER_SUPPORTS_NEON_SHA3_EXTENSION=1"
+      ],
+      "flags": [
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Wno-unused-parameter",
+        "-pthread",
+        "-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=",
+        "-Wno-overriding-option"
+      ],
+      "include_paths": [
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src"
+      ]
+    },
+    "crypto_assembly": {
+      "log_line": 1613,
+      "category": "crypto_assembly",
+      "argv": [
+        "cc",
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-std=c11",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src",
+        "-Wall",
+        "-Wextra",
+        "-Wno-unused-parameter",
+        "-pthread",
+        "-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=",
+        "-Wno-overriding-option",
+        "-DBORINGSSL_IMPLEMENTATION=1",
+        "-DBORINGSSL_PREFIX=aws_lc_0_46_0",
+        "-D_DARWIN_C_SOURCE=1",
+        "-DAWS_LC_STDALIGN_AVAILABLE=1",
+        "-DAWS_LC_BUILTIN_SWAP_SUPPORTED=1",
+        "-DMY_ASSEMBLER_SUPPORTS_NEON_SHA3_EXTENSION=1",
+        "-o",
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/c4391ac3c46825d6-aesv8-gcm-armv8-unroll8.o",
+        "-c",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/aesv8-gcm-armv8-unroll8.S"
+      ],
+      "raw_command": "\"cc\" \"-O3\" \"-ffunction-sections\" \"-fdata-sections\" \"-fPIC\" \"--target=arm64-apple-macosx\" \"-mmacosx-version-min=27.0\" \"-std=c11\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src\" \"-Wall\" \"-Wextra\" \"-Wno-unused-parameter\" \"-pthread\" \"-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=\" \"-Wno-overriding-option\" \"-DBORINGSSL_IMPLEMENTATION=1\" \"-DBORINGSSL_PREFIX=aws_lc_0_46_0\" \"-D_DARWIN_C_SOURCE=1\" \"-DAWS_LC_STDALIGN_AVAILABLE=1\" \"-DAWS_LC_BUILTIN_SWAP_SUPPORTED=1\" \"-DMY_ASSEMBLER_SUPPORTS_NEON_SHA3_EXTENSION=1\" \"-o\" \"/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/c4391ac3c46825d6-aesv8-gcm-armv8-unroll8.o\" \"-c\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/aesv8-gcm-armv8-unroll8.S\"",
+      "source": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/aesv8-gcm-armv8-unroll8.S",
+      "defines": [
+        "BORINGSSL_IMPLEMENTATION=1",
+        "BORINGSSL_PREFIX=aws_lc_0_46_0",
+        "_DARWIN_C_SOURCE=1",
+        "AWS_LC_STDALIGN_AVAILABLE=1",
+        "AWS_LC_BUILTIN_SWAP_SUPPORTED=1",
+        "MY_ASSEMBLER_SUPPORTS_NEON_SHA3_EXTENSION=1"
+      ],
+      "flags": [
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Wno-unused-parameter",
+        "-pthread",
+        "-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=",
+        "-Wno-overriding-option"
+      ],
+      "include_paths": [
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src"
+      ]
+    },
+    "jitterentropy": {
+      "log_line": 1030,
+      "category": "jitterentropy",
+      "argv": [
+        "cc",
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src",
+        "-Wall",
+        "-Wextra",
+        "-fwrapv",
+        "--param",
+        "ssp-buffer-size=4",
+        "-fvisibility=hidden",
+        "-Wcast-align",
+        "-Wmissing-field-initializers",
+        "-Wshadow",
+        "-Wswitch-enum",
+        "-Wextra",
+        "-Wall",
+        "-pedantic",
+        "-O0",
+        "-fwrapv",
+        "-Wconversion",
+        "-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=",
+        "-fsanitize-undefined-strip-path-components=-1",
+        "--include=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include/openssl/boringssl_prefix_symbols.h",
+        "-DBORINGSSL_IMPLEMENTATION=1",
+        "-DBORINGSSL_PREFIX=aws_lc_0_46_0",
+        "-DAWSLC=1",
+        "-D_DARWIN_C_SOURCE=1",
+        "-o",
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/2d40dbbd793ef942-jitterentropy-base.o",
+        "-c",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-base.c"
+      ],
+      "raw_command": "\"cc\" \"-O3\" \"-ffunction-sections\" \"-fdata-sections\" \"-fPIC\" \"--target=arm64-apple-macosx\" \"-mmacosx-version-min=27.0\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src\" \"-Wall\" \"-Wextra\" \"-fwrapv\" \"--param\" \"ssp-buffer-size=4\" \"-fvisibility=hidden\" \"-Wcast-align\" \"-Wmissing-field-initializers\" \"-Wshadow\" \"-Wswitch-enum\" \"-Wextra\" \"-Wall\" \"-pedantic\" \"-O0\" \"-fwrapv\" \"-Wconversion\" \"-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=\" \"-fsanitize-undefined-strip-path-components=-1\" \"--include=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include/openssl/boringssl_prefix_symbols.h\" \"-DBORINGSSL_IMPLEMENTATION=1\" \"-DBORINGSSL_PREFIX=aws_lc_0_46_0\" \"-DAWSLC=1\" \"-D_DARWIN_C_SOURCE=1\" \"-o\" \"/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/2d40dbbd793ef942-jitterentropy-base.o\" \"-c\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-base.c\"",
+      "source": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-base.c",
+      "defines": [
+        "BORINGSSL_IMPLEMENTATION=1",
+        "BORINGSSL_PREFIX=aws_lc_0_46_0",
+        "AWSLC=1",
+        "_DARWIN_C_SOURCE=1"
+      ],
+      "flags": [
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-Wall",
+        "-Wextra",
+        "-fwrapv",
+        "--param",
+        "-fvisibility=hidden",
+        "-Wcast-align",
+        "-Wmissing-field-initializers",
+        "-Wshadow",
+        "-Wswitch-enum",
+        "-Wextra",
+        "-Wall",
+        "-pedantic",
+        "-O0",
+        "-fwrapv",
+        "-Wconversion",
+        "-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=",
+        "-fsanitize-undefined-strip-path-components=-1",
+        "--include=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include/openssl/boringssl_prefix_symbols.h"
+      ],
+      "include_paths": [
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src"
+      ]
+    },
+    "sha3_probe": {
+      "log_line": 722,
+      "category": "compiler_probe",
+      "argv": [
+        "cc",
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-Werror",
+        "-Wall",
+        "-Wextra",
+        "-march=armv8.4-a+sha3",
+        "-Wno-unused-parameter",
+        "-o",
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/out-neon_sha3_check/7dfda64fdf5a526c-neon_sha3_check.o",
+        "-c",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/tests/compiler_features_tests/neon_sha3_check.c"
+      ],
+      "raw_command": "\"cc\" \"-O3\" \"-ffunction-sections\" \"-fdata-sections\" \"-fPIC\" \"--target=arm64-apple-macosx\" \"-mmacosx-version-min=27.0\" \"-Werror\" \"-Wall\" \"-Wextra\" \"-march=armv8.4-a+sha3\" \"-Wno-unused-parameter\" \"-o\" \"/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/out-neon_sha3_check/7dfda64fdf5a526c-neon_sha3_check.o\" \"-c\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/tests/compiler_features_tests/neon_sha3_check.c\"",
+      "source": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/tests/compiler_features_tests/neon_sha3_check.c",
+      "defines": [],
+      "flags": [
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-Werror",
+        "-Wall",
+        "-Wextra",
+        "-march=armv8.4-a+sha3",
+        "-Wno-unused-parameter"
+      ],
+      "include_paths": []
+    },
+    "architecture_specific": {
+      "log_line": 928,
+      "category": "crypto_assembly",
+      "argv": [
+        "cc",
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-std=c11",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/include",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library",
+        "-I",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src",
+        "-Wall",
+        "-Wextra",
+        "-Wno-unused-parameter",
+        "-pthread",
+        "-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=",
+        "-Wno-overriding-option",
+        "--include=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include/openssl/boringssl_prefix_symbols_asm.h",
+        "-DBORINGSSL_IMPLEMENTATION=1",
+        "-DBORINGSSL_PREFIX=aws_lc_0_46_0",
+        "-D_DARWIN_C_SOURCE=1",
+        "-DAWS_LC_STDALIGN_AVAILABLE=1",
+        "-DAWS_LC_BUILTIN_SWAP_SUPPORTED=1",
+        "-DMY_ASSEMBLER_SUPPORTS_NEON_SHA3_EXTENSION=1",
+        "-DS2N_BN_HIDE_SYMBOLS=1",
+        "-o",
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/ac9a06e0f1f9cd7d-sha3_keccak_f1600_alt.o",
+        "-c",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak_f1600_alt.S"
+      ],
+      "raw_command": "\"cc\" \"-O3\" \"-ffunction-sections\" \"-fdata-sections\" \"-fPIC\" \"--target=arm64-apple-macosx\" \"-mmacosx-version-min=27.0\" \"-std=c11\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/include\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library\" \"-I\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src\" \"-Wall\" \"-Wextra\" \"-Wno-unused-parameter\" \"-pthread\" \"-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=\" \"-Wno-overriding-option\" \"--include=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include/openssl/boringssl_prefix_symbols_asm.h\" \"-DBORINGSSL_IMPLEMENTATION=1\" \"-DBORINGSSL_PREFIX=aws_lc_0_46_0\" \"-D_DARWIN_C_SOURCE=1\" \"-DAWS_LC_STDALIGN_AVAILABLE=1\" \"-DAWS_LC_BUILTIN_SWAP_SUPPORTED=1\" \"-DMY_ASSEMBLER_SUPPORTS_NEON_SHA3_EXTENSION=1\" \"-DS2N_BN_HIDE_SYMBOLS=1\" \"-o\" \"/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/ac9a06e0f1f9cd7d-sha3_keccak_f1600_alt.o\" \"-c\" \"/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak_f1600_alt.S\"",
+      "source": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak_f1600_alt.S",
+      "defines": [
+        "BORINGSSL_IMPLEMENTATION=1",
+        "BORINGSSL_PREFIX=aws_lc_0_46_0",
+        "_DARWIN_C_SOURCE=1",
+        "AWS_LC_STDALIGN_AVAILABLE=1",
+        "AWS_LC_BUILTIN_SWAP_SUPPORTED=1",
+        "MY_ASSEMBLER_SUPPORTS_NEON_SHA3_EXTENSION=1",
+        "S2N_BN_HIDE_SYMBOLS=1"
+      ],
+      "flags": [
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Wno-unused-parameter",
+        "-pthread",
+        "-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=",
+        "-Wno-overriding-option",
+        "--include=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include/openssl/boringssl_prefix_symbols_asm.h"
+      ],
+      "include_paths": [
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/include",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src"
+      ]
+    }
+  },
+  "distinct_sets": [
+    {
+      "category": "compiler_probe",
+      "flags": [
+        "-E"
+      ],
+      "defines": [],
+      "count": 9,
+      "example_sources": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/16250384627782321289detect_compiler_family.c",
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/out-apple_core_services_check/2360857053700938866detect_compiler_family.c",
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/4157012866403563717detect_compiler_family.c"
+      ],
+      "example_log_lines": [
+        272,
+        318,
+        364
+      ]
+    },
+    {
+      "category": "compiler_probe",
+      "flags": [
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-Wall",
+        "-Wextra"
+      ],
+      "defines": [],
+      "count": 1,
+      "example_sources": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/out-apple_core_services_check/src/apple_core_services_check.c"
+      ],
+      "example_log_lines": [
+        353
+      ]
+    },
+    {
+      "category": "compiler_probe",
+      "flags": [
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-Werror",
+        "-Wall",
+        "-Wextra",
+        "-Wno-unused-parameter"
+      ],
+      "defines": [],
+      "count": 3,
+      "example_sources": [
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/tests/compiler_features_tests/c11.c",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/tests/compiler_features_tests/stdalign_check.c",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/tests/compiler_features_tests/builtin_swap_check.c"
+      ],
+      "example_log_lines": [
+        463,
+        588,
+        655
+      ]
+    },
+    {
+      "category": "compiler_probe",
+      "flags": [
+        "-O0",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-Wall",
+        "-Wextra",
+        "-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=",
+        "-Wno-unused-command-line-argument"
+      ],
+      "defines": [],
+      "count": 2,
+      "example_sources": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/flag_check.c",
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/flag_check.c"
+      ],
+      "example_log_lines": [
+        484,
+        990
+      ]
+    },
+    {
+      "category": "compiler_probe",
+      "flags": [
+        "-O0",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-Wall",
+        "-Wextra",
+        "-Wno-overriding-t-option",
+        "-Wno-unused-command-line-argument"
+      ],
+      "defines": [],
+      "count": 1,
+      "example_sources": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/flag_check.c"
+      ],
+      "example_log_lines": [
+        504
+      ]
+    },
+    {
+      "category": "compiler_probe",
+      "flags": [
+        "-O0",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-Wall",
+        "-Wextra",
+        "-Wno-overriding-option",
+        "-Wno-unused-command-line-argument"
+      ],
+      "defines": [],
+      "count": 1,
+      "example_sources": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/flag_check.c"
+      ],
+      "example_log_lines": [
+        523
+      ]
+    },
+    {
+      "category": "compiler_probe",
+      "flags": [
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-Werror",
+        "-Wall",
+        "-Wextra",
+        "-march=armv8.4-a+sha3",
+        "-Wno-unused-parameter"
+      ],
+      "defines": [],
+      "count": 1,
+      "example_sources": [
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/tests/compiler_features_tests/neon_sha3_check.c"
+      ],
+      "example_log_lines": [
+        722
+      ]
+    },
+    {
+      "category": "crypto_assembly",
+      "flags": [
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Wno-unused-parameter",
+        "-pthread",
+        "-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=",
+        "-Wno-overriding-option",
+        "--include=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include/openssl/boringssl_prefix_symbols_asm.h"
+      ],
+      "defines": [
+        "BORINGSSL_IMPLEMENTATION=1",
+        "BORINGSSL_PREFIX=aws_lc_0_46_0",
+        "_DARWIN_C_SOURCE=1",
+        "AWS_LC_STDALIGN_AVAILABLE=1",
+        "AWS_LC_BUILTIN_SWAP_SUPPORTED=1",
+        "MY_ASSEMBLER_SUPPORTS_NEON_SHA3_EXTENSION=1",
+        "S2N_BN_HIDE_SYMBOLS=1"
+      ],
+      "count": 69,
+      "example_sources": [
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_madd_n25519.S",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_madd_n25519_alt.S",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_mod_n25519.S"
+      ],
+      "example_log_lines": [
+        807,
+        808,
+        809
+      ]
+    },
+    {
+      "category": "compiler_probe",
+      "flags": [
+        "-O0",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-Wall",
+        "-Wextra",
+        "-fsanitize-undefined-strip-path-components=-1",
+        "-Wno-unused-command-line-argument"
+      ],
+      "defines": [],
+      "count": 1,
+      "example_sources": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/flag_check.c"
+      ],
+      "example_log_lines": [
+        1009
+      ]
+    },
+    {
+      "category": "jitterentropy",
+      "flags": [
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-Wall",
+        "-Wextra",
+        "-fwrapv",
+        "--param",
+        "-fvisibility=hidden",
+        "-Wcast-align",
+        "-Wmissing-field-initializers",
+        "-Wshadow",
+        "-Wswitch-enum",
+        "-Wextra",
+        "-Wall",
+        "-pedantic",
+        "-O0",
+        "-fwrapv",
+        "-Wconversion",
+        "-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=",
+        "-fsanitize-undefined-strip-path-components=-1",
+        "--include=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/generated-include/openssl/boringssl_prefix_symbols.h"
+      ],
+      "defines": [
+        "BORINGSSL_IMPLEMENTATION=1",
+        "BORINGSSL_PREFIX=aws_lc_0_46_0",
+        "AWSLC=1",
+        "_DARWIN_C_SOURCE=1"
+      ],
+      "count": 6,
+      "example_sources": [
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-base.c",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-gcd.c",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-health.c"
+      ],
+      "example_log_lines": [
+        1030,
+        1031,
+        1032
+      ]
+    },
+    {
+      "category": "crypto_c",
+      "flags": [
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Wno-unused-parameter",
+        "-pthread",
+        "-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=",
+        "-Wno-overriding-option"
+      ],
+      "defines": [
+        "BORINGSSL_IMPLEMENTATION=1",
+        "BORINGSSL_PREFIX=aws_lc_0_46_0",
+        "_DARWIN_C_SOURCE=1",
+        "AWS_LC_STDALIGN_AVAILABLE=1",
+        "AWS_LC_BUILTIN_SWAP_SUPPORTED=1",
+        "MY_ASSEMBLER_SUPPORTS_NEON_SHA3_EXTENSION=1"
+      ],
+      "count": 250,
+      "example_sources": [
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/asn1_lib.c",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/asn1_par.c",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/asn_pack.c"
+      ],
+      "example_log_lines": [
+        1062,
+        1063,
+        1064
+      ]
+    },
+    {
+      "category": "crypto_assembly",
+      "flags": [
+        "-O3",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=27.0",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Wno-unused-parameter",
+        "-pthread",
+        "-ffile-prefix-map=/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0=",
+        "-Wno-overriding-option"
+      ],
+      "defines": [
+        "BORINGSSL_IMPLEMENTATION=1",
+        "BORINGSSL_PREFIX=aws_lc_0_46_0",
+        "_DARWIN_C_SOURCE=1",
+        "AWS_LC_STDALIGN_AVAILABLE=1",
+        "AWS_LC_BUILTIN_SWAP_SUPPORTED=1",
+        "MY_ASSEMBLER_SUPPORTS_NEON_SHA3_EXTENSION=1"
+      ],
+      "count": 46,
+      "example_sources": [
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_intt_aarch64_asm.S",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_ntt_aarch64_asm.S",
+        "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_pointwise_montgomery_aarch64_asm.S"
+      ],
+      "example_log_lines": [
+        1553,
+        1555,
+        1557
+      ]
+    }
+  ],
+  "note": "argv remains authoritative; flags list omits compile/output/include operands, which are retained in complete argv"
+}

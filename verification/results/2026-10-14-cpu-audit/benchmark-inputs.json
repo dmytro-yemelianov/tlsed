@@ -1,0 +1,15 @@
+{
+  "fixture_usage": "fixed leaf/root P256 signed; TLS handshake/key shares/nonces vary via provider RNG; bulk payload generated deterministically by harness source",
+  "files": {
+    "crates/tls-bench/compare_clients.py": "3bfc8da4273ee55c86b354a9645b5552957903fe2a122fdaf95214c6a12d5fb5",
+    "crates/tls-bench/compare_versions.py": "f3837c0311df04278cfe86e6f69dd922d2c82a6b69f3b57458636b6e0421c4e6",
+    "crates/tls-bench/summarize.py": "d00deab087edc49b6ab2d51ffbd37dfe91df682da6bc4b5f1a80490af07cf389",
+    "crates/tls-bench/fixtures/README.md": "d1296e53a319b1cedba17de671f13a430857e0483bfb5c5d24799ce3a60eb677",
+    "crates/tls-bench/fixtures/ca.der": "d6517b3f2f31d119fcc2880ddc29257696f8ab43b0b8a737a304e2fe34bb8e75",
+    "crates/tls-bench/fixtures/ca.pem": "5d7f2c2c01f431bcc72267a4655b7cb541f69691b32c6d153ca7d1585b5c606a",
+    "crates/tls-bench/fixtures/server-key.der": "92b5fae8f905a2eeb6c51d85d3d83d0b26a3621baa056e940c1b54c8a840ed90",
+    "crates/tls-bench/fixtures/server-key.pem": "bc4d939a02159c3547dd052d95a38bc7961fd2d2344fab73167aa635d762f328",
+    "crates/tls-bench/fixtures/server.der": "f17604ae2e4e42abad2583d8de33d52ea399e1d9073c761839ae773e7f62bc50",
+    "crates/tls-bench/fixtures/server.pem": "8934635ca51f260ebe3c299c2a46fe6ba067cfe67fa113fc04a0f99ac9c7be1c"
+  }
+}

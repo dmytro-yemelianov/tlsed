@@ -1,0 +1,234 @@
+{
+  "binary_sha256": "f898001244b1bf48641d8e897b6d90a9de04978fb97803df0bfc515f54100e2e",
+  "runs": [
+    {
+      "name": "aes-rx-tlsed",
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/client_compare_baseline",
+        "--only",
+        "bulk-rx-16384",
+        "--suite",
+        "aes128",
+        "--samples",
+        "10000",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed-first"
+      ],
+      "sample_argv": [
+        "/usr/bin/sample",
+        "27224",
+        "2",
+        "1",
+        "-file",
+        "verification/results/2026-10-14-cpu-audit/profiles/aes-rx-tlsed.sample.txt"
+      ],
+      "sample_exit": 0,
+      "driver_exit": -15,
+      "rows": 1779,
+      "termination": "deliberate after sample; diagnostic partial CSV excluded from canonical timing"
+    },
+    {
+      "name": "aes-rx-rustls_strict",
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/client_compare_baseline",
+        "--only",
+        "bulk-rx-16384",
+        "--suite",
+        "aes128",
+        "--samples",
+        "10000",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls-first"
+      ],
+      "sample_argv": [
+        "/usr/bin/sample",
+        "27806",
+        "2",
+        "1",
+        "-file",
+        "verification/results/2026-10-14-cpu-audit/profiles/aes-rx-rustls_strict.sample.txt"
+      ],
+      "sample_exit": 0,
+      "driver_exit": -15,
+      "rows": 1718,
+      "termination": "deliberate after sample; diagnostic partial CSV excluded from canonical timing"
+    },
+    {
+      "name": "aes-tx-tlsed",
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/client_compare_baseline",
+        "--only",
+        "bulk-tx-16384",
+        "--suite",
+        "aes128",
+        "--samples",
+        "10000",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed-first"
+      ],
+      "sample_argv": [
+        "/usr/bin/sample",
+        "28046",
+        "2",
+        "1",
+        "-file",
+        "verification/results/2026-10-14-cpu-audit/profiles/aes-tx-tlsed.sample.txt"
+      ],
+      "sample_exit": 0,
+      "driver_exit": -15,
+      "rows": 1537,
+      "termination": "deliberate after sample; diagnostic partial CSV excluded from canonical timing"
+    },
+    {
+      "name": "aes-tx-rustls_strict",
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/client_compare_baseline",
+        "--only",
+        "bulk-tx-16384",
+        "--suite",
+        "aes128",
+        "--samples",
+        "10000",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls-first"
+      ],
+      "sample_argv": [
+        "/usr/bin/sample",
+        "28518",
+        "2",
+        "1",
+        "-file",
+        "verification/results/2026-10-14-cpu-audit/profiles/aes-tx-rustls_strict.sample.txt"
+      ],
+      "sample_exit": 0,
+      "driver_exit": -15,
+      "rows": 1547,
+      "termination": "deliberate after sample; diagnostic partial CSV excluded from canonical timing"
+    },
+    {
+      "name": "chacha-rx-tlsed",
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/client_compare_baseline",
+        "--only",
+        "bulk-rx-16384",
+        "--suite",
+        "chacha",
+        "--samples",
+        "10000",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed-first"
+      ],
+      "sample_argv": [
+        "/usr/bin/sample",
+        "28853",
+        "2",
+        "1",
+        "-file",
+        "verification/results/2026-10-14-cpu-audit/profiles/chacha-rx-tlsed.sample.txt"
+      ],
+      "sample_exit": 0,
+      "driver_exit": -15,
+      "rows": 566,
+      "termination": "deliberate after sample; diagnostic partial CSV excluded from canonical timing"
+    },
+    {
+      "name": "chacha-rx-rustls_strict",
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/client_compare_baseline",
+        "--only",
+        "bulk-rx-16384",
+        "--suite",
+        "chacha",
+        "--samples",
+        "10000",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls-first"
+      ],
+      "sample_argv": [
+        "/usr/bin/sample",
+        "29098",
+        "2",
+        "1",
+        "-file",
+        "verification/results/2026-10-14-cpu-audit/profiles/chacha-rx-rustls_strict.sample.txt"
+      ],
+      "sample_exit": 0,
+      "driver_exit": -15,
+      "rows": 522,
+      "termination": "deliberate after sample; diagnostic partial CSV excluded from canonical timing"
+    },
+    {
+      "name": "lifecycle-tlsed",
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/client_compare_baseline",
+        "--only",
+        "lifecycle",
+        "--suite",
+        "aes128",
+        "--samples",
+        "100000",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed-first"
+      ],
+      "sample_argv": [
+        "/usr/bin/sample",
+        "43831",
+        "2",
+        "1",
+        "-file",
+        "verification/results/2026-10-14-cpu-audit/profiles/lifecycle-tlsed.sample.txt"
+      ],
+      "sample_exit": 0,
+      "driver_exit": -15,
+      "rows": 17320,
+      "termination": "deliberate after sample; diagnostic partial CSV excluded from canonical timing"
+    },
+    {
+      "name": "lifecycle-rustls_strict",
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/client_compare_baseline",
+        "--only",
+        "lifecycle",
+        "--suite",
+        "aes128",
+        "--samples",
+        "100000",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls-first"
+      ],
+      "sample_argv": [
+        "/usr/bin/sample",
+        "44082",
+        "2",
+        "1",
+        "-file",
+        "verification/results/2026-10-14-cpu-audit/profiles/lifecycle-rustls_strict.sample.txt"
+      ],
+      "sample_exit": 0,
+      "driver_exit": -15,
+      "rows": 19402,
+      "termination": "deliberate after sample; diagnostic partial CSV excluded from canonical timing"
+    }
+  ],
+  "excluded_attempt": {
+    "samples": 10000,
+    "reason": "lifecycle first participant completed before sampling ended; mixed implementations, excluded from attribution",
+    "csv": "lifecycle-mixed-attempt.csv"
+  }
+}

@@ -1,0 +1,12 @@
+Preparing a sysroot for Miri (target: aarch64-apple-darwin)... done
+   Compiling bytemuck v1.25.2
+   Compiling zeroize v1.9.1
+   Compiling wipe-probe v0.0.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/wipe-probe)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.28s
+     Running unittests src/lib.rs (target/miri/aarch64-apple-darwin/debug/build/wipe-probe/6d347775b39b0df8/out/wipe_probe-6d347775b39b0df8)
+
+running 1 test
+test guarded_ranges ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 57.16s
+

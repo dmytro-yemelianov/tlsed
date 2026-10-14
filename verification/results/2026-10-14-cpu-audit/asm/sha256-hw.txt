@@ -1,0 +1,50 @@
+
+target/cpu-audit/workspace/target/release/client_compare_baseline:	file format mach-o arm64
+
+Disassembly of section __TEXT,__text:
+
+000000010019a940 <_aws_lc_0_46_0_sha256_block_data_order_hw>:
+10019aa70: 5e0760c4    	sha256su1.4s	v4, v6, v7
+10019aa74: 4cdf7870    	ld1.4s	{ v16 }, [x3], #16
+10019aa78: 4ea58631    	add.4s	v17, v17, v5
+10019aa7c: 5e2828c5    	sha256su0.4s	v5, v6
+10019aa80: 4ea01c02    	mov.16b	v2, v0
+10019aa84: 5e114020    	sha256h.4s	q0, q1, v17
+10019aa88: 5e115041    	sha256h2.4s	q1, q2, v17
+10019aa8c: 5e0460e5    	sha256su1.4s	v5, v7, v4
+10019aa90: 4cdf7871    	ld1.4s	{ v17 }, [x3], #16
+10019aa94: 4ea68610    	add.4s	v16, v16, v6
+10019aa98: 5e2828e6    	sha256su0.4s	v6, v7
+10019aa9c: 4ea01c02    	mov.16b	v2, v0
+10019aaa0: 5e104020    	sha256h.4s	q0, q1, v16
+10019aaa4: 5e105041    	sha256h2.4s	q1, q2, v16
+10019aaa8: 5e056086    	sha256su1.4s	v6, v4, v5
+10019aaac: 4cdf7870    	ld1.4s	{ v16 }, [x3], #16
+10019aab0: 4ea78631    	add.4s	v17, v17, v7
+10019aab4: 5e282887    	sha256su0.4s	v7, v4
+10019aab8: 4ea01c02    	mov.16b	v2, v0
+10019aabc: 5e114020    	sha256h.4s	q0, q1, v17
+10019aac0: 5e115041    	sha256h2.4s	q1, q2, v17
+10019aac4: 5e0660a7    	sha256su1.4s	v7, v5, v6
+10019aac8: 4cdf7871    	ld1.4s	{ v17 }, [x3], #16
+10019aacc: 4ea48610    	add.4s	v16, v16, v4
+10019aad0: 4ea01c02    	mov.16b	v2, v0
+10019aad4: 5e104020    	sha256h.4s	q0, q1, v16
+10019aad8: 5e105041    	sha256h2.4s	q1, q2, v16
+10019aadc: 4cdf7870    	ld1.4s	{ v16 }, [x3], #16
+10019aae0: 4ea58631    	add.4s	v17, v17, v5
+10019aae4: 4ea01c02    	mov.16b	v2, v0
+10019aae8: 5e114020    	sha256h.4s	q0, q1, v17
+10019aaec: 5e115041    	sha256h2.4s	q1, q2, v17
+10019aaf0: 4c407871    	ld1.4s	{ v17 }, [x3]
+10019aaf4: 4ea68610    	add.4s	v16, v16, v6
+10019aaf8: d103c063    	sub	x3, x3, #0xf0
+10019aafc: 4ea01c02    	mov.16b	v2, v0
+10019ab00: 5e104020    	sha256h.4s	q0, q1, v16
+10019ab04: 5e105041    	sha256h2.4s	q1, q2, v16
+10019ab08: 4ea78631    	add.4s	v17, v17, v7
+10019ab0c: 4ea01c02    	mov.16b	v2, v0
+10019ab10: 5e114020    	sha256h.4s	q0, q1, v17
+10019ab14: 5e115041    	sha256h2.4s	q1, q2, v17
+10019ab18: 4eb28400    	add.4s	v0, v0, v18
+10019ab1c: 4eb38421    	add.4s	v1, v1, v19

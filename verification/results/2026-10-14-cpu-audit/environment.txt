@@ -1,0 +1,29 @@
+$ rustc --version --verbose
+rustc 1.98.1 (48a229cea 2026-09-01)
+binary: rustc
+commit-hash: 48a229ceaefd4985c50990b14116b6d856af0985
+commit-date: 2026-09-01
+host: aarch64-apple-darwin
+release: 1.98.1
+LLVM version: 22.1.8
+
+$ sw_vers
+ProductName:		macOS
+ProductVersion:		27.2
+BuildVersion:		26B5086k
+
+$ uname -m
+arm64
+
+$ sysctl -n machdep.cpu.brand_string
+Apple M5
+
+$ pmset -g batt
+Now drawing from 'AC Power'
+ -InternalBattery-0 (id=24117347)	100%; charged; 0:00 remaining present: true
+
+Release thinLTO/codegen-units1; build/profile/test separated from canonical timing; no affinity/frequency/scheduler isolation.
+RUSTFLAGS=unset
+CFLAGS=unset
+CXXFLAGS=unset
+AWS_LC_SYS_CFLAGS=unset

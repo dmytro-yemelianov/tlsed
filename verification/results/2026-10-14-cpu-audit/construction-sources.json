@@ -1,0 +1,8 @@
+{
+  "engine_sources_match_production": true,
+  "binary_path": "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/client_compare_construction",
+  "binary_sha256": "09504a74f3c1c7e591da359168437d1e2c1c770228c9f50ecea5e955fdc2ebb4",
+  "harness_sha256": "cbbb8818c15abd4832e21bea623fc75ddb3d8d863ce0674442d231b2610974ea",
+  "batch": 32,
+  "excludes": "buffer Vec capacity reservation for reused buffers, clients Vec reservation, ClientHello emission/validation, Drop and release all outside constructor timer; fresh caller-buffer allocation included only for TLSed fresh workload"
+}

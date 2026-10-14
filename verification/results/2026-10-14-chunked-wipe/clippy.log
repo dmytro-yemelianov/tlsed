@@ -1,0 +1,4 @@
+    Checking bytemuck v1.25.2
+    Checking tls-client v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/crates/tls-client)
+    Checking tls-bench v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/crates/tls-bench)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.97s

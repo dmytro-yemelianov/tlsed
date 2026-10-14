@@ -1,0 +1,9 @@
+implementation,workload,direction,payload_bytes,iterations,sample,elapsed_ns
+tlsed,construction_reused_buffers,both,0,32,0,239667
+tlsed,construction_reused_buffers,both,0,32,1,239750
+tlsed,construction_fresh_buffers,both,0,32,0,292667
+tlsed,construction_fresh_buffers,both,0,32,1,293125
+rustls_strict,construction_reused_buffers,both,0,32,0,354584
+rustls_strict,construction_reused_buffers,both,0,32,1,353958
+rustls_strict,construction_fresh_buffers,both,0,32,0,354250
+rustls_strict,construction_fresh_buffers,both,0,32,1,352208

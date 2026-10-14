@@ -1,0 +1,492 @@
+
+target/cpu-audit/workspace/target/release/client_compare_baseline:	file format mach-o arm64
+
+Disassembly of section __TEXT,__text:
+
+0000000100008fb8 <core::ptr::drop_glue::<tls_client::ClientConnection>>:
+100008fb8: a9be4ff4    	stp	x20, x19, [sp, #-0x20]!
+100008fbc: a9017bfd    	stp	x29, x30, [sp, #0x10]
+100008fc0: 910043fd    	add	x29, sp, #0x10
+100008fc4: aa0003f3    	mov	x19, x0
+100008fc8: f942480a    	ldr	x10, [x0, #0x490]
+100008fcc: b40003ca    	cbz	x10, 0x100009044 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x8c>
+100008fd0: f9424e68    	ldr	x8, [x19, #0x498]
+100008fd4: 91003d49    	add	x9, x10, #0xf
+100008fd8: 927ced29    	and	x9, x9, #0xfffffffffffffff0
+100008fdc: 5280020b    	mov	w11, #0x10              ; =16
+100008fe0: cb0a0129    	sub	x9, x9, x10
+100008fe4: 8b09014c    	add	x12, x10, x9
+100008fe8: cb09010d    	sub	x13, x8, x9
+100008fec: d344fdae    	lsr	x14, x13, #4
+100008ff0: 92400daf    	and	x15, x13, #0xf
+100008ff4: 927ce9ad    	and	x13, x13, #0x7ffffffffffffff0
+100008ff8: 8b0d0190    	add	x16, x12, x13
+100008ffc: eb09011f    	cmp	x8, x9
+100009000: 9a89310d    	csel	x13, x8, x9, lo
+100009004: 9a8c316b    	csel	x11, x11, x12, lo
+100009008: 9a8e33ec    	csel	x12, xzr, x14, lo
+10000900c: 9a9f2608    	csinc	x8, x16, xzr, hs
+100009010: 9a8f33e9    	csel	x9, xzr, x15, lo
+100009014: b400008d    	cbz	x13, 0x100009024 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x6c>
+100009018: 3800155f    	strb	wzr, [x10], #0x1
+10000901c: f10005ad    	subs	x13, x13, #0x1
+100009020: 54ffffc1    	b.ne	0x100009018 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x60>
+100009024: b400008c    	cbz	x12, 0x100009034 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x7c>
+100009028: a8817d7f    	stp	xzr, xzr, [x11], #0x10
+10000902c: f100058c    	subs	x12, x12, #0x1
+100009030: 54ffffc1    	b.ne	0x100009028 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x70>
+100009034: b4000089    	cbz	x9, 0x100009044 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x8c>
+100009038: 3800151f    	strb	wzr, [x8], #0x1
+10000903c: f1000529    	subs	x9, x9, #0x1
+100009040: 54ffffc1    	b.ne	0x100009038 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x80>
+100009044: f9425a6a    	ldr	x10, [x19, #0x4b0]
+100009048: b40003ca    	cbz	x10, 0x1000090c0 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x108>
+10000904c: f9425e68    	ldr	x8, [x19, #0x4b8]
+100009050: 91003d49    	add	x9, x10, #0xf
+100009054: 927ced29    	and	x9, x9, #0xfffffffffffffff0
+100009058: 5280020b    	mov	w11, #0x10              ; =16
+10000905c: cb0a0129    	sub	x9, x9, x10
+100009060: 8b09014c    	add	x12, x10, x9
+100009064: cb09010d    	sub	x13, x8, x9
+100009068: d344fdae    	lsr	x14, x13, #4
+10000906c: 92400daf    	and	x15, x13, #0xf
+100009070: 927ce9ad    	and	x13, x13, #0x7ffffffffffffff0
+100009074: 8b0d0190    	add	x16, x12, x13
+100009078: eb09011f    	cmp	x8, x9
+10000907c: 9a89310d    	csel	x13, x8, x9, lo
+100009080: 9a8c316b    	csel	x11, x11, x12, lo
+100009084: 9a8e33ec    	csel	x12, xzr, x14, lo
+100009088: 9a9f2608    	csinc	x8, x16, xzr, hs
+10000908c: 9a8f33e9    	csel	x9, xzr, x15, lo
+100009090: b400008d    	cbz	x13, 0x1000090a0 <core::ptr::drop_glue::<tls_client::ClientConnection>+0xe8>
+100009094: 3800155f    	strb	wzr, [x10], #0x1
+100009098: f10005ad    	subs	x13, x13, #0x1
+10000909c: 54ffffc1    	b.ne	0x100009094 <core::ptr::drop_glue::<tls_client::ClientConnection>+0xdc>
+1000090a0: b400008c    	cbz	x12, 0x1000090b0 <core::ptr::drop_glue::<tls_client::ClientConnection>+0xf8>
+1000090a4: a8817d7f    	stp	xzr, xzr, [x11], #0x10
+1000090a8: f100058c    	subs	x12, x12, #0x1
+1000090ac: 54ffffc1    	b.ne	0x1000090a4 <core::ptr::drop_glue::<tls_client::ClientConnection>+0xec>
+1000090b0: b4000089    	cbz	x9, 0x1000090c0 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x108>
+1000090b4: 3800151f    	strb	wzr, [x8], #0x1
+1000090b8: f1000529    	subs	x9, x9, #0x1
+1000090bc: 54ffffc1    	b.ne	0x1000090b4 <core::ptr::drop_glue::<tls_client::ClientConnection>+0xfc>
+1000090c0: f9426a6a    	ldr	x10, [x19, #0x4d0]
+1000090c4: b40003ca    	cbz	x10, 0x10000913c <core::ptr::drop_glue::<tls_client::ClientConnection>+0x184>
+1000090c8: f9426e68    	ldr	x8, [x19, #0x4d8]
+1000090cc: 91003d49    	add	x9, x10, #0xf
+1000090d0: 927ced29    	and	x9, x9, #0xfffffffffffffff0
+1000090d4: 5280020b    	mov	w11, #0x10              ; =16
+1000090d8: cb0a0129    	sub	x9, x9, x10
+1000090dc: 8b09014c    	add	x12, x10, x9
+1000090e0: cb09010d    	sub	x13, x8, x9
+1000090e4: d344fdae    	lsr	x14, x13, #4
+1000090e8: 92400daf    	and	x15, x13, #0xf
+1000090ec: 927ce9ad    	and	x13, x13, #0x7ffffffffffffff0
+1000090f0: 8b0d0190    	add	x16, x12, x13
+1000090f4: eb09011f    	cmp	x8, x9
+1000090f8: 9a89310d    	csel	x13, x8, x9, lo
+1000090fc: 9a8c316b    	csel	x11, x11, x12, lo
+100009100: 9a8e33ec    	csel	x12, xzr, x14, lo
+100009104: 9a9f2608    	csinc	x8, x16, xzr, hs
+100009108: 9a8f33e9    	csel	x9, xzr, x15, lo
+10000910c: b400008d    	cbz	x13, 0x10000911c <core::ptr::drop_glue::<tls_client::ClientConnection>+0x164>
+100009110: 3800155f    	strb	wzr, [x10], #0x1
+100009114: f10005ad    	subs	x13, x13, #0x1
+100009118: 54ffffc1    	b.ne	0x100009110 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x158>
+10000911c: b400008c    	cbz	x12, 0x10000912c <core::ptr::drop_glue::<tls_client::ClientConnection>+0x174>
+100009120: a8817d7f    	stp	xzr, xzr, [x11], #0x10
+100009124: f100058c    	subs	x12, x12, #0x1
+100009128: 54ffffc1    	b.ne	0x100009120 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x168>
+10000912c: b4000089    	cbz	x9, 0x10000913c <core::ptr::drop_glue::<tls_client::ClientConnection>+0x184>
+100009130: 3800151f    	strb	wzr, [x8], #0x1
+100009134: f1000529    	subs	x9, x9, #0x1
+100009138: 54ffffc1    	b.ne	0x100009130 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x178>
+10000913c: f9423268    	ldr	x8, [x19, #0x460]
+100009140: 92800009    	mov	x9, #-0x1               ; =-1
+100009144: f8690108    	ldaddl	x9, x8, [x8]
+100009148: f100051f    	cmp	x8, #0x1
+10000914c: 54000081    	b.ne	0x10000915c <core::ptr::drop_glue::<tls_client::ClientConnection>+0x1a4>
+100009150: d50339bf    	dmb	ishld
+100009154: f9423260    	ldr	x0, [x19, #0x460]
+100009158: 9400531e    	bl	0x10001ddd0 <<alloc::sync::Arc<tls_client::ClientConfig>>::drop_slow>
+10000915c: 39474268    	ldrb	w8, [x19, #0x1d0]
+100009160: 370000c8    	tbnz	w8, #0x0, 0x100009178 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x1c0>
+100009164: f940ee68    	ldr	x8, [x19, #0x1d8]
+100009168: f100051f    	cmp	x8, #0x1
+10000916c: 5400006b    	b.lt	0x100009178 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x1c0>
+100009170: f940f260    	ldr	x0, [x19, #0x1e0]
+100009174: 9407e5e3    	bl	0x100202900 <dyld_stub_binder+0x100202900>
+100009178: f9402a68    	ldr	x8, [x19, #0x50]
+10000917c: b100051f    	cmn	x8, #0x1
+100009180: 540000a0    	b.eq	0x100009194 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x1dc>
+100009184: f9402e60    	ldr	x0, [x19, #0x58]
+100009188: 94044518    	bl	0x10011a5e8 <_aws_lc_0_46_0_EVP_PKEY_free>
+10000918c: f9403660    	ldr	x0, [x19, #0x68]
+100009190: 94044516    	bl	0x10011a5e8 <_aws_lc_0_46_0_EVP_PKEY_free>
+100009194: 3949ca68    	ldrb	w8, [x19, #0x272]
+100009198: 7100091f    	cmp	w8, #0x2
+10000919c: 540000c0    	b.eq	0x1000091b4 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x1fc>
+1000091a0: 3949a268    	ldrb	w8, [x19, #0x268]
+1000091a4: 7100091f    	cmp	w8, #0x2
+1000091a8: 54000060    	b.eq	0x1000091b4 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x1fc>
+1000091ac: 9108a260    	add	x0, x19, #0x228
+1000091b0: 9403fd8e    	bl	0x1001087e8 <_aws_lc_0_46_0_EVP_MD_CTX_cleanup>
+1000091b4: 394bea68    	ldrb	w8, [x19, #0x2fa]
+1000091b8: 7100091f    	cmp	w8, #0x2
+1000091bc: 540000c0    	b.eq	0x1000091d4 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x21c>
+1000091c0: 394bc268    	ldrb	w8, [x19, #0x2f0]
+1000091c4: 7100091f    	cmp	w8, #0x2
+1000091c8: 54000060    	b.eq	0x1000091d4 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x21c>
+1000091cc: 910ac260    	add	x0, x19, #0x2b0
+1000091d0: 9403fd86    	bl	0x1001087e8 <_aws_lc_0_46_0_EVP_MD_CTX_cleanup>
+1000091d4: 39516268    	ldrb	w8, [x19, #0x458]
+1000091d8: 7103fd1f    	cmp	w8, #0xff
+1000091dc: 54001280    	b.eq	0x10000942c <core::ptr::drop_glue::<tls_client::ClientConnection>+0x474>
+1000091e0: 390e427f    	strb	wzr, [x19, #0x390]
+1000091e4: 390e467f    	strb	wzr, [x19, #0x391]
+1000091e8: 390e4a7f    	strb	wzr, [x19, #0x392]
+1000091ec: 390e4e7f    	strb	wzr, [x19, #0x393]
+1000091f0: 390e527f    	strb	wzr, [x19, #0x394]
+1000091f4: 390e567f    	strb	wzr, [x19, #0x395]
+1000091f8: 390e5a7f    	strb	wzr, [x19, #0x396]
+1000091fc: 390e5e7f    	strb	wzr, [x19, #0x397]
+100009200: 390e627f    	strb	wzr, [x19, #0x398]
+100009204: 390e667f    	strb	wzr, [x19, #0x399]
+100009208: 390e6a7f    	strb	wzr, [x19, #0x39a]
+10000920c: 390e6e7f    	strb	wzr, [x19, #0x39b]
+100009210: 390e727f    	strb	wzr, [x19, #0x39c]
+100009214: 390e767f    	strb	wzr, [x19, #0x39d]
+100009218: 390e7a7f    	strb	wzr, [x19, #0x39e]
+10000921c: 390e7e7f    	strb	wzr, [x19, #0x39f]
+100009220: 390e827f    	strb	wzr, [x19, #0x3a0]
+100009224: 390e867f    	strb	wzr, [x19, #0x3a1]
+100009228: 390e8a7f    	strb	wzr, [x19, #0x3a2]
+10000922c: 390e8e7f    	strb	wzr, [x19, #0x3a3]
+100009230: 390e927f    	strb	wzr, [x19, #0x3a4]
+100009234: 390e967f    	strb	wzr, [x19, #0x3a5]
+100009238: 390e9a7f    	strb	wzr, [x19, #0x3a6]
+10000923c: 390e9e7f    	strb	wzr, [x19, #0x3a7]
+100009240: 390ea27f    	strb	wzr, [x19, #0x3a8]
+100009244: 390ea67f    	strb	wzr, [x19, #0x3a9]
+100009248: 390eaa7f    	strb	wzr, [x19, #0x3aa]
+10000924c: 390eae7f    	strb	wzr, [x19, #0x3ab]
+100009250: 390eb27f    	strb	wzr, [x19, #0x3ac]
+100009254: 390eb67f    	strb	wzr, [x19, #0x3ad]
+100009258: 390eba7f    	strb	wzr, [x19, #0x3ae]
+10000925c: 390ebe7f    	strb	wzr, [x19, #0x3af]
+100009260: 390ec27f    	strb	wzr, [x19, #0x3b0]
+100009264: 390ec67f    	strb	wzr, [x19, #0x3b1]
+100009268: 390eca7f    	strb	wzr, [x19, #0x3b2]
+10000926c: 390ece7f    	strb	wzr, [x19, #0x3b3]
+100009270: 390ed27f    	strb	wzr, [x19, #0x3b4]
+100009274: 390ed67f    	strb	wzr, [x19, #0x3b5]
+100009278: 390eda7f    	strb	wzr, [x19, #0x3b6]
+10000927c: 390ede7f    	strb	wzr, [x19, #0x3b7]
+100009280: 390ee27f    	strb	wzr, [x19, #0x3b8]
+100009284: 390ee67f    	strb	wzr, [x19, #0x3b9]
+100009288: 390eea7f    	strb	wzr, [x19, #0x3ba]
+10000928c: 390eee7f    	strb	wzr, [x19, #0x3bb]
+100009290: 390ef27f    	strb	wzr, [x19, #0x3bc]
+100009294: 390ef67f    	strb	wzr, [x19, #0x3bd]
+100009298: 390efa7f    	strb	wzr, [x19, #0x3be]
+10000929c: 390efe7f    	strb	wzr, [x19, #0x3bf]
+1000092a0: f901e27f    	str	xzr, [x19, #0x3c0]
+1000092a4: 390f227f    	strb	wzr, [x19, #0x3c8]
+1000092a8: 390f267f    	strb	wzr, [x19, #0x3c9]
+1000092ac: 390f2a7f    	strb	wzr, [x19, #0x3ca]
+1000092b0: 390f2e7f    	strb	wzr, [x19, #0x3cb]
+1000092b4: 390f327f    	strb	wzr, [x19, #0x3cc]
+1000092b8: 390f367f    	strb	wzr, [x19, #0x3cd]
+1000092bc: 390f3a7f    	strb	wzr, [x19, #0x3ce]
+1000092c0: 390f3e7f    	strb	wzr, [x19, #0x3cf]
+1000092c4: 390f427f    	strb	wzr, [x19, #0x3d0]
+1000092c8: 390f467f    	strb	wzr, [x19, #0x3d1]
+1000092cc: 390f4a7f    	strb	wzr, [x19, #0x3d2]
+1000092d0: 390f4e7f    	strb	wzr, [x19, #0x3d3]
+1000092d4: 390f527f    	strb	wzr, [x19, #0x3d4]
+1000092d8: 390f567f    	strb	wzr, [x19, #0x3d5]
+1000092dc: 390f5a7f    	strb	wzr, [x19, #0x3d6]
+1000092e0: 390f5e7f    	strb	wzr, [x19, #0x3d7]
+1000092e4: 390f627f    	strb	wzr, [x19, #0x3d8]
+1000092e8: 390f667f    	strb	wzr, [x19, #0x3d9]
+1000092ec: 390f6a7f    	strb	wzr, [x19, #0x3da]
+1000092f0: 390f6e7f    	strb	wzr, [x19, #0x3db]
+1000092f4: 390f727f    	strb	wzr, [x19, #0x3dc]
+1000092f8: 390f767f    	strb	wzr, [x19, #0x3dd]
+1000092fc: 390f7a7f    	strb	wzr, [x19, #0x3de]
+100009300: 390f7e7f    	strb	wzr, [x19, #0x3df]
+100009304: 390f827f    	strb	wzr, [x19, #0x3e0]
+100009308: 390f867f    	strb	wzr, [x19, #0x3e1]
+10000930c: 390f8a7f    	strb	wzr, [x19, #0x3e2]
+100009310: 390f8e7f    	strb	wzr, [x19, #0x3e3]
+100009314: 390f927f    	strb	wzr, [x19, #0x3e4]
+100009318: 390f967f    	strb	wzr, [x19, #0x3e5]
+10000931c: 390f9a7f    	strb	wzr, [x19, #0x3e6]
+100009320: 390f9e7f    	strb	wzr, [x19, #0x3e7]
+100009324: 390fa27f    	strb	wzr, [x19, #0x3e8]
+100009328: 390fa67f    	strb	wzr, [x19, #0x3e9]
+10000932c: 390faa7f    	strb	wzr, [x19, #0x3ea]
+100009330: 390fae7f    	strb	wzr, [x19, #0x3eb]
+100009334: 390fb27f    	strb	wzr, [x19, #0x3ec]
+100009338: 390fb67f    	strb	wzr, [x19, #0x3ed]
+10000933c: 390fba7f    	strb	wzr, [x19, #0x3ee]
+100009340: 390fbe7f    	strb	wzr, [x19, #0x3ef]
+100009344: 390fc27f    	strb	wzr, [x19, #0x3f0]
+100009348: 390fc67f    	strb	wzr, [x19, #0x3f1]
+10000934c: 390fca7f    	strb	wzr, [x19, #0x3f2]
+100009350: 390fce7f    	strb	wzr, [x19, #0x3f3]
+100009354: 390fd27f    	strb	wzr, [x19, #0x3f4]
+100009358: 390fd67f    	strb	wzr, [x19, #0x3f5]
+10000935c: 390fda7f    	strb	wzr, [x19, #0x3f6]
+100009360: 390fde7f    	strb	wzr, [x19, #0x3f7]
+100009364: f901fe7f    	str	xzr, [x19, #0x3f8]
+100009368: 3910427f    	strb	wzr, [x19, #0x410]
+10000936c: 3910467f    	strb	wzr, [x19, #0x411]
+100009370: 39104a7f    	strb	wzr, [x19, #0x412]
+100009374: 39104e7f    	strb	wzr, [x19, #0x413]
+100009378: 3910527f    	strb	wzr, [x19, #0x414]
+10000937c: 3910567f    	strb	wzr, [x19, #0x415]
+100009380: 39105a7f    	strb	wzr, [x19, #0x416]
+100009384: 39105e7f    	strb	wzr, [x19, #0x417]
+100009388: 3910627f    	strb	wzr, [x19, #0x418]
+10000938c: 3910667f    	strb	wzr, [x19, #0x419]
+100009390: 39106a7f    	strb	wzr, [x19, #0x41a]
+100009394: 39106e7f    	strb	wzr, [x19, #0x41b]
+100009398: 3910727f    	strb	wzr, [x19, #0x41c]
+10000939c: 3910767f    	strb	wzr, [x19, #0x41d]
+1000093a0: 39107a7f    	strb	wzr, [x19, #0x41e]
+1000093a4: 39107e7f    	strb	wzr, [x19, #0x41f]
+1000093a8: 3910827f    	strb	wzr, [x19, #0x420]
+1000093ac: 3910867f    	strb	wzr, [x19, #0x421]
+1000093b0: 39108a7f    	strb	wzr, [x19, #0x422]
+1000093b4: 39108e7f    	strb	wzr, [x19, #0x423]
+1000093b8: 3910927f    	strb	wzr, [x19, #0x424]
+1000093bc: 3910967f    	strb	wzr, [x19, #0x425]
+1000093c0: 39109a7f    	strb	wzr, [x19, #0x426]
+1000093c4: 39109e7f    	strb	wzr, [x19, #0x427]
+1000093c8: 3910a27f    	strb	wzr, [x19, #0x428]
+1000093cc: 3910a67f    	strb	wzr, [x19, #0x429]
+1000093d0: 3910aa7f    	strb	wzr, [x19, #0x42a]
+1000093d4: 3910ae7f    	strb	wzr, [x19, #0x42b]
+1000093d8: 3910b27f    	strb	wzr, [x19, #0x42c]
+1000093dc: 3910b67f    	strb	wzr, [x19, #0x42d]
+1000093e0: 3910ba7f    	strb	wzr, [x19, #0x42e]
+1000093e4: 3910be7f    	strb	wzr, [x19, #0x42f]
+1000093e8: 3910c27f    	strb	wzr, [x19, #0x430]
+1000093ec: 3910c67f    	strb	wzr, [x19, #0x431]
+1000093f0: 3910ca7f    	strb	wzr, [x19, #0x432]
+1000093f4: 3910ce7f    	strb	wzr, [x19, #0x433]
+1000093f8: 3910d27f    	strb	wzr, [x19, #0x434]
+1000093fc: 3910d67f    	strb	wzr, [x19, #0x435]
+100009400: 3910da7f    	strb	wzr, [x19, #0x436]
+100009404: 3910de7f    	strb	wzr, [x19, #0x437]
+100009408: 3910e27f    	strb	wzr, [x19, #0x438]
+10000940c: 3910e67f    	strb	wzr, [x19, #0x439]
+100009410: 3910ea7f    	strb	wzr, [x19, #0x43a]
+100009414: 3910ee7f    	strb	wzr, [x19, #0x43b]
+100009418: 3910f27f    	strb	wzr, [x19, #0x43c]
+10000941c: 3910f67f    	strb	wzr, [x19, #0x43d]
+100009420: 3910fa7f    	strb	wzr, [x19, #0x43e]
+100009424: 3910fe7f    	strb	wzr, [x19, #0x43f]
+100009428: f902227f    	str	xzr, [x19, #0x440]
+10000942c: 394d0268    	ldrb	w8, [x19, #0x340]
+100009430: 7103fd1f    	cmp	w8, #0xff
+100009434: 54000640    	b.eq	0x1000094fc <core::ptr::drop_glue::<tls_client::ClientConnection>+0x544>
+100009438: 390c027f    	strb	wzr, [x19, #0x300]
+10000943c: 390c067f    	strb	wzr, [x19, #0x301]
+100009440: 390c0a7f    	strb	wzr, [x19, #0x302]
+100009444: 390c0e7f    	strb	wzr, [x19, #0x303]
+100009448: 390c127f    	strb	wzr, [x19, #0x304]
+10000944c: 390c167f    	strb	wzr, [x19, #0x305]
+100009450: 390c1a7f    	strb	wzr, [x19, #0x306]
+100009454: 390c1e7f    	strb	wzr, [x19, #0x307]
+100009458: 390c227f    	strb	wzr, [x19, #0x308]
+10000945c: 390c267f    	strb	wzr, [x19, #0x309]
+100009460: 390c2a7f    	strb	wzr, [x19, #0x30a]
+100009464: 390c2e7f    	strb	wzr, [x19, #0x30b]
+100009468: 390c327f    	strb	wzr, [x19, #0x30c]
+10000946c: 390c367f    	strb	wzr, [x19, #0x30d]
+100009470: 390c3a7f    	strb	wzr, [x19, #0x30e]
+100009474: 390c3e7f    	strb	wzr, [x19, #0x30f]
+100009478: 390c427f    	strb	wzr, [x19, #0x310]
+10000947c: 390c467f    	strb	wzr, [x19, #0x311]
+100009480: 390c4a7f    	strb	wzr, [x19, #0x312]
+100009484: 390c4e7f    	strb	wzr, [x19, #0x313]
+100009488: 390c527f    	strb	wzr, [x19, #0x314]
+10000948c: 390c567f    	strb	wzr, [x19, #0x315]
+100009490: 390c5a7f    	strb	wzr, [x19, #0x316]
+100009494: 390c5e7f    	strb	wzr, [x19, #0x317]
+100009498: 390c627f    	strb	wzr, [x19, #0x318]
+10000949c: 390c667f    	strb	wzr, [x19, #0x319]
+1000094a0: 390c6a7f    	strb	wzr, [x19, #0x31a]
+1000094a4: 390c6e7f    	strb	wzr, [x19, #0x31b]
+1000094a8: 390c727f    	strb	wzr, [x19, #0x31c]
+1000094ac: 390c767f    	strb	wzr, [x19, #0x31d]
+1000094b0: 390c7a7f    	strb	wzr, [x19, #0x31e]
+1000094b4: 390c7e7f    	strb	wzr, [x19, #0x31f]
+1000094b8: 390c827f    	strb	wzr, [x19, #0x320]
+1000094bc: 390c867f    	strb	wzr, [x19, #0x321]
+1000094c0: 390c8a7f    	strb	wzr, [x19, #0x322]
+1000094c4: 390c8e7f    	strb	wzr, [x19, #0x323]
+1000094c8: 390c927f    	strb	wzr, [x19, #0x324]
+1000094cc: 390c967f    	strb	wzr, [x19, #0x325]
+1000094d0: 390c9a7f    	strb	wzr, [x19, #0x326]
+1000094d4: 390c9e7f    	strb	wzr, [x19, #0x327]
+1000094d8: 390ca27f    	strb	wzr, [x19, #0x328]
+1000094dc: 390ca67f    	strb	wzr, [x19, #0x329]
+1000094e0: 390caa7f    	strb	wzr, [x19, #0x32a]
+1000094e4: 390cae7f    	strb	wzr, [x19, #0x32b]
+1000094e8: 390cb27f    	strb	wzr, [x19, #0x32c]
+1000094ec: 390cb67f    	strb	wzr, [x19, #0x32d]
+1000094f0: 390cba7f    	strb	wzr, [x19, #0x32e]
+1000094f4: 390cbe7f    	strb	wzr, [x19, #0x32f]
+1000094f8: f9019a7f    	str	xzr, [x19, #0x330]
+1000094fc: 394e2268    	ldrb	w8, [x19, #0x388]
+100009500: 7103fd1f    	cmp	w8, #0xff
+100009504: 54000640    	b.eq	0x1000095cc <core::ptr::drop_glue::<tls_client::ClientConnection>+0x614>
+100009508: 390d227f    	strb	wzr, [x19, #0x348]
+10000950c: 390d267f    	strb	wzr, [x19, #0x349]
+100009510: 390d2a7f    	strb	wzr, [x19, #0x34a]
+100009514: 390d2e7f    	strb	wzr, [x19, #0x34b]
+100009518: 390d327f    	strb	wzr, [x19, #0x34c]
+10000951c: 390d367f    	strb	wzr, [x19, #0x34d]
+100009520: 390d3a7f    	strb	wzr, [x19, #0x34e]
+100009524: 390d3e7f    	strb	wzr, [x19, #0x34f]
+100009528: 390d427f    	strb	wzr, [x19, #0x350]
+10000952c: 390d467f    	strb	wzr, [x19, #0x351]
+100009530: 390d4a7f    	strb	wzr, [x19, #0x352]
+100009534: 390d4e7f    	strb	wzr, [x19, #0x353]
+100009538: 390d527f    	strb	wzr, [x19, #0x354]
+10000953c: 390d567f    	strb	wzr, [x19, #0x355]
+100009540: 390d5a7f    	strb	wzr, [x19, #0x356]
+100009544: 390d5e7f    	strb	wzr, [x19, #0x357]
+100009548: 390d627f    	strb	wzr, [x19, #0x358]
+10000954c: 390d667f    	strb	wzr, [x19, #0x359]
+100009550: 390d6a7f    	strb	wzr, [x19, #0x35a]
+100009554: 390d6e7f    	strb	wzr, [x19, #0x35b]
+100009558: 390d727f    	strb	wzr, [x19, #0x35c]
+10000955c: 390d767f    	strb	wzr, [x19, #0x35d]
+100009560: 390d7a7f    	strb	wzr, [x19, #0x35e]
+100009564: 390d7e7f    	strb	wzr, [x19, #0x35f]
+100009568: 390d827f    	strb	wzr, [x19, #0x360]
+10000956c: 390d867f    	strb	wzr, [x19, #0x361]
+100009570: 390d8a7f    	strb	wzr, [x19, #0x362]
+100009574: 390d8e7f    	strb	wzr, [x19, #0x363]
+100009578: 390d927f    	strb	wzr, [x19, #0x364]
+10000957c: 390d967f    	strb	wzr, [x19, #0x365]
+100009580: 390d9a7f    	strb	wzr, [x19, #0x366]
+100009584: 390d9e7f    	strb	wzr, [x19, #0x367]
+100009588: 390da27f    	strb	wzr, [x19, #0x368]
+10000958c: 390da67f    	strb	wzr, [x19, #0x369]
+100009590: 390daa7f    	strb	wzr, [x19, #0x36a]
+100009594: 390dae7f    	strb	wzr, [x19, #0x36b]
+100009598: 390db27f    	strb	wzr, [x19, #0x36c]
+10000959c: 390db67f    	strb	wzr, [x19, #0x36d]
+1000095a0: 390dba7f    	strb	wzr, [x19, #0x36e]
+1000095a4: 390dbe7f    	strb	wzr, [x19, #0x36f]
+1000095a8: 390dc27f    	strb	wzr, [x19, #0x370]
+1000095ac: 390dc67f    	strb	wzr, [x19, #0x371]
+1000095b0: 390dca7f    	strb	wzr, [x19, #0x372]
+1000095b4: 390dce7f    	strb	wzr, [x19, #0x373]
+1000095b8: 390dd27f    	strb	wzr, [x19, #0x374]
+1000095bc: 390dd67f    	strb	wzr, [x19, #0x375]
+1000095c0: 390dda7f    	strb	wzr, [x19, #0x376]
+1000095c4: 390dde7f    	strb	wzr, [x19, #0x377]
+1000095c8: f901be7f    	str	xzr, [x19, #0x378]
+1000095cc: f9408668    	ldr	x8, [x19, #0x108]
+1000095d0: b100091f    	cmn	x8, #0x2
+1000095d4: 54000220    	b.eq	0x100009618 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x660>
+1000095d8: 3905427f    	strb	wzr, [x19, #0x150]
+1000095dc: 3905467f    	strb	wzr, [x19, #0x151]
+1000095e0: 39054a7f    	strb	wzr, [x19, #0x152]
+1000095e4: 39054e7f    	strb	wzr, [x19, #0x153]
+1000095e8: 3905527f    	strb	wzr, [x19, #0x154]
+1000095ec: 3905567f    	strb	wzr, [x19, #0x155]
+1000095f0: 39055a7f    	strb	wzr, [x19, #0x156]
+1000095f4: 39055e7f    	strb	wzr, [x19, #0x157]
+1000095f8: 3905627f    	strb	wzr, [x19, #0x158]
+1000095fc: 3905667f    	strb	wzr, [x19, #0x159]
+100009600: 39056a7f    	strb	wzr, [x19, #0x15a]
+100009604: 39056e7f    	strb	wzr, [x19, #0x15b]
+100009608: b100051f    	cmn	x8, #0x1
+10000960c: 54000060    	b.eq	0x100009618 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x660>
+100009610: f9408a60    	ldr	x0, [x19, #0x110]
+100009614: 9403edd8    	bl	0x100104d74 <_aws_lc_0_46_0_EVP_AEAD_CTX_free>
+100009618: f940b268    	ldr	x8, [x19, #0x160]
+10000961c: b100091f    	cmn	x8, #0x2
+100009620: 54000220    	b.eq	0x100009664 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x6ac>
+100009624: 3906a27f    	strb	wzr, [x19, #0x1a8]
+100009628: 3906a67f    	strb	wzr, [x19, #0x1a9]
+10000962c: 3906aa7f    	strb	wzr, [x19, #0x1aa]
+100009630: 3906ae7f    	strb	wzr, [x19, #0x1ab]
+100009634: 3906b27f    	strb	wzr, [x19, #0x1ac]
+100009638: 3906b67f    	strb	wzr, [x19, #0x1ad]
+10000963c: 3906ba7f    	strb	wzr, [x19, #0x1ae]
+100009640: 3906be7f    	strb	wzr, [x19, #0x1af]
+100009644: 3906c27f    	strb	wzr, [x19, #0x1b0]
+100009648: 3906c67f    	strb	wzr, [x19, #0x1b1]
+10000964c: 3906ca7f    	strb	wzr, [x19, #0x1b2]
+100009650: 3906ce7f    	strb	wzr, [x19, #0x1b3]
+100009654: b100051f    	cmn	x8, #0x1
+100009658: 54000060    	b.eq	0x100009664 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x6ac>
+10000965c: f940b660    	ldr	x0, [x19, #0x168]
+100009660: 9403edc5    	bl	0x100104d74 <_aws_lc_0_46_0_EVP_AEAD_CTX_free>
+100009664: f9400268    	ldr	x8, [x19]
+100009668: f100091f    	cmp	x8, #0x2
+10000966c: 540000e0    	b.eq	0x100009688 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x6d0>
+100009670: f9401668    	ldr	x8, [x19, #0x28]
+100009674: b40000a8    	cbz	x8, 0x100009688 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x6d0>
+100009678: f9401269    	ldr	x9, [x19, #0x20]
+10000967c: 3800153f    	strb	wzr, [x9], #0x1
+100009680: f1000508    	subs	x8, x8, #0x1
+100009684: 54ffffc1    	b.ne	0x10000967c <core::ptr::drop_glue::<tls_client::ClientConnection>+0x6c4>
+100009688: f940de68    	ldr	x8, [x19, #0x1b8]
+10000968c: f100051f    	cmp	x8, #0x1
+100009690: 540000ab    	b.lt	0x1000096a4 <core::ptr::drop_glue::<tls_client::ClientConnection>+0x6ec>
+100009694: f940e260    	ldr	x0, [x19, #0x1c0]
+100009698: a9417bfd    	ldp	x29, x30, [sp, #0x10]
+10000969c: a8c24ff4    	ldp	x20, x19, [sp], #0x20
+1000096a0: 1407e498    	b	0x100202900 <dyld_stub_binder+0x100202900>
+1000096a4: a9417bfd    	ldp	x29, x30, [sp, #0x10]
+1000096a8: a8c24ff4    	ldp	x20, x19, [sp], #0x20
+1000096ac: d65f03c0    	ret
+
+00000001000096b0 <core::ptr::drop_glue::<std::env::Args>>:
+1000096b0: a9bd57f6    	stp	x22, x21, [sp, #-0x30]!
+1000096b4: a9014ff4    	stp	x20, x19, [sp, #0x10]
+1000096b8: a9027bfd    	stp	x29, x30, [sp, #0x20]
+1000096bc: 910083fd    	add	x29, sp, #0x20
+1000096c0: aa0003f3    	mov	x19, x0
+1000096c4: f9400408    	ldr	x8, [x0, #0x8]
+1000096c8: f9400c09    	ldr	x9, [x0, #0x18]
+1000096cc: eb080129    	subs	x9, x9, x8
+1000096d0: 540001e0    	b.eq	0x10000970c <core::ptr::drop_glue::<std::env::Args>+0x5c>
+1000096d4: b201f3ea    	mov	x10, #-0x5555555555555556 ; =-6148914691236517206
+1000096d8: f295556a    	movk	x10, #0xaaab
+1000096dc: 9bca7d29    	umulh	x9, x9, x10
+1000096e0: d344fd34    	lsr	x20, x9, #4
+1000096e4: 91002115    	add	x21, x8, #0x8
+1000096e8: 14000004    	b	0x1000096f8 <core::ptr::drop_glue::<std::env::Args>+0x48>
+1000096ec: 910062b5    	add	x21, x21, #0x18
+1000096f0: f1000694    	subs	x20, x20, #0x1
+1000096f4: 540000c0    	b.eq	0x10000970c <core::ptr::drop_glue::<std::env::Args>+0x5c>
+1000096f8: f85f82a8    	ldur	x8, [x21, #-0x8]
+1000096fc: b4ffff88    	cbz	x8, 0x1000096ec <core::ptr::drop_glue::<std::env::Args>+0x3c>
+100009700: f94002a0    	ldr	x0, [x21]
+100009704: 9407e47f    	bl	0x100202900 <dyld_stub_binder+0x100202900>
+100009708: 17fffff9    	b	0x1000096ec <core::ptr::drop_glue::<std::env::Args>+0x3c>
+10000970c: f9400a68    	ldr	x8, [x19, #0x10]
+100009710: b40000c8    	cbz	x8, 0x100009728 <core::ptr::drop_glue::<std::env::Args>+0x78>
+100009714: f9400260    	ldr	x0, [x19]
+100009718: a9427bfd    	ldp	x29, x30, [sp, #0x20]
+10000971c: a9414ff4    	ldp	x20, x19, [sp, #0x10]
+100009720: a8c357f6    	ldp	x22, x21, [sp], #0x30
+100009724: 1407e477    	b	0x100202900 <dyld_stub_binder+0x100202900>
+100009728: a9427bfd    	ldp	x29, x30, [sp, #0x20]
+10000972c: a9414ff4    	ldp	x20, x19, [sp, #0x10]
+100009730: a8c357f6    	ldp	x22, x21, [sp], #0x30
+100009734: d65f03c0    	ret
+
+0000000100009738 <core::ptr::drop_glue::<rustls_pki_types::server_name::ServerName>>:
+100009738: 39400008    	ldrb	w8, [x0]
+10000973c: 36000048    	tbz	w8, #0x0, 0x100009744 <core::ptr::drop_glue::<rustls_pki_types::server_name::ServerName>+0xc>

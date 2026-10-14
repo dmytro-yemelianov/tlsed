@@ -1,0 +1,45 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.04s
+   Doc-tests tls_client
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests tls_core
+
+running 8 tests
+test crates/tls-core/src/key_schedule.rs - key_schedule::SendingTraffic (line 517) - compile fail ... ok
+test crates/tls-core/src/key_schedule.rs - key_schedule::BoundedSecret (line 106) - compile fail ... ok
+test crates/tls-core/src/counter.rs - counter::ReadCounter (line 121) - compile fail ... ok
+test crates/tls-core/src/counter.rs - counter::WriteCounter (line 91) - compile fail ... ok
+test crates/tls-core/src/counter.rs - counter::Reservation (line 27) - compile fail ... ok
+test crates/tls-core/src/key_schedule.rs - key_schedule::BoundedSecret (line 102) - compile fail ... ok
+test crates/tls-core/src/key_schedule.rs - key_schedule::TrafficSecret (line 188) - compile fail ... ok
+test crates/tls-core/src/key_schedule.rs - key_schedule::TrafficSecret (line 193) - compile fail ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+   Doc-tests tls_crypto
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests tls_crypto_awslc
+
+running 5 tests
+test crates/tls-crypto-awslc/src/agreement.rs - agreement::AwsLcEphemeral (line 36) - compile fail ... ok
+test crates/tls-crypto-awslc/src/agreement.rs - agreement::AwsLcEphemeral (line 21) - compile fail ... ok
+test crates/tls-crypto-awslc/src/agreement.rs - agreement::AwsLcEphemeral (line 30) - compile fail ... ok
+test crates/tls-crypto-awslc/src/lib.rs - AwsLcKey (line 20) - compile fail ... ok
+test crates/tls-crypto-awslc/src/lib.rs - AwsLcKey (line 26) - compile fail ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+   Doc-tests tls_pki
+
+running 1 test
+test crates/tls-pki/src/lib.rs - OwnedVerifiedServerCert (line 271) - compile fail ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+

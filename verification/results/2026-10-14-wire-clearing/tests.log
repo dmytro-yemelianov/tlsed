@@ -1,0 +1,277 @@
+   Compiling tls-client v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/crates/tls-client)
+   Compiling tls-bench v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/crates/tls-bench)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.93s
+     Running unittests src/bin/client_compare.rs (target/debug/deps/client_compare-f608fab70377be01)
+
+running 1 test
+test tests::both_clients_reject_wrong_reference_identity ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running unittests src/bin/pki_compare.rs (target/debug/deps/pki_compare-b71de4e734ee945b)
+
+running 1 test
+test tests::both_policies_accept_valid_and_reject_exact_negative_causes ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/tls_bench-dfae6c94e990fd74)
+
+running 1 test
+test tests::baseline_rejects_wrong_reference_identity ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running unittests src/lib.rs (target/debug/deps/tls_client-e4941df130d59fc2)
+
+running 4 tests
+test wire_wiping_unit::incoming_authentication_failure_clears_all_wire_and_plaintext_capacity ... ok
+test wire_wiping_unit::partial_wire_drains_clear_only_handed_bytes_and_peer_authenticates_large_then_small ... ok
+test read_wiping_unit::authenticated_partial_reads_preserve_unread_bytes_and_leave_entire_loan_clean ... ok
+test wire_wiping_unit::fragmented_receive_preserves_exact_pending_wire_then_clears_complete_record ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/faults.rs (target/debug/deps/faults-f5c75c860b97fb18)
+
+running 3 tests
+test automatic_key_update_import_fault_preserves_old_record_sequence_for_alert ... ok
+test finished_verification_and_application_import_faults_are_atomic ... ok
+test eof_discards_queued_and_partial_records_without_substitute_alert ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/interop.rs (target/debug/deps/interop-3d14bf4f769a3eba)
+
+running 13 tests
+test authenticated_user_canceled_is_ignored_until_close_notify ... ok
+test client_finished_final_byte_handoff_gates_establishment ... ok
+test fatal_peer_alert_during_fragmented_ticket_has_no_reciprocal_response ... ok
+test authenticated_fatal_peer_alert_aborts_without_reciprocal_alert ... ok
+test compatibility_ccs_after_finished_is_rejected ... ok
+test close_notify_and_unclean_eof ... ok
+test replayed_native_hello_retry_request_is_unexpected_message ... ok
+test authenticated_cv_finished_and_aead_mutations_are_rejected ... ok
+test no_resumption_client_ignores_authenticated_ticket_and_continues_application_data ... ok
+test pending_peer_key_update_blocks_application_until_response_is_processed ... ok
+test identity_root_and_expiry_fail_closed ... ok
+test hello_retry_request_and_key_updates ... ok
+test authenticated_suite_group_fragmentation_matrix ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests/read_wiping.rs (target/debug/deps/read_wiping-f3cb6bca9b8edd4e)
+
+running 4 tests
+test eof_with_unread_authenticated_plaintext_prevents_further_release ... ok
+test partial_reads_zero_output_backpressure_and_large_to_short_records ... ok
+test unauthenticated_record_never_releases_plaintext_and_failed_loans_are_wiped ... ok
+test unread_plaintext_is_wiped_when_live_connection_is_dropped ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/lib.rs (target/debug/deps/tls_core-86009584f3321e1a)
+
+running 2 tests
+test counter::tests::epoch_cap_differs_by_direction ... ok
+test key_schedule::tests::direction_epoch_caps_and_checked_overflow ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/client_policy.rs (target/debug/deps/client_policy-62503154ad12c727)
+
+running 2 tests
+test complete_flight_with_retry_and_failed_evidence ... ok
+test exhaustive_u8_policy_matches_complete_allowed_relation ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/foundation.rs (target/debug/deps/foundation-54002b6fd34def69)
+
+running 7 tests
+test reservations_are_monotone_retired_and_direction_owned ... ok
+test borrowed_parser_exact_shortages_and_tail ... ok
+test framing_fails_closed_without_body_amplification ... ok
+test all_auth_transitions_and_failure_release_guards ... ok
+test arbitrary_fragmentation_and_coalescing ... ok
+test count_edges_and_capacity_respecting_minimality ... ok
+test codec_lengths_versions_and_output_atomicity ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/handshake.rs (target/debug/deps/handshake-faec02d1a96c0a23)
+
+running 8 tests
+test coalesced_messages_backpressure_and_transcript_bytes ... ok
+test key_change_messages_require_real_record_end ... ok
+test partial_message_cannot_cross_epochs_or_record_types ... ok
+test oversized_u24_rejected_before_body_copy ... ok
+test total_length_guards_and_native_edges ... ok
+test zero_body_syntax_and_recoverable_misuse_and_truncation ... ok
+test unsupported_types_and_invalid_resource_limits ... ok
+test every_fragmentation_with_small_work_budgets ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/hello.rs (target/debug/deps/hello-0cc7e43b9827a641)
+
+running 7 tests
+test cookie_only_retry_and_retry_key_share_format ... ok
+test encrypted_extensions_single_alpn_empty_ack_group_vector_and_fail_closed ... ok
+test certificate_borrowing_two_pass_atomic_slots_and_auth_lengths ... ok
+test client_invalid_configuration_dns_and_protocol_bounds_are_atomic ... ok
+test server_hello_limits_version_selection_duplicates_and_placement ... ok
+test published_server_hello_hrr_and_server_flight_auth_views ... ok
+test client_encoding_lengths_and_exact_extension_layout ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/key_schedule.rs (target/debug/deps/key_schedule-1f913029adb392e8)
+
+running 5 tests
+test label_codec_edges_exact_bytes_small_buffers_and_wiping ... ok
+test invalid_input_and_faulting_provider_never_return_secret_success ... ok
+test sha384_independent_cryptography_openssl_fixture ... ok
+test rfc8448_section3_full_no_psk_chain_keys_ivs_and_finished ... ok
+test altered_transcripts_tags_direction_labels_and_contexts ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/protected.rs (target/debug/deps/protected-a0186253abe0bdce)
+
+running 9 tests
+test failing_or_malformed_provider_retires_nonce_wipes_and_cannot_retry ... ok
+test terminal_failure_immediately_drops_key_once_preflight_retains_it ... ok
+test rfc8448_section3_client_application_and_alert_known_answers ... ok
+test bounds_small_buffers_and_sender_caps_are_preflight ... ok
+test exact_aad_and_sequence_nonce_match_provider_calls ... ok
+test all_suites_types_padding_and_fragmented_input ... ok
+test authenticated_malformed_inner_and_tight_receiving_caps ... ok
+test full_inner_capacity_counts_type_and_padding ... ok
+test ciphertext_mutation_replay_and_reordering_are_terminal_and_wiped ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/rfc8448_composition.rs (target/debug/deps/rfc8448_composition-cc603ef8c3aa4efd)
+
+running 2 tests
+test published_hello_retry_request_transcript_hash ... ok
+test published_transcript_derives_record_keys_and_verifies_finished ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/rfc8448_record.rs (target/debug/deps/rfc8448_record-abc2bf9ae95c089f)
+
+running 1 test
+test published_server_handshake_record_and_exact_message_bytes ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/transcript.rs (target/debug/deps/transcript-0f499af09ab57e63)
+
+running 9 tests
+test constructor_retires_failed_or_algorithm_changing_context ... ok
+test provider_errors_retire_context_once_and_never_return_partial_digest ... ok
+test retry_wrong_stage_sentinel_direct_append_and_budget_are_rejected ... ok
+test resource_caps_and_hello_order_poison_before_hash_progress ... ok
+test malformed_extra_and_post_handshake_bytes_never_advance ... ok
+test hrr_rewrites_exact_encoded_history_for_both_hashes ... ok
+test constructor_discards_preexisting_provider_history ... ok
+test hrr_legacy_version_is_ignored_after_endpoint_version_selection ... ok
+test streaming_order_headers_snapshots_and_freeze ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests examples/client_policy_probe.rs (target/debug/examples/client_policy_probe-173dbefdbbd7f8c8)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests examples/key_schedule_probe.rs (target/debug/examples/key_schedule_probe-da64de9da3b73848)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests examples/model_probe.rs (target/debug/examples/model_probe-aabf89057cd5aef8)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests examples/protected_probe.rs (target/debug/examples/protected_probe-5defb57ab3fad2a7)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/tls_crypto-9c0132136f10e9a2)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/tls_crypto_awslc-68d86f28bf2a518f)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/agreement.rs (target/debug/deps/agreement-7e7489f89eb675a8)
+
+running 5 tests
+test rfc7748_section_6_1_native_known_answer ... ok
+test x25519_rejects_low_order_zero_result_shares_and_wipes ... ok
+test p256_rejects_compressed_hybrid_infinity_and_invalid_points ... ok
+test fresh_pairs_agree_for_both_groups_and_correct_share_formats ... ok
+test wrong_peer_lengths_and_exact_output_lengths_wipe_all_supplied_bytes ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/provider.rs (target/debug/deps/provider-324f7d6d0d2fa9d9)
+
+running 12 tests
+test capabilities_and_seal_key_length_guards ... ok
+test rfc8439_section_2_8_2_aead ... ok
+test aes_gcm_zero_key_known_answers ... ok
+test sha256_sha384_abc_known_answers ... ok
+test nist_published_gcm_examples_1_and_2 ... ok
+test rfc4231_hmac_case1_and_native_verification ... ok
+test rfc5869_appendix_a_sha256_vectors ... ok
+test every_suite_authenticates_ciphertext_aad_nonce_and_wipes_errors ... ok
+test sha384_extract_expand_matches_native_opaque_extract ... ok
+test streaming_hash_snapshot_update_reset_and_output_guards ... ok
+test secret_output_length_guards_and_expand_limits ... ok
+test secure_random_smoke ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running unittests src/lib.rs (target/debug/deps/tls_pki-3daeea489ce4e623)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/pki.rs (target/debug/deps/pki-8c33468b608c10a0)
+
+running 16 tests
+test client_only_eku_is_rejected_for_server_authentication ... ok
+test invalid_der_and_changed_chain_signature_preserve_native_errors ... ok
+test baseline_chain_and_dns_identity_at_explicit_time ... ok
+test chain_limits_precede_external_der_and_signature_operations ... ok
+test strict_key_usage_rejects_issuing_intermediate_without_key_cert_sign ... ok
+test strict_key_usage_rejects_leaf_without_digital_signature ... ok
+test ip_san_success_and_common_name_never_substitutes_for_san ... ok
+test named_key_usage_rejects_noncanonical_and_unknown_or_truncated_bits ... ok
+test absent_key_usage_is_unrestricted_and_trust_anchor_is_separate ... ok
+test wrong_root_expiry_and_not_yet_valid_preserve_native_errors ... ok
+test strict_key_usage_rejects_trailing_extension_der_bytes ... ok
+test wrong_dns_and_ip_preserve_native_name_errors ... ok
+test strict_path_callback_ignores_unused_certificates_and_retries_alternatives ... ok
+test owned_verified_leaf_survives_chain_storage_and_verifies_same_domain ... ok
+test ecdsa_certificate_verify_binds_server_context_hash_and_scheme ... ok
+test ed25519_certificate_verify_and_rsa_pss_rsae_all_hashes ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+

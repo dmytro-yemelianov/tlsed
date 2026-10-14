@@ -1,0 +1,8 @@
+{
+  "crates/tls-core/src/handshake.rs": "f61093423e9cc7cc8caccb1f7108ffe3d07f21a74ef619b8760800801cc1b6a5",
+  "crates/tls-core/Cargo.toml": "0754ddde697819126e201c12deda56db3eefb698798d9e6ab429f85c4052eeef",
+  "crates/tls-client/src/lib.rs": "c7be544391dd648bff70de5731e3398b2e4662fe78d1b2f81191dcb5b1cf9eb5",
+  "crates/tls-client/Cargo.toml": "7b9205624f8b687d3e68fc411e3d5fa9b928854d6eb2802d9cdae8d627e54a0b",
+  "Cargo.lock": "8cfcd8fd9ccd91220680c070d2c70064c63da41fb4646847e7a12dfe389c119b",
+  "crates/tls-bench/src/bin/client_compare.rs": "83c9c76ad29ba3519ba9625606226457e9b93f2aaeca0c71d1b0b39bc19ac771"
+}

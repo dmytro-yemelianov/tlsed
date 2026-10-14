@@ -1,0 +1,10 @@
+{
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/client_compare_production_baseline": "fe9c04135c9295aee73d0d106d4bbe24ff0499cee2439d32d0344536ed95207c",
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/pki_compare_production_baseline": "dbaaf9eccdc3cec263746a702235791ecebe97fa6316a1362857fbf6caf66675",
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/client_compare_baseline": "f898001244b1bf48641d8e897b6d90a9de04978fb97803df0bfc515f54100e2e",
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/client_compare_block8": "84e7b355551e803a247a3d7725e7dd9771b37c09b5d14f06a1b2e07dd4b92144",
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/client_compare_construction": "09504a74f3c1c7e591da359168437d1e2c1c770228c9f50ecea5e955fdc2ebb4",
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/client_compare_drop_u128": "01b809348cd748a4663c79956b38cbb07dde56f2ea13856f72f22751b1d1a12e",
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/client_compare_production_drop_u128": "52c304eb84043fe4640c02ad2be2066746f42d13a8f7b33c76cc222334314d4c",
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/verification/experiments/cpu-audit/target/release/tlsed-cpu-audit": "5c90d96e4bafcf49ad266558c27b1f284d731f571b43e6ea37df7791d8c4091b"
+}

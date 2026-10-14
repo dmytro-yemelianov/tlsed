@@ -1,0 +1,9 @@
+   Compiling bytemuck v1.25.2
+   Compiling zeroize v1.9.1
+   Compiling tls-crypto v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/crates/tls-crypto)
+   Compiling tls-core v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/crates/tls-core)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.47s
+[[92mInfo[39m ] Imported: /var/folders/d1/r2bpvclx19q4vd4c_8g42ddh0000gn/T/tlsed-translation-iblm53sd/tls_core.llbc
+[[92mInfo[39m ] Generated: /var/folders/d1/r2bpvclx19q4vd4c_8g42ddh0000gn/T/tlsed-translation-iblm53sd/TlsCore.lean
+[[92mInfo[39m ] Total execution time: 0.823176 seconds
+Production source and retained translation hashes match pinned extraction evidence

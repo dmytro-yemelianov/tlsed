@@ -1,0 +1,198 @@
+
+target/cpu-audit/workspace/target/release/client_compare_baseline:	file format mach-o arm64
+
+Disassembly of section __TEXT,__text:
+
+000000010018ae80 <_aws_lc_0_46_0_chacha20_poly1305_open>:
+10018ae80: a9bb7bfd    	stp	x29, x30, [sp, #-0x50]!
+10018ae84: 910003fd    	mov	x29, sp
+10018ae88: 6d0127e8    	stp	d8, d9, [sp, #0x10]
+10018ae8c: 6d022fea    	stp	d10, d11, [sp, #0x20]
+10018ae90: 6d0337ec    	stp	d12, d13, [sp, #0x30]
+10018ae94: 6d043fee    	stp	d14, d15, [sp, #0x40]
+10018ae98: d000070b    	adrp	x11, 0x10026c000 <_kObjectData+0xaf4>
+10018ae9c: 913c016b    	add	x11, x11, #0xf00
+10018aea0: 4c402178    	ld1.16b	{ v24, v25, v26, v27 }, [x11]
+10018aea4: 4c4060bc    	ld1.16b	{ v28, v29, v30 }, [x5]
+10018aea8: d280002f    	mov	x15, #0x1               ; =1
+10018aeac: d2800008    	mov	x8, #0x0                ; =0
+10018aeb0: d2800009    	mov	x9, #0x0                ; =0
+10018aeb4: d280000a    	mov	x10, #0x0               ; =0
+10018aeb8: 4e081c9f    	mov.d	v31[0], x4
+10018aebc: 4e181c5f    	mov.d	v31[1], x2
+10018aec0: f102005f    	cmp	x2, #0x80
+10018aec4: 540077cd    	b.le	0x10018bdbc <_aws_lc_0_46_0_chacha20_poly1305_open+0xf3c>
+10018aec8: 4eb81f00    	mov.16b	v0, v24
+10018aecc: 4ebc1f85    	mov.16b	v5, v28
+10018aed0: 4ebd1faa    	mov.16b	v10, v29
+10018aed4: 4ebe1fcf    	mov.16b	v15, v30
+10018aed8: d2800146    	mov	x6, #0xa                ; =10
+10018aedc: d503201f    	nop
+10018aee0: 4ea58400    	add.4s	v0, v0, v5
+10018aee4: 6e201def    	eor.16b	v15, v15, v0
+10018aee8: 6e6009ef    	rev32.8h	v15, v15
+10018aeec: 4eaf854a    	add.4s	v10, v10, v15
+10018aef0: 6e2a1ca5    	eor.16b	v5, v5, v10
+10018aef4: 6f2c04b4    	ushr.4s	v20, v5, #0x14
+10018aef8: 6f2c54b4    	sli.4s	v20, v5, #0xc
+10018aefc: 4eb48400    	add.4s	v0, v0, v20
+10018af00: 6e201def    	eor.16b	v15, v15, v0
+10018af04: 4e1a01ef    	tbl.16b	v15, { v15 }, v26
+10018af08: 4eaf854a    	add.4s	v10, v10, v15
+10018af0c: 6e2a1e94    	eor.16b	v20, v20, v10
+10018af10: 6f270685    	ushr.4s	v5, v20, #0x19
+10018af14: 6f275685    	sli.4s	v5, v20, #0x7
+10018af18: 6e0520a5    	ext.16b	v5, v5, v5, #0x4
+10018af1c: 6e0a414a    	ext.16b	v10, v10, v10, #0x8
+10018af20: 6e0f61ef    	ext.16b	v15, v15, v15, #0xc
+10018af24: 4ea58400    	add.4s	v0, v0, v5
+10018af28: 6e201def    	eor.16b	v15, v15, v0
+10018af2c: 6e6009ef    	rev32.8h	v15, v15
+10018af30: 4eaf854a    	add.4s	v10, v10, v15
+10018af34: 6e2a1ca5    	eor.16b	v5, v5, v10
+10018af38: 6f2c04b4    	ushr.4s	v20, v5, #0x14
+10018af3c: 6f2c54b4    	sli.4s	v20, v5, #0xc
+10018af40: 4eb48400    	add.4s	v0, v0, v20
+10018af44: 6e201def    	eor.16b	v15, v15, v0
+10018af48: 4e1a01ef    	tbl.16b	v15, { v15 }, v26
+10018af4c: 4eaf854a    	add.4s	v10, v10, v15
+10018af50: 6e2a1e94    	eor.16b	v20, v20, v10
+10018af54: 6f270685    	ushr.4s	v5, v20, #0x19
+10018af58: 6f275685    	sli.4s	v5, v20, #0x7
+10018af5c: 6e0560a5    	ext.16b	v5, v5, v5, #0xc
+10018af60: 6e0a414a    	ext.16b	v10, v10, v10, #0x8
+10018af64: 6e0f21ef    	ext.16b	v15, v15, v15, #0x4
+10018af68: f10004c6    	subs	x6, x6, #0x1
+10018af6c: 54fffba8    	b.hi	0x10018aee0 <_aws_lc_0_46_0_chacha20_poly1305_open+0x60>
+10018af70: 4eb88400    	add.4s	v0, v0, v24
+10018af74: 4ebc84a5    	add.4s	v5, v5, v28
+10018af78: 4e3b1c00    	and.16b	v0, v0, v27
+10018af7c: 4e083c10    	mov.d	x16, v0[0]
+10018af80: 4e183c11    	mov.d	x17, v0[1]
+10018af84: 4ea51cbb    	mov.16b	v27, v5
+10018af88: 97fffb0e    	bl	0x100189bc0 <ChaCha20_512_neon+0x1160>
+10018af8c: aa0103e3    	mov	x3, x1
+10018af90: f103005f    	cmp	x2, #0xc0
+10018af94: 54002b0b    	b.lt	0x10018b4f4 <_aws_lc_0_46_0_chacha20_poly1305_open+0x674>
+10018af98: d000070b    	adrp	x11, 0x10026c000 <_kObjectData+0xaf4>
+10018af9c: 913c016b    	add	x11, x11, #0xf00
+10018afa0: 4d60e960    	ld4r.4s	{ v0, v1, v2, v3 }, [x11]
+10018afa4: 4eb81f04    	mov.16b	v4, v24
+10018afa8: 4dffe8a5    	ld4r.4s	{ v5, v6, v7, v8 }, [x5], #16
+10018afac: 4ebc1f89    	mov.16b	v9, v28
+10018afb0: 4dffe8aa    	ld4r.4s	{ v10, v11, v12, v13 }, [x5], #16
+10018afb4: 4ebd1fae    	mov.16b	v14, v29
+10018afb8: 4d60e8af    	ld4r.4s	{ v15, v16, v17, v18 }, [x5]
+10018afbc: d10080a5    	sub	x5, x5, #0x20
+10018afc0: 4eb985ef    	add.4s	v15, v15, v25
+10018afc4: 4ebe1fd3    	mov.16b	v19, v30
+10018afc8: 6e341e94    	eor.16b	v20, v20, v20
+10018afcc: 6e205a95    	mvn.16b	v21, v20
+10018afd0: 6eb58735    	sub.4s	v21, v25, v21
+10018afd4: 6e1462b4    	ext.16b	v20, v21, v20, #0xc
+10018afd8: 4eb48673    	add.4s	v19, v19, v20
+10018afdc: d344fc44    	lsr	x4, x2, #4
+10018afe0: d1002884    	sub	x4, x4, #0xa
+10018afe4: d2800147    	mov	x7, #0xa                ; =10
+10018afe8: eb0400e6    	subs	x6, x7, x4
+10018afec: eb0400e6    	subs	x6, x7, x4
+10018aff0: 9a84d0e7    	csel	x7, x7, x4, le
+10018aff4: b4000427    	cbz	x7, 0x10018b078 <_aws_lc_0_46_0_chacha20_poly1305_open+0x1f8>
+10018aff8: d503201f    	nop
+10018affc: d503201f    	nop
+10018b000: a8c1306b    	ldp	x11, x12, [x3], #0x10
+10018b004: ab0b0108    	adds	x8, x8, x11
+10018b008: ba0c0129    	adcs	x9, x9, x12
+10018b00c: 9a0f014a    	adc	x10, x10, x15
+10018b010: 9b107d0b    	mul	x11, x8, x16
+10018b014: 9bd07d0c    	umulh	x12, x8, x16
+10018b018: 9b107d2d    	mul	x13, x9, x16
+10018b01c: 9bd07d2e    	umulh	x14, x9, x16
+10018b020: ab0d018c    	adds	x12, x12, x13
+10018b024: 9b107d4d    	mul	x13, x10, x16
+10018b028: 9a0e01ad    	adc	x13, x13, x14
+10018b02c: 9b117d0e    	mul	x14, x8, x17
+10018b030: 9bd17d08    	umulh	x8, x8, x17
+10018b034: ab0e018c    	adds	x12, x12, x14
+10018b038: 9b117d2e    	mul	x14, x9, x17
+10018b03c: 9bd17d29    	umulh	x9, x9, x17
+10018b040: ba0801ce    	adcs	x14, x14, x8
+10018b044: 9b117d4a    	mul	x10, x10, x17
+10018b048: 9a09014a    	adc	x10, x10, x9
+10018b04c: ab0e01ad    	adds	x13, x13, x14
+10018b050: 9a1f014e    	adc	x14, x10, xzr
+10018b054: 924005aa    	and	x10, x13, #0x3
+10018b058: 927ef5a8    	and	x8, x13, #0xfffffffffffffffc
+10018b05c: 93cd09cd    	extr	x13, x14, x13, #0x2
+10018b060: ab0b0108    	adds	x8, x8, x11
+10018b064: d342fdcb    	lsr	x11, x14, #2
+10018b068: 9a0b01c9    	adc	x9, x14, x11
+10018b06c: ab0d0108    	adds	x8, x8, x13
+10018b070: ba0c0129    	adcs	x9, x9, x12
+10018b074: 9a1f014a    	adc	x10, x10, xzr
+10018b078: 4ea58400    	add.4s	v0, v0, v5
+10018b07c: 4ea68421    	add.4s	v1, v1, v6
+10018b080: 4ea78442    	add.4s	v2, v2, v7
+10018b084: 4ea88463    	add.4s	v3, v3, v8
+10018b088: 4ea98484    	add.4s	v4, v4, v9
+10018b08c: 6e201def    	eor.16b	v15, v15, v0
+10018b090: 6e211e10    	eor.16b	v16, v16, v1
+10018b094: 6e221e31    	eor.16b	v17, v17, v2
+10018b098: 6e231e52    	eor.16b	v18, v18, v3
+10018b09c: 6e241e73    	eor.16b	v19, v19, v4
+10018b0a0: 6e6009ef    	rev32.8h	v15, v15
+10018b0a4: 6e600a10    	rev32.8h	v16, v16
+10018b0a8: 6e600a31    	rev32.8h	v17, v17
+10018b0ac: 6e600a52    	rev32.8h	v18, v18
+10018b0b0: 6e600a73    	rev32.8h	v19, v19
+10018b0b4: 4eaf854a    	add.4s	v10, v10, v15
+10018b0b8: 4eb0856b    	add.4s	v11, v11, v16
+10018b0bc: 4eb1858c    	add.4s	v12, v12, v17
+10018b0c0: 4eb285ad    	add.4s	v13, v13, v18
+10018b0c4: 4eb385ce    	add.4s	v14, v14, v19
+10018b0c8: 6e2a1ca5    	eor.16b	v5, v5, v10
+10018b0cc: 6e2b1cc6    	eor.16b	v6, v6, v11
+10018b0d0: 6e2c1ce7    	eor.16b	v7, v7, v12
+10018b0d4: 6e2d1d08    	eor.16b	v8, v8, v13
+10018b0d8: 6e2e1d29    	eor.16b	v9, v9, v14
+10018b0dc: 6f2c04b4    	ushr.4s	v20, v5, #0x14
+10018b0e0: 6f2c54b4    	sli.4s	v20, v5, #0xc
+10018b0e4: 6f2c04c5    	ushr.4s	v5, v6, #0x14
+10018b0e8: 6f2c54c5    	sli.4s	v5, v6, #0xc
+10018b0ec: 6f2c04e6    	ushr.4s	v6, v7, #0x14
+10018b0f0: 6f2c54e6    	sli.4s	v6, v7, #0xc
+10018b0f4: 6f2c0507    	ushr.4s	v7, v8, #0x14
+10018b0f8: 6f2c5507    	sli.4s	v7, v8, #0xc
+10018b0fc: 6f2c0528    	ushr.4s	v8, v9, #0x14
+10018b100: 6f2c5528    	sli.4s	v8, v9, #0xc
+10018b104: 4eb48400    	add.4s	v0, v0, v20
+10018b108: 4ea58421    	add.4s	v1, v1, v5
+10018b10c: 4ea68442    	add.4s	v2, v2, v6
+10018b110: 4ea78463    	add.4s	v3, v3, v7
+10018b114: 4ea88484    	add.4s	v4, v4, v8
+10018b118: 6e201def    	eor.16b	v15, v15, v0
+10018b11c: 6e211e10    	eor.16b	v16, v16, v1
+10018b120: 6e221e31    	eor.16b	v17, v17, v2
+10018b124: 6e231e52    	eor.16b	v18, v18, v3
+10018b128: 6e241e73    	eor.16b	v19, v19, v4
+10018b12c: 4e1a01ef    	tbl.16b	v15, { v15 }, v26
+10018b130: 4e1a0210    	tbl.16b	v16, { v16 }, v26
+10018b134: 4e1a0231    	tbl.16b	v17, { v17 }, v26
+10018b138: 4e1a0252    	tbl.16b	v18, { v18 }, v26
+10018b13c: 4e1a0273    	tbl.16b	v19, { v19 }, v26
+10018b140: 4eaf854a    	add.4s	v10, v10, v15
+10018b144: 4eb0856b    	add.4s	v11, v11, v16
+10018b148: 4eb1858c    	add.4s	v12, v12, v17
+10018b14c: 4eb285ad    	add.4s	v13, v13, v18
+10018b150: 4eb385ce    	add.4s	v14, v14, v19
+10018b154: 6e2a1e94    	eor.16b	v20, v20, v10
+10018b158: 6e2b1ca5    	eor.16b	v5, v5, v11
+10018b15c: 6e2c1cc6    	eor.16b	v6, v6, v12
+10018b160: 6e2d1ce7    	eor.16b	v7, v7, v13
+10018b164: 6e2e1d08    	eor.16b	v8, v8, v14
+10018b168: 6f270509    	ushr.4s	v9, v8, #0x19
+10018b16c: 6f275509    	sli.4s	v9, v8, #0x7
+10018b170: 6f2704e8    	ushr.4s	v8, v7, #0x19
+10018b174: 6f2754e8    	sli.4s	v8, v7, #0x7
+10018b178: 6f2704c7    	ushr.4s	v7, v6, #0x19
+10018b17c: 6f2754c7    	sli.4s	v7, v6, #0x7

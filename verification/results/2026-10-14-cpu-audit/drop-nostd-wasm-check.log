@@ -1,0 +1,3 @@
+    Checking bytemuck v1.25.2
+    Checking tls-core v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/crates/tls-core)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.49s
