@@ -140,6 +140,7 @@ name = "tls-crypto-awslc"
 version = "0.1.0"
 dependencies = [
  "aws-lc-rs",
+ "bytemuck",
  "tls-crypto",
  "zeroize",
 ]
