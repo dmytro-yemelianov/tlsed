@@ -1,0 +1,18 @@
+[package]
+name = "tls-pki"
+description = "Maintained certificate and reference-identity verification for experimental TLS 1.3"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+rustls-webpki = { version = "=0.103.15", features = ["aws-lc-rs"] }
+rustls-pki-types = "=1.15.1"
+x509-parser = { version = "=0.18.1", default-features = false }
+
+[dev-dependencies]
+aws-lc-rs = "=1.18.2"
+
+[lints]
+workspace = true
