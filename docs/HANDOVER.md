@@ -23,9 +23,11 @@
 `RUSTUP_TOOLCHAIN=nightly-2026-09-17 CHARON_BIN=… AENEAS_BIN=… python3 verification/check_translation.py --regenerate`.
 Скрипт очікує 8-символьний префікс версії Aeneas, тому в клоні Aeneas треба `git config core.abbrev 8`, інакше `-version` дає 7 символів і перевірка відмовляє. Попередню копію `TlsCore.lean` перезаписано без diff; у новому генерованому файлі немає `wipe`/`last_nonzero`. `check_translation.py` проходить; `lake build` у `verification/aeneas`: 1728 jobs, без помилок і `sorry`.
 
+**Зроблено після цього оновлення:**
+- Landed-бінарник переміряно проти pre-landing збірки (`verification/results/2026-10-14-landed-check`, парний): padmax 0.22×, bad tag 16 KiB 0.25×, 4 KiB padding 0.29×, 1 KiB padding 0.37×. Довгі й короткі записи в межах шуму (~1.00).
+- Профілі aes256, chacha, p256 і hrr у `tls-bench` перезапущено з виправленим транспортом (`crates/tls-bench/results/2026-10-14-client-comparison-transport-fixed-other`). Для більшості рядків зміна ≤5%. Винятки: AES-256 client→server 16 KiB (1.02 → 0.87, широкий діапазон) і lifecycle через фікс `Drop`.
+
 **Відкрите:**
-- Переміряти landed-бінарник, коли машина вільна (зараз стороннє навантаження ~12, від `cargo-fuzz` іншої сесії).
-- Профілі aes256, chacha, p256 і hrr у `tls-bench` ще з drain-транспортом; перезапустити, якщо їх цитують.
 - Вирішити, чи лишати `verification/aeneas` (proof-файли) untracked; зараз закомічено лише згенероване.
 
 ---
