@@ -1,0 +1,152 @@
+
+running 3 tests
+test counter::tests::epoch_cap_differs_by_direction ... ok
+test key_schedule::tests::direction_epoch_caps_and_checked_overflow ... ok
+test protected::candidate_equivalence::wipe_zeroes_exact_range ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 2 tests
+test complete_flight_with_retry_and_failed_evidence ... ok
+test exhaustive_u8_policy_matches_complete_allowed_relation ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+
+running 1 test
+test full_loan_drop_preserves_guards_for_all_alignments_and_states ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+
+running 7 tests
+test all_auth_transitions_and_failure_release_guards ... ok
+test borrowed_parser_exact_shortages_and_tail ... ok
+test reservations_are_monotone_retired_and_direction_owned ... ok
+test framing_fails_closed_without_body_amplification ... ok
+test arbitrary_fragmentation_and_coalescing ... ok
+test count_edges_and_capacity_respecting_minimality ... ok
+test codec_lengths_versions_and_output_atomicity ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 8 tests
+test partial_message_cannot_cross_epochs_or_record_types ... ok
+test total_length_guards_and_native_edges ... ok
+test coalesced_messages_backpressure_and_transcript_bytes ... ok
+test unsupported_types_and_invalid_resource_limits ... ok
+test zero_body_syntax_and_recoverable_misuse_and_truncation ... ok
+test oversized_u24_rejected_before_body_copy ... ok
+test key_change_messages_require_real_record_end ... ok
+test every_fragmentation_with_small_work_budgets ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 7 tests
+test certificate_borrowing_two_pass_atomic_slots_and_auth_lengths ... ok
+test cookie_only_retry_and_retry_key_share_format ... ok
+test encrypted_extensions_single_alpn_empty_ack_group_vector_and_fail_closed ... ok
+test client_invalid_configuration_dns_and_protocol_bounds_are_atomic ... ok
+test server_hello_limits_version_selection_duplicates_and_placement ... ok
+test published_server_hello_hrr_and_server_flight_auth_views ... ok
+test client_encoding_lengths_and_exact_extension_layout ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 5 tests
+test label_codec_edges_exact_bytes_small_buffers_and_wiping ... ok
+test invalid_input_and_faulting_provider_never_return_secret_success ... ok
+test sha384_independent_cryptography_openssl_fixture ... ok
+test rfc8448_section3_full_no_psk_chain_keys_ivs_and_finished ... ok
+test altered_transcripts_tags_direction_labels_and_contexts ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 9 tests
+test failing_or_malformed_provider_retires_nonce_wipes_and_cannot_retry ... ok
+test terminal_failure_immediately_drops_key_once_preflight_retains_it ... ok
+test exact_aad_and_sequence_nonce_match_provider_calls ... ok
+test bounds_small_buffers_and_sender_caps_are_preflight ... ok
+test authenticated_malformed_inner_and_tight_receiving_caps ... ok
+test rfc8448_section3_client_application_and_alert_known_answers ... ok
+test all_suites_types_padding_and_fragmented_input ... ok
+test full_inner_capacity_counts_type_and_padding ... ok
+test ciphertext_mutation_replay_and_reordering_are_terminal_and_wiped ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 2 tests
+test published_hello_retry_request_transcript_hash ... ok
+test published_transcript_derives_record_keys_and_verifies_finished ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test published_server_handshake_record_and_exact_message_bytes ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 9 tests
+test constructor_retires_failed_or_algorithm_changing_context ... ok
+test provider_errors_retire_context_once_and_never_return_partial_digest ... ok
+test malformed_extra_and_post_handshake_bytes_never_advance ... ok
+test resource_caps_and_hello_order_poison_before_hash_progress ... ok
+test hrr_legacy_version_is_ignored_after_endpoint_version_selection ... ok
+test retry_wrong_stage_sentinel_direct_append_and_budget_are_rejected ... ok
+test hrr_rewrites_exact_encoded_history_for_both_hashes ... ok
+test constructor_discards_preexisting_provider_history ... ok
+test streaming_order_headers_snapshots_and_freeze ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 8 tests
+test src/key_schedule.rs - key_schedule::BoundedSecret (line 106) - compile fail ... ok
+test src/key_schedule.rs - key_schedule::SendingTraffic (line 517) - compile fail ... ok
+test src/key_schedule.rs - key_schedule::TrafficSecret (line 188) - compile fail ... ok
+test src/counter.rs - counter::ReadCounter (line 121) - compile fail ... ok
+test src/counter.rs - counter::Reservation (line 27) - compile fail ... ok
+test src/key_schedule.rs - key_schedule::BoundedSecret (line 102) - compile fail ... ok
+test src/key_schedule.rs - key_schedule::TrafficSecret (line 193) - compile fail ... ok
+test src/counter.rs - counter::WriteCounter (line 91) - compile fail ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+   Compiling libc v0.2.190
+   Compiling find-msvc-tools v0.1.14
+   Compiling shlex v2.0.1
+   Compiling fs_extra v1.3.0
+   Compiling pkg-config v0.3.34
+   Compiling dunce v1.0.5
+   Compiling aws-lc-rs v1.18.2
+   Compiling zeroize v1.9.1
+   Compiling untrusted v0.7.1
+   Compiling tls-crypto v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/crates/tls-crypto)
+   Compiling bytemuck v1.25.2
+   Compiling tls-core v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/tls-core)
+   Compiling jobserver v0.1.35
+   Compiling cc v1.8.0
+   Compiling cmake v0.1.58
+   Compiling aws-lc-sys v0.46.0
+   Compiling tls-crypto-awslc v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/crates/tls-crypto-awslc)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 11.41s
+     Running unittests src/lib.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/debug/deps/tls_core-3422ad546dfc2550)
+     Running tests/client_policy.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/debug/deps/client_policy-eff4e9ac15dc63d5)
+     Running tests/drop_wiping.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/debug/deps/drop_wiping-592b9d19d722d218)
+     Running tests/foundation.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/debug/deps/foundation-16cbb42ed3f3ac14)
+     Running tests/handshake.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/debug/deps/handshake-5c0141f324b93b44)
+     Running tests/hello.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/debug/deps/hello-51f749e0e2e800d4)
+     Running tests/key_schedule.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/debug/deps/key_schedule-a2065fb6c0e47d20)
+     Running tests/protected.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/debug/deps/protected-ab2988b8f41605a6)
+     Running tests/rfc8448_composition.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/debug/deps/rfc8448_composition-4495e1611c15c9ab)
+     Running tests/rfc8448_record.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/debug/deps/rfc8448_record-1f070056fa89bbe3)
+     Running tests/transcript.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/debug/deps/transcript-b830fae79e85e50d)
+   Doc-tests tls_core

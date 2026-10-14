@@ -1,0 +1,113 @@
+
+running 6 tests
+test secret_wiping_unit::secret_wipe_covers_requested_bytes_and_preserves_every_outer_guard ... ok
+test wire_wiping_unit::incoming_authentication_failure_clears_all_wire_and_plaintext_capacity ... ok
+test wire_wiping_unit::partial_wire_drains_clear_only_handed_bytes_and_peer_authenticates_large_then_small ... ok
+test read_wiping_unit::authenticated_partial_reads_preserve_unread_bytes_and_leave_entire_loan_clean ... ok
+test wire_wiping_unit::fragmented_receive_preserves_exact_pending_wire_then_clears_complete_record ... ok
+test secret_wiping_unit::authenticated_partial_reads_at_varied_loan_offsets_preserve_guards_and_unread_data ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+
+running 3 tests
+test automatic_key_update_import_fault_preserves_old_record_sequence_for_alert ... ok
+test finished_verification_and_application_import_faults_are_atomic ... ok
+test eof_discards_queued_and_partial_records_without_substitute_alert ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+
+running 13 tests
+test compatibility_ccs_after_finished_is_rejected ... ok
+test authenticated_fatal_peer_alert_aborts_without_reciprocal_alert ... ok
+test fatal_peer_alert_during_fragmented_ticket_has_no_reciprocal_response ... ok
+test authenticated_user_canceled_is_ignored_until_close_notify ... ok
+test client_finished_final_byte_handoff_gates_establishment ... ok
+test close_notify_and_unclean_eof ... ok
+test replayed_native_hello_retry_request_is_unexpected_message ... ok
+test authenticated_cv_finished_and_aead_mutations_are_rejected ... ok
+test identity_root_and_expiry_fail_closed ... ok
+test no_resumption_client_ignores_authenticated_ticket_and_continues_application_data ... ok
+test pending_peer_key_update_blocks_application_until_response_is_processed ... ok
+test hello_retry_request_and_key_updates ... ok
+test authenticated_suite_group_fragmentation_matrix ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+
+running 4 tests
+test eof_with_unread_authenticated_plaintext_prevents_further_release ... ok
+test unauthenticated_record_never_releases_plaintext_and_failed_loans_are_wiped ... ok
+test partial_reads_zero_output_backpressure_and_large_to_short_records ... ok
+test unread_plaintext_is_wiped_when_live_connection_is_dropped ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling libc v0.2.190
+   Compiling unicode-ident v1.0.27
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.14
+   Compiling dunce v1.0.5
+   Compiling autocfg v1.5.1
+   Compiling fs_extra v1.3.0
+   Compiling pkg-config v0.3.34
+   Compiling minimal-lexical v0.2.1
+   Compiling aws-lc-rs v1.18.2
+   Compiling thiserror v2.0.21
+   Compiling time-core v0.1.9
+   Compiling zeroize v1.9.1
+   Compiling memchr v2.8.3
+   Compiling num-traits v0.2.19
+   Compiling num-conv v0.2.2
+   Compiling deranged v0.5.9
+   Compiling powerfmt v0.2.1
+   Compiling untrusted v0.7.1
+   Compiling time-macros v0.2.32
+   Compiling oid-registry v0.8.1
+   Compiling rustls-pki-types v1.15.1
+   Compiling nom v7.1.3
+   Compiling untrusted v0.9.0
+   Compiling lazy_static v1.5.1
+   Compiling tls-crypto v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/ws/crates/tls-crypto)
+   Compiling data-encoding v2.11.1
+   Compiling bytemuck v1.25.2
+   Compiling rustls v0.23.45
+   Compiling subtle v2.6.1
+   Compiling once_cell v1.21.4
+   Compiling tls-core v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/ws/crates/tls-core)
+   Compiling time v0.3.55
+   Compiling num-integer v0.1.47
+   Compiling jobserver v0.1.35
+   Compiling num-bigint v0.4.8
+   Compiling syn v3.0.9
+   Compiling syn v2.0.119
+   Compiling rusticata-macros v4.1.0
+   Compiling cc v1.8.0
+   Compiling cmake v0.1.58
+   Compiling aws-lc-sys v0.46.0
+   Compiling thiserror-impl v2.0.21
+   Compiling displaydoc v0.2.7
+   Compiling synstructure v0.13.2
+   Compiling asn1-rs-impl v0.2.0
+   Compiling asn1-rs-derive v0.6.0
+   Compiling asn1-rs v0.7.2
+   Compiling der-parser v10.0.0
+   Compiling x509-parser v0.18.1
+   Compiling rustls-webpki v0.103.15
+   Compiling tls-crypto-awslc v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/ws/crates/tls-crypto-awslc)
+   Compiling tls-pki v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/ws/crates/tls-pki)
+   Compiling tls-client v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/ws/crates/tls-client)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 11.01s
+     Running unittests src/lib.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/ws-target/debug/deps/tls_client-175aa45ac306a01a)
+     Running tests/faults.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/ws-target/debug/deps/faults-8fa9950623c69c1d)
+     Running tests/interop.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/ws-target/debug/deps/interop-acebc8aef2a1c0ee)
+     Running tests/read_wiping.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/ws-target/debug/deps/read_wiping-20b44437111f4899)
+   Doc-tests tls_client

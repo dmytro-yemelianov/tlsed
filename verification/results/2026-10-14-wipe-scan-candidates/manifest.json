@@ -1,0 +1,1431 @@
+{
+  "host_last_seen": {
+    "cpu": "Apple M5",
+    "macos": "27.2",
+    "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+    "power": "Now drawing from 'Battery Power'"
+  },
+  "kernels": {
+    "commands": [
+      {
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/candidate_kernels",
+          "0"
+        ],
+        "loadavg_before": [
+          4.6015625,
+          7.94580078125,
+          7.66015625
+        ],
+        "loadavg_after": [
+          4.6015625,
+          7.94580078125,
+          7.66015625
+        ]
+      },
+      {
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/candidate_kernels",
+          "1"
+        ],
+        "loadavg_before": [
+          4.6015625,
+          7.94580078125,
+          7.66015625
+        ],
+        "loadavg_after": [
+          4.6015625,
+          7.94580078125,
+          7.66015625
+        ]
+      },
+      {
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/candidate_kernels",
+          "2"
+        ],
+        "loadavg_before": [
+          4.6015625,
+          7.94580078125,
+          7.66015625
+        ],
+        "loadavg_after": [
+          4.6015625,
+          7.94580078125,
+          7.66015625
+        ]
+      },
+      {
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/candidate_kernels",
+          "3"
+        ],
+        "loadavg_before": [
+          4.6015625,
+          7.94580078125,
+          7.66015625
+        ],
+        "loadavg_after": [
+          4.71337890625,
+          7.9130859375,
+          7.650390625
+        ]
+      },
+      {
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/candidate_kernels",
+          "4"
+        ],
+        "loadavg_before": [
+          4.71337890625,
+          7.9130859375,
+          7.650390625
+        ],
+        "loadavg_after": [
+          4.71337890625,
+          7.9130859375,
+          7.650390625
+        ]
+      },
+      {
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/candidate_kernels",
+          "5"
+        ],
+        "loadavg_before": [
+          4.71337890625,
+          7.9130859375,
+          7.650390625
+        ],
+        "loadavg_after": [
+          4.71337890625,
+          7.9130859375,
+          7.650390625
+        ]
+      }
+    ],
+    "binary_sha256": "9e24a50f80345d0f3e08019683a7096832fc0d0a28ac2b774a65fb4e61054f1c",
+    "source_sha256": "e79bc63624572b57fa2600ded2b54d12df25f4eb82aa4d5f4ae5987b1deba720"
+  },
+  "build": {
+    "block": 64,
+    "variants": {
+      "production_copy": {
+        "block": null,
+        "wipe": false,
+        "scan": false,
+        "awslc": false,
+        "tests": {
+          "core": {
+            "passed": 61,
+            "failed": 0
+          }
+        },
+        "protected_rs_sha256": "33b69fec76ba3ae588afc5d8b32efff13edfeb1265993e195d8e06de746212f8",
+        "awslc_lib_rs_sha256": "6d92c7dee64d1eb7625bd4e1e97100dcc572f601a58ae0fe03c1652d14553c70",
+        "binary": "target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+        "binary_sha256": "95b6aeca1cd42aa768d229e91cbb25cb6f7bb9c7b67377d8aee9317e7a7592aa"
+      },
+      "wipe": {
+        "block": null,
+        "wipe": true,
+        "scan": false,
+        "awslc": false,
+        "tests": {
+          "core": {
+            "passed": 62,
+            "failed": 0
+          }
+        },
+        "protected_rs_sha256": "05f19a8e74eeff4ac55d50e58abce893ea25ca4c22be8270417217bf8617aa95",
+        "awslc_lib_rs_sha256": "6d92c7dee64d1eb7625bd4e1e97100dcc572f601a58ae0fe03c1652d14553c70",
+        "binary": "target/inner-scan-audit/variants/wipe/target/release/tlsed-inner-scan-audit-wipe",
+        "binary_sha256": "0cf0d4aeadc0aba045efc7a18a5b4f671e09dba2d4da15ade74b627d37c88067"
+      },
+      "scan": {
+        "block": 64,
+        "wipe": false,
+        "scan": true,
+        "awslc": false,
+        "tests": {
+          "core": {
+            "passed": 62,
+            "failed": 0
+          }
+        },
+        "protected_rs_sha256": "56ebcf41cf0131d9e58a02a106aaf96a05b1af3db4710abff4e27579027a0f6c",
+        "awslc_lib_rs_sha256": "6d92c7dee64d1eb7625bd4e1e97100dcc572f601a58ae0fe03c1652d14553c70",
+        "binary": "target/inner-scan-audit/variants/scan/target/release/tlsed-inner-scan-audit-scan",
+        "binary_sha256": "d31ede58f346b33227977e690d96a7889a5416e32136d4e2e91fe2d0ca22b0c0"
+      },
+      "wipe_scan": {
+        "block": 64,
+        "wipe": true,
+        "scan": true,
+        "awslc": false,
+        "tests": {
+          "core": {
+            "passed": 63,
+            "failed": 0
+          }
+        },
+        "protected_rs_sha256": "8458d9b52d139cc872c36668e9f3122796d44070de2eb18655377020e3fb8125",
+        "awslc_lib_rs_sha256": "6d92c7dee64d1eb7625bd4e1e97100dcc572f601a58ae0fe03c1652d14553c70",
+        "binary": "target/inner-scan-audit/variants/wipe_scan/target/release/tlsed-inner-scan-audit-wipe_scan",
+        "binary_sha256": "fd2f77a74ef3dfa60e74bade44ea64c3b5fe9e6f9ff9d5c46285442b9bef3493"
+      },
+      "awslc": {
+        "block": null,
+        "wipe": false,
+        "scan": false,
+        "awslc": true,
+        "tests": {
+          "core": {
+            "passed": 61,
+            "failed": 0
+          },
+          "awslc": {
+            "passed": 23,
+            "failed": 0
+          }
+        },
+        "protected_rs_sha256": "33b69fec76ba3ae588afc5d8b32efff13edfeb1265993e195d8e06de746212f8",
+        "awslc_lib_rs_sha256": "47fc2bb7bcd1ef0bb65ba009403db6d08ce89abf968aa47f727611b8a98e8427",
+        "binary": "target/inner-scan-audit/variants/awslc/target/release/tlsed-inner-scan-audit-awslc",
+        "binary_sha256": "c5f383c6acf2f2acc6de8bcf1f38cd3203d14364d7423170d8988fe4f8fa1816"
+      },
+      "wipe_scan_awslc": {
+        "block": 64,
+        "wipe": true,
+        "scan": true,
+        "awslc": true,
+        "tests": {
+          "core": {
+            "passed": 63,
+            "failed": 0
+          },
+          "awslc": {
+            "passed": 23,
+            "failed": 0
+          }
+        },
+        "protected_rs_sha256": "8458d9b52d139cc872c36668e9f3122796d44070de2eb18655377020e3fb8125",
+        "awslc_lib_rs_sha256": "47fc2bb7bcd1ef0bb65ba009403db6d08ce89abf968aa47f727611b8a98e8427",
+        "binary": "target/inner-scan-audit/variants/wipe_scan_awslc/target/release/tlsed-inner-scan-audit-wipe_scan_awslc",
+        "binary_sha256": "2fe2fc9ccc89ac7899f69f2aa12e307b437e23e80de68abd779601864bb5f3f2"
+      }
+    },
+    "production_protected_rs_sha256": "33b69fec76ba3ae588afc5d8b32efff13edfeb1265993e195d8e06de746212f8",
+    "production_awslc_lib_rs_sha256": "6d92c7dee64d1eb7625bd4e1e97100dcc572f601a58ae0fe03c1652d14553c70"
+  },
+  "e2e": {
+    "repeats": 10,
+    "runs": [
+      {
+        "variant": "production_copy",
+        "repeat": 0,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+          "bench",
+          "0"
+        ],
+        "loadavg_before": [
+          4.576171875,
+          7.8310546875,
+          7.623046875
+        ],
+        "loadavg_after": [
+          4.576171875,
+          7.8310546875,
+          7.623046875
+        ]
+      },
+      {
+        "variant": "wipe",
+        "repeat": 0,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/release/tlsed-inner-scan-audit-wipe",
+          "bench",
+          "0"
+        ],
+        "loadavg_before": [
+          4.576171875,
+          7.8310546875,
+          7.623046875
+        ],
+        "loadavg_after": [
+          4.44970703125,
+          7.75048828125,
+          7.595703125
+        ]
+      },
+      {
+        "variant": "scan",
+        "repeat": 0,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/scan/target/release/tlsed-inner-scan-audit-scan",
+          "bench",
+          "0"
+        ],
+        "loadavg_before": [
+          4.44970703125,
+          7.75048828125,
+          7.595703125
+        ],
+        "loadavg_after": [
+          4.44970703125,
+          7.75048828125,
+          7.595703125
+        ]
+      },
+      {
+        "variant": "wipe_scan",
+        "repeat": 0,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan/target/release/tlsed-inner-scan-audit-wipe_scan",
+          "bench",
+          "0"
+        ],
+        "loadavg_before": [
+          4.44970703125,
+          7.75048828125,
+          7.595703125
+        ],
+        "loadavg_after": [
+          4.33349609375,
+          7.67138671875,
+          7.568359375
+        ]
+      },
+      {
+        "variant": "awslc",
+        "repeat": 0,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/awslc/target/release/tlsed-inner-scan-audit-awslc",
+          "bench",
+          "0"
+        ],
+        "loadavg_before": [
+          4.33349609375,
+          7.67138671875,
+          7.568359375
+        ],
+        "loadavg_after": [
+          4.33349609375,
+          7.67138671875,
+          7.568359375
+        ]
+      },
+      {
+        "variant": "wipe_scan_awslc",
+        "repeat": 0,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/target/release/tlsed-inner-scan-audit-wipe_scan_awslc",
+          "bench",
+          "0"
+        ],
+        "loadavg_before": [
+          4.33349609375,
+          7.67138671875,
+          7.568359375
+        ],
+        "loadavg_after": [
+          4.33349609375,
+          7.67138671875,
+          7.568359375
+        ]
+      },
+      {
+        "variant": "wipe",
+        "repeat": 1,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/release/tlsed-inner-scan-audit-wipe",
+          "bench",
+          "1"
+        ],
+        "loadavg_before": [
+          4.33349609375,
+          7.67138671875,
+          7.568359375
+        ],
+        "loadavg_after": [
+          4.306640625,
+          7.6103515625,
+          7.54736328125
+        ]
+      },
+      {
+        "variant": "scan",
+        "repeat": 1,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/scan/target/release/tlsed-inner-scan-audit-scan",
+          "bench",
+          "1"
+        ],
+        "loadavg_before": [
+          4.306640625,
+          7.6103515625,
+          7.54736328125
+        ],
+        "loadavg_after": [
+          4.306640625,
+          7.6103515625,
+          7.54736328125
+        ]
+      },
+      {
+        "variant": "wipe_scan",
+        "repeat": 1,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan/target/release/tlsed-inner-scan-audit-wipe_scan",
+          "bench",
+          "1"
+        ],
+        "loadavg_before": [
+          4.306640625,
+          7.6103515625,
+          7.54736328125
+        ],
+        "loadavg_after": [
+          4.306640625,
+          7.6103515625,
+          7.54736328125
+        ]
+      },
+      {
+        "variant": "awslc",
+        "repeat": 1,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/awslc/target/release/tlsed-inner-scan-audit-awslc",
+          "bench",
+          "1"
+        ],
+        "loadavg_before": [
+          4.306640625,
+          7.6103515625,
+          7.54736328125
+        ],
+        "loadavg_after": [
+          4.12158203125,
+          7.51708984375,
+          7.5146484375
+        ]
+      },
+      {
+        "variant": "wipe_scan_awslc",
+        "repeat": 1,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/target/release/tlsed-inner-scan-audit-wipe_scan_awslc",
+          "bench",
+          "1"
+        ],
+        "loadavg_before": [
+          4.12158203125,
+          7.51708984375,
+          7.5146484375
+        ],
+        "loadavg_after": [
+          4.12158203125,
+          7.51708984375,
+          7.5146484375
+        ]
+      },
+      {
+        "variant": "production_copy",
+        "repeat": 1,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+          "bench",
+          "1"
+        ],
+        "loadavg_before": [
+          4.12158203125,
+          7.51708984375,
+          7.5146484375
+        ],
+        "loadavg_after": [
+          4.03173828125,
+          7.44189453125,
+          7.48779296875
+        ]
+      },
+      {
+        "variant": "scan",
+        "repeat": 2,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/scan/target/release/tlsed-inner-scan-audit-scan",
+          "bench",
+          "2"
+        ],
+        "loadavg_before": [
+          4.03173828125,
+          7.44189453125,
+          7.48779296875
+        ],
+        "loadavg_after": [
+          4.03173828125,
+          7.44189453125,
+          7.48779296875
+        ]
+      },
+      {
+        "variant": "wipe_scan",
+        "repeat": 2,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan/target/release/tlsed-inner-scan-audit-wipe_scan",
+          "bench",
+          "2"
+        ],
+        "loadavg_before": [
+          4.03173828125,
+          7.44189453125,
+          7.48779296875
+        ],
+        "loadavg_after": [
+          4.03173828125,
+          7.44189453125,
+          7.48779296875
+        ]
+      },
+      {
+        "variant": "awslc",
+        "repeat": 2,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/awslc/target/release/tlsed-inner-scan-audit-awslc",
+          "bench",
+          "2"
+        ],
+        "loadavg_before": [
+          4.03173828125,
+          7.44189453125,
+          7.48779296875
+        ],
+        "loadavg_after": [
+          4.02880859375,
+          7.38427734375,
+          7.46728515625
+        ]
+      },
+      {
+        "variant": "wipe_scan_awslc",
+        "repeat": 2,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/target/release/tlsed-inner-scan-audit-wipe_scan_awslc",
+          "bench",
+          "2"
+        ],
+        "loadavg_before": [
+          4.02880859375,
+          7.38427734375,
+          7.46728515625
+        ],
+        "loadavg_after": [
+          4.02880859375,
+          7.38427734375,
+          7.46728515625
+        ]
+      },
+      {
+        "variant": "production_copy",
+        "repeat": 2,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+          "bench",
+          "2"
+        ],
+        "loadavg_before": [
+          4.02880859375,
+          7.38427734375,
+          7.46728515625
+        ],
+        "loadavg_after": [
+          3.7861328125,
+          7.27783203125,
+          7.42919921875
+        ]
+      },
+      {
+        "variant": "wipe",
+        "repeat": 2,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/release/tlsed-inner-scan-audit-wipe",
+          "bench",
+          "2"
+        ],
+        "loadavg_before": [
+          3.7861328125,
+          7.27783203125,
+          7.42919921875
+        ],
+        "loadavg_after": [
+          3.7861328125,
+          7.27783203125,
+          7.42919921875
+        ]
+      },
+      {
+        "variant": "wipe_scan",
+        "repeat": 3,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan/target/release/tlsed-inner-scan-audit-wipe_scan",
+          "bench",
+          "3"
+        ],
+        "loadavg_before": [
+          3.7861328125,
+          7.27783203125,
+          7.42919921875
+        ],
+        "loadavg_after": [
+          3.7861328125,
+          7.27783203125,
+          7.42919921875
+        ]
+      },
+      {
+        "variant": "awslc",
+        "repeat": 3,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/awslc/target/release/tlsed-inner-scan-audit-awslc",
+          "bench",
+          "3"
+        ],
+        "loadavg_before": [
+          3.7861328125,
+          7.27783203125,
+          7.42919921875
+        ],
+        "loadavg_after": [
+          3.64306640625,
+          7.18994140625,
+          7.39697265625
+        ]
+      },
+      {
+        "variant": "wipe_scan_awslc",
+        "repeat": 3,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/target/release/tlsed-inner-scan-audit-wipe_scan_awslc",
+          "bench",
+          "3"
+        ],
+        "loadavg_before": [
+          3.64306640625,
+          7.18994140625,
+          7.39697265625
+        ],
+        "loadavg_after": [
+          3.64306640625,
+          7.18994140625,
+          7.39697265625
+        ]
+      },
+      {
+        "variant": "production_copy",
+        "repeat": 3,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+          "bench",
+          "3"
+        ],
+        "loadavg_before": [
+          3.64306640625,
+          7.18994140625,
+          7.39697265625
+        ],
+        "loadavg_after": [
+          3.43115234375,
+          7.0869140625,
+          7.359375
+        ]
+      },
+      {
+        "variant": "wipe",
+        "repeat": 3,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/release/tlsed-inner-scan-audit-wipe",
+          "bench",
+          "3"
+        ],
+        "loadavg_before": [
+          3.43115234375,
+          7.0869140625,
+          7.359375
+        ],
+        "loadavg_after": [
+          3.43115234375,
+          7.0869140625,
+          7.359375
+        ]
+      },
+      {
+        "variant": "scan",
+        "repeat": 3,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/scan/target/release/tlsed-inner-scan-audit-scan",
+          "bench",
+          "3"
+        ],
+        "loadavg_before": [
+          3.43115234375,
+          7.0869140625,
+          7.359375
+        ],
+        "loadavg_after": [
+          3.31640625,
+          7.00244140625,
+          7.32763671875
+        ]
+      },
+      {
+        "variant": "awslc",
+        "repeat": 4,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/awslc/target/release/tlsed-inner-scan-audit-awslc",
+          "bench",
+          "4"
+        ],
+        "loadavg_before": [
+          3.31640625,
+          7.00244140625,
+          7.32763671875
+        ],
+        "loadavg_after": [
+          3.31640625,
+          7.00244140625,
+          7.32763671875
+        ]
+      },
+      {
+        "variant": "wipe_scan_awslc",
+        "repeat": 4,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/target/release/tlsed-inner-scan-audit-wipe_scan_awslc",
+          "bench",
+          "4"
+        ],
+        "loadavg_before": [
+          3.31640625,
+          7.00244140625,
+          7.32763671875
+        ],
+        "loadavg_after": [
+          3.31640625,
+          7.00244140625,
+          7.32763671875
+        ]
+      },
+      {
+        "variant": "production_copy",
+        "repeat": 4,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+          "bench",
+          "4"
+        ],
+        "loadavg_before": [
+          3.31640625,
+          7.00244140625,
+          7.32763671875
+        ],
+        "loadavg_after": [
+          3.2109375,
+          6.9189453125,
+          7.29638671875
+        ]
+      },
+      {
+        "variant": "wipe",
+        "repeat": 4,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/release/tlsed-inner-scan-audit-wipe",
+          "bench",
+          "4"
+        ],
+        "loadavg_before": [
+          3.2109375,
+          6.9189453125,
+          7.29638671875
+        ],
+        "loadavg_after": [
+          3.2109375,
+          6.9189453125,
+          7.29638671875
+        ]
+      },
+      {
+        "variant": "scan",
+        "repeat": 4,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/scan/target/release/tlsed-inner-scan-audit-scan",
+          "bench",
+          "4"
+        ],
+        "loadavg_before": [
+          3.2109375,
+          6.9189453125,
+          7.29638671875
+        ],
+        "loadavg_after": [
+          3.03369140625,
+          6.8203125,
+          7.25927734375
+        ]
+      },
+      {
+        "variant": "wipe_scan",
+        "repeat": 4,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan/target/release/tlsed-inner-scan-audit-wipe_scan",
+          "bench",
+          "4"
+        ],
+        "loadavg_before": [
+          3.03369140625,
+          6.8203125,
+          7.25927734375
+        ],
+        "loadavg_after": [
+          3.03369140625,
+          6.8203125,
+          7.25927734375
+        ]
+      },
+      {
+        "variant": "wipe_scan_awslc",
+        "repeat": 5,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/target/release/tlsed-inner-scan-audit-wipe_scan_awslc",
+          "bench",
+          "5"
+        ],
+        "loadavg_before": [
+          3.03369140625,
+          6.8203125,
+          7.25927734375
+        ],
+        "loadavg_after": [
+          3.03369140625,
+          6.8203125,
+          7.25927734375
+        ]
+      },
+      {
+        "variant": "production_copy",
+        "repeat": 5,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+          "bench",
+          "5"
+        ],
+        "loadavg_before": [
+          3.03369140625,
+          6.8203125,
+          7.25927734375
+        ],
+        "loadavg_after": [
+          3.03076171875,
+          6.7568359375,
+          7.23388671875
+        ]
+      },
+      {
+        "variant": "wipe",
+        "repeat": 5,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/release/tlsed-inner-scan-audit-wipe",
+          "bench",
+          "5"
+        ],
+        "loadavg_before": [
+          3.03076171875,
+          6.7568359375,
+          7.23388671875
+        ],
+        "loadavg_after": [
+          3.03076171875,
+          6.7568359375,
+          7.23388671875
+        ]
+      },
+      {
+        "variant": "scan",
+        "repeat": 5,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/scan/target/release/tlsed-inner-scan-audit-scan",
+          "bench",
+          "5"
+        ],
+        "loadavg_before": [
+          3.03076171875,
+          6.7568359375,
+          7.23388671875
+        ],
+        "loadavg_after": [
+          3.02783203125,
+          6.6943359375,
+          7.208984375
+        ]
+      },
+      {
+        "variant": "wipe_scan",
+        "repeat": 5,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan/target/release/tlsed-inner-scan-audit-wipe_scan",
+          "bench",
+          "5"
+        ],
+        "loadavg_before": [
+          3.02783203125,
+          6.6943359375,
+          7.208984375
+        ],
+        "loadavg_after": [
+          3.02783203125,
+          6.6943359375,
+          7.208984375
+        ]
+      },
+      {
+        "variant": "awslc",
+        "repeat": 5,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/awslc/target/release/tlsed-inner-scan-audit-awslc",
+          "bench",
+          "5"
+        ],
+        "loadavg_before": [
+          3.02783203125,
+          6.6943359375,
+          7.208984375
+        ],
+        "loadavg_after": [
+          3.02783203125,
+          6.6943359375,
+          7.208984375
+        ]
+      },
+      {
+        "variant": "production_copy",
+        "repeat": 6,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+          "bench",
+          "6"
+        ],
+        "loadavg_before": [
+          3.02783203125,
+          6.6943359375,
+          7.208984375
+        ],
+        "loadavg_after": [
+          3.025390625,
+          6.6328125,
+          7.18408203125
+        ]
+      },
+      {
+        "variant": "wipe",
+        "repeat": 6,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/release/tlsed-inner-scan-audit-wipe",
+          "bench",
+          "6"
+        ],
+        "loadavg_before": [
+          3.025390625,
+          6.6328125,
+          7.18408203125
+        ],
+        "loadavg_after": [
+          3.025390625,
+          6.6328125,
+          7.18408203125
+        ]
+      },
+      {
+        "variant": "scan",
+        "repeat": 6,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/scan/target/release/tlsed-inner-scan-audit-scan",
+          "bench",
+          "6"
+        ],
+        "loadavg_before": [
+          3.025390625,
+          6.6328125,
+          7.18408203125
+        ],
+        "loadavg_after": [
+          2.94287109375,
+          6.5556640625,
+          7.1533203125
+        ]
+      },
+      {
+        "variant": "wipe_scan",
+        "repeat": 6,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan/target/release/tlsed-inner-scan-audit-wipe_scan",
+          "bench",
+          "6"
+        ],
+        "loadavg_before": [
+          2.94287109375,
+          6.5556640625,
+          7.1533203125
+        ],
+        "loadavg_after": [
+          2.94287109375,
+          6.5556640625,
+          7.1533203125
+        ]
+      },
+      {
+        "variant": "awslc",
+        "repeat": 6,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/awslc/target/release/tlsed-inner-scan-audit-awslc",
+          "bench",
+          "6"
+        ],
+        "loadavg_before": [
+          2.94287109375,
+          6.5556640625,
+          7.1533203125
+        ],
+        "loadavg_after": [
+          4.228515625,
+          6.76220703125,
+          7.22265625
+        ]
+      },
+      {
+        "variant": "wipe_scan_awslc",
+        "repeat": 6,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/target/release/tlsed-inner-scan-audit-wipe_scan_awslc",
+          "bench",
+          "6"
+        ],
+        "loadavg_before": [
+          4.228515625,
+          6.76220703125,
+          7.22265625
+        ],
+        "loadavg_after": [
+          4.228515625,
+          6.76220703125,
+          7.22265625
+        ]
+      },
+      {
+        "variant": "wipe",
+        "repeat": 7,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/release/tlsed-inner-scan-audit-wipe",
+          "bench",
+          "7"
+        ],
+        "loadavg_before": [
+          4.228515625,
+          6.76220703125,
+          7.22265625
+        ],
+        "loadavg_after": [
+          4.228515625,
+          6.76220703125,
+          7.22265625
+        ]
+      },
+      {
+        "variant": "scan",
+        "repeat": 7,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/scan/target/release/tlsed-inner-scan-audit-scan",
+          "bench",
+          "7"
+        ],
+        "loadavg_before": [
+          4.228515625,
+          6.76220703125,
+          7.22265625
+        ],
+        "loadavg_after": [
+          4.2099609375,
+          6.71630859375,
+          7.20361328125
+        ]
+      },
+      {
+        "variant": "wipe_scan",
+        "repeat": 7,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan/target/release/tlsed-inner-scan-audit-wipe_scan",
+          "bench",
+          "7"
+        ],
+        "loadavg_before": [
+          4.2099609375,
+          6.71630859375,
+          7.20361328125
+        ],
+        "loadavg_after": [
+          4.2099609375,
+          6.71630859375,
+          7.20361328125
+        ]
+      },
+      {
+        "variant": "awslc",
+        "repeat": 7,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/awslc/target/release/tlsed-inner-scan-audit-awslc",
+          "bench",
+          "7"
+        ],
+        "loadavg_before": [
+          4.2099609375,
+          6.71630859375,
+          7.20361328125
+        ],
+        "loadavg_after": [
+          4.27294921875,
+          6.6875,
+          7.1904296875
+        ]
+      },
+      {
+        "variant": "wipe_scan_awslc",
+        "repeat": 7,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/target/release/tlsed-inner-scan-audit-wipe_scan_awslc",
+          "bench",
+          "7"
+        ],
+        "loadavg_before": [
+          4.27294921875,
+          6.6875,
+          7.1904296875
+        ],
+        "loadavg_after": [
+          4.27294921875,
+          6.6875,
+          7.1904296875
+        ]
+      },
+      {
+        "variant": "production_copy",
+        "repeat": 7,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+          "bench",
+          "7"
+        ],
+        "loadavg_before": [
+          4.27294921875,
+          6.6875,
+          7.1904296875
+        ],
+        "loadavg_after": [
+          4.27294921875,
+          6.6875,
+          7.1904296875
+        ]
+      },
+      {
+        "variant": "scan",
+        "repeat": 8,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/scan/target/release/tlsed-inner-scan-audit-scan",
+          "bench",
+          "8"
+        ],
+        "loadavg_before": [
+          4.27294921875,
+          6.6875,
+          7.1904296875
+        ],
+        "loadavg_after": [
+          4.1708984375,
+          6.6259765625,
+          7.16552734375
+        ]
+      },
+      {
+        "variant": "wipe_scan",
+        "repeat": 8,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan/target/release/tlsed-inner-scan-audit-wipe_scan",
+          "bench",
+          "8"
+        ],
+        "loadavg_before": [
+          4.1708984375,
+          6.6259765625,
+          7.16552734375
+        ],
+        "loadavg_after": [
+          4.1708984375,
+          6.6259765625,
+          7.16552734375
+        ]
+      },
+      {
+        "variant": "awslc",
+        "repeat": 8,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/awslc/target/release/tlsed-inner-scan-audit-awslc",
+          "bench",
+          "8"
+        ],
+        "loadavg_before": [
+          4.1708984375,
+          6.6259765625,
+          7.16552734375
+        ],
+        "loadavg_after": [
+          4.71728515625,
+          6.6982421875,
+          7.18798828125
+        ]
+      },
+      {
+        "variant": "wipe_scan_awslc",
+        "repeat": 8,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/target/release/tlsed-inner-scan-audit-wipe_scan_awslc",
+          "bench",
+          "8"
+        ],
+        "loadavg_before": [
+          4.71728515625,
+          6.6982421875,
+          7.18798828125
+        ],
+        "loadavg_after": [
+          4.71728515625,
+          6.6982421875,
+          7.18798828125
+        ]
+      },
+      {
+        "variant": "production_copy",
+        "repeat": 8,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+          "bench",
+          "8"
+        ],
+        "loadavg_before": [
+          4.71728515625,
+          6.6982421875,
+          7.18798828125
+        ],
+        "loadavg_after": [
+          4.65966796875,
+          6.6533203125,
+          7.1689453125
+        ]
+      },
+      {
+        "variant": "wipe",
+        "repeat": 8,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/release/tlsed-inner-scan-audit-wipe",
+          "bench",
+          "8"
+        ],
+        "loadavg_before": [
+          4.65966796875,
+          6.6533203125,
+          7.1689453125
+        ],
+        "loadavg_after": [
+          4.65966796875,
+          6.6533203125,
+          7.1689453125
+        ]
+      },
+      {
+        "variant": "wipe_scan",
+        "repeat": 9,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan/target/release/tlsed-inner-scan-audit-wipe_scan",
+          "bench",
+          "9"
+        ],
+        "loadavg_before": [
+          4.65966796875,
+          6.6533203125,
+          7.1689453125
+        ],
+        "loadavg_after": [
+          4.65966796875,
+          6.6533203125,
+          7.1689453125
+        ]
+      },
+      {
+        "variant": "awslc",
+        "repeat": 9,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/awslc/target/release/tlsed-inner-scan-audit-awslc",
+          "bench",
+          "9"
+        ],
+        "loadavg_before": [
+          4.65966796875,
+          6.6533203125,
+          7.1689453125
+        ],
+        "loadavg_after": [
+          4.4462890625,
+          6.57568359375,
+          7.13818359375
+        ]
+      },
+      {
+        "variant": "wipe_scan_awslc",
+        "repeat": 9,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe_scan_awslc/target/release/tlsed-inner-scan-audit-wipe_scan_awslc",
+          "bench",
+          "9"
+        ],
+        "loadavg_before": [
+          4.4462890625,
+          6.57568359375,
+          7.13818359375
+        ],
+        "loadavg_after": [
+          4.4462890625,
+          6.57568359375,
+          7.13818359375
+        ]
+      },
+      {
+        "variant": "production_copy",
+        "repeat": 9,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+          "bench",
+          "9"
+        ],
+        "loadavg_before": [
+          4.4462890625,
+          6.57568359375,
+          7.13818359375
+        ],
+        "loadavg_after": [
+          4.41015625,
+          6.53271484375,
+          7.11962890625
+        ]
+      },
+      {
+        "variant": "wipe",
+        "repeat": 9,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/wipe/target/release/tlsed-inner-scan-audit-wipe",
+          "bench",
+          "9"
+        ],
+        "loadavg_before": [
+          4.41015625,
+          6.53271484375,
+          7.11962890625
+        ],
+        "loadavg_after": [
+          4.41015625,
+          6.53271484375,
+          7.11962890625
+        ]
+      },
+      {
+        "variant": "scan",
+        "repeat": 9,
+        "argv": [
+          "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/scan/target/release/tlsed-inner-scan-audit-scan",
+          "bench",
+          "9"
+        ],
+        "loadavg_before": [
+          4.41015625,
+          6.53271484375,
+          7.11962890625
+        ],
+        "loadavg_after": [
+          4.296875,
+          6.4736328125,
+          7.09521484375
+        ]
+      }
+    ],
+    "profiles": [
+      {
+        "variant": "wipe_scan_awslc",
+        "case": "padmax",
+        "sample_exit": 0,
+        "driver_exit": 0,
+        "driver_stderr": "padmax: 5165 batches of 512",
+        "file": "profile-wipe_scan_awslc-padmax.sample.txt",
+        "loadavg_before": [
+          4.27294921875,
+          6.43212890625,
+          7.07666015625
+        ]
+      },
+      {
+        "variant": "wipe_scan_awslc",
+        "case": "tag_long",
+        "sample_exit": 0,
+        "driver_exit": 0,
+        "driver_stderr": "tag_long: 4193 batches of 512",
+        "file": "profile-wipe_scan_awslc-tag_long.sample.txt",
+        "loadavg_before": [
+          4.2509765625,
+          6.3916015625,
+          7.05859375
+        ]
+      },
+      {
+        "variant": "wipe_scan_awslc",
+        "case": "inner_padmax",
+        "sample_exit": 0,
+        "driver_exit": 0,
+        "driver_stderr": "inner_padmax: 4822 batches of 512",
+        "file": "profile-wipe_scan_awslc-inner_padmax.sample.txt",
+        "loadavg_before": [
+          4.390625,
+          6.384765625,
+          7.05224609375
+        ]
+      }
+    ],
+    "variant_binary_sha256": {
+      "production_copy": "95b6aeca1cd42aa768d229e91cbb25cb6f7bb9c7b67377d8aee9317e7a7592aa",
+      "wipe": "0cf0d4aeadc0aba045efc7a18a5b4f671e09dba2d4da15ade74b627d37c88067",
+      "scan": "d31ede58f346b33227977e690d96a7889a5416e32136d4e2e91fe2d0ca22b0c0",
+      "wipe_scan": "fd2f77a74ef3dfa60e74bade44ea64c3b5fe9e6f9ff9d5c46285442b9bef3493",
+      "awslc": "c5f383c6acf2f2acc6de8bcf1f38cd3203d14364d7423170d8988fe4f8fa1816",
+      "wipe_scan_awslc": "2fe2fc9ccc89ac7899f69f2aa12e307b437e23e80de68abd779601864bb5f3f2"
+    }
+  },
+  "host": {
+    "cpu": "Apple M5",
+    "macos": "27.2",
+    "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+    "power": "Now drawing from 'Battery Power'"
+  },
+  "client_tests": {
+    "production": {
+      "exit": 0,
+      "passed": 26
+    },
+    "wipe_scan_awslc": {
+      "exit": 0,
+      "passed": 26
+    }
+  }
+}

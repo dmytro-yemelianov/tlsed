@@ -1,0 +1,171 @@
+Analysis of sampling tlsed-inner-scan-audit (pid 30986) every 1 millisecond
+Process:         tlsed-inner-scan-audit [30986]
+Path:            /Users/USER/*/tlsed-inner-scan-audit
+Load Address:    0x102a64000
+Identifier:      tlsed-inner-scan-audit
+Version:         0
+Code Type:       ARM64
+Platform:        macOS
+Parent Process:  Python [24322]
+Target Type:     live task
+
+Date/Time:       2026-10-14 19:42:56.019 +0300
+Launch Time:     2026-10-14 19:42:54.985 +0300
+OS Version:      macOS 27.2 (26B5086k)
+Report Version:  7
+Analysis Tool:   /usr/bin/sample
+
+Physical footprint:         12.2M
+Physical footprint (peak):  12.5M
+Idle exit:                  untracked
+----
+
+Call graph:
+    1649 Thread_36425082   DispatchQueue_1: com.apple.main-thread  (serial)
+      1649 start  (in dyld) + 6688  [0x1843f7ef0]
+        1649 main  (in tlsed-inner-scan-audit) + 52  [0x102a9a984]
+          1649 _RNvNtCs82bWklYMk3w_3std2rt19lang_start_internal  (in tlsed-inner-scan-audit) + 932  [0x102a8bbb4]
+            1649 _RNCINvNtCs82bWklYMk3w_3std2rt10lang_startuE0CsipSaOuLXQVW_22tlsed_inner_scan_audit  (in tlsed-inner-scan-audit) + 16  [0x102a96668]
+              1649 _RINvNtNtCs82bWklYMk3w_3std3sys9backtrace28___rust_begin_short_backtraceFEuuECsipSaOuLXQVW_22tlsed_inner_scan_audit  (in tlsed-inner-scan-audit) + 12  [0x102a9649c]
+                1649 _RNvCsipSaOuLXQVW_22tlsed_inner_scan_audit4main  (in tlsed-inner-scan-audit) + 6152  [0x102a97e98]
+                  1644 _RNvCsipSaOuLXQVW_22tlsed_inner_scan_audit8run_case  (in tlsed-inner-scan-audit) + 724  [0x102a99154]
+                  + 942 _RNvMs0_NtCskTyc944OSEW_8tls_core9protectedINtB5_15ProtectedReaderNtCskEdrCRZwZyr_16tls_crypto_awslc8AwsLcKeyE4openCsipSaOuLXQVW_22tlsed_inner_scan_audit  (in tlsed-inner-scan-audit) + 724  [0x102a9a0e4]
+                  + ! 676 _RNvXCskEdrCRZwZyr_16tls_crypto_awslcNtB2_8AwsLcKeyNtCshnWrpmuUAe7_10tls_crypto7AeadKey13open_in_place  (in tlsed-inner-scan-audit) + 356,352,...  [0x102a95df0,0x102a95dec,...]
+                  + ! 266 _RNvXCskEdrCRZwZyr_16tls_crypto_awslcNtB2_8AwsLcKeyNtCshnWrpmuUAe7_10tls_crypto7AeadKey13open_in_place  (in tlsed-inner-scan-audit) + 472  [0x102a95e64]
+                  + !   223 aws_lc_0_46_0_EVP_AEAD_CTX_open  (in tlsed-inner-scan-audit) + 408  [0x102a9c464]
+                  + !   | 223 aead_aes_gcm_open_gather  (in tlsed-inner-scan-audit) + 36  [0x102a9ebc0]
+                  + !   |   216 aead_aes_gcm_open_gather_impl  (in tlsed-inner-scan-audit) + 684  [0x102a9f250]
+                  + !   |   + 214 aws_lc_0_46_0_CRYPTO_gcm128_decrypt_ctr32  (in tlsed-inner-scan-audit) + 868  [0x102a9deec]
+                  + !   |   + ! 214 aws_lc_0_46_0_aesv8_gcm_8x_dec_128  (in tlsed-inner-scan-audit) + 1752,1876,...  [0x102aaa188,0x102aaa204,...]
+                  + !   |   + 1 aws_lc_0_46_0_CRYPTO_gcm128_decrypt_ctr32  (in tlsed-inner-scan-audit) + 516  [0x102a9dd8c]
+                  + !   |   + ! 1 aws_lc_0_46_0_aes_hw_encrypt  (in tlsed-inner-scan-audit) + 44  [0x102aa84ac]
+                  + !   |   + 1 aws_lc_0_46_0_CRYPTO_gcm128_decrypt_ctr32  (in tlsed-inner-scan-audit) + 304  [0x102a9dcb8]
+                  + !   |   3 aead_aes_gcm_open_gather_impl  (in tlsed-inner-scan-audit) + 116,20  [0x102a9f018,0x102a9efb8]
+                  + !   |   2 aead_aes_gcm_open_gather_impl  (in tlsed-inner-scan-audit) + 168  [0x102a9f04c]
+                  + !   |   + 1 DYLD-STUB$$memcpy  (in tlsed-inner-scan-audit) + 0  [0x102b16924]
+                  + !   |   + 1 _platform_memmove  (in libsystem_platform.dylib) + 180  [0x1847dae14]
+                  + !   |   1 aead_aes_gcm_open_gather_impl  (in tlsed-inner-scan-audit) + 188  [0x102a9f060]
+                  + !   |   + 1 aws_lc_0_46_0_CRYPTO_gcm128_setiv  (in tlsed-inner-scan-audit) + 276  [0x102a9d080]
+                  + !   |   +   1 aws_lc_0_46_0_aes_hw_encrypt  (in tlsed-inner-scan-audit) + 0  [0x102aa8480]
+                  + !   |   1 aws_lc_0_46_0_ERR_put_error  (in tlsed-inner-scan-audit) + 240  [0x102a9aa98]
+                  + !   26 aws_lc_0_46_0_EVP_AEAD_CTX_open  (in tlsed-inner-scan-audit) + 112  [0x102a9c33c]
+                  + !   | 25 _platform_memset  (in libsystem_platform.dylib) + 140,148  [0x1847dab1c,0x1847dab24]
+                  + !   | 1 DYLD-STUB$$bzero  (in tlsed-inner-scan-audit) + 4  [0x102b16838]
+                  + !   16 aws_lc_0_46_0_EVP_AEAD_CTX_open  (in tlsed-inner-scan-audit) + 468  [0x102a9c4a0]
+                  + !   | 16 _platform_memset  (in libsystem_platform.dylib) + 140  [0x1847dab1c]
+                  + !   1 aws_lc_0_46_0_EVP_AEAD_CTX_open  (in tlsed-inner-scan-audit) + 296  [0x102a9c3f4]
+                  + 638 _RNvMs0_NtCskTyc944OSEW_8tls_core9protectedINtB5_15ProtectedReaderNtCskEdrCRZwZyr_16tls_crypto_awslc8AwsLcKeyE4openCsipSaOuLXQVW_22tlsed_inner_scan_audit  (in tlsed-inner-scan-audit) + 868  [0x102a9a174]
+                  + ! 635 _RINvMs0_NtCskTyc944OSEW_8tls_core9protectedINtB6_15ProtectedReaderNtCskEdrCRZwZyr_16tls_crypto_awslc8AwsLcKeyE4failINtNtB8_4wire5ParseNtB6_12OpenedRecordEECsipSaOuLXQVW_22tlsed_inner_scan_audit  (in tlsed-inner-scan-audit) + 40,36,...  [0x102a9615c,0x102a96158,...]
+                  + ! 3 _RINvMs0_NtCskTyc944OSEW_8tls_core9protectedINtB6_15ProtectedReaderNtCskEdrCRZwZyr_16tls_crypto_awslc8AwsLcKeyE4failINtNtB8_4wire5ParseNtB6_12OpenedRecordEECsipSaOuLXQVW_22tlsed_inner_scan_audit  (in tlsed-inner-scan-audit) + 120  [0x102a961ac]
+                  + !   2 _xzm_free_tc  (in libsystem_malloc.dylib) + 260  [0x1845f3bb8]
+                  + !   1 aws_lc_0_46_0_EVP_AEAD_CTX_free  (in tlsed-inner-scan-audit) + 40  [0x102a9c134]
+                  + !     1 aead_aes_gcm_cleanup  (in tlsed-inner-scan-audit) + 0  [0x102a9eb64]
+                  + 63 _RNvMs0_NtCskTyc944OSEW_8tls_core9protectedINtB5_15ProtectedReaderNtCskEdrCRZwZyr_16tls_crypto_awslc8AwsLcKeyE4openCsipSaOuLXQVW_22tlsed_inner_scan_audit  (in tlsed-inner-scan-audit) + 676  [0x102a9a0b4]
+                  + ! 63 _platform_memmove  (in libsystem_platform.dylib) + 88,100,...  [0x1847dadb8,0x1847dadc4,...]
+                  + 1 _RNvMs0_NtCskTyc944OSEW_8tls_core9protectedINtB5_15ProtectedReaderNtCskEdrCRZwZyr_16tls_crypto_awslc8AwsLcKeyE4openCsipSaOuLXQVW_22tlsed_inner_scan_audit  (in tlsed-inner-scan-audit) + 228  [0x102a99ef4]
+                  5 _RNvCsipSaOuLXQVW_22tlsed_inner_scan_audit8run_case  (in tlsed-inner-scan-audit) + 556  [0x102a990ac]
+                    4 _RNvNtNtCshsbo2FMSqcl_9aws_lc_rs4aead7aes_gcm13init_128_aead  (in tlsed-inner-scan-audit) + 92  [0x102a95c54]
+                    ! 4 aws_lc_0_46_0_EVP_AEAD_CTX_init  (in tlsed-inner-scan-audit) + 60  [0x102a9c09c]
+                    !   4 aead_aes_gcm_init  (in tlsed-inner-scan-audit) + 176  [0x102a9eb4c]
+                    !     2 aws_lc_0_46_0_aes_ctr_set_key  (in tlsed-inner-scan-audit) + 36,312  [0x102a9c598,0x102a9c6ac]
+                    !     1 aws_lc_0_46_0_aes_ctr_set_key  (in tlsed-inner-scan-audit) + 328  [0x102a9c6bc]
+                    !     : 1 aws_lc_0_46_0_aes_hw_set_encrypt_key  (in tlsed-inner-scan-audit) + 0  [0x102aa81e0]
+                    !     1 aws_lc_0_46_0_aes_ctr_set_key  (in tlsed-inner-scan-audit) + 404  [0x102a9c708]
+                    !       1 aws_lc_0_46_0_aes_hw_encrypt  (in tlsed-inner-scan-audit) + 4  [0x102aa8484]
+                    1 _RNvNtNtCshsbo2FMSqcl_9aws_lc_rs4aead7aes_gcm13init_128_aead  (in tlsed-inner-scan-audit) + 48  [0x102a95c28]
+                      1 aws_lc_0_46_0_OPENSSL_malloc  (in tlsed-inner-scan-audit) + 92  [0x102a9f434]
+                        1 _xzm_xzone_malloc_tiny  (in libsystem_malloc.dylib) + 244  [0x1845ead38]
+
+Total number in stack (recursive counted multiple, when >=5):
+
+Sort by top of stack, same collapsed (when >= 5):
+        _RNvXCskEdrCRZwZyr_16tls_crypto_awslcNtB2_8AwsLcKeyNtCshnWrpmuUAe7_10tls_crypto7AeadKey13open_in_place  (in tlsed-inner-scan-audit)        676
+        _RINvMs0_NtCskTyc944OSEW_8tls_core9protectedINtB6_15ProtectedReaderNtCskEdrCRZwZyr_16tls_crypto_awslc8AwsLcKeyE4failINtNtB8_4wire5ParseNtB6_12OpenedRecordEECsipSaOuLXQVW_22tlsed_inner_scan_audit  (in tlsed-inner-scan-audit)        635
+        aws_lc_0_46_0_aesv8_gcm_8x_dec_128  (in tlsed-inner-scan-audit)        214
+        _platform_memmove  (in libsystem_platform.dylib)        64
+        _platform_memset  (in libsystem_platform.dylib)        41
+
+Binary Images:
+       0x102a64000 -        0x102b29503 +tlsed-inner-scan-audit (0) <833C5FE6-EC54-33DB-A2AA-02078DAF1099> /Users/*/tlsed-inner-scan-audit
+       0x184344000 -        0x1843935f7  libobjc.A.dylib (973.1) <EEE430DF-FFB9-374D-BBE5-ED51CD0437B9> /usr/lib/libobjc.A.dylib
+       0x184394000 -        0x18439e23f  libsharedcache.dylib (0) <D957C98A-41D2-3218-BAD7-BF00A7E6BBD2> /usr/lib/libsharedcache.dylib
+       0x18439f000 -        0x1843c5e4b  libdyld.dylib (27102) <87F56248-B6DD-3F09-8C5C-9E890AA91F3F> /usr/lib/system/libdyld.dylib
+       0x1843c6000 -        0x18448599f  dyld (1.0.0 - 27102) <93AA5F3B-B81F-3596-9C18-B1652592D239> /usr/lib/dyld
+       0x184486000 -        0x18448901f  libsystem_blocks.dylib (98.1) <88F49D32-213E-3F6A-9E84-2AAC9C867DD1> /usr/lib/system/libsystem_blocks.dylib
+       0x18448a000 -        0x1844df127  libxpc.dylib (3298.40.20) <322DE992-D1C8-3F90-898F-A5A76C9754A6> /usr/lib/system/libxpc.dylib
+       0x1844e0000 -        0x18450005b  libsystem_trace.dylib (1966.40.15) <E30E62D7-CCBB-3348-B126-B6EB16E78FFF> /usr/lib/system/libsystem_trace.dylib
+       0x184501000 -        0x1845b65df  libcorecrypto.dylib (2109.40.15) <1D4F7B5A-7738-3CBA-B297-E5468D4E32BD> /usr/lib/system/libcorecrypto.dylib
+       0x1845b7000 -        0x18460d0d7  libsystem_malloc.dylib (886.40.15) <3B469040-D8B6-3A31-B624-8AEC27331D79> /usr/lib/system/libsystem_malloc.dylib
+       0x18460e000 -        0x1846541df  libdispatch.dylib (1605.40.4) <17137F9A-DDBB-3797-A71A-A5668FF4B7D3> /usr/lib/system/libdispatch.dylib
+       0x184655000 -        0x184657d2b  libsystem_featureflags.dylib (111) <A2E81F70-E715-3BD4-AE2C-88B6775AA3C1> /usr/lib/system/libsystem_featureflags.dylib
+       0x184658000 -        0x1846dacd3  libsystem_c.dylib (1786.40.6) <20C4C15A-59F7-39D5-B1EC-C2CEDEBEBBC5> /usr/lib/system/libsystem_c.dylib
+       0x1846db000 -        0x184770033  libc++.1.dylib (2200.32) <D58D7794-452C-387F-AA7B-1279ABCCDE1F> /usr/lib/libc++.1.dylib
+       0x184771000 -        0x18478aeff  libc++abi.dylib (2200.32) <FFD6E416-A3BA-356B-9D99-0B1E4876E86B> /usr/lib/libc++abi.dylib
+       0x18478b000 -        0x1847c9a6b  libsystem_kernel.dylib (13432.40.144.0.1) <856A82F2-A17D-34A7-A639-8AF3C4BC0BEB> /usr/lib/system/libsystem_kernel.dylib
+       0x1847ca000 -        0x1847d692b  libsystem_pthread.dylib (553.40.2) <BA5937CB-2B50-38DB-9C70-DF124EA1E6C6> /usr/lib/system/libsystem_pthread.dylib
+       0x1847d7000 -        0x1847e04f3  libsystem_platform.dylib (402.40.3) <627A1841-6911-3936-A05A-D8A014FF4D29> /usr/lib/system/libsystem_platform.dylib
+       0x1847e1000 -        0x18480f903  libsystem_info.dylib (603) <93EE5DAC-F769-3480-AC28-19E0CBD3D95C> /usr/lib/system/libsystem_info.dylib
+       0x188943000 -        0x18894cb13  libsystem_darwin.dylib (1786.40.6) <EB9554F3-1C51-3488-AC65-80466D0541BC> /usr/lib/system/libsystem_darwin.dylib
+       0x188d9e000 -        0x188dafb8b  libsystem_notify.dylib (368) <6B278BFE-A3CF-39EC-96E2-42D35E958273> /usr/lib/system/libsystem_notify.dylib
+       0x18af48000 -        0x18af62e13  libsystem_networkextension.dylib (2365.40.1) <D8F7CE37-6DAD-3DDC-B6AD-8CDC938C7310> /usr/lib/system/libsystem_networkextension.dylib
+       0x18aff0000 -        0x18b007277  libsystem_asl.dylib (409.40.3) <9BCD0B76-CCF0-3A3B-9373-C9C9FAC5DF94> /usr/lib/system/libsystem_asl.dylib
+       0x18bf40000 -        0x18bf40f2f  libobjcMsgSend.dylib (973.1) <8949D017-E290-3F7F-926A-A8D904D9A89C> /usr/lib/objc/libobjcMsgSend.dylib
+       0x18d101000 -        0x18d108edf  libsystem_symptoms.dylib (2394.40.15) <B84C1D38-05A4-3C42-95A2-EA5240B161B0> /usr/lib/system/libsystem_symptoms.dylib
+       0x1913a0000 -        0x1913dbbd7  libsystem_containermanager.dylib (833.40.14) <D2F270DA-4DC6-3E1E-A10C-9243D100EE19> /usr/lib/system/libsystem_containermanager.dylib
+       0x192b19000 -        0x192b1d27f  libsystem_configuration.dylib (1452) <1F9EFB9D-F3D3-3601-BF7B-8829E97DB652> /usr/lib/system/libsystem_configuration.dylib
+       0x192b1e000 -        0x192b24e03  libsystem_sandbox.dylib (3051.40.70) <70BB3F15-BFB0-3CD2-83AC-AFC74D65CDBF> /usr/lib/system/libsystem_sandbox.dylib
+       0x193f40000 -        0x193f40f2f  libobjcMsgSend1.dylib (973.1) <4807242A-F48E-300E-A042-DDA9AA8AAB43> /usr/lib/objc/libobjcMsgSend1.dylib
+       0x194700000 -        0x194702f73  libquarantine.dylib (217.40.3) <B0428D79-32B7-30F5-984B-9F1ECA33D49E> /usr/lib/system/libquarantine.dylib
+       0x194e12000 -        0x194e181e7  libsystem_coreservices.dylib (203) <D6199F02-F4E8-3F89-8E06-F451C14CFF5C> /usr/lib/system/libsystem_coreservices.dylib
+       0x1953e2000 -        0x19541fb67  libsystem_m.dylib (3326.40.2) <6907B942-0566-3083-8E80-BD89EDD3681D> /usr/lib/system/libsystem_m.dylib
+       0x195421000 -        0x1954244f7  libmacho.dylib (27102) <61E4A167-56EB-3C19-B861-70DC3263BC89> /usr/lib/system/libmacho.dylib
+       0x19543e000 -        0x19544a707  libcommonCrypto.dylib (600041.40.2) <46FC0832-D242-34FE-A95B-F48284B91063> /usr/lib/system/libcommonCrypto.dylib
+       0x19544b000 -        0x195454c87  libunwind.dylib (2200.5) <0C7E02BA-D332-36C8-A531-DD450D410578> /usr/lib/system/libunwind.dylib
+       0x19545c000 -        0x1954667ab  libcopyfile.dylib (260.40.3) <96DDFE66-08D1-3235-8D0B-8A8CD32451B7> /usr/lib/system/libcopyfile.dylib
+       0x195467000 -        0x19546a8bf  libcompiler_rt.dylib (103.4) <AF72D893-C2E7-3C6A-86A0-0E813709D724> /usr/lib/system/libcompiler_rt.dylib
+       0x19546b000 -        0x19547007f  libsystem_collections.dylib (1786.40.6) <5B9756CB-7BBF-3B63-BFFB-CE2C8389CE57> /usr/lib/system/libsystem_collections.dylib
+       0x195471000 -        0x195473f1f  libsystem_secinit.dylib (182) <E4332B63-6146-3A2B-9595-D04BCD353EE5> /usr/lib/system/libsystem_secinit.dylib
+       0x195474000 -        0x195476987  libremovefile.dylib (96.40.2) <04D9B42E-3A44-3640-B04A-02C2305D39F7> /usr/lib/system/libremovefile.dylib
+       0x195477000 -        0x195477e27  libkeymgr.dylib (31) <5635024C-8AC4-3FFA-9352-93E2C6F16FA3> /usr/lib/system/libkeymgr.dylib
+       0x195478000 -        0x195480af7  libsystem_dnssd.dylib (3111.40.40) <C425313B-373E-37CE-BBA4-5387E72E25E8> /usr/lib/system/libsystem_dnssd.dylib
+       0x195481000 -        0x195485f1b  libcache.dylib (95) <E0658B01-A7B7-3A74-80A0-5F987573BE59> /usr/lib/system/libcache.dylib
+       0x195486000 -        0x1954878f3  libSystem.B.dylib (1359.40.3) <515E755D-71CD-34B1-B944-C5AB816A45E0> /usr/lib/libSystem.B.dylib
+       0x19bf40000 -        0x19bf40f2f  libobjcMsgSend2.dylib (973.1) <CFD8218C-D12A-3EA5-A75C-A6315D45E654> /usr/lib/objc/libobjcMsgSend2.dylib
+       0x1a3f40000 -        0x1a3f40f2f  libobjcMsgSend3.dylib (973.1) <34A74D54-DF28-3864-995B-06D1BBDFCE32> /usr/lib/objc/libobjcMsgSend3.dylib
+       0x1abf40000 -        0x1abf40f2f  libobjcMsgSend4.dylib (973.1) <FBFD0AC0-0A4A-3024-9129-9FD614CA6710> /usr/lib/objc/libobjcMsgSend4.dylib
+       0x1b3f40000 -        0x1b3f40f2f  libobjcMsgSend5.dylib (973.1) <55D83FD3-87EF-3031-9E36-9EFC403A722D> /usr/lib/objc/libobjcMsgSend5.dylib
+       0x1bbf40000 -        0x1bbf40f2f  libobjcMsgSend6.dylib (973.1) <146D2FAE-A125-32B7-84BF-4A547ABC6806> /usr/lib/objc/libobjcMsgSend6.dylib
+       0x1c3f40000 -        0x1c3f40f2f  libobjcMsgSend7.dylib (973.1) <0A6E9A95-9E27-3FC0-98F4-C2CD388BFD78> /usr/lib/objc/libobjcMsgSend7.dylib
+       0x1cbf40000 -        0x1cbf40f2f  libobjcMsgSend8.dylib (973.1) <A64095BC-6FA7-3FA3-8367-91C282B907B2> /usr/lib/objc/libobjcMsgSend8.dylib
+       0x1d3f40000 -        0x1d3f40f2f  libobjcMsgSend9.dylib (973.1) <B79A1FCA-4DC2-32D9-AD93-8DCF7D529AC2> /usr/lib/objc/libobjcMsgSend9.dylib
+       0x1dbf40000 -        0x1dbf40f2f  libobjcMsgSend10.dylib (973.1) <1F2A814C-16E2-3AA6-90D2-81A5DF193402> /usr/lib/objc/libobjcMsgSend10.dylib
+       0x1e3f40000 -        0x1e3f40f2f  libobjcMsgSend11.dylib (973.1) <5D3A8E17-5B42-37E0-A77A-491156D417E0> /usr/lib/objc/libobjcMsgSend11.dylib
+       0x20bf40000 -        0x20bf40f2f  libobjcMsgSend12.dylib (973.1) <927B3C03-AFB4-34DD-B9AB-62BC24113DBA> /usr/lib/objc/libobjcMsgSend12.dylib
+       0x213f40000 -        0x213f40f2f  libobjcMsgSend13.dylib (973.1) <7EE5174C-043C-3C39-A6CC-82AD8057F9DF> /usr/lib/objc/libobjcMsgSend13.dylib
+       0x21bf40000 -        0x21bf40f2f  libobjcMsgSend14.dylib (973.1) <7A829591-8804-3081-924E-AF9E9ED264D8> /usr/lib/objc/libobjcMsgSend14.dylib
+       0x223f40000 -        0x223f40f2f  libobjcMsgSend15.dylib (973.1) <8B4CE077-0524-3BC3-BB93-5DF636A30F11> /usr/lib/objc/libobjcMsgSend15.dylib
+       0x22bf40000 -        0x22bf40f2f  libobjcMsgSend16.dylib (973.1) <BFEC82F0-FBB1-3251-B677-1C8100E0E745> /usr/lib/objc/libobjcMsgSend16.dylib
+       0x233f40000 -        0x233f40f2f  libobjcMsgSend17.dylib (973.1) <33BA8024-06A2-3E70-91D0-C5B452C2F32C> /usr/lib/objc/libobjcMsgSend17.dylib
+       0x23bf40000 -        0x23bf40f2f  libobjcMsgSend18.dylib (973.1) <7813827B-986A-3B81-A169-1CA5F4C1E1B2> /usr/lib/objc/libobjcMsgSend18.dylib
+       0x243f40000 -        0x243f40f2f  libobjcMsgSend19.dylib (973.1) <C038D350-4D38-3CB1-A3D0-760342CDFC32> /usr/lib/objc/libobjcMsgSend19.dylib
+       0x24bf40000 -        0x24bf40f2f  libobjcMsgSend20.dylib (973.1) <3C046988-07DD-3686-937C-0C5718A28696> /usr/lib/objc/libobjcMsgSend20.dylib
+       0x253f40000 -        0x253f40f2f  libobjcMsgSend21.dylib (973.1) <E76890F5-B25A-3D21-9915-C78B36681E48> /usr/lib/objc/libobjcMsgSend21.dylib
+       0x25bf40000 -        0x25bf40f2f  libobjcMsgSend22.dylib (973.1) <B53BAAF7-3559-3336-8BBF-A4113EA6A526> /usr/lib/objc/libobjcMsgSend22.dylib
+       0x263f40000 -        0x263f40f2f  libobjcMsgSend23.dylib (973.1) <95D32998-8790-3B4A-B2A5-674BA7EB301C> /usr/lib/objc/libobjcMsgSend23.dylib
+       0x26bf40000 -        0x26bf40f2f  libobjcMsgSend24.dylib (973.1) <74FEE64F-5FDA-32A8-8F68-7D02848A0314> /usr/lib/objc/libobjcMsgSend24.dylib
+       0x273f40000 -        0x273f40f2f  libobjcMsgSend25.dylib (973.1) <B138D6B0-B600-3353-9340-D8D1831D9B73> /usr/lib/objc/libobjcMsgSend25.dylib
+       0x28bf40000 -        0x28bf40f2f  libobjcMsgSend26.dylib (973.1) <7FBB8A5A-F396-35D0-8669-A83D27FE8DA4> /usr/lib/objc/libobjcMsgSend26.dylib
+       0x293f40000 -        0x293f40f2f  libobjcMsgSend27.dylib (973.1) <86BF6B6D-4D58-3CC2-A62E-A383D0A16300> /usr/lib/objc/libobjcMsgSend27.dylib
+       0x29bf40000 -        0x29bf40f2f  libobjcMsgSend28.dylib (973.1) <51EB05F9-6569-35F1-BAD4-25BF26271403> /usr/lib/objc/libobjcMsgSend28.dylib
+       0x2a3f40000 -        0x2a3f40f2f  libobjcMsgSend29.dylib (973.1) <EA605B4C-BDCC-32B2-A3A4-9CB10DB3C7D0> /usr/lib/objc/libobjcMsgSend29.dylib
+       0x2abf40000 -        0x2abf40f2f  libobjcMsgSend30.dylib (973.1) <04E81205-1445-3CFF-8749-8657AF1AA81A> /usr/lib/objc/libobjcMsgSend30.dylib
+       0x2b38ee000 -        0x2b38f4fe5  libRosetta.dylib (385) <5103BF9F-FB6E-3E76-8F7D-8AF8EE30C7D2> /usr/lib/libRosetta.dylib
+       0x2b3f40000 -        0x2b3f40f2f  libobjcMsgSend31.dylib (973.1) <C1272557-49AB-3E92-BE44-683E183F56A9> /usr/lib/objc/libobjcMsgSend31.dylib
+       0x2b4745000 -        0x2b474875b  libsystem_darwindirectory.dylib (129.0.1) <E4534D55-FA26-35EC-B3C8-650AB80B6250> /usr/lib/system/libsystem_darwindirectory.dylib
+       0x2b4749000 -        0x2b4753eaf  libsystem_eligibility.dylib (446.40.34.501.1) <6809A567-CC29-3330-B0C5-FBED3ABA052E> /usr/lib/system/libsystem_eligibility.dylib
+       0x2b4754000 -        0x2b475d42b  libsystem_sanitizers.dylib (32) <2406158D-EC09-3689-A1C2-AF7BBF4649DC> /usr/lib/system/libsystem_sanitizers.dylib
+       0x2b475e000 -        0x2b475ea1b  libsystem_trial.dylib (511.1.2) <9C153026-D866-3A6B-86D1-8BA75A2523E7> /usr/lib/system/libsystem_trial.dylib
+       0x2bbf40000 -        0x2bbf40f2f  libobjcMsgSend32.dylib (973.1) <BFFD3798-B0F7-3758-B668-53C0C500A985> /usr/lib/objc/libobjcMsgSend32.dylib
+       0x2c3f40000 -        0x2c3f40f2f  libobjcMsgSend33.dylib (973.1) <0DBA794E-6D22-3F41-8AB6-9CB020794E83> /usr/lib/objc/libobjcMsgSend33.dylib
+       0x2cbf40000 -        0x2cbf40f2f  libobjcMsgSend34.dylib (973.1) <CAA4DBD6-1687-3389-9538-C2B76FDDBC80> /usr/lib/objc/libobjcMsgSend34.dylib
+       0x2d3f40000 -        0x2d3f40f2f  libobjcMsgSend35.dylib (973.1) <74469BCD-F55B-3E3B-9087-2919904135CA> /usr/lib/objc/libobjcMsgSend35.dylib

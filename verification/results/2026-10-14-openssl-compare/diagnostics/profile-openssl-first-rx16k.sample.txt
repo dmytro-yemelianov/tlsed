@@ -1,0 +1,363 @@
+Analysis of sampling openssl-compare (pid 16435) every 1 millisecond
+Process:         openssl-compare [16435]
+Path:            /Users/USER/*/openssl-compare
+Load Address:    0x104538000
+Identifier:      openssl-compare
+Version:         0
+Code Type:       ARM64
+Platform:        macOS
+Parent Process:  zsh [11678]
+Target Type:     live task
+
+Date/Time:       2026-10-14 22:06:30.603 +0300
+Launch Time:     2026-10-14 22:06:29.539 +0300
+OS Version:      macOS 27.2 (26B5086k)
+Report Version:  7
+Analysis Tool:   /usr/bin/sample
+
+Physical footprint:         3296K
+Physical footprint (peak):  3296K
+Idle exit:                  untracked
+----
+
+Call graph:
+    1554 Thread_37677504   DispatchQueue_1: com.apple.main-thread  (serial)
+      1554 start  (in dyld) + 6688  [0x1843f7ef0]
+        1554 main  (in openssl-compare) + 52  [0x10456cb98]
+          1554 _RNvNtCs82bWklYMk3w_3std2rt19lang_start_internal  (in openssl-compare) + 932  [0x1045f1288]
+            1554 _RNCINvNtCs82bWklYMk3w_3std2rt10lang_startINtNtCs8Mbv00yxnRz_4core6result6ResultuINtNtCshxvaOLs88l5_5alloc5boxed3BoxDNtNtBI_5error5ErrorEL_EEE0Cs38PSYICUuD2_15openssl_compare  (in openssl-compare) + 24  [0x10454e5dc]
+              1554 _RINvNtNtCs82bWklYMk3w_3std3sys9backtrace28___rust_begin_short_backtraceFEINtNtCs8Mbv00yxnRz_4core6result6ResultuINtNtCshxvaOLs88l5_5alloc5boxed3BoxDNtNtB1e_5error5ErrorEL_EEB19_ECs38PSYICUuD2_15openssl_compare  (in openssl-compare) + 12  [0x10454e314]
+                1554 _RNvCs38PSYICUuD2_15openssl_compare4main  (in openssl-compare) + 3520  [0x104550450]
+                  911 _RNvCs38PSYICUuD2_15openssl_compare7measure  (in openssl-compare) + 3384  [0x104553580]
+                  + 843 _RNvMs6_Cs38PSYICUuD2_15openssl_compareNtB5_9Transport4pump  (in openssl-compare) + 248  [0x10455f750]
+                  + ! 843 _RNvMs3_Cs38PSYICUuD2_15openssl_compareNtB5_6Client4step  (in openssl-compare) + 388  [0x10455acec]
+                  + !   743 oc_drive  (in openssl-compare) + 140  [0x10461c724]
+                  + !   : 743 SSL_peek  (in libssl.3.dylib) + 28  [0x104997f30]
+                  + !   :   742 ssl3_read_internal  (in libssl.3.dylib) + 136  [0x10498cae0]
+                  + !   :   | 738 ssl3_read_bytes  (in libssl.3.dylib) + 488  [0x1049d8a60]
+                  + !   :   | + 736 tls_read_record  (in libssl.3.dylib) + 100  [0x1049ddb00]
+                  + !   :   | + ! 652 tls_get_more_records  (in libssl.3.dylib) + 1240  [0x1049dd208]
+                  + !   :   | + ! : 626 tls13_cipher  (in libssl.3.dylib) + 1096  [0x1049db180]
+                  + !   :   | + ! : | 625 EVP_DecryptUpdate  (in libcrypto.3.dylib) + 156  [0x10531881c]
+                  + !   :   | + ! : | + 624 ossl_gcm_stream_update  (in libcrypto.3.dylib) + 84  [0x105403028]
+                  + !   :   | + ! : | + ! 623 gcm_cipher_internal  (in libcrypto.3.dylib) + 400  [0x1054031fc]
+                  + !   :   | + ! : | + ! : 620 generic_aes_gcm_cipher_update  (in libcrypto.3.dylib) + 380  [0x1053f5218]
+                  + !   :   | + ! : | + ! : | 620 armv8_aes_gcm_decrypt  (in libcrypto.3.dylib) + 88  [0x1053f4f58]
+                  + !   :   | + ! : | + ! : |   620 aes_gcm_dec_128_kernel  (in libcrypto.3.dylib) + 1396,828,...  [0x1053612a4,0x10536106c,...]
+                  + !   :   | + ! : | + ! : 2 generic_aes_gcm_cipher_update  (in libcrypto.3.dylib) + 132  [0x1053f5120]
+                  + !   :   | + ! : | + ! : | 2 CRYPTO_gcm128_decrypt_ctr32  (in libcrypto.3.dylib) + 272,444  [0x105366d24,0x105366dd0]
+                  + !   :   | + ! : | + ! : 1 generic_aes_gcm_cipher_update  (in libcrypto.3.dylib) + 356  [0x1053f5200]
+                  + !   :   | + ! : | + ! 1 gcm_cipher_internal  (in libcrypto.3.dylib) + 112  [0x1054030dc]
+                  + !   :   | + ! : | + 1 gcm_cipher_internal  (in libcrypto.3.dylib) + 128  [0x1054030ec]
+                  + !   :   | + ! : | 1 EVP_DecryptUpdate  (in libcrypto.3.dylib) + 156  [0x10531881c]
+                  + !   :   | + ! : 4 tls13_cipher  (in libssl.3.dylib) + 560  [0x1049daf68]
+                  + !   :   | + ! : | 2 WPACKET_finish  (in libssl.3.dylib) + 56  [0x104985808]
+                  + !   :   | + ! : | + 1 wpacket_intern_close  (in libssl.3.dylib) + 360  [0x104985770]
+                  + !   :   | + ! : | + ! 1 _xzm_free_tc  (in libsystem_malloc.dylib) + 104  [0x1845f3b1c]
+                  + !   :   | + ! : | + 1 wpacket_intern_close  (in libssl.3.dylib) + 24  [0x104985620]
+                  + !   :   | + ! : | 2 WPACKET_finish  (in libssl.3.dylib) + 80  [0x104985820]
+                  + !   :   | + ! : |   1 DYLD-STUB$$CRYPTO_free  (in libssl.3.dylib) + 8  [0x104a03b98]
+                  + !   :   | + ! : |   1 _free  (in libsystem_malloc.dylib) + 0  [0x1845f7354]
+                  + !   :   | + ! : 4 tls13_cipher  (in libssl.3.dylib) + 996  [0x1049db11c]
+                  + !   :   | + ! : | 3 EVP_CIPHER_CTX_ctrl  (in libcrypto.3.dylib) + 916  [0x1053199fc]
+                  + !   :   | + ! : | + 3 ossl_gcm_set_ctx_params  (in libcrypto.3.dylib) + 584  [0x105402c18]
+                  + !   :   | + ! : | +   2 OSSL_PARAM_get_octet_string  (in libcrypto.3.dylib) + 28  [0x10534912c]
+                  + !   :   | + ! : | +   ! 1 get_string_internal  (in libcrypto.3.dylib) + 348  [0x105349108]
+                  + !   :   | + ! : | +   ! : 1 _platform_memmove  (in libsystem_platform.dylib) + 0  [0x1847dad60]
+                  + !   :   | + ! : | +   ! 1 get_string_internal  (in libcrypto.3.dylib) + 64  [0x105348fec]
+                  + !   :   | + ! : | +   1 OSSL_PARAM_get_octet_string  (in libcrypto.3.dylib) + 28  [0x10534912c]
+                  + !   :   | + ! : | 1 EVP_CIPHER_CTX_ctrl  (in libcrypto.3.dylib) + 876  [0x1053199d4]
+                  + !   :   | + ! : 4 tls13_cipher  (in libssl.3.dylib) + 1128  [0x1049db1a0]
+                  + !   :   | + ! : | 4 EVP_DecryptFinal_ex  (in libcrypto.3.dylib) + 232  [0x105318e8c]
+                  + !   :   | + ! : |   4 ossl_gcm_stream_final  (in libcrypto.3.dylib) + 60  [0x105403360]
+                  + !   :   | + ! : |     2 gcm_cipher_internal  (in libcrypto.3.dylib) + 508  [0x105403268]
+                  + !   :   | + ! : |     + 2 ossl_gcm_cipher_final  (in libcrypto.3.dylib) + 36  [0x105454de8]
+                  + !   :   | + ! : |     +   1 CRYPTO_gcm128_finish  (in libcrypto.3.dylib) + 80  [0x105366ebc]
+                  + !   :   | + ! : |     +   ! 1 _platform_memset  (in libsystem_platform.dylib) + 200  [0x1847dab58]
+                  + !   :   | + ! : |     +   1 CRYPTO_gcm128_finish  (in libcrypto.3.dylib) + 48  [0x105366e9c]
+                  + !   :   | + ! : |     2 gcm_cipher_internal  (in libcrypto.3.dylib) + 40  [0x105403094]
+                  + !   :   | + ! : 3 tls13_cipher  (in libssl.3.dylib) + 452  [0x1049daefc]
+                  + !   :   | + ! : | 2 wpacket_intern_init_len  (in libssl.3.dylib) + 48  [0x1049854c8]
+                  + !   :   | + ! : | + 1 CRYPTO_zalloc  (in libcrypto.3.dylib) + 20  [0x10545c800]
+                  + !   :   | + ! : | + ! 1 CRYPTO_malloc  (in libcrypto.3.dylib) + 112  [0x10545c7a4]
+                  + !   :   | + ! : | + !   1 _malloc_zone_malloc  (in libsystem_malloc.dylib) + 100  [0x1845f6798]
+                  + !   :   | + ! : | + 1 CRYPTO_zalloc  (in libcrypto.3.dylib) + 40  [0x10545c814]
+                  + !   :   | + ! : | +   1 _platform_memset  (in libsystem_platform.dylib) + 180  [0x1847dab44]
+                  + !   :   | + ! : | 1 WPACKET_init_static_len  (in libssl.3.dylib) + 0  [0x1049fe370]
+                  + !   :   | + ! : 3 tls13_cipher  (in libssl.3.dylib) + 1068  [0x1049db164]
+                  + !   :   | + ! : | 3 EVP_DecryptUpdate  (in libcrypto.3.dylib) + 156  [0x10531881c]
+                  + !   :   | + ! : |   2 ossl_gcm_stream_update  (in libcrypto.3.dylib) + 0,4  [0x105402fd4,0x105402fd8]
+                  + !   :   | + ! : |   1 ossl_gcm_stream_update  (in libcrypto.3.dylib) + 84  [0x105403028]
+                  + !   :   | + ! : |     1 gcm_cipher_internal  (in libcrypto.3.dylib) + 356  [0x1054031d0]
+                  + !   :   | + ! : |       1 ossl_gcm_setiv  (in libcrypto.3.dylib) + 16  [0x105454d4c]
+                  + !   :   | + ! : |         1 CRYPTO_gcm128_setiv  (in libcrypto.3.dylib) + 288  [0x10536634c]
+                  + !   :   | + ! : |           1 aes_v8_encrypt  (in libcrypto.3.dylib) + 32  [0x10524d8e0]
+                  + !   :   | + ! : 2 tls13_cipher  (in libssl.3.dylib) + 472  [0x1049daf10]
+                  + !   :   | + ! : | 2 WPACKET_put_bytes__  (in libssl.3.dylib) + 52  [0x1049fe534]
+                  + !   :   | + ! : |   2 WPACKET_reserve_bytes  (in libssl.3.dylib) + 68,72  [0x1049fe244,0x1049fe248]
+                  + !   :   | + ! : 2 tls13_cipher  (in libssl.3.dylib) + 520  [0x1049daf40]
+                  + !   :   | + ! : | 2 WPACKET_put_bytes__  (in libssl.3.dylib) + 52  [0x1049fe534]
+                  + !   :   | + ! : |   2 WPACKET_reserve_bytes  (in libssl.3.dylib) + 8,152  [0x1049fe208,0x1049fe298]
+                  + !   :   | + ! : 1 tls13_cipher  (in libssl.3.dylib) + 368  [0x1049daea8]
+                  + !   :   | + ! : | 1 _platform_memmove  (in libsystem_platform.dylib) + 452  [0x1847daf24]
+                  + !   :   | + ! : 1 tls13_cipher  (in libssl.3.dylib) + 492  [0x1049daf24]
+                  + !   :   | + ! : | 1 WPACKET_put_bytes__  (in libssl.3.dylib) + 52  [0x1049fe534]
+                  + !   :   | + ! : |   1 WPACKET_reserve_bytes  (in libssl.3.dylib) + 8  [0x1049fe208]
+                  + !   :   | + ! : 1 tls13_cipher  (in libssl.3.dylib) + 924  [0x1049db0d4]
+                  + !   :   | + ! : | 1 EVP_CIPHER_get_mode  (in libcrypto.3.dylib) + 0  [0x10531c03c]
+                  + !   :   | + ! : 1 tls13_cipher  (in libssl.3.dylib) + 956  [0x1049db0f4]
+                  + !   :   | + ! :   1 evp_cipher_init_internal  (in libcrypto.3.dylib) + 1232  [0x1053181f0]
+                  + !   :   | + ! :     1 gcm_init  (in libcrypto.3.dylib) + 152  [0x1054021c8]
+                  + !   :   | + ! :       1 _platform_memmove  (in libsystem_platform.dylib) + 436  [0x1847daf14]
+                  + !   :   | + ! 65 tls_get_more_records  (in libssl.3.dylib) + 536  [0x1049dcf48]
+                  + !   :   | + ! : 65 tls_default_read_n  (in libssl.3.dylib) + 424  [0x1049dcbc4]
+                  + !   :   | + ! :   64 BIO_read  (in libcrypto.3.dylib) + 28  [0x10526fa6c]
+                  + !   :   | + ! :   | 63 bio_read_intern  (in libcrypto.3.dylib) + 164  [0x10526fb30]
+                  + !   :   | + ! :   | + 63 bread_conv  (in libcrypto.3.dylib) + 40  [0x10527133c]
+                  + !   :   | + ! :   | +   63 mem_read  (in libcrypto.3.dylib) + 104  [0x1052793f0]
+                  + !   :   | + ! :   | +     63 _platform_memmove  (in libsystem_platform.dylib) + 88,112,...  [0x1847dadb8,0x1847dadd0,...]
+                  + !   :   | + ! :   | 1 bio_read_intern  (in libcrypto.3.dylib) + 12  [0x10526fa98]
+                  + !   :   | + ! :   1 BIO_read  (in libcrypto.3.dylib) + 40  [0x10526fa78]
+                  + !   :   | + ! 6 tls_get_more_records  (in libssl.3.dylib) + 1252  [0x1049dd214]
+                  + !   :   | + ! : 6 ERR_clear_last_mark  (in libcrypto.3.dylib) + 12  [0x105301d2c]
+                  + !   :   | + ! :   2 ossl_err_get_state_int  (in libcrypto.3.dylib) + 16  [0x1053007cc]
+                  + !   :   | + ! :   | 2 __error  (in libsystem_kernel.dylib) + 0,4  [0x18478c604,0x18478c608]
+                  + !   :   | + ! :   2 ossl_err_get_state_int  (in libcrypto.3.dylib) + 48  [0x1053007ec]
+                  + !   :   | + ! :   | 1 CRYPTO_THREAD_get_local_ex  (in libcrypto.3.dylib) + 88  [0x10534f578]
+                  + !   :   | + ! :   | + 1 pthread_getspecific  (in libsystem_pthread.dylib) + 4  [0x1847cbd60]
+                  + !   :   | + ! :   | 1 CRYPTO_THREAD_get_local_ex  (in libcrypto.3.dylib) + 64  [0x10534f560]
+                  + !   :   | + ! :   1 ossl_err_get_state_int  (in libcrypto.3.dylib) + 32  [0x1053007dc]
+                  + !   :   | + ! :   | 1 OPENSSL_init_crypto  (in libcrypto.3.dylib) + 32  [0x10545c2d4]
+                  + !   :   | + ! :   1 ossl_err_get_state_int  (in libcrypto.3.dylib) + 156  [0x105300858]
+                  + !   :   | + ! :     1 __error  (in libsystem_kernel.dylib) + 24  [0x18478c61c]
+                  + !   :   | + ! 5 tls_get_more_records  (in libssl.3.dylib) + 196  [0x1049dcdf4]
+                  + !   :   | + ! : 3 tls_default_read_n  (in libssl.3.dylib) + 424  [0x1049dcbc4]
+                  + !   :   | + ! : | 3 BIO_read  (in libcrypto.3.dylib) + 28  [0x10526fa6c]
+                  + !   :   | + ! : |   3 bio_read_intern  (in libcrypto.3.dylib) + 164  [0x10526fb30]
+                  + !   :   | + ! : |     2 bread_conv  (in libcrypto.3.dylib) + 40  [0x10527133c]
+                  + !   :   | + ! : |     + 1 mem_read  (in libcrypto.3.dylib) + 104  [0x1052793f0]
+                  + !   :   | + ! : |     + ! 1 _platform_memmove  (in libsystem_platform.dylib) + 452  [0x1847daf24]
+                  + !   :   | + ! : |     + 1 mem_read  (in libcrypto.3.dylib) + 32  [0x1052793a8]
+                  + !   :   | + ! : |     1 bread_conv  (in libcrypto.3.dylib) + 24  [0x10527132c]
+                  + !   :   | + ! : 1 tls_default_read_n  (in libssl.3.dylib) + 400  [0x1049dcbac]
+                  + !   :   | + ! : | 1 __error  (in libsystem_kernel.dylib) + 20  [0x18478c618]
+                  + !   :   | + ! : 1 tls_default_read_n  (in libssl.3.dylib) + 548  [0x1049dcc40]
+                  + !   :   | + ! 5 tls_get_more_records  (in libssl.3.dylib) + 1204  [0x1049dd1e4]
+                  + !   :   | + ! : 3 ERR_set_mark  (in libcrypto.3.dylib) + 12  [0x105301a74]
+                  + !   :   | + ! : | 2 OPENSSL_init_crypto  (in libcrypto.3.dylib) + 212,220  [0x10545c388,0x10545c390]
+                  + !   :   | + ! : | 1 ossl_err_get_state_int  (in libcrypto.3.dylib) + 32  [0x1053007dc]
+                  + !   :   | + ! : |   1 OPENSSL_init_crypto  (in libcrypto.3.dylib) + 112  [0x10545c324]
+                  + !   :   | + ! : 2 ossl_err_get_state_int  (in libcrypto.3.dylib) + 200  [0x105300884]
+                  + !   :   | + ! 2 tls_get_more_records  (in libssl.3.dylib) + 948,1276  [0x1049dd0e4,0x1049dd22c]
+                  + !   :   | + ! 1 tls13_post_process_record  (in libssl.3.dylib) + 204  [0x1049db42c]
+                  + !   :   | + 1 tls_get_more_records  (in libssl.3.dylib) + 1804  [0x1049dd43c]
+                  + !   :   | + 1 tls_read_record  (in libssl.3.dylib) + 100  [0x1049ddb00]
+                  + !   :   | 2 ssl3_read_bytes  (in libssl.3.dylib) + 92,1544  [0x1049d88d4,0x1049d8e80]
+                  + !   :   | 1 ssl3_read_bytes  (in libssl.3.dylib) + 556  [0x1049d8aa4]
+                  + !   :   | + 1 tls_processed_read_pending  (in libssl.3.dylib) + 0  [0x1049de340]
+                  + !   :   | 1 ssl3_read_bytes  (in libssl.3.dylib) + 1772  [0x1049d8f64]
+                  + !   :   |   1 SSL_in_init  (in libssl.3.dylib) + 44  [0x1049eb1f4]
+                  + !   :   1 ssl3_read_internal  (in libssl.3.dylib) + 64  [0x10498ca98]
+                  + !   :     1 DYLD-STUB$$__error  (in libssl.3.dylib) + 4  [0x104a04ee4]
+                  + !   94 oc_drive  (in openssl-compare) + 104  [0x10461c700]
+                  + !   : 93 BIO_write  (in libcrypto.3.dylib) + 32  [0x10526fc54]
+                  + !   : | 92 bio_write_intern  (in libcrypto.3.dylib) + 160  [0x10526fd14]
+                  + !   : | + 89 bwrite_conv  (in libcrypto.3.dylib) + 40  [0x1052712c8]
+                  + !   : | + ! 45 mem_write  (in libcrypto.3.dylib) + 88  [0x1052792e8]
+                  + !   : | + ! : 44 BUF_MEM_grow_clean  (in libcrypto.3.dylib) + 232  [0x10528caa4]
+                  + !   : | + ! : | 44 _platform_memset  (in libsystem_platform.dylib) + 140,148  [0x1847dab1c,0x1847dab24]
+                  + !   : | + ! : 1 BUF_MEM_grow_clean  (in libcrypto.3.dylib) + 24  [0x10528c9d4]
+                  + !   : | + ! 41 mem_write  (in libcrypto.3.dylib) + 116  [0x105279304]
+                  + !   : | + ! : 41 _platform_memmove  (in libsystem_platform.dylib) + 88,104,...  [0x1847dadb8,0x1847dadc8,...]
+                  + !   : | + ! 2 mem_write  (in libcrypto.3.dylib) + 0,116  [0x105279290,0x105279304]
+                  + !   : | + ! 1 mem_write  (in libcrypto.3.dylib) + 76  [0x1052792dc]
+                  + !   : | + !   1 mem_buf_sync  (in libcrypto.3.dylib) + 0  [0x105279778]
+                  + !   : | + 2 bwrite_conv  (in libcrypto.3.dylib) + 32  [0x1052712c0]
+                  + !   : | + 1 mem_write  (in libcrypto.3.dylib) + 196  [0x105279354]
+                  + !   : | 1 bwrite_conv  (in libcrypto.3.dylib) + 60  [0x1052712dc]
+                  + !   : 1 DYLD-STUB$$BIO_write  (in openssl-compare) + 4  [0x10473c254]
+                  + !   2 oc_drive  (in openssl-compare) + 272  [0x10461c7a8]
+                  + !   : 1 BIO_ctrl_pending  (in libcrypto.3.dylib) + 24  [0x105270a58]
+                  + !   : | 1 BIO_ctrl  (in libcrypto.3.dylib) + 252  [0x1052702e0]
+                  + !   : |   1 mem_ctrl  (in libcrypto.3.dylib) + 36  [0x105279568]
+                  + !   : 1 DYLD-STUB$$BIO_ctrl_pending  (in openssl-compare) + 4  [0x10473c20c]
+                  + !   1 oc_drive  (in openssl-compare) + 80  [0x10461c6e8]
+                  + !   : 1 SSL_get_wbio  (in libssl.3.dylib) + 4  [0x104996934]
+                  + !   1 oc_drive  (in openssl-compare) + 224  [0x10461c778]
+                  + !   : 1 BIO_ctrl_pending  (in libcrypto.3.dylib) + 24  [0x105270a58]
+                  + !   :   1 BIO_ctrl  (in libcrypto.3.dylib) + 172  [0x105270290]
+                  + !   1 oc_drive  (in openssl-compare) + 292  [0x10461c7bc]
+                  + !   : 1 SSL_pending  (in libssl.3.dylib) + 20  [0x104997060]
+                  + !   :   1 ssl3_pending  (in libssl.3.dylib) + 204  [0x1049d80d0]
+                  + !   1 oc_drive  (in openssl-compare) + 80  [0x10461c6e8]
+                  + 64 _RNvMs6_Cs38PSYICUuD2_15openssl_compareNtB5_9Transport4pump  (in openssl-compare) + 156  [0x10455f6f4]
+                  + ! 42 _RNvMs_NtCsdUyDCJi77gV_6rustls6vecbufNtB4_14ChunkVecBuffer8write_to  (in openssl-compare) + 728  [0x104591468]
+                  + ! : 42 _RNvYNtCs38PSYICUuD2_15openssl_compare5QueueNtNtCs82bWklYMk3w_3std2io5Write14write_vectoredB4_  (in openssl-compare) + 92  [0x10456c6b4]
+                  + ! :   42 _platform_memmove  (in libsystem_platform.dylib) + 88,104,...  [0x1847dadb8,0x1847dadc8,...]
+                  + ! 14 _RNvMs_NtCsdUyDCJi77gV_6rustls6vecbufNtB4_14ChunkVecBuffer8write_to  (in openssl-compare) + 428,404,...  [0x10459133c,0x104591324,...]
+                  + ! 8 _RNvMs_NtCsdUyDCJi77gV_6rustls6vecbufNtB4_14ChunkVecBuffer8write_to  (in openssl-compare) + 1188  [0x104591634]
+                  + !   2 _xzm_free_outlined  (in libsystem_malloc.dylib) + 8,280  [0x1845ef0c0,0x1845ef1d0]
+                  + !   2 _xzm_free_tc  (in libsystem_malloc.dylib) + 0,84  [0x1845f3ab4,0x1845f3b08]
+                  + !   2 _xzm_xzone_free_freelist  (in libsystem_malloc.dylib) + 48,136  [0x1845efe64,0x1845efebc]
+                  + !   1 _free  (in libsystem_malloc.dylib) + 56  [0x1845f738c]
+                  + !   1 xzm_malloc_zone_try_free_default_tc  (in libsystem_malloc.dylib) + 0  [0x1845f267c]
+                  + 3 _RNvMs6_Cs38PSYICUuD2_15openssl_compareNtB5_9Transport4pump  (in openssl-compare) + 136,184,...  [0x10455f6e0,0x10455f710,...]
+                  + 1 _RNvMs3_Cs38PSYICUuD2_15openssl_compareNtB5_6Client4step  (in openssl-compare) + 15488  [0x10455e7e8]
+                  486 _RNvCs38PSYICUuD2_15openssl_compare7measure  (in openssl-compare) + 3244  [0x1045534f4]
+                  + 484 _RNvMNtCsdUyDCJi77gV_6rustls12common_stateNtB2_11CommonState20send_appdata_encrypt  (in openssl-compare) + 960  [0x10457ee8c]
+                  + ! 484 _RNvMNtCsdUyDCJi77gV_6rustls12record_layerNtB2_11RecordLayer16encrypt_outgoing  (in openssl-compare) + 68  [0x10457fc7c]
+                  + !   431 _RNvXs4_NtNtNtCsdUyDCJi77gV_6rustls6crypto9aws_lc_rs5tls13NtB5_19GcmMessageEncrypterNtNtB9_6cipher16MessageEncrypter7encrypt  (in openssl-compare) + 468  [0x1045b71cc]
+                  + !   : 430 _RINvMs_NtNtCsdrD9GfEAjVf_9aws_lc_rs4aead11unbound_keyNtB5_10UnboundKey24seal_in_place_append_tagNtNtNtNtCsdUyDCJi77gV_6rustls4msgs7message8outbound15PrefixedPayloadEB1E_  (in openssl-compare) + 264  [0x1045735d0]
+                  + !   : | 429 aws_lc_0_46_0_EVP_AEAD_CTX_seal  (in openssl-compare) + 276  [0x10463ea10]
+                  + !   : | + 429 aead_aes_gcm_tls13_seal_scatter  (in openssl-compare) + 224  [0x104689470]
+                  + !   : | +   421 aead_aes_gcm_seal_scatter_impl  (in openssl-compare) + 700  [0x104688c60]
+                  + !   : | +   ! 421 aws_lc_0_46_0_CRYPTO_gcm128_encrypt_ctr32  (in openssl-compare) + 864  [0x10467dd60]
+                  + !   : | +   !   421 aws_lc_0_46_0_aesv8_gcm_8x_enc_128  (in openssl-compare) + 996,1180,...  [0x1046c6ab4,0x1046c6b6c,...]
+                  + !   : | +   3 aead_aes_gcm_seal_scatter_impl  (in openssl-compare) + 32,52,...  [0x1046889c4,0x1046889d8,...]
+                  + !   : | +   2 aead_aes_gcm_seal_scatter_impl  (in openssl-compare) + 232  [0x104688a8c]
+                  + !   : | +   ! 2 _platform_memmove  (in libsystem_platform.dylib) + 196,204  [0x1847dae24,0x1847dae2c]
+                  + !   : | +   2 aead_aes_gcm_seal_scatter_impl  (in openssl-compare) + 252  [0x104688aa0]
+                  + !   : | +   ! 2 aws_lc_0_46_0_CRYPTO_gcm128_setiv  (in openssl-compare) + 48  [0x10467d2b8]
+                  + !   : | +   1 aws_lc_0_46_0_CRYPTO_gcm128_setiv  (in openssl-compare) + 296  [0x10467d3b0]
+                  + !   : | 1 aws_lc_0_46_0_EVP_AEAD_CTX_seal  (in openssl-compare) + 232  [0x10463e9e4]
+                  + !   : 1 _RINvMs_NtNtCsdrD9GfEAjVf_9aws_lc_rs4aead11unbound_keyNtB5_10UnboundKey24seal_in_place_append_tagNtNtNtNtCsdUyDCJi77gV_6rustls4msgs7message8outbound15PrefixedPayloadEB1E_  (in openssl-compare) + 160  [0x104573568]
+                  + !   49 _RNvXs4_NtNtNtCsdUyDCJi77gV_6rustls6crypto9aws_lc_rs5tls13NtB5_19GcmMessageEncrypterNtNtB9_6cipher16MessageEncrypter7encrypt  (in openssl-compare) + 272  [0x1045b7108]
+                  + !   : 49 _RNvMs_NtNtNtCsdUyDCJi77gV_6rustls4msgs7message8outboundNtB4_14OutboundChunks11copy_to_vec  (in openssl-compare) + 116  [0x104592ca0]
+                  + !   :   49 _platform_memmove  (in libsystem_platform.dylib) + 88,64,...  [0x1847dadb8,0x1847dada0,...]
+                  + !   2 _RNvXs4_NtNtNtCsdUyDCJi77gV_6rustls6crypto9aws_lc_rs5tls13NtB5_19GcmMessageEncrypterNtNtB9_6cipher16MessageEncrypter7encrypt  (in openssl-compare) + 84  [0x1045b704c]
+                  + !   : 1 _RNvMs2_NtNtNtCsdUyDCJi77gV_6rustls4msgs7message8outboundNtB5_15PrefixedPayload13with_capacity  (in openssl-compare) + 60  [0x1045856e8]
+                  + !   : | 1 _xzm_xzone_malloc_small_freelist  (in libsystem_malloc.dylib) + 188  [0x1845eb100]
+                  + !   : 1 _RNvMs2_NtNtNtCsdUyDCJi77gV_6rustls4msgs7message8outboundNtB5_15PrefixedPayload13with_capacity  (in openssl-compare) + 0  [0x1045856ac]
+                  + !   2 _RNvXs4_NtNtNtCsdUyDCJi77gV_6rustls6crypto9aws_lc_rs5tls13NtB5_19GcmMessageEncrypterNtNtB9_6cipher16MessageEncrypter7encrypt  (in openssl-compare) + 360,576  [0x1045b7160,0x1045b7238]
+                  + 2 _RNvMNtCsdUyDCJi77gV_6rustls12common_stateNtB2_11CommonState20send_appdata_encrypt  (in openssl-compare) + 84,664  [0x10457eb20,0x10457ed64]
+                  93 _RNvCs38PSYICUuD2_15openssl_compare7measure  (in openssl-compare) + 4408  [0x104553980]
+                  + 93 _platform_memcmp  (in libsystem_platform.dylib) + 48,56,...  [0x1847d81a0,0x1847d81a8,...]
+                  56 _RNvCs38PSYICUuD2_15openssl_compare7measure  (in openssl-compare) + 3676  [0x1045536a4]
+                  + 56 oc_read  (in openssl-compare) + 64  [0x10461c898]
+                  +   56 SSL_read_ex  (in libssl.3.dylib) + 12  [0x104997d90]
+                  +     55 ssl3_read_internal  (in libssl.3.dylib) + 136  [0x10498cae0]
+                  +     ! 48 ssl3_read_bytes  (in libssl.3.dylib) + 1612  [0x1049d8ec4]
+                  +     ! : 48 _platform_memmove  (in libsystem_platform.dylib) + 88  [0x1847dadb8]
+                  +     ! 3 ssl3_read_bytes  (in libssl.3.dylib) + 1656  [0x1049d8ef0]
+                  +     ! : 2 ssl_release_record  (in libssl.3.dylib) + 64  [0x1049d75fc]
+                  +     ! : | 2 tls_release_record  (in libssl.3.dylib) + 20  [0x1049ddbcc]
+                  +     ! : 1 ssl_release_record  (in libssl.3.dylib) + 92  [0x1049d7618]
+                  +     ! :   1 ossl_tls_handle_rlayer_return  (in libssl.3.dylib) + 212  [0x1049d8818]
+                  +     ! 2 ssl3_read_bytes  (in libssl.3.dylib) + 1612,1640  [0x1049d8ec4,0x1049d8ee0]
+                  +     ! 1 ssl3_read_bytes  (in libssl.3.dylib) + 1772  [0x1049d8f64]
+                  +     ! : 1 SSL_in_init  (in libssl.3.dylib) + 40  [0x1049eb1f0]
+                  +     ! 1 ssl_release_record  (in libssl.3.dylib) + 240  [0x1049d76ac]
+                  +     1 ssl3_read_internal  (in libssl.3.dylib) + 12  [0x10498ca64]
+                  6 _RNvCs38PSYICUuD2_15openssl_compare7measure  (in openssl-compare) + 4704  [0x104553aa8]
+                  + 6 _RNvNtNtCs82bWklYMk3w_3std2io5stdio6__print  (in openssl-compare) + 100  [0x1045f231c]
+                  +   6 _RNvXse_NtNtCs82bWklYMk3w_3std2io5stdioRNtB5_6StdoutNtB7_5Write9write_fmt  (in openssl-compare) + 68  [0x1045f845c]
+                  +     5 _RNvNtCs8Mbv00yxnRz_4core3fmt5write  (in openssl-compare) + 144  [0x10454128c]
+                  +     ! 5 _RNvXNvNtCs82bWklYMk3w_3std2io17default_write_fmtINtB2_7AdapterNtNtB4_5stdio10StdoutLockENtNtCs8Mbv00yxnRz_4core3fmt5Write9write_strB6_  (in openssl-compare) + 24  [0x1045f6d54]
+                  +     !   5 _RNvXsh_NtNtCs82bWklYMk3w_3std2io5stdioNtB5_10StdoutLockNtB7_5Write9write_all  (in openssl-compare) + 144  [0x1045f85c0]
+                  +     !     5 _RNvMs_NtNtNtCs82bWklYMk3w_3std2io8buffered9bufwriterINtB4_9BufWriterNtNtB8_5stdio9StdoutRawE9flush_bufBa_  (in openssl-compare) + 112  [0x1045edf38]
+                  +     !       5 write  (in libsystem_kernel.dylib) + 8  [0x18478f838]
+                  +     1 _RNvNtCs8Mbv00yxnRz_4core3fmt5write  (in openssl-compare) + 96  [0x10454125c]
+                  +       1 _RNvXNvNtCs82bWklYMk3w_3std2io17default_write_fmtINtB2_7AdapterNtNtB4_5stdio10StdoutLockENtNtCs8Mbv00yxnRz_4core3fmt5Write9write_strB6_  (in openssl-compare) + 24  [0x1045f6d54]
+                  +         1 _RNvXsh_NtNtCs82bWklYMk3w_3std2io5stdioNtB5_10StdoutLockNtB7_5Write9write_all  (in openssl-compare) + 232  [0x1045f8618]
+                  +           1 _platform_memmove  (in libsystem_platform.dylib) + 436  [0x1847daf14]
+                  2 _RNvCs38PSYICUuD2_15openssl_compare7measure  (in openssl-compare) + 3136,3176  [0x104553488,0x1045534b0]
+
+Total number in stack (recursive counted multiple, when >=5):
+        11       _platform_memmove  (in libsystem_platform.dylib) + 0  [0x1847dad60]
+
+Sort by top of stack, same collapsed (when >= 5):
+        aes_gcm_dec_128_kernel  (in libcrypto.3.dylib)        620
+        aws_lc_0_46_0_aesv8_gcm_8x_enc_128  (in openssl-compare)        421
+        _platform_memmove  (in libsystem_platform.dylib)        250
+        _platform_memcmp  (in libsystem_platform.dylib)        93
+        _platform_memset  (in libsystem_platform.dylib)        46
+        _RNvMs_NtCsdUyDCJi77gV_6rustls6vecbufNtB4_14ChunkVecBuffer8write_to  (in openssl-compare)        14
+        WPACKET_reserve_bytes  (in libssl.3.dylib)        5
+        write  (in libsystem_kernel.dylib)        5
+
+Binary Images:
+       0x104538000 -        0x1047cadcb +openssl-compare (0) <0E4B248A-06CB-3694-844A-8516C95F4D4A> /Users/*/openssl-compare
+       0x104984000 -        0x104a154db +libssl.3.dylib (0) <17A7BDD5-479D-38CC-B864-FA8C68C22D94> /opt/homebrew/*/libssl.3.dylib
+       0x10523c000 -        0x10557d647 +libcrypto.3.dylib (0) <F373B83B-2378-3ED3-B07C-4E13114C2417> /opt/homebrew/*/libcrypto.3.dylib
+       0x184344000 -        0x1843935f7  libobjc.A.dylib (973.1) <EEE430DF-FFB9-374D-BBE5-ED51CD0437B9> /usr/lib/libobjc.A.dylib
+       0x184394000 -        0x18439e23f  libsharedcache.dylib (0) <D957C98A-41D2-3218-BAD7-BF00A7E6BBD2> /usr/lib/libsharedcache.dylib
+       0x18439f000 -        0x1843c5e4b  libdyld.dylib (27102) <87F56248-B6DD-3F09-8C5C-9E890AA91F3F> /usr/lib/system/libdyld.dylib
+       0x1843c6000 -        0x18448599f  dyld (1.0.0 - 27102) <93AA5F3B-B81F-3596-9C18-B1652592D239> /usr/lib/dyld
+       0x184486000 -        0x18448901f  libsystem_blocks.dylib (98.1) <88F49D32-213E-3F6A-9E84-2AAC9C867DD1> /usr/lib/system/libsystem_blocks.dylib
+       0x18448a000 -        0x1844df127  libxpc.dylib (3298.40.20) <322DE992-D1C8-3F90-898F-A5A76C9754A6> /usr/lib/system/libxpc.dylib
+       0x1844e0000 -        0x18450005b  libsystem_trace.dylib (1966.40.15) <E30E62D7-CCBB-3348-B126-B6EB16E78FFF> /usr/lib/system/libsystem_trace.dylib
+       0x184501000 -        0x1845b65df  libcorecrypto.dylib (2109.40.15) <1D4F7B5A-7738-3CBA-B297-E5468D4E32BD> /usr/lib/system/libcorecrypto.dylib
+       0x1845b7000 -        0x18460d0d7  libsystem_malloc.dylib (886.40.15) <3B469040-D8B6-3A31-B624-8AEC27331D79> /usr/lib/system/libsystem_malloc.dylib
+       0x18460e000 -        0x1846541df  libdispatch.dylib (1605.40.4) <17137F9A-DDBB-3797-A71A-A5668FF4B7D3> /usr/lib/system/libdispatch.dylib
+       0x184655000 -        0x184657d2b  libsystem_featureflags.dylib (111) <A2E81F70-E715-3BD4-AE2C-88B6775AA3C1> /usr/lib/system/libsystem_featureflags.dylib
+       0x184658000 -        0x1846dacd3  libsystem_c.dylib (1786.40.6) <20C4C15A-59F7-39D5-B1EC-C2CEDEBEBBC5> /usr/lib/system/libsystem_c.dylib
+       0x1846db000 -        0x184770033  libc++.1.dylib (2200.32) <D58D7794-452C-387F-AA7B-1279ABCCDE1F> /usr/lib/libc++.1.dylib
+       0x184771000 -        0x18478aeff  libc++abi.dylib (2200.32) <FFD6E416-A3BA-356B-9D99-0B1E4876E86B> /usr/lib/libc++abi.dylib
+       0x18478b000 -        0x1847c9a6b  libsystem_kernel.dylib (13432.40.144.0.1) <856A82F2-A17D-34A7-A639-8AF3C4BC0BEB> /usr/lib/system/libsystem_kernel.dylib
+       0x1847ca000 -        0x1847d692b  libsystem_pthread.dylib (553.40.2) <BA5937CB-2B50-38DB-9C70-DF124EA1E6C6> /usr/lib/system/libsystem_pthread.dylib
+       0x1847d7000 -        0x1847e04f3  libsystem_platform.dylib (402.40.3) <627A1841-6911-3936-A05A-D8A014FF4D29> /usr/lib/system/libsystem_platform.dylib
+       0x1847e1000 -        0x18480f903  libsystem_info.dylib (603) <93EE5DAC-F769-3480-AC28-19E0CBD3D95C> /usr/lib/system/libsystem_info.dylib
+       0x188943000 -        0x18894cb13  libsystem_darwin.dylib (1786.40.6) <EB9554F3-1C51-3488-AC65-80466D0541BC> /usr/lib/system/libsystem_darwin.dylib
+       0x188d9e000 -        0x188dafb8b  libsystem_notify.dylib (368) <6B278BFE-A3CF-39EC-96E2-42D35E958273> /usr/lib/system/libsystem_notify.dylib
+       0x18af48000 -        0x18af62e13  libsystem_networkextension.dylib (2365.40.1) <D8F7CE37-6DAD-3DDC-B6AD-8CDC938C7310> /usr/lib/system/libsystem_networkextension.dylib
+       0x18aff0000 -        0x18b007277  libsystem_asl.dylib (409.40.3) <9BCD0B76-CCF0-3A3B-9373-C9C9FAC5DF94> /usr/lib/system/libsystem_asl.dylib
+       0x18bf40000 -        0x18bf40f2f  libobjcMsgSend.dylib (973.1) <8949D017-E290-3F7F-926A-A8D904D9A89C> /usr/lib/objc/libobjcMsgSend.dylib
+       0x18d101000 -        0x18d108edf  libsystem_symptoms.dylib (2394.40.15) <B84C1D38-05A4-3C42-95A2-EA5240B161B0> /usr/lib/system/libsystem_symptoms.dylib
+       0x1913a0000 -        0x1913dbbd7  libsystem_containermanager.dylib (833.40.14) <D2F270DA-4DC6-3E1E-A10C-9243D100EE19> /usr/lib/system/libsystem_containermanager.dylib
+       0x192b19000 -        0x192b1d27f  libsystem_configuration.dylib (1452) <1F9EFB9D-F3D3-3601-BF7B-8829E97DB652> /usr/lib/system/libsystem_configuration.dylib
+       0x192b1e000 -        0x192b24e03  libsystem_sandbox.dylib (3051.40.70) <70BB3F15-BFB0-3CD2-83AC-AFC74D65CDBF> /usr/lib/system/libsystem_sandbox.dylib
+       0x193f40000 -        0x193f40f2f  libobjcMsgSend1.dylib (973.1) <4807242A-F48E-300E-A042-DDA9AA8AAB43> /usr/lib/objc/libobjcMsgSend1.dylib
+       0x194700000 -        0x194702f73  libquarantine.dylib (217.40.3) <B0428D79-32B7-30F5-984B-9F1ECA33D49E> /usr/lib/system/libquarantine.dylib
+       0x194e12000 -        0x194e181e7  libsystem_coreservices.dylib (203) <D6199F02-F4E8-3F89-8E06-F451C14CFF5C> /usr/lib/system/libsystem_coreservices.dylib
+       0x1953e2000 -        0x19541fb67  libsystem_m.dylib (3326.40.2) <6907B942-0566-3083-8E80-BD89EDD3681D> /usr/lib/system/libsystem_m.dylib
+       0x195421000 -        0x1954244f7  libmacho.dylib (27102) <61E4A167-56EB-3C19-B861-70DC3263BC89> /usr/lib/system/libmacho.dylib
+       0x19543e000 -        0x19544a707  libcommonCrypto.dylib (600041.40.2) <46FC0832-D242-34FE-A95B-F48284B91063> /usr/lib/system/libcommonCrypto.dylib
+       0x19544b000 -        0x195454c87  libunwind.dylib (2200.5) <0C7E02BA-D332-36C8-A531-DD450D410578> /usr/lib/system/libunwind.dylib
+       0x19545c000 -        0x1954667ab  libcopyfile.dylib (260.40.3) <96DDFE66-08D1-3235-8D0B-8A8CD32451B7> /usr/lib/system/libcopyfile.dylib
+       0x195467000 -        0x19546a8bf  libcompiler_rt.dylib (103.4) <AF72D893-C2E7-3C6A-86A0-0E813709D724> /usr/lib/system/libcompiler_rt.dylib
+       0x19546b000 -        0x19547007f  libsystem_collections.dylib (1786.40.6) <5B9756CB-7BBF-3B63-BFFB-CE2C8389CE57> /usr/lib/system/libsystem_collections.dylib
+       0x195471000 -        0x195473f1f  libsystem_secinit.dylib (182) <E4332B63-6146-3A2B-9595-D04BCD353EE5> /usr/lib/system/libsystem_secinit.dylib
+       0x195474000 -        0x195476987  libremovefile.dylib (96.40.2) <04D9B42E-3A44-3640-B04A-02C2305D39F7> /usr/lib/system/libremovefile.dylib
+       0x195477000 -        0x195477e27  libkeymgr.dylib (31) <5635024C-8AC4-3FFA-9352-93E2C6F16FA3> /usr/lib/system/libkeymgr.dylib
+       0x195478000 -        0x195480af7  libsystem_dnssd.dylib (3111.40.40) <C425313B-373E-37CE-BBA4-5387E72E25E8> /usr/lib/system/libsystem_dnssd.dylib
+       0x195481000 -        0x195485f1b  libcache.dylib (95) <E0658B01-A7B7-3A74-80A0-5F987573BE59> /usr/lib/system/libcache.dylib
+       0x195486000 -        0x1954878f3  libSystem.B.dylib (1359.40.3) <515E755D-71CD-34B1-B944-C5AB816A45E0> /usr/lib/libSystem.B.dylib
+       0x19bf40000 -        0x19bf40f2f  libobjcMsgSend2.dylib (973.1) <CFD8218C-D12A-3EA5-A75C-A6315D45E654> /usr/lib/objc/libobjcMsgSend2.dylib
+       0x1a3f40000 -        0x1a3f40f2f  libobjcMsgSend3.dylib (973.1) <34A74D54-DF28-3864-995B-06D1BBDFCE32> /usr/lib/objc/libobjcMsgSend3.dylib
+       0x1abf40000 -        0x1abf40f2f  libobjcMsgSend4.dylib (973.1) <FBFD0AC0-0A4A-3024-9129-9FD614CA6710> /usr/lib/objc/libobjcMsgSend4.dylib
+       0x1b3f40000 -        0x1b3f40f2f  libobjcMsgSend5.dylib (973.1) <55D83FD3-87EF-3031-9E36-9EFC403A722D> /usr/lib/objc/libobjcMsgSend5.dylib
+       0x1bbf40000 -        0x1bbf40f2f  libobjcMsgSend6.dylib (973.1) <146D2FAE-A125-32B7-84BF-4A547ABC6806> /usr/lib/objc/libobjcMsgSend6.dylib
+       0x1c3f40000 -        0x1c3f40f2f  libobjcMsgSend7.dylib (973.1) <0A6E9A95-9E27-3FC0-98F4-C2CD388BFD78> /usr/lib/objc/libobjcMsgSend7.dylib
+       0x1cbf40000 -        0x1cbf40f2f  libobjcMsgSend8.dylib (973.1) <A64095BC-6FA7-3FA3-8367-91C282B907B2> /usr/lib/objc/libobjcMsgSend8.dylib
+       0x1d3f40000 -        0x1d3f40f2f  libobjcMsgSend9.dylib (973.1) <B79A1FCA-4DC2-32D9-AD93-8DCF7D529AC2> /usr/lib/objc/libobjcMsgSend9.dylib
+       0x1dbf40000 -        0x1dbf40f2f  libobjcMsgSend10.dylib (973.1) <1F2A814C-16E2-3AA6-90D2-81A5DF193402> /usr/lib/objc/libobjcMsgSend10.dylib
+       0x1e3f40000 -        0x1e3f40f2f  libobjcMsgSend11.dylib (973.1) <5D3A8E17-5B42-37E0-A77A-491156D417E0> /usr/lib/objc/libobjcMsgSend11.dylib
+       0x20bf40000 -        0x20bf40f2f  libobjcMsgSend12.dylib (973.1) <927B3C03-AFB4-34DD-B9AB-62BC24113DBA> /usr/lib/objc/libobjcMsgSend12.dylib
+       0x213f40000 -        0x213f40f2f  libobjcMsgSend13.dylib (973.1) <7EE5174C-043C-3C39-A6CC-82AD8057F9DF> /usr/lib/objc/libobjcMsgSend13.dylib
+       0x21bf40000 -        0x21bf40f2f  libobjcMsgSend14.dylib (973.1) <7A829591-8804-3081-924E-AF9E9ED264D8> /usr/lib/objc/libobjcMsgSend14.dylib
+       0x223f40000 -        0x223f40f2f  libobjcMsgSend15.dylib (973.1) <8B4CE077-0524-3BC3-BB93-5DF636A30F11> /usr/lib/objc/libobjcMsgSend15.dylib
+       0x22bf40000 -        0x22bf40f2f  libobjcMsgSend16.dylib (973.1) <BFEC82F0-FBB1-3251-B677-1C8100E0E745> /usr/lib/objc/libobjcMsgSend16.dylib
+       0x233f40000 -        0x233f40f2f  libobjcMsgSend17.dylib (973.1) <33BA8024-06A2-3E70-91D0-C5B452C2F32C> /usr/lib/objc/libobjcMsgSend17.dylib
+       0x23bf40000 -        0x23bf40f2f  libobjcMsgSend18.dylib (973.1) <7813827B-986A-3B81-A169-1CA5F4C1E1B2> /usr/lib/objc/libobjcMsgSend18.dylib
+       0x243f40000 -        0x243f40f2f  libobjcMsgSend19.dylib (973.1) <C038D350-4D38-3CB1-A3D0-760342CDFC32> /usr/lib/objc/libobjcMsgSend19.dylib
+       0x24bf40000 -        0x24bf40f2f  libobjcMsgSend20.dylib (973.1) <3C046988-07DD-3686-937C-0C5718A28696> /usr/lib/objc/libobjcMsgSend20.dylib
+       0x253f40000 -        0x253f40f2f  libobjcMsgSend21.dylib (973.1) <E76890F5-B25A-3D21-9915-C78B36681E48> /usr/lib/objc/libobjcMsgSend21.dylib
+       0x25bf40000 -        0x25bf40f2f  libobjcMsgSend22.dylib (973.1) <B53BAAF7-3559-3336-8BBF-A4113EA6A526> /usr/lib/objc/libobjcMsgSend22.dylib
+       0x263f40000 -        0x263f40f2f  libobjcMsgSend23.dylib (973.1) <95D32998-8790-3B4A-B2A5-674BA7EB301C> /usr/lib/objc/libobjcMsgSend23.dylib
+       0x26bf40000 -        0x26bf40f2f  libobjcMsgSend24.dylib (973.1) <74FEE64F-5FDA-32A8-8F68-7D02848A0314> /usr/lib/objc/libobjcMsgSend24.dylib
+       0x273f40000 -        0x273f40f2f  libobjcMsgSend25.dylib (973.1) <B138D6B0-B600-3353-9340-D8D1831D9B73> /usr/lib/objc/libobjcMsgSend25.dylib
+       0x28bf40000 -        0x28bf40f2f  libobjcMsgSend26.dylib (973.1) <7FBB8A5A-F396-35D0-8669-A83D27FE8DA4> /usr/lib/objc/libobjcMsgSend26.dylib
+       0x293f40000 -        0x293f40f2f  libobjcMsgSend27.dylib (973.1) <86BF6B6D-4D58-3CC2-A62E-A383D0A16300> /usr/lib/objc/libobjcMsgSend27.dylib
+       0x29bf40000 -        0x29bf40f2f  libobjcMsgSend28.dylib (973.1) <51EB05F9-6569-35F1-BAD4-25BF26271403> /usr/lib/objc/libobjcMsgSend28.dylib
+       0x2a3f40000 -        0x2a3f40f2f  libobjcMsgSend29.dylib (973.1) <EA605B4C-BDCC-32B2-A3A4-9CB10DB3C7D0> /usr/lib/objc/libobjcMsgSend29.dylib
+       0x2abf40000 -        0x2abf40f2f  libobjcMsgSend30.dylib (973.1) <04E81205-1445-3CFF-8749-8657AF1AA81A> /usr/lib/objc/libobjcMsgSend30.dylib
+       0x2b38ee000 -        0x2b38f4fe5  libRosetta.dylib (385) <5103BF9F-FB6E-3E76-8F7D-8AF8EE30C7D2> /usr/lib/libRosetta.dylib
+       0x2b3f40000 -        0x2b3f40f2f  libobjcMsgSend31.dylib (973.1) <C1272557-49AB-3E92-BE44-683E183F56A9> /usr/lib/objc/libobjcMsgSend31.dylib
+       0x2b4745000 -        0x2b474875b  libsystem_darwindirectory.dylib (129.0.1) <E4534D55-FA26-35EC-B3C8-650AB80B6250> /usr/lib/system/libsystem_darwindirectory.dylib
+       0x2b4749000 -        0x2b4753eaf  libsystem_eligibility.dylib (446.40.34.501.1) <6809A567-CC29-3330-B0C5-FBED3ABA052E> /usr/lib/system/libsystem_eligibility.dylib
+       0x2b4754000 -        0x2b475d42b  libsystem_sanitizers.dylib (32) <2406158D-EC09-3689-A1C2-AF7BBF4649DC> /usr/lib/system/libsystem_sanitizers.dylib
+       0x2b475e000 -        0x2b475ea1b  libsystem_trial.dylib (511.1.2) <9C153026-D866-3A6B-86D1-8BA75A2523E7> /usr/lib/system/libsystem_trial.dylib
+       0x2bbf40000 -        0x2bbf40f2f  libobjcMsgSend32.dylib (973.1) <BFFD3798-B0F7-3758-B668-53C0C500A985> /usr/lib/objc/libobjcMsgSend32.dylib
+       0x2c3f40000 -        0x2c3f40f2f  libobjcMsgSend33.dylib (973.1) <0DBA794E-6D22-3F41-8AB6-9CB020794E83> /usr/lib/objc/libobjcMsgSend33.dylib
+       0x2cbf40000 -        0x2cbf40f2f  libobjcMsgSend34.dylib (973.1) <CAA4DBD6-1687-3389-9538-C2B76FDDBC80> /usr/lib/objc/libobjcMsgSend34.dylib
+       0x2d3f40000 -        0x2d3f40f2f  libobjcMsgSend35.dylib (973.1) <74469BCD-F55B-3E3B-9087-2919904135CA> /usr/lib/objc/libobjcMsgSend35.dylib

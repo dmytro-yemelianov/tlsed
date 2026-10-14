@@ -1,0 +1,24 @@
+[package]
+name = "openssl-compare"
+version = "0.0.0"
+edition = "2024"
+rust-version = "1.98"
+publish = false
+
+[workspace]
+
+[dependencies]
+rustls = { version = "=0.23.45", default-features = false, features = ["std", "aws_lc_rs"] }
+aws-lc-rs = "=1.18.2"
+rustls-webpki = { version = "=0.103.15", features = ["aws-lc-rs"] }
+tls-client = { path = "../../../crates/tls-client" }
+tls-crypto = { path = "../../../crates/tls-crypto" }
+tls-crypto-awslc = { path = "../../../crates/tls-crypto-awslc" }
+tls-pki = { path = "../../../crates/tls-pki" }
+
+[build-dependencies]
+cc = "=1.8.0"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

@@ -1,0 +1,73 @@
+--- production/crates/tls-crypto-awslc/src/lib.rs
++++ wipe_scan_awslc/src/lib.rs
+@@ -34,6 +34,14 @@
+     key: aead::LessSafeKey,
+ }
+ 
++/// Erase caller bytes with aligned u128 stores, as `Reassembler::drop` does.
++fn wipe(bytes: &mut [u8]) {
++    let (head, words, tail) = bytemuck::pod_align_to_mut::<u8, u128>(bytes);
++    head.zeroize();
++    words.zeroize();
++    tail.zeroize();
++}
++
+ impl AeadKey for AwsLcKey {
+     fn suite(&self) -> CipherSuite {
+         self.suite
+@@ -65,7 +73,7 @@
+             Ok(total)
+         })();
+         if result.is_err() {
+-            buffer.zeroize();
++            wipe(buffer);
+         }
+         result
+     }
+@@ -91,7 +99,7 @@
+         // The provider may modify the buffer before reporting an invalid tag.
+         // Wipe even the tag and every supplied byte on every returned error.
+         if result.is_err() {
+-            buffer.zeroize();
++            wipe(buffer);
+         }
+         result
+     }
+@@ -315,3 +323,37 @@
+         hmac::verify(&key, input, tag).map_err(|_| CryptoError::AuthenticationFailed)
+     }
+ }
++
++#[cfg(test)]
++mod candidate_wipe {
++    use super::*;
++
++    #[test]
++    fn failed_seal_and_open_wipe_the_whole_buffer() {
++        let key = AwsLcProvider
++            .aead_key(CipherSuite::Aes128GcmSha256, &[7; 16])
++            .unwrap();
++        let nonce = [0u8; NONCE_LEN];
++        let aad = b"header";
++        for total in [1usize, 15, 16, 17, 1_041, 16_401] {
++            // Plaintext longer than the buffer: seal fails and wipes everything.
++            let mut small = vec![0xA5u8; total];
++            assert!(key.seal_in_place(&nonce, aad, &mut small, total + 1).is_err());
++            assert!(small.iter().all(|&b| b == 0), "seal total={total}");
++            if total < TAG_LEN {
++                // Too short to hold a tag: open fails and wipes everything.
++                let mut short = vec![0x5Au8; total];
++                assert!(key.open_in_place(&nonce, aad, &mut short).is_err());
++                assert!(short.iter().all(|&b| b == 0), "short open total={total}");
++            } else {
++                // Valid record with a flipped tag: open fails and wipes everything.
++                let mut record = vec![0x5Au8; total];
++                key.seal_in_place(&nonce, aad, &mut record, total - TAG_LEN).unwrap();
++                let last = record.len() - 1;
++                record[last] ^= 1;
++                assert!(key.open_in_place(&nonce, aad, &mut record).is_err());
++                assert!(record.iter().all(|&b| b == 0), "tag open total={total}");
++            }
++        }
++    }
++}

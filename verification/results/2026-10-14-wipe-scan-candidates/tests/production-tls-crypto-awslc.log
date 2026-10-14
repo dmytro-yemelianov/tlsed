@@ -1,0 +1,50 @@
+   Compiling aws-lc-rs v1.18.2
+   Compiling aws-lc-sys v0.46.0
+   Compiling tls-crypto-awslc v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/crates/tls-crypto-awslc)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 8.05s
+     Running unittests src/lib.rs (target/inner-scan-audit/ws-production/debug/deps/tls_crypto_awslc-6d4713397110a90f)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/agreement.rs (target/inner-scan-audit/ws-production/debug/deps/agreement-62cdfe076f85411e)
+
+running 5 tests
+test rfc7748_section_6_1_native_known_answer ... ok
+test x25519_rejects_low_order_zero_result_shares_and_wipes ... ok
+test p256_rejects_compressed_hybrid_infinity_and_invalid_points ... ok
+test fresh_pairs_agree_for_both_groups_and_correct_share_formats ... ok
+test wrong_peer_lengths_and_exact_output_lengths_wipe_all_supplied_bytes ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/provider.rs (target/inner-scan-audit/ws-production/debug/deps/provider-8ffd7e1d61a66216)
+
+running 12 tests
+test rfc8439_section_2_8_2_aead ... ok
+test rfc5869_appendix_a_sha256_vectors ... ok
+test aes_gcm_zero_key_known_answers ... ok
+test capabilities_and_seal_key_length_guards ... ok
+test sha256_sha384_abc_known_answers ... ok
+test nist_published_gcm_examples_1_and_2 ... ok
+test every_suite_authenticates_ciphertext_aad_nonce_and_wipes_errors ... ok
+test rfc4231_hmac_case1_and_native_verification ... ok
+test sha384_extract_expand_matches_native_opaque_extract ... ok
+test streaming_hash_snapshot_update_reset_and_output_guards ... ok
+test secret_output_length_guards_and_expand_limits ... ok
+test secure_random_smoke ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+   Doc-tests tls_crypto_awslc
+
+running 5 tests
+test crates/tls-crypto-awslc/src/agreement.rs - agreement::AwsLcEphemeral (line 21) - compile fail ... ok
+test crates/tls-crypto-awslc/src/agreement.rs - agreement::AwsLcEphemeral (line 36) - compile fail ... ok
+test crates/tls-crypto-awslc/src/lib.rs - AwsLcKey (line 26) - compile fail ... ok
+test crates/tls-crypto-awslc/src/agreement.rs - agreement::AwsLcEphemeral (line 30) - compile fail ... ok
+test crates/tls-crypto-awslc/src/lib.rs - AwsLcKey (line 20) - compile fail ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+

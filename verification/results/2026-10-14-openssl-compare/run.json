@@ -1,0 +1,583 @@
+{
+  "design": {
+    "repeats": 6,
+    "samples_per_repeat": 100,
+    "bulk_records_per_sample": 256,
+    "peer": "one rustls 0.23.45 server (fixtures; strict-policy-independent, bench/1, TLS 1.3, no resumption)",
+    "clients": {
+      "tlsed": "tls-client (strict tls-pki policy)",
+      "rustls": "rustls 0.23.45 client with the same strict verifier",
+      "openssl": "OpenSSL 3 client, X509 strict purpose SSL_SERVER, fixture CA, memory BIOs"
+    },
+    "order": "rotates by repeat; fresh process per repeat",
+    "profiles": [
+      "aes128-x25519",
+      "aes128-x25519-fragment64",
+      "chacha-x25519"
+    ],
+    "limits": "OpenSSL uses its own chain checks, not tls-pki; PKI cost is not identical across clients"
+  },
+  "host": {
+    "cpu": "Apple M5",
+    "macos": "27.2",
+    "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+    "openssl": "OpenSSL 3.6.5 29 Sep 2026 (Library: OpenSSL 3.6.5 29 Sep 2026)",
+    "power": "Now drawing from 'AC Power'"
+  },
+  "sources": {
+    "verification/experiments/openssl-compare/Cargo.toml": "0b5708fcf6a1aa1212cd37bfd7ecfa2a5a15a7f88d2d555d1824e435723e9945",
+    "verification/experiments/openssl-compare/Cargo.lock": "4009d50157a8c4783b4d20fec79d550d7d9c11bd191660845788d6882ea8578c",
+    "verification/experiments/openssl-compare/build.rs": "700bf109e2804c7fd4e6a0c3aecc94b604b5dcf461ae697c2308bc50a090bb56",
+    "verification/experiments/openssl-compare/src/main.rs": "20884e287ae9cd6e8035eb82e7b8a5f8907603a8029f3af0617c0fb9e558accb",
+    "verification/experiments/openssl-compare/src/ossl.rs": "6300553879a0b663edd25756b92fb2b8d6327c7b464b536aa2b8a25fdc0d9ff6",
+    "verification/experiments/openssl-compare/src/openssl_shim.c": "700fdd4c840da64d2126ed1a07fbdf0dc8880cd18b159cf5ef65e1f73943756b",
+    "verification/experiments/openssl-compare/run.py": "e2500c345be7973ff45e37c626c564156bc2e6189b8935e3f790b94a65832f9b",
+    "crates/tls-bench/src/bin/client_compare.rs": "039c964f15cb0f137f6b50cb9f8e9c211cc6cd28a19f24caaeb7007f1007c7b1"
+  },
+  "binary_sha256": "70fd2f577ee94dc2e9f51c34094fc33db52fb9835c81a4b63a1b8e91642d062b",
+  "runs": [
+    {
+      "profile": "aes128-x25519",
+      "repeat": 0,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed,rustls,openssl"
+      ],
+      "loadavg_before": [
+        3.24365234375,
+        4.708984375,
+        6.0810546875
+      ],
+      "loadavg_after": [
+        3.24365234375,
+        4.708984375,
+        6.0810546875
+      ]
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 1,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls,openssl,tlsed"
+      ],
+      "loadavg_before": [
+        3.24365234375,
+        4.708984375,
+        6.0810546875
+      ],
+      "loadavg_after": [
+        3.24365234375,
+        4.708984375,
+        6.0810546875
+      ]
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 2,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "openssl,tlsed,rustls"
+      ],
+      "loadavg_before": [
+        3.24365234375,
+        4.708984375,
+        6.0810546875
+      ],
+      "loadavg_after": [
+        3.14404296875,
+        4.66357421875,
+        6.05712890625
+      ]
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 3,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed,rustls,openssl"
+      ],
+      "loadavg_before": [
+        3.14404296875,
+        4.66357421875,
+        6.05712890625
+      ],
+      "loadavg_after": [
+        3.14404296875,
+        4.66357421875,
+        6.05712890625
+      ]
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 4,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls,openssl,tlsed"
+      ],
+      "loadavg_before": [
+        3.14404296875,
+        4.66357421875,
+        6.05712890625
+      ],
+      "loadavg_after": [
+        3.14404296875,
+        4.66357421875,
+        6.05712890625
+      ]
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 5,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "openssl,tlsed,rustls"
+      ],
+      "loadavg_before": [
+        3.14404296875,
+        4.66357421875,
+        6.05712890625
+      ],
+      "loadavg_after": [
+        3.14404296875,
+        4.66357421875,
+        6.05712890625
+      ]
+    },
+    {
+      "profile": "aes128-x25519-fragment64",
+      "repeat": 0,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "64",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed,rustls,openssl"
+      ],
+      "loadavg_before": [
+        3.14404296875,
+        4.66357421875,
+        6.05712890625
+      ],
+      "loadavg_after": [
+        3.05224609375,
+        4.619140625,
+        6.033203125
+      ]
+    },
+    {
+      "profile": "aes128-x25519-fragment64",
+      "repeat": 1,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "64",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls,openssl,tlsed"
+      ],
+      "loadavg_before": [
+        3.05224609375,
+        4.619140625,
+        6.033203125
+      ],
+      "loadavg_after": [
+        3.05224609375,
+        4.619140625,
+        6.033203125
+      ]
+    },
+    {
+      "profile": "aes128-x25519-fragment64",
+      "repeat": 2,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "64",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "openssl,tlsed,rustls"
+      ],
+      "loadavg_before": [
+        3.05224609375,
+        4.619140625,
+        6.033203125
+      ],
+      "loadavg_after": [
+        2.9677734375,
+        4.5751953125,
+        6.00927734375
+      ]
+    },
+    {
+      "profile": "aes128-x25519-fragment64",
+      "repeat": 3,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "64",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed,rustls,openssl"
+      ],
+      "loadavg_before": [
+        2.9677734375,
+        4.5751953125,
+        6.00927734375
+      ],
+      "loadavg_after": [
+        2.9677734375,
+        4.5751953125,
+        6.00927734375
+      ]
+    },
+    {
+      "profile": "aes128-x25519-fragment64",
+      "repeat": 4,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "64",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls,openssl,tlsed"
+      ],
+      "loadavg_before": [
+        2.9677734375,
+        4.5751953125,
+        6.00927734375
+      ],
+      "loadavg_after": [
+        3.05029296875,
+        4.5654296875,
+        5.9970703125
+      ]
+    },
+    {
+      "profile": "aes128-x25519-fragment64",
+      "repeat": 5,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "64",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "openssl,tlsed,rustls"
+      ],
+      "loadavg_before": [
+        3.05029296875,
+        4.5654296875,
+        5.9970703125
+      ],
+      "loadavg_after": [
+        3.05029296875,
+        4.5654296875,
+        5.9970703125
+      ]
+    },
+    {
+      "profile": "chacha-x25519",
+      "repeat": 0,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "chacha",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed,rustls,openssl"
+      ],
+      "loadavg_before": [
+        3.05029296875,
+        4.5654296875,
+        5.9970703125
+      ],
+      "loadavg_after": [
+        3.2861328125,
+        4.5888671875,
+        5.9970703125
+      ]
+    },
+    {
+      "profile": "chacha-x25519",
+      "repeat": 1,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "chacha",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls,openssl,tlsed"
+      ],
+      "loadavg_before": [
+        3.2861328125,
+        4.5888671875,
+        5.9970703125
+      ],
+      "loadavg_after": [
+        3.26318359375,
+        4.56201171875,
+        5.9794921875
+      ]
+    },
+    {
+      "profile": "chacha-x25519",
+      "repeat": 2,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "chacha",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "openssl,tlsed,rustls"
+      ],
+      "loadavg_before": [
+        3.26318359375,
+        4.56201171875,
+        5.9794921875
+      ],
+      "loadavg_after": [
+        3.26318359375,
+        4.56201171875,
+        5.9794921875
+      ]
+    },
+    {
+      "profile": "chacha-x25519",
+      "repeat": 3,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "chacha",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed,rustls,openssl"
+      ],
+      "loadavg_before": [
+        3.26318359375,
+        4.56201171875,
+        5.9794921875
+      ],
+      "loadavg_after": [
+        3.32177734375,
+        4.55224609375,
+        5.9677734375
+      ]
+    },
+    {
+      "profile": "chacha-x25519",
+      "repeat": 4,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "chacha",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls,openssl,tlsed"
+      ],
+      "loadavg_before": [
+        3.32177734375,
+        4.55224609375,
+        5.9677734375
+      ],
+      "loadavg_after": [
+        3.4560546875,
+        4.5595703125,
+        5.9619140625
+      ]
+    },
+    {
+      "profile": "chacha-x25519",
+      "repeat": 5,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/openssl-compare/release/openssl-compare",
+        "--suite",
+        "chacha",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "openssl,tlsed,rustls"
+      ],
+      "loadavg_before": [
+        3.4560546875,
+        4.5595703125,
+        5.9619140625
+      ],
+      "loadavg_after": [
+        3.4560546875,
+        4.5595703125,
+        5.9619140625
+      ]
+    }
+  ],
+  "raw_csv_sha256": {
+    "aes128-x25519/repeat-0.csv": "5809e25327c4fda600122dff2f9eeb496190719b0a6a17cf086d92a842333767",
+    "aes128-x25519/repeat-1.csv": "7f47b908365c5463193d05b93e71da7d050347e90ffbedbcd066c13b4ac12be3",
+    "aes128-x25519/repeat-2.csv": "0f7048a18749e61088d9c7fdbfed9de00174f35c4c573b4289c2f2556ef37c86",
+    "aes128-x25519/repeat-3.csv": "8ebba2c488a156389803122ad11d7655abf41837710266da6e0537659c2f3b69",
+    "aes128-x25519/repeat-4.csv": "d463053f0dcb9b69a358577d53825ecf9c464601bae4dcae567b641d7df85556",
+    "aes128-x25519/repeat-5.csv": "7130b0162d1beb39257a88c2394434ddf7f75314f03b48c26b171ad437055be4",
+    "aes128-x25519-fragment64/repeat-0.csv": "21c4e233481042b976f84a13797664cde034df6327eddb54f05ef920ef55e71b",
+    "aes128-x25519-fragment64/repeat-1.csv": "d839b433bf0953426c9d4b07fd52fd27b022b3a7900a417c315bdf717b42fc85",
+    "aes128-x25519-fragment64/repeat-2.csv": "679a8083f9df62d686fd9f7b883a74a5a8b45c37979653ef424af34e7659917f",
+    "aes128-x25519-fragment64/repeat-3.csv": "ff9e195c591262d1dbc4c956826fd828be43fc11a080d5759b761fad335b0b55",
+    "aes128-x25519-fragment64/repeat-4.csv": "38d572ef1ae3c5915189e1ba931bd94d3de0e53e33d4f38fa750300e6fedd8d7",
+    "aes128-x25519-fragment64/repeat-5.csv": "2ecf3cecd6dae55e0a0cbd30a8e029261bc2d6a202f8c24bc62e4a3f1304d947",
+    "chacha-x25519/repeat-0.csv": "94ec0edd3d77d99eb7c3d59553b67dca575d049a70f105f3974bb46a7cc3a300",
+    "chacha-x25519/repeat-1.csv": "b99c04175abf4d63d09bce427055eeb10325e25b97ae5949820c71db5ffee0bf",
+    "chacha-x25519/repeat-2.csv": "0352a63d4376899808f1ad53bd12465864951affa413e50dff87471a9a13a223",
+    "chacha-x25519/repeat-3.csv": "a09e34af670d6f6d87352e2d8f0976ac1c77c8702f30347f7c3f204a59c7695e",
+    "chacha-x25519/repeat-4.csv": "7dc133690727b3f7ed13c5aa265cce1abe75f8161d507d3f8a92556c42b5fd69",
+    "chacha-x25519/repeat-5.csv": "1281c1cb6b441101131349f3ec50f05d849c0ddebdbfe5f4b4f1af625b073712",
+    "comparison.csv": "8e6732daf671b5ebfd74d145f1db7ad0a4ee9085a2edd5bd2f795bc7c8489341"
+  }
+}
