@@ -1,0 +1,7 @@
+implementation,workload,direction,payload_bytes,iterations,n,mean_ns,stdev_ns,cv_percent,p50_ns,p95_ns,p99_ns,gib_per_s
+tls_pki_strict_key_usage,pki_invalid_signature,server_identity,432,256,600,6913574.22,1260142.72,18.23,6604542,8437792,12361667,0.000000
+tls_pki_strict_key_usage,pki_valid,server_identity,432,256,600,7386026.54,3529428.71,47.79,6842125,9181792,14035458,0.000000
+tls_pki_strict_key_usage,pki_wrong_name,server_identity,432,256,600,7489060.70,2385499.54,31.85,6896000,10079292,16068916,0.000000
+webpki_native_policy,pki_invalid_signature,server_identity,432,256,600,6912219.17,1280186.79,18.52,6581291,8531834,13109208,0.000000
+webpki_native_policy,pki_valid,server_identity,432,256,600,7065374.16,3186089.62,45.09,6609083,8866125,13075000,0.000000
+webpki_native_policy,pki_wrong_name,server_identity,432,256,600,7154354.52,1870546.29,26.15,6659709,9608375,13888458,0.000000

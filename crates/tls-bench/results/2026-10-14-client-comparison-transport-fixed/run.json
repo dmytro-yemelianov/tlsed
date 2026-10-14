@@ -1,0 +1,339 @@
+{
+  "repeats": 6,
+  "samples_per_repeat": 100,
+  "bulk_records_per_sample": 256,
+  "assurance": "authenticated client + identical rustls server pair; shared strict tls-pki policy",
+  "fresh_process_per_repeat": true,
+  "order": "alternates by repeat",
+  "binary_sha256": {
+    "client_compare": "5e505a407d9cd6cf53c602593abfb428a041350c33274e406383301e8e478299",
+    "pki_compare": "939f54e6c12ae70190a0b5c0bbe754bbf19a1fd6976872ac1df818135df36b12"
+  },
+  "commands": [
+    {
+      "profile": "aes128-x25519",
+      "repeat": 0,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 1,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 2,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 3,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 4,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 5,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519-fragment64",
+      "repeat": 0,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "64",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519-fragment64",
+      "repeat": 1,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "64",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519-fragment64",
+      "repeat": 2,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "64",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519-fragment64",
+      "repeat": 3,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "64",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519-fragment64",
+      "repeat": 4,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "64",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519-fragment64",
+      "repeat": 5,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "64",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "pki",
+      "repeat": 0,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/pki_compare",
+        "--samples",
+        "100",
+        "--iterations",
+        "256",
+        "--warmup",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "pki",
+      "repeat": 1,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/pki_compare",
+        "--samples",
+        "100",
+        "--iterations",
+        "256",
+        "--warmup",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "pki",
+      "repeat": 2,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/pki_compare",
+        "--samples",
+        "100",
+        "--iterations",
+        "256",
+        "--warmup",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "pki",
+      "repeat": 3,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/pki_compare",
+        "--samples",
+        "100",
+        "--iterations",
+        "256",
+        "--warmup",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "pki",
+      "repeat": 4,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/pki_compare",
+        "--samples",
+        "100",
+        "--iterations",
+        "256",
+        "--warmup",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "pki",
+      "repeat": 5,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/pki_compare",
+        "--samples",
+        "100",
+        "--iterations",
+        "256",
+        "--warmup",
+        "20"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "controls": "no concurrent agent compilation/fuzzing; affinity/frequency/scheduler isolation unavailable"
+}
