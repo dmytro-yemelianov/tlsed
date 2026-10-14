@@ -1,0 +1,5 @@
+All retained pre-campaign hashes match final source/fixtures/manifest/lock/seeds.
+454fe4dc2aa9cf8b1ac7172224da6837058e7e68a5efd57cb576116b5771cda9  crates/tls-pki/tests/pki.rs
+af397b8e4b3af7f7b5b2fddc5536b8aac95ad3af4eb5cffb5ff44255e96b8b19  docs/PKI.md
+145c3610d56c044e5f79e2be71c2e12be8d7b38d1721a8af65cf97a14d68ac42  crates/tls-pki/tests/fixtures/README.md
+All12 retained seed copies match original bytes and every final manifest hash rechecks after path remapping.

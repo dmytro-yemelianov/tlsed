@@ -1,0 +1,80 @@
+[package]
+name = "tls-core-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2024"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "=0.4.10"
+tls-core = { path = "../crates/tls-core" }
+tls-crypto = { path = "../crates/tls-crypto" }
+tls-crypto-awslc = { path = "../crates/tls-crypto-awslc" }
+tls-pki = { path = "../crates/tls-pki" }
+tls-client = { path = "../crates/tls-client" }
+rustls = { version = "=0.23.45", default-features = false, features = ["std", "aws_lc_rs"] }
+
+[[bin]]
+name = "record_parser"
+path = "fuzz_targets/record_parser.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "fragmented_records"
+path = "fuzz_targets/fragmented_records.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "auth_counter"
+path = "fuzz_targets/auth_counter.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "handshake_reassembly"
+path = "fuzz_targets/handshake_reassembly.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "protected_records"
+path = "fuzz_targets/protected_records.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "transcript_labels"
+path = "fuzz_targets/transcript_labels.rs"
+test = false
+doc = false
+bench = false
+
+# Deliberately independent of the stable root workspace/toolchain profile.
+[workspace]
+members = ["."]
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[[bin]]
+name = "bounded_server_pki"
+path = "fuzz_targets/bounded_server_pki.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "client_engine"
+path = "fuzz_targets/client_engine.rs"
+test = false
+doc = false
+bench = false

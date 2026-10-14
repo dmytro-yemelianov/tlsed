@@ -1,0 +1,13 @@
+name = "tls13-model"
+version = "0.1.0"
+defaultTargets = ["Tls13", "tls13_model"]
+
+[leanOptions]
+warningAsError = true
+
+[[lean_lib]]
+name = "Tls13"
+
+[[lean_exe]]
+name = "tls13_model"
+root = "Main"

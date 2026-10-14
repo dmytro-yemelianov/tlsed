@@ -1,0 +1,13 @@
+Native AWS-LC sanitizer evidence for milestone2
+Host Darwin27.2.0 arm64, pinned nightly-2026-09-17 cargo-fuzz0.13.1.
+No C sanitizer flags were explicitly supplied to these runs.
+fuzz/target/aarch64-apple-darwin/release/build/aws-lc-sys/2b5f5903c670e55c/run/stdout
+CFLAGS = None
+CFLAGS_aarch64-apple-darwin = None
+CFLAGS_aarch64_apple_darwin = None
+HOST_CFLAGS = None
+Command: nm -u fuzz/target/aarch64-apple-darwin/release/build/aws-lc-sys/2b5f5903c670e55c/out/libaws_lc_0_46_0_crypto.a
+nm exit code: 0
+__asan/__sanitizer undefined-symbol matches: 0
+Treat native provider C/assembly as outside this campaign's demonstrated sanitizer coverage.
+Rust ASan execution is not a proof of complete backend instrumentation or security.

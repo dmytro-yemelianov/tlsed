@@ -1,0 +1,8 @@
+Native AWS-LC coverage check after bounded_server_pki ASan run.
+Rust ASan instrumentation does not establish native C/assembly coverage.
+fuzz/target/aarch64-apple-darwin/release/build/aws-lc-sys/2b5f5903c670e55c/out/libaws_lc_0_46_0_crypto.a
+nm exit: 0
+ASan/sanitizer undefined-symbol references: 0
+fuzz/target/aarch64-apple-darwin/release/build/aws-lc-sys/7c64c783597f66a5/out/libaws_lc_0_46_0_crypto.a
+nm exit: 0
+ASan/sanitizer undefined-symbol references: 0

@@ -1,0 +1,18 @@
+Target: transcript_labels
+Final constructor-reset/preload-oracle campaign
+Command: cargo +nightly-2026-09-17 fuzz run transcript_labels -- -max_total_time=10 -max_len=4096
+Toolchain: rustc 1.100.0-nightly (923c95cdf 2026-09-16)
+Host: Darwin 27.2.0 arm64
+cargo-fuzz: 0.13.1; libfuzzer-sys: 0.4.10
+Exit status: 0
+Requested time: 10 seconds; reported elapsed: 11 seconds
+Executions: 463286; seed: 3069676395
+Reused local corpus: yes
+Final target includes deliberately preloaded actual AWSLC contexts before Transcript::new.
+Actual SHA256/SHA384 streaming, snapshots, HRR rewrite, freeze and bounded operation/resource oracles.
+Exact label encoding and maintained HKDF expansion/wipe oracles; no derived secret logging.
+No endpoint, certificate identity, global nonce freshness or cryptographic security claim.
+Native C/assembly sanitizer coverage is not established; see native-sanitizer-check.txt.
+Old first-oracle/pre-constructor-reset logs are historical, not final-source evidence.
+The run's manifest and lock snapshots are retained because another agent is adding an independent PKI target afterward.
+Source/manifest snapshot SHA256 values are retained separately. Short fuzz passage is not a sustained campaign or audit.

@@ -1,0 +1,40 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on shared package cache
+   Compiling tls-core v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/crates/tls-core)
+   Compiling tls-core-fuzz v0.0.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/fuzz)
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.53s
+    Blocking waiting for file lock on build directory
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.24s
+     Running `fuzz/target/aarch64-apple-darwin/release/handshake_reassembly -artifact_prefix=/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/fuzz/artifacts/handshake_reassembly/ -max_total_time=10 -max_len=4096 /Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/fuzz/corpus/handshake_reassembly`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 224469322
+INFO: Loaded 1 modules   (1460 inline 8-bit counters): 1460 [0x104663e30, 0x1046643e4), 
+INFO: Loaded 1 PC tables (1460 PCs): 1460 [0x1046643e8,0x104669f28), 
+INFO:      134 files found in /Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/fuzz/corpus/handshake_reassembly
+INFO: seed corpus: files: 134 min: 1b max: 259b total: 3711b rss: 36Mb
+#135	INITED cov: 242 ft: 508 corp: 101/2983b exec/s: 0 rss: 38Mb
+#21531	REDUCE cov: 242 ft: 508 corp: 101/2982b lim: 467 exec/s: 0 rss: 54Mb L: 22/259 MS: 1 EraseBytes-
+#85574	REDUCE cov: 242 ft: 508 corp: 101/2981b lim: 1098 exec/s: 0 rss: 94Mb L: 5/259 MS: 3 CopyPart-ChangeBit-EraseBytes-
+#117042	REDUCE cov: 242 ft: 508 corp: 101/2980b lim: 1408 exec/s: 0 rss: 114Mb L: 23/259 MS: 3 EraseBytes-ChangeASCIIInt-ChangeByte-
+#390272	REDUCE cov: 242 ft: 508 corp: 101/2974b lim: 4096 exec/s: 195136 rss: 288Mb L: 48/259 MS: 5 InsertByte-CopyPart-EraseBytes-ChangeByte-ChangeBit-
+#410864	REDUCE cov: 242 ft: 508 corp: 101/2973b lim: 4096 exec/s: 205432 rss: 301Mb L: 47/259 MS: 2 ChangeBit-EraseBytes-
+#485454	REDUCE cov: 242 ft: 508 corp: 101/2972b lim: 4096 exec/s: 161818 rss: 340Mb L: 46/259 MS: 4 InsertByte-CrossOver-ChangeByte-EraseBytes-
+#503666	REDUCE cov: 242 ft: 508 corp: 101/2971b lim: 4096 exec/s: 167888 rss: 346Mb L: 11/259 MS: 2 CrossOver-EraseBytes-
+#505656	REDUCE cov: 242 ft: 508 corp: 101/2970b lim: 4096 exec/s: 168552 rss: 347Mb L: 24/259 MS: 5 EraseBytes-ChangeByte-CMP-ChangeBinInt-CopyPart- DE: "\377\377\377\377\377\377\377\001"-
+#508556	REDUCE cov: 242 ft: 508 corp: 101/2968b lim: 4096 exec/s: 169518 rss: 347Mb L: 44/259 MS: 5 CopyPart-InsertByte-CopyPart-ChangeBinInt-EraseBytes-
+#524288	pulse  cov: 242 ft: 508 corp: 101/2968b lim: 4096 exec/s: 174762 rss: 347Mb
+#538982	REDUCE cov: 242 ft: 508 corp: 101/2966b lim: 4096 exec/s: 179660 rss: 350Mb L: 42/259 MS: 1 EraseBytes-
+#659394	REDUCE cov: 242 ft: 508 corp: 101/2965b lim: 4096 exec/s: 164848 rss: 403Mb L: 23/259 MS: 3 InsertRepeatedBytes-PersAutoDict-EraseBytes- DE: "\377\377\377\377\377\377\377\001"-
+#943848	REDUCE cov: 242 ft: 508 corp: 101/2964b lim: 4096 exec/s: 157308 rss: 490Mb L: 10/259 MS: 2 EraseBytes-ChangeBinInt-
+#1048576	pulse  cov: 242 ft: 508 corp: 101/2964b lim: 4096 exec/s: 149796 rss: 492Mb
+#1085741	REDUCE cov: 242 ft: 508 corp: 101/2959b lim: 4096 exec/s: 155105 rss: 493Mb L: 93/259 MS: 3 EraseBytes-CrossOver-CrossOver-
+#1085770	REDUCE cov: 242 ft: 508 corp: 101/2955b lim: 4096 exec/s: 155110 rss: 493Mb L: 89/259 MS: 4 ChangeBinInt-InsertRepeatedBytes-ChangeASCIIInt-EraseBytes-
+#1108499	REDUCE cov: 242 ft: 508 corp: 101/2954b lim: 4096 exec/s: 158357 rss: 493Mb L: 88/259 MS: 4 ShuffleBytes-ChangeByte-ChangeASCIIInt-EraseBytes-
+#1382345	REDUCE cov: 242 ft: 508 corp: 101/2951b lim: 4096 exec/s: 153593 rss: 497Mb L: 20/259 MS: 4 CopyPart-PersAutoDict-CrossOver-EraseBytes- DE: "\377\377\377\377\377\377\377\001"-
+#1654047	DONE   cov: 242 ft: 508 corp: 101/2951b lim: 4096 exec/s: 150367 rss: 499Mb
+###### Recommended dictionary. ######
+"\377\377\377\377\377\377\377\001" # Uses: 88847
+###### End of recommended dictionary. ######
+Done 1654047 runs in 11 second(s)

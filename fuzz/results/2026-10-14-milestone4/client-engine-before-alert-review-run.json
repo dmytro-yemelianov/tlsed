@@ -1,0 +1,18 @@
+{
+  "command": [
+    "cargo",
+    "+nightly-2026-09-17",
+    "fuzz",
+    "run",
+    "client_engine",
+    "--",
+    "-max_total_time=10",
+    "-max_len=4096",
+    "-seed=71513"
+  ],
+  "exit_code": 0,
+  "seed": 71513,
+  "requested_seconds": 10,
+  "max_len": 4096,
+  "initial_retained_seeds": 28
+}
