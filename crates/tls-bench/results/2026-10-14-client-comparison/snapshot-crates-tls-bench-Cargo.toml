@@ -1,0 +1,20 @@
+[package]
+name = "tls-bench"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+default-run = "tls-bench"
+
+[dependencies]
+rustls = { version = "=0.23.45", default-features = false, features = ["std", "aws_lc_rs"] }
+aws-lc-rs = "=1.18.2"
+rustls-webpki = { version = "=0.103.15", features = ["aws-lc-rs"] }
+tls-client = { path = "../tls-client" }
+tls-core = { path = "../tls-core" }
+tls-crypto = { path = "../tls-crypto" }
+tls-crypto-awslc = { path = "../tls-crypto-awslc" }
+tls-pki = { path = "../tls-pki" }
+
+[lints]
+workspace = true

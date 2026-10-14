@@ -1,0 +1,21 @@
+Observed 2026-10-14; exploratory runs, no scheduler isolation
+CPU: Apple M5 ARM64
+macOS27.2 build26B5086k; Darwin27.2.0
+rustls0.23.45; rustls-webpki0.103.15; aws-lc-rs1.18.2; aws-lc-sys0.46.0
+Rust release profile: thin LTO, codegen-units=1
+C flags: -O3 -Wall -Wextra -Werror; Homebrew openssl@3 include/lib/rpath
+Profile: TLS13 AES128GCM SHA256 X25519 P256/SHA256 server cert; localhost SAN, SNI; ALPN bench/1
+No client auth, tickets, resumption or early data; both peers authenticated server identity
+rustc 1.98.1 (48a229cea 2026-09-01)
+cargo 1.98.1 (797e8a9bc 2026-08-05)
+Apple clang version 21.0.0 (clang-2100.3.34.2)
+Target: arm64-apple-darwin27.2.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+OpenSSL 3.6.5 29 Sep 2026 (Library: OpenSSL 3.6.5 29 Sep 2026)
+d6517b3f2f31d119fcc2880ddc29257696f8ab43b0b8a737a304e2fe34bb8e75  crates/tls-bench/fixtures/ca.der
+5d7f2c2c01f431bcc72267a4655b7cb541f69691b32c6d153ca7d1585b5c606a  crates/tls-bench/fixtures/ca.pem
+92b5fae8f905a2eeb6c51d85d3d83d0b26a3621baa056e940c1b54c8a840ed90  crates/tls-bench/fixtures/server-key.der
+bc4d939a02159c3547dd052d95a38bc7961fd2d2344fab73167aa635d762f328  crates/tls-bench/fixtures/server-key.pem
+f17604ae2e4e42abad2583d8de33d52ea399e1d9073c761839ae773e7f62bc50  crates/tls-bench/fixtures/server.der
+8934635ca51f260ebe3c299c2a46fe6ba067cfe67fa113fc04a0f99ac9c7be1c  crates/tls-bench/fixtures/server.pem

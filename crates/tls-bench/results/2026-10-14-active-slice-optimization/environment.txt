@@ -1,0 +1,19 @@
+$ rustc --version
+rustc 1.98.1 (48a229cea 2026-09-01)
+
+$ sw_vers
+ProductName:		macOS
+ProductVersion:		27.2
+BuildVersion:		26B5086k
+
+$ uname -m
+arm64
+
+$ sysctl -n machdep.cpu.brand_string
+Apple M5
+
+$ pmset -g batt
+Now drawing from 'AC Power'
+ -InternalBattery-0 (id=24117347)	100%; charged; 0:00 remaining present: true
+
+Release thinLTO/codegen-units1; no agent builds/fuzz during timing; no affinity/frequency/scheduler isolation.
