@@ -516,6 +516,64 @@ fn measure(
     }
     Ok(())
 }
+/// One live connection in the round-robin working-set test: its own scratch buffers (through
+/// `Client`), server, and transport.
+struct Connection<'a> {
+    client: Client<'a>,
+    server: rustls::ServerConnection,
+    transport: Transport,
+}
+
+/// Server-to-client 16 KiB records spread round-robin over `connections` live connections. The
+/// bytes per record match `measure`; only the memory each record touches changes, because a
+/// connection's buffers are used once per round rather than on every record.
+fn measure_round_robin(
+    kind: Implementation,
+    config: &Configs,
+    samples: usize,
+    records: usize,
+    fragment: usize,
+    connections: usize,
+) -> Result<()> {
+    let mut scratches: Vec<Scratch> = (0..connections).map(|_| Scratch::new()).collect();
+    let mut pool = Vec::with_capacity(connections);
+    for scratch in scratches.iter_mut() {
+        let mut client = Client::new(kind, config, scratch, "localhost")?;
+        let mut server = rustls::ServerConnection::new(config.server.clone())?;
+        let mut transport = Transport::new(fragment);
+        transport.handshake(&mut client, &mut server)?;
+        pool.push(Connection {
+            client,
+            server,
+            transport,
+        });
+    }
+    let payload = vec![0x5a; 16384];
+    let mut received = vec![0; 16384];
+    for sample in 0..(samples + 5) {
+        let start = Instant::now();
+        for record in 0..records {
+            let conn = &mut pool[record % connections];
+            conn.server.writer().write_all(&payload)?;
+            conn.transport.pump(&mut conn.client, &mut conn.server)?;
+            conn.client.read(&mut received)?;
+            if received != payload {
+                return Err("authenticated plaintext mismatch".into());
+            }
+            std::hint::black_box(&received);
+        }
+        let elapsed = start.elapsed().as_nanos();
+        if sample >= 5 {
+            println!(
+                "{},round_robin_{connections},server_to_client,16384,{records},{},{elapsed}",
+                kind.name(),
+                sample - 5
+            );
+        }
+    }
+    Ok(())
+}
+
 fn main() -> Result<()> {
     let args: Vec<_> = std::env::args().collect();
     let option = |key: &str, default: &str| -> Result<String> {
@@ -559,6 +617,13 @@ fn main() -> Result<()> {
     if !matches!(implementation.as_str(), "both" | "tlsed" | "rustls") {
         return Err("invalid implementation filter".into());
     }
+    // Working-set test: with --connections, the bulk records are spread round-robin over K live
+    // connections, including K = 1, so every point in a series uses the same path.
+    let round_robin = args.iter().any(|x| x == "--connections");
+    let connections: usize = option("--connections", "1")?.parse()?;
+    if connections == 0 || connections > 1024 {
+        return Err("invalid connection count".into());
+    }
     println!("implementation,workload,direction,payload_bytes,iterations,sample,elapsed_ns");
     for kind in kinds {
         let selected = matches!(
@@ -569,7 +634,11 @@ fn main() -> Result<()> {
             continue;
         }
         let before = minor_faults();
-        measure(kind, &config, samples, records, fragment, &only)?;
+        if round_robin {
+            measure_round_robin(kind, &config, samples, records, fragment, connections)?;
+        } else {
+            measure(kind, &config, samples, records, fragment, &only)?;
+        }
         if let (Some(before), Some(after)) = (before, minor_faults()) {
             eprintln!("minor_faults,{},{}", kind.name(), after - before);
         }

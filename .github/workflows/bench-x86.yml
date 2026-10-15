@@ -19,6 +19,10 @@ on:
         description: "Time each client alone at 16645, 4096 and 1024-byte fragments (server-to-client 16 KiB)"
         type: boolean
         default: false
+      cache_test:
+        description: "Copy cost against footprint, and TLS records round-robin over 1-256 connections"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -104,6 +108,26 @@ jobs:
                 > "$FS/$impl-f$frag.csv" 2> "$FS/$impl-f$frag.err"
             done
           done
+      - name: Cache-state test, copy footprint and working set
+        if: ${{ inputs.cache_test }}
+        run: |
+          CT="$RUNNER_TEMP/cache-test"
+          mkdir -p "$CT"
+          for size in 16384 1024; do
+            for mode in dst both; do
+              target/release/copy_footprint --size $size --mode $mode > "$CT/copy-$mode-$size.csv"
+            done
+          done
+          for rep in 0 1 2; do
+            if [ $((rep % 2)) -eq 0 ]; then order="tlsed rustls"; else order="rustls tlsed"; fi
+            for k in 1 16 64 256; do
+              for impl in $order; do
+                target/release/client_compare --impl $impl --connections $k \
+                  --samples 40 --bulk-records 256 \
+                  > "$CT/ws-$impl-k$k-r$rep.csv" 2> "$CT/ws-$impl-k$k-r$rep.err"
+              done
+            done
+          done
       - name: Save host and results
         run: |
           lscpu > "$RUNNER_TEMP/host-lscpu.txt"
@@ -132,3 +156,8 @@ jobs:
         with:
           name: fragment-sweep-x86
           path: ${{ runner.temp }}/fragment-sweep
+      - uses: actions/upload-artifact@v4
+        if: ${{ inputs.cache_test }}
+        with:
+          name: cache-test-x86
+          path: ${{ runner.temp }}/cache-test
