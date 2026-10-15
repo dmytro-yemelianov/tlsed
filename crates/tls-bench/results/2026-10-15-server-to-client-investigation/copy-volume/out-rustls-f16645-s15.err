@@ -1,0 +1,17 @@
+minor_faults,rustls_strict,149
+copy_calls,100338
+copy_bytes,328970513
+hist_log2,0,5307
+hist_log2,1,652
+hist_log2,2,20791
+hist_log2,3,10683
+hist_log2,4,10486
+hist_log2,5,9620
+hist_log2,6,1646
+hist_log2,7,66
+hist_log2,8,7224
+hist_log2,9,319
+hist_log2,10,242
+hist_log2,12,15382
+hist_log2,13,5120
+hist_log2,14,12800

@@ -48,11 +48,38 @@ The slow 9V74 runners show the same signature: rustls about 4–5 µs slower per
 - **Minor page faults.** On EPYC 7763: 141–143 for TLSed and 151–152 for rustls per run. On EPYC 9V45: 147 and 154. On Linux arm64: 137 and 145. These are too few to matter.
 - **Process mode.** Separate and combined runs agree on EPYC 9V45 (1.02 and 0.99) and EPYC 7763 (0.685 and 0.697), and on macOS.
 
+## Copy volume: rustls copies more bytes (`copy-volume/`)
+
+An `LD_PRELOAD` shim (`copyshim.c`) counts every `memcpy` and `memmove` call and its bytes, on the Linux arm64 build. Each client runs at 5 and at 15 samples, and the slope between them gives bytes per bulk record. That removes handshake and warm-up bytes. The shim sees calls from Rust and from aws-lc through the PLT.
+
+| Fragment | TLSed bytes/record | rustls bytes/record | TLSed copy calls/record | rustls copy calls/record |
+|---:|---:|---:|---:|---:|
+| 16,645 (default) | 82,597 | 127,676 | 10.4 | 18.9 |
+| 4,096 | 86,732 | 127,655 | 16.0 | 17.9 |
+| 1,024 | 93,917 | 233,204 | 28.0 | 45.7 |
+
+So rustls copies about 1.5× TLSed's bytes at the default fragment size, and about 2.5× at 1 KiB. For a 16 KiB record, the copy volume is about 5 (TLSed) and 8 (rustls) record-sized copies, so both clients copy several times, and rustls more.
+
+Per-byte cost, approximate, from the EPYC 7763 perf run (`x86-zen3-slow/perf-breakdown.txt`) divided by 51,840 records: TLSed moves about 83 KB in about 1.8 µs of `memmove`, roughly 46 GB/s, and rustls about 128 KB in about 8.0 µs, roughly 16 GB/s. The byte counts come from the Linux arm64 build, and the copy calls are the same code on the EPYC run. The throughput figures include a shared per-process component and are approximate.
+
+So on the slow host, rustls moves about 1.5× the bytes at about a third of TLSed's copy throughput. Both factors add to the gap.
+
+## Fragment sweep: time does not follow bytes on these hosts (`fragment-sweep/`)
+
+Separate processes, two repeats, TLSed ÷ rustls, server-to-client 16 KiB:
+
+| Fragment | Linux arm64, Docker | macOS (Apple M5) |
+|---:|---|---|
+| 16,645 | 0.96, 1.01 | 0.87, 0.86 |
+| 4,096 | 1.08, 1.08 | 0.95, 0.91 |
+| 1,024 | 1.03, 1.01 | 0.84, 0.94 |
+
+Smaller fragments raise rustls's copy volume, but on these two hosts the time ratio stays between 0.84 and 1.08 and shows no trend with fragment size. Copy throughput was not measured on these hosts, so the reason is not established. The large penalty appeared on the slow EPYC runners, where copies are expensive. A sweep on one of those runners would show whether the gap follows the byte counts there, and that needs a dispatch that lands on one.
+
 ## Open questions
 
-- Do rustls's copies move more bytes than TLSed's, or does each copy cost more? A size-instrumented run would separate these.
-- The `--fragment` option changes the chunk size rustls's deframer sees. If `DeframerVecBuffer::discard` moves whole records, varying it should change rustls's copy time. This has not been run.
-- Why the same copy costs more on the EPYC 7763 and 9V74 runners than on the 9V45 runner. Memory bandwidth and cache state on the host are plausible, but nothing here measures them.
+- Why copy throughput on the EPYC 7763 and 9V74 hosts is roughly a third of TLSed's copy throughput on the same host. Rustls's copies may land in cold memory, because it allocates a new buffer per record, but nothing here measures cache state at the copy.
+- The fragment sweep on a slow EPYC runner, to see whether the time gap widens at small fragments as the byte counts predict.
 - Profiles of the EPYC 9V74 slow runners, to confirm the copy signature there directly.
 
 ## Other findings
@@ -76,3 +103,5 @@ The slow 9V74 runners show the same signature: rustls about 4–5 µs slower per
 - `x86-baseline/`: EPYC 9V74 run (`38709562536`): pre-landing and current padded records, combined primary comparison.
 - `mac-process-check/`: macOS combined and separate runs, three repeats each.
 - `linux-arm64/`: separate-process runs, the padded-record baseline check, cachegrind summaries and strace counts.
+- `copy-volume/`: the copy-counting shim source, raw runs at each fragment and sample count, and `per-record.txt`.
+- `fragment-sweep/`: separate-process timings on Linux arm64 and macOS at three fragment sizes, two repeats each.
