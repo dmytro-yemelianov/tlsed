@@ -1,4 +1,41 @@
-# TLSed — handover, 2026-10-14
+# TLSed — handover, 2026-10-15
+
+## Оновлення 2026-10-15
+
+**Злиття в `main`.** PR #1 злито в `main` merge-комітом `8dc154a`, логічні коміти гілки збережено. Перед злиттям усі перевірки на `da3466e` пройшли (`rust-and-lean`, `fuzz-smoke`). `bench-x86` на `main` з `8dc154a` завершився успішно (run `38702456224`).
+
+**Коміти гілки `general-workspace-task-d698612e` після попереднього оновлення:**
+- `ff33eab` tls-core: extractable inner-scan form, retranslate Aeneas pin (уже в `main` через PR #1).
+- `902e036` verification: extractable-scan kernels and paired timing.
+- `da3466e` tls-bench: primary-profile rerun on the landed build.
+- `8323c19` verification: Lean proofs for the inner-scan loops.
+- `501dbc4` tls-bench: x86 benchmark results from GitHub Actions.
+
+Коміти `902e036`–`501dbc4` ще не в `main`. Для злиття потрібен окремий PR.
+
+**Scan у формі, яку витягує Aeneas.** `protected::last_nonzero` тепер перевіряє блоки по 64 байти через OR-редукцію над підзрізом і сканує останній ненульовий блок індексними циклами. Результат той самий, що `rposition(|&b| b != 0)`, це покрито тестом `last_nonzero_matches_rposition`. Pin перегенеровано: `check_translation.py` проходить, `lake build` у `verification/aeneas` без помилок.
+
+**Виміряно (парно проти pre-landing збірки, 6 повторів, Apple M5, AC)** — `verification/results/2026-10-15-extractable-scan/`:
+- padmax 0.215, inner_padmax 0.217, pad4k 0.274, pad1k 0.366 від pre-landing часу.
+- tag_long 0.254. Цей шлях не доходить до scan (bad tag падає в AEAD), різниця в межах шуму.
+- long 1.009 і short 0.996 — в межах шуму.
+- Ядро: у варіанті `x_sub` (committed) 170 нс проти 153 нс у slice-equality версії на 16 383 нулях. Whole-block OR (`x_or`) у 9 разів повільніший, early-exit (`x_exit`) не векторизується.
+- Primary profile на landed-збірці (`crates/tls-bench/results/2026-10-15-client-comparison-primary-landed/`) у межах діапазонів pre-landing прогону.
+
+**Доведення циклів (`verification/aeneas/ScanProof.lean`).** Доведено повну коректність `last_nonzero_spec`: функція повертає `ok`, не падає (ані вихід за межі, ані переповнення) і її результат задовольняє `IsLastNonzeroBelow`. `IsLastNonzeroBelow.unique` показує, що ця специфікація однозначно визначає результат. Охоплено три цикли: `block_is_zero` (OR-накопичення по 64 байтах), `last_nonzero_below` (спад по байтах) і `last_nonzero_loop` (пропуск блоків). Інваріанти через `loop.spec_decr_nat`. `ScanProof` — `lean_lib` і default target; `check_axioms.py` тепер аудитує 171 теорему, лише `propext`, `Classical.choice`, `Quot.sound`. Немає `sorry`, немає попереджень від нашого коду.
+- Не доведено: що `IsLastNonzeroBelow` дорівнює викликові `rposition` у бібліотеці Rust. Це визначення специфікації. Відповідність перевіряє тест `last_nonzero_matches_rposition` на тестових входах.
+- Питання з попереднього оновлення, чи лишати `verification/aeneas` untracked, закрито: proof-файли закомічені й відстежуються.
+
+**x86 (`crates/tls-bench/results/2026-10-15-x86-ci/`).** AMD EPYC 9V74, 4 vCPU, Hyper-V, спільний раннер. Лише 3 повтори клієнтського порівняння, тому результати індикативні.
+- Handshake і lifecycle на рівні rustls (0.99–1.00). Малі bulk-записи швидші за rustls в обох напрямках.
+- Server→client 16 KiB: 0.56 на x86 проти 0.88 на macOS. Три повтори збігаються (0.55–0.59), тобто різниця стабільна. Причину не встановлено. Не подавати 0.56 як перевагу x86, доки не перевірено шлях AWS-LC на цьому CPU і буферизацію клієнта rustls.
+- Padded-запис коштує 1.23× long-запису. На macOS після landing це 1.27×, до landing було 5.9×. Пре-landing базової лінії на x86 немає, бо workflow міряє лише поточне дерево.
+
+**Відкрите:**
+- Причина server→client 16 KiB на x86 (0.56 проти 0.88 на macOS): перевірити AWS-LC path і буферизацію rustls.
+- Пре-landing базова лінія для x86: додати в `bench-x86.yml` прогін попереднього коміту або окремий ref.
+- Формальна відповідність `IsLastNonzeroBelow` і `rposition` на рівні бібліотеки Rust: не зроблено.
+- PR для `902e036`–`501dbc4` у `main`: не відкрито, потрібне рішення.
 
 ## Оновлення 2026-10-14 (після Aeneas)
 
