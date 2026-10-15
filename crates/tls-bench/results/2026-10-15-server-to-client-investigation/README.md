@@ -11,6 +11,7 @@ On x86, the server-to-client 16 KiB ratio (TLSed ÷ rustls) depends on the runne
 | `38710051326` | EPYC 7763 | 0.697 | 0.685 (10,962 / 15,989) | 11,121 / 16,010 |
 | `38708921581` | EPYC 9V45 | 0.991 (0.961–0.993) | 1.02 (2,719 / 2,667) | 2,721 / 2,816 |
 | `38712799344` | Xeon Platinum 8370C | 1.042 (1.019–1.061) | not run | 5,403 / 5,222 at 16,645-byte fragments |
+| `38713510313` | EPYC 9V74 (second slow run) | 0.55 (0.545–0.56) | 0.557 (5,331 / 9,562) | 2,318 |
 
 Ratios in the combined column are the median of per-repeat ratios from `comparison.csv`. Per-record values are the medians from the same file, divided by 128 records per sample.
 
@@ -77,10 +78,34 @@ Separate processes, two repeats, TLSed ÷ rustls, server-to-client 16 KiB:
 
 Smaller fragments raise rustls's copy volume, but on these two hosts the time ratio stays between 0.84 and 1.08 and shows no trend with fragment size. The same sweep on an x86 runner (Xeon Platinum 8370C, run `38712799344`, `x86-fragment-sweep-xeon-8370c/`) gives TLSed ÷ rustls of 1.035 at 16,645 bytes, 1.052 at 4,096 and 0.948 at 1,024, again with no trend. This runner has parity with rustls at every fragment size, so the byte counts do not produce a penalty there either. Copy throughput was not measured on these hosts, so the reason is not established. The large penalty appeared on the slow EPYC runners, where copies are expensive. A sweep on one of those runners would show whether the gap follows the byte counts there, and that needs a dispatch that lands on one.
 
+## Second EPYC 9V74 run (`38713510313`): memmove again, but bytes do not predict time
+
+This run also had perf and a fragment sweep on a slow EPYC 9V74. It reproduces the mechanism:
+
+- Perf: the total CPU-time gap is 238.6 ms, and `memmove`/`memcpy` accounts for 233.6 ms of it. AES-GCM is nearly the same work for both clients.
+- Separate and combined runs agree again (0.557 and 0.55). Minor faults stay at 146–157 per run.
+
+The fragment sweep on this runner does not follow the byte counts (`x86-epyc-9v74-run5/sweep/`):
+
+| Fragment | TLSed ÷ rustls |
+|---:|---:|
+| 16,645 | 0.557 |
+| 4,096 | 0.656 (single repeat, noisy) |
+| 1,024 | 0.544 |
+
+The shim histogram from `copy-volume/` shows why this is surprising. Copies of 8 KiB or more per record:
+
+| Fragment | rustls copies ≥8 KiB per record | rustls bytes in those copies | TLSed copies ≥8 KiB per record | TLSed bytes |
+|---:|---:|---:|---:|---:|
+| 16,645 | 7 | 98 KB | 5 | 82 KB |
+| 1,024 | 13 | 147 KB | 4 | 66 KB |
+
+So rustls's large-copy volume rises by 50% at 1 KiB, yet its time rises by only about 6% (9.6 µs to 10.2 µs). Copy bytes alone do not set the cost. One explanation is that at small fragments the same buffers are reused and stay in cache, so their copies are cheap. This is a hypothesis; the run does not measure cache state. The single 4,096 repeat is too noisy to read.
+
 ## Open questions
 
 - Why copy throughput on the EPYC 7763 and 9V74 hosts is roughly a third of TLSed's copy throughput on the same host. Rustls's copies may land in cold memory, because it allocates a new buffer per record, but nothing here measures cache state at the copy.
-- The fragment sweep on a slow EPYC runner, to see whether the time gap widens at small fragments as the byte counts predict. The sweep has run on the Xeon 8370C (no trend) but not on an EPYC runner, and the EPYC 7763 is the one where the penalty is memmove-bound.
+- Whether copy cost depends on the working set (cache-hot small buffers against cold 16 KiB buffers). The fragment sweep on EPYC 9V74 shows that copy bytes alone do not set the time, so a test that separates cache state from byte count is needed.
 - Profiles of the EPYC 9V74 slow runners, to confirm the copy signature there directly.
 
 ## Other findings
@@ -105,5 +130,6 @@ Smaller fragments raise rustls's copy volume, but on these two hosts the time ra
 - `mac-process-check/`: macOS combined and separate runs, three repeats each.
 - `linux-arm64/`: separate-process runs, the padded-record baseline check, cachegrind summaries and strace counts.
 - `x86-fragment-sweep-xeon-8370c/`: the Xeon 8370C run (`38712799344`): bench output, the combined comparison, and the fragment sweep.
+- `x86-epyc-9v74-run5/`: second EPYC 9V74 run (`38713510313`): bench output, deep-dive timings, faults, perf and callgrind reports, and the fragment sweep.
 - `copy-volume/`: the copy-counting shim source, raw runs at each fragment and sample count, and `per-record.txt`.
 - `fragment-sweep/`: separate-process timings on Linux arm64 and macOS at three fragment sizes, two repeats each.
