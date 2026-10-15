@@ -1,0 +1,5 @@
+x509_verify_micro (diagnostics/x509_verify_micro.c), store built once outside the timer, purpose SSL_SERVER, X509_V_FLAG_X509_STRICT, host localhost, 5000 iterations per run:
+  run 1: mean 45845.0 ns
+  run 2: mean 40503.6 ns
+  run 3: mean 40653.4 ns
+Same machine, same session: tls_pki_strict_key_usage valid = 28390 ns median, webpki_native_policy valid = 27967 ns median (pki_compare-now.csv).

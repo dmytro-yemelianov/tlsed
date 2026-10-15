@@ -1,0 +1,109 @@
+Attribution, current harness (no per-step error-queue clear in the shim; read cursor instead of per-fragment drain in the transport).
+Sampled with `sample PID 2 1` 1 s after launch; order openssl,tlsed,rustls so the window is the OpenSSL phase.
+Profile runs perturb timing (sample pauses the process), so these are attribution shares, not timings.
+
+== handshake window (OpenSSL phase), 16645-byte fragments; total samples 1582
+   42.6%  OpenSSL: record/BIO/state machine
+    8.5%  AWS-LC (rustls/TLSed crypto)
+    4.7%  memmove/memset
+    4.5%  malloc/free
+    4.4%  kernel (stdout writes, outside timed loop)
+    2.8%  harness/shim (Rust, C)
+    1.4%  other: openssl-compare
+    0.3%  rustls peer (server)
+    0.3%  other: libsystem_pthread.dylib
+  top symbols:
+      9.2%  _ecp_nistz256_mul_mont  [libcrypto.3.dylib]
+      6.8%  _ecp_nistz256_sqr_mont  [libcrypto.3.dylib]
+      4.5%  aws_lc_0_46_0_curve25519_x25519_byte_alt  [openssl-compare]
+      3.5%  fe51_mul  [libcrypto.3.dylib]
+      3.0%  fe51_sq  [libcrypto.3.dylib]
+      2.8%  _RNvMs6_Cs38PSYICUuD2_15openssl_compareNtB5_9Transport4pump  [openssl-compare]
+
+== bulk-rx-16384 server->client, 16645-byte fragments; total samples 1554
+   39.9%  OpenSSL: AES-GCM kernel
+   27.1%  AWS-LC (rustls/TLSed crypto)
+   25.0%  memmove/memset
+    0.9%  rustls peer (server)
+    0.3%  OpenSSL: record/BIO/state machine
+    0.3%  kernel (stdout writes, outside timed loop)
+  top symbols:
+     39.9%  aes_gcm_dec_128_kernel  [libcrypto.3.dylib]
+     27.1%  aws_lc_0_46_0_aesv8_gcm_8x_enc_128  [openssl-compare]
+     16.1%  _platform_memmove  [libsystem_platform.dylib]
+      6.0%  _platform_memcmp  [libsystem_platform.dylib]
+      3.0%  _platform_memset  [libsystem_platform.dylib]
+      0.9%  _RNvMs_NtCsdUyDCJi77gV_6rustls6vecbufNtB4_14ChunkVecBuffer8write_to  [openssl-compare]
+
+== bulk-tx-64 client->server, 16645-byte fragments; total samples 1598
+   31.5%  OpenSSL: record/BIO/state machine
+   13.1%  harness/shim (Rust, C)
+   12.8%  memmove/memset
+    7.3%  OpenSSL: AES-GCM kernel
+    7.0%  rustls peer (server)
+    6.1%  malloc/free
+    5.8%  AWS-LC (rustls/TLSed crypto)
+    3.7%  other: openssl-compare
+    2.7%  kernel (stdout writes, outside timed loop)
+  top symbols:
+     11.9%  _RNvMs6_Cs38PSYICUuD2_15openssl_compareNtB5_9Transport4pump  [openssl-compare]
+      6.0%  _platform_memmove  [libsystem_platform.dylib]
+      5.9%  _platform_memset  [libsystem_platform.dylib]
+      3.3%  WPACKET_reserve_bytes  [libssl.3.dylib]
+      2.7%  write  [libsystem_kernel.dylib]
+      2.3%  aead_aes_gcm_open_gather_impl  [openssl-compare]
+
+== bulk-rx-64 server->client, 16645-byte fragments; total samples 1605
+   34.0%  OpenSSL: record/BIO/state machine
+   15.3%  rustls peer (server)
+   10.7%  OpenSSL: AES-GCM kernel
+    7.5%  memmove/memset
+    6.4%  AWS-LC (rustls/TLSed crypto)
+    4.7%  kernel (stdout writes, outside timed loop)
+    4.5%  other: openssl-compare
+    4.3%  malloc/free
+    3.1%  harness/shim (Rust, C)
+    1.1%  other: libsystem_pthread.dylib
+  top symbols:
+      8.3%  _RNvMs_NtCsdUyDCJi77gV_6rustls6vecbufNtB4_14ChunkVecBuffer8write_to  [openssl-compare]
+      5.6%  _platform_memmove  [libsystem_platform.dylib]
+      4.0%  write  [libsystem_kernel.dylib]
+      3.8%  ssl3_read_bytes  [libssl.3.dylib]
+      2.3%  aead_aes_gcm_seal_scatter_impl  [openssl-compare]
+      1.9%  aws_lc_0_46_0_aes_gcm_enc_kernel  [openssl-compare]
+
+== bulk-tx-16384 client->server, 64-byte fragments; total samples 1593
+   22.4%  memmove/memset
+   20.3%  OpenSSL: record/BIO/state machine
+   14.2%  OpenSSL: AES-GCM kernel
+   13.8%  harness/shim (Rust, C)
+   10.1%  rustls peer (server)
+    9.4%  AWS-LC (rustls/TLSed crypto)
+    5.3%  other: openssl-compare
+    0.6%  kernel (stdout writes, outside timed loop)
+    0.6%  malloc/free
+  top symbols:
+     14.2%  _platform_memmove  [libsystem_platform.dylib]
+     14.2%  aes_gcm_enc_128_kernel  [libcrypto.3.dylib]
+      9.4%  aws_lc_0_46_0_aesv8_gcm_8x_dec_128  [openssl-compare]
+      8.9%  _RNvMs6_Cs38PSYICUuD2_15openssl_compareNtB5_9Transport4pump  [openssl-compare]
+      5.5%  _platform_memset  [libsystem_platform.dylib]
+      3.9%  _RNvMs3_NtNtNtCsdUyDCJi77gV_6rustls4msgs8deframer7buffersNtB5_17Defram  [openssl-compare]
+
+== bulk-rx-16384 server->client, 64-byte fragments; total samples 1617
+   60.9%  OpenSSL: record/BIO/state machine
+   10.4%  OpenSSL: AES-GCM kernel
+    8.4%  memmove/memset
+    6.2%  AWS-LC (rustls/TLSed crypto)
+    4.5%  other: openssl-compare
+    3.3%  harness/shim (Rust, C)
+    2.0%  other: libsystem_pthread.dylib
+    1.1%  kernel (stdout writes, outside timed loop)
+  top symbols:
+     10.4%  aes_gcm_dec_128_kernel  [libcrypto.3.dylib]
+      6.7%  _platform_memmove  [libsystem_platform.dylib]
+      6.2%  aws_lc_0_46_0_aesv8_gcm_8x_enc_128  [openssl-compare]
+      4.8%  bio_read_intern  [libcrypto.3.dylib]
+      3.9%  ssl3_read_bytes  [libssl.3.dylib]
+      3.3%  mem_read  [libcrypto.3.dylib]
+

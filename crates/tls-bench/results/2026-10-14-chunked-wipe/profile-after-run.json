@@ -1,0 +1,26 @@
+{
+  "binary_sha256": "fe9c04135c9295aee73d0d106d4bbe24ff0499cee2439d32d0344536ed95207c",
+  "argv": [
+    "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+    "--only",
+    "bulk-rx-16384",
+    "--samples",
+    "10000",
+    "--bulk-records",
+    "256",
+    "--order",
+    "tlsed-first"
+  ],
+  "sample_argv": [
+    "/usr/bin/sample",
+    "5035",
+    "2",
+    "1",
+    "-file",
+    "crates/tls-bench/results/2026-10-14-chunked-wipe/profile-after-rx.sample.txt"
+  ],
+  "sample_exit": 0,
+  "driver_exit": -15,
+  "rows": 1957,
+  "termination": "deliberate after sample; diagnostic partial CSV excluded from timings"
+}

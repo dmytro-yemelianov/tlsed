@@ -1,0 +1,12 @@
+10:36  up 2 days, 18:09, 1 user, load averages: 3.07 4.34 6.74
+10:36  up 2 days, 18:09, 1 user, load averages: 3.07 4.34 6.74
+10:36  up 2 days, 18:09, 1 user, load averages: 3.14 4.33 6.72
+10:36  up 2 days, 18:09, 1 user, load averages: 3.14 4.33 6.72
+10:36  up 2 days, 18:09, 1 user, load averages: 3.61 4.41 6.74
+10:37  up 2 days, 18:09, 1 user, load averages: 3.61 4.41 6.74
+10:37  up 2 days, 18:09, 1 user, load averages: 4.28 4.53 6.77
+10:37  up 2 days, 18:09, 1 user, load averages: 4.28 4.53 6.77
+10:37  up 2 days, 18:09, 1 user, load averages: 4.02 4.48 6.73
+10:37  up 2 days, 18:09, 1 user, load averages: 4.02 4.48 6.73
+10:37  up 2 days, 18:09, 1 user, load averages: 4.02 4.48 6.73
+10:37  up 2 days, 18:09, 1 user, load averages: 4.02 4.47 6.72

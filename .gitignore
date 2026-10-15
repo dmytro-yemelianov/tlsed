@@ -1,0 +1,8 @@
+/target/
+/lean/.lake/
+/verification/aeneas/.lake/
+/fuzz/target/
+/fuzz/artifacts/
+/fuzz/corpus/
+/.codebase-memory/
+__pycache__/

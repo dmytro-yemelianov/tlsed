@@ -1,0 +1,115 @@
+[
+  {
+    "label": "format",
+    "argv": [
+      "cargo",
+      "fmt",
+      "--all",
+      "--",
+      "--check"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "clippy",
+    "argv": [
+      "cargo",
+      "clippy",
+      "--locked",
+      "--workspace",
+      "--all-targets",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "tests",
+    "argv": [
+      "cargo",
+      "test",
+      "--locked",
+      "--workspace",
+      "--all-targets"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "doctests",
+    "argv": [
+      "cargo",
+      "test",
+      "--locked",
+      "--workspace",
+      "--doc"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "client-release",
+    "argv": [
+      "cargo",
+      "test",
+      "--locked",
+      "--release",
+      "-p",
+      "tls-client",
+      "--tests"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "bench-build",
+    "argv": [
+      "cargo",
+      "build",
+      "--locked",
+      "--release",
+      "-p",
+      "tls-bench",
+      "--bins"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "proof-source",
+    "argv": [
+      "python3",
+      "verification/check_proof_sources.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "translation-freshness",
+    "argv": [
+      "python3",
+      "verification/check_translation.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "rust-lean-models",
+    "argv": [
+      "python3",
+      "verification/check_models.py"
+    ],
+    "exit_code": 0,
+    "cases": 4923,
+    "operations": 10
+  },
+  {
+    "label": "standalone-lean-and-axiom-audit",
+    "executor": "lean_proofs",
+    "commands": [
+      "cd lean && lake build",
+      "python3 verification/check_proof_sources.py",
+      "python3 verification/check_axioms.py"
+    ],
+    "exit_code": 0,
+    "theorems": 148,
+    "model": 127,
+    "linked": 21,
+    "evidence": "axiom-audit.json"
+  }
+]

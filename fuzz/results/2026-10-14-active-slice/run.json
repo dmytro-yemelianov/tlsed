@@ -1,0 +1,24 @@
+{
+  "command": [
+    "cargo",
+    "+nightly-2026-09-17",
+    "fuzz",
+    "run",
+    "client_engine",
+    "fuzz/corpus/client_engine_active_slice",
+    "--",
+    "-max_total_time=15",
+    "-max_len=4096",
+    "-seed=71513"
+  ],
+  "exit_code": 0,
+  "seed": 71513,
+  "requested_seconds": 15,
+  "max_len": 4096,
+  "initial_retained_seeds": 28,
+  "initial_corpus": "fresh copy of retained28 seeds; no generated corpus reused",
+  "native_c_assembly_asan_coverage": "not established",
+  "binary_sha256": "24b4c98998c8a291748aaefe4644dff0d3225525c4f3ed5772182f56c0d4c675",
+  "executions": 11759,
+  "observed_seconds": 16
+}

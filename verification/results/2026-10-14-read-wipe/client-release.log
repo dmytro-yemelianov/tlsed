@@ -1,0 +1,47 @@
+   Compiling tls-client v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/crates/tls-client)
+    Finished `release` profile [optimized] target(s) in 9.99s
+     Running unittests src/lib.rs (target/release/deps/tls_client-34deb9a3124465b4)
+
+running 1 test
+test read_wiping_unit::authenticated_partial_reads_preserve_unread_bytes_and_leave_entire_loan_clean ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/faults.rs (target/release/deps/faults-9d65f65082b77e5c)
+
+running 3 tests
+test automatic_key_update_import_fault_preserves_old_record_sequence_for_alert ... ok
+test eof_discards_queued_and_partial_records_without_substitute_alert ... ok
+test finished_verification_and_application_import_faults_are_atomic ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/interop.rs (target/release/deps/interop-89fa022a60e4221f)
+
+running 13 tests
+test client_finished_final_byte_handoff_gates_establishment ... ok
+test fatal_peer_alert_during_fragmented_ticket_has_no_reciprocal_response ... ok
+test close_notify_and_unclean_eof ... ok
+test authenticated_fatal_peer_alert_aborts_without_reciprocal_alert ... ok
+test identity_root_and_expiry_fail_closed ... ok
+test authenticated_user_canceled_is_ignored_until_close_notify ... ok
+test compatibility_ccs_after_finished_is_rejected ... ok
+test authenticated_cv_finished_and_aead_mutations_are_rejected ... ok
+test hello_retry_request_and_key_updates ... ok
+test replayed_native_hello_retry_request_is_unexpected_message ... ok
+test pending_peer_key_update_blocks_application_until_response_is_processed ... ok
+test no_resumption_client_ignores_authenticated_ticket_and_continues_application_data ... ok
+test authenticated_suite_group_fragmentation_matrix ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/read_wiping.rs (target/release/deps/read_wiping-c33fd64cd44a9629)
+
+running 4 tests
+test unauthenticated_record_never_releases_plaintext_and_failed_loans_are_wiped ... ok
+test eof_with_unread_authenticated_plaintext_prevents_further_release ... ok
+test partial_reads_zero_output_backpressure_and_large_to_short_records ... ok
+test unread_plaintext_is_wiped_when_live_connection_is_dropped ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+

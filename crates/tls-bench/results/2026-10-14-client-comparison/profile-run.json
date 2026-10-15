@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+    "--samples",
+    "5000",
+    "--bulk-records",
+    "256",
+    "--order",
+    "tlsed-first"
+  ],
+  "sample_command": [
+    "/usr/bin/sample",
+    "PID",
+    "2",
+    "1",
+    "-file",
+    "client-sample.txt"
+  ],
+  "sample_exit_code": 0,
+  "driver_exit_code": -15,
+  "purpose": "separate diagnostic sampling after canonical benchmarks; terminated early; exclude partial CSV from summaries"
+}

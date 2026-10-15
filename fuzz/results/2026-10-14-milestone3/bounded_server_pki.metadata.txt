@@ -1,0 +1,24 @@
+Command: cargo +nightly-2026-09-17 fuzz run bounded_server_pki -- -max_total_time=10 -max_len=8192 -seed=71513
+Exit code: 0
+Cargo-fuzz0.13.1; rustc1.100.0-nightly923c95cdf2026-09-16; cargo1.100.0-nightly495c385d02026-09-16.
+ASan default cargo-fuzz Rust build; Apple M5 ARM64/macOS27.2.
+12 curated initial seeds; final370269 runs/11s, cov1603/ft3273, corpus242/40KiB, observed447MiB processRSS.
+Inputcap8192; at most4 certs,2048each/4096aggregate reach nativeverify; 5 localentriesexercise preflightcountfailure. CVsignaturecap1025 enables max-sizefailure branch.
+Trust roots are fixedcommittedfixtures only. Three fixedselfsignednegativeKUfixtures are explicit harness-only anchors to reach leafKU parsing. Inputbytesneverbecometrustedanchors.
+Mutated DER, rawleaf/rawissuer, fixedvalidchain, KUbad/goodcandidatepaths, absence/trailing/noncanonical/unknown/highbit, DNS/IP,time,limits,CVhash/signature/scheme paths.
+Passing run is a short smoke, not audit/completepathcoverage/endpointinterop or memorybound proof. Manygeneratedshortinputs returnearly and totalsinclude such executions. No nativeC/assembly sanitizercoverage established; checksretainedseparately.
+Production/sourcehashes verifiedunchanged afterrun. No secrets are logged; certificates/signatures/testkeys are publicfixtures. Original12seedhashes retained; generatedcorpus ignored bygit.
+
+Original corpus seeds are copied byte-for-byte into retained pki-seeds/; source-hash manifest now hashes those retained paths. Generated mutations are not retained. Copy mapping:
+fuzz/corpus/bounded_server_pki/seed-00 -> fuzz/results/2026-10-14-milestone3/pki-seeds/seed-00
+fuzz/corpus/bounded_server_pki/seed-01 -> fuzz/results/2026-10-14-milestone3/pki-seeds/seed-01
+fuzz/corpus/bounded_server_pki/seed-02 -> fuzz/results/2026-10-14-milestone3/pki-seeds/seed-02
+fuzz/corpus/bounded_server_pki/seed-03 -> fuzz/results/2026-10-14-milestone3/pki-seeds/seed-03
+fuzz/corpus/bounded_server_pki/seed-04 -> fuzz/results/2026-10-14-milestone3/pki-seeds/seed-04
+fuzz/corpus/bounded_server_pki/seed-05 -> fuzz/results/2026-10-14-milestone3/pki-seeds/seed-05
+fuzz/corpus/bounded_server_pki/seed-06 -> fuzz/results/2026-10-14-milestone3/pki-seeds/seed-06
+fuzz/corpus/bounded_server_pki/seed-07 -> fuzz/results/2026-10-14-milestone3/pki-seeds/seed-07
+fuzz/corpus/bounded_server_pki/seed-08 -> fuzz/results/2026-10-14-milestone3/pki-seeds/seed-08
+fuzz/corpus/bounded_server_pki/seed-09 -> fuzz/results/2026-10-14-milestone3/pki-seeds/seed-09
+fuzz/corpus/bounded_server_pki/seed-10 -> fuzz/results/2026-10-14-milestone3/pki-seeds/seed-10
+fuzz/corpus/bounded_server_pki/seed-11 -> fuzz/results/2026-10-14-milestone3/pki-seeds/seed-11

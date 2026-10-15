@@ -1,0 +1,22 @@
+{
+  "https://raw.githubusercontent.com/rust-lang/rust/1.98.0/library/core/src/slice/mod.rs": {
+    "local_path": "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/rust-1.98.0-slice.rs",
+    "sha256": "453bfd6e0fc09e06ac1793ccb03e2e2f04fae149db6a079256097c8fad510669"
+  },
+  "https://raw.githubusercontent.com/rust-lang/rust/1.98.0/library/stdarch/crates/core_arch/src/aarch64/neon/generated.rs": {
+    "local_path": "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/rust-1.98.0-aarch64-neon-generated.rs",
+    "sha256": "a74b96a7bbbb635af0f0c7699b682993923cfe12b6dd76fc351a3fc36d55eaa8"
+  },
+  "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zeroize-1.9.1/src/lib.rs": {
+    "sha256": "0ec1dcf0d7c33b0bab02f85d79d37f29bbb8f034f648513797859a7b37bca637"
+  },
+  "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zeroize-1.9.1/src/aarch64.rs": {
+    "sha256": "86180b7aa417a1918165fbc6665227f7667e989384f008dfbe77137ae64f873c"
+  },
+  "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bytemuck-1.25.2/src/lib.rs": {
+    "sha256": "d4256f4efdfaf8ef19dbcef82777e740dcb9f3b78d44c3836fec611b26294cce"
+  },
+  "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bytemuck-1.25.2/src/pod.rs": {
+    "sha256": "7d6f8cb584e351d1f5f36496e2e43f7fd07fcfd792a8824424ead479acf49f56"
+  }
+}

@@ -1,0 +1,11 @@
+Milestone3 native-provider sanitizer coverage evidence.
+No C sanitizer flags explicitly supplied. Native C/assembly coverage is not established.
+fuzz/target/aarch64-apple-darwin/release/build/aws-lc-sys/2b5f5903c670e55c/run/stdout
+CFLAGS = None
+CFLAGS_aarch64-apple-darwin = None
+CFLAGS_aarch64_apple_darwin = None
+HOST_CFLAGS = None
+Command: nm -u fuzz/target/aarch64-apple-darwin/release/build/aws-lc-sys/2b5f5903c670e55c/out/libaws_lc_0_46_0_crypto.a
+nm exit code: 0
+ASan/sanitizer undefined-symbol references: 0
+Rust ASan campaign passage does not prove native backend instrumentation or security.

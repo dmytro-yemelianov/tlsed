@@ -1,0 +1,23 @@
+[
+  {
+    "package": "rustls-0.23.45",
+    "source_path": "src/msgs/deframer/buffers.rs",
+    "git_commit": "2976d90fd1c2db6b518700dd101b714069cfcb17",
+    "snapshot": "crates/tls-bench/results/2026-10-14-wire-clearing/upstream-rustls-0.23.45-src-msgs-deframer-buffers.rs.txt",
+    "sha256": "48bb18eff4e5859ec56aba8910488a791457afabc79feba0b09375e11bcca459"
+  },
+  {
+    "package": "rustls-0.23.45",
+    "source_path": "src/vecbuf.rs",
+    "git_commit": "2976d90fd1c2db6b518700dd101b714069cfcb17",
+    "snapshot": "crates/tls-bench/results/2026-10-14-wire-clearing/upstream-rustls-0.23.45-src-vecbuf.rs.txt",
+    "sha256": "ab3129d12dbf01c946586f83ebf4fa00c5aac778315948e000f595f14a77ff6c"
+  },
+  {
+    "package": "rustls-webpki-0.103.15",
+    "source_path": "src/verify_cert.rs",
+    "git_commit": "c14836d8de33c0ad0ac7dcb28fe9aade20831a4d",
+    "snapshot": "crates/tls-bench/results/2026-10-14-wire-clearing/upstream-rustls-webpki-0.103.15-src-verify_cert.rs.txt",
+    "sha256": "235986cb11713f256caea24f29fece0c767896bf4a6de35764205cf1adb5fed9"
+  }
+]

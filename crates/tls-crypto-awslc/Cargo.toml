@@ -1,0 +1,16 @@
+[package]
+name = "tls-crypto-awslc"
+description = "AWS-LC provider for experimental TLS 1.3 components"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+tls-crypto = { path = "../tls-crypto" }
+bytemuck = { version = "=1.25.2", default-features = false }
+aws-lc-rs = "=1.18.2"
+zeroize = { version = "=1.9.1", default-features = false }
+
+[lints]
+workspace = true

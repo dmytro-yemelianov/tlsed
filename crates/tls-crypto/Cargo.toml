@@ -1,0 +1,10 @@
+[package]
+name = "tls-crypto"
+description = "Narrow maintained-provider boundary for experimental TLS 1.3 components"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true

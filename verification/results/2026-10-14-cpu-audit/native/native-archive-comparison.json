@@ -1,0 +1,12 @@
+{
+  "clone_before": {
+    "target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/libaws_lc_0_46_0_crypto.a": "3ca5aff32f48eb44b7ea52288f786ed9a7c1c14ae50d22125473b1e551c4b8ab"
+  },
+  "current_clone_and_production": {
+    "target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/libaws_lc_0_46_0_crypto.a": "3ca5aff32f48eb44b7ea52288f786ed9a7c1c14ae50d22125473b1e551c4b8ab",
+    "target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/libaws_lc_0_46_0_crypto.a": "3ca5aff32f48eb44b7ea52288f786ed9a7c1c14ae50d22125473b1e551c4b8ab",
+    "target/release/build/aws-lc-sys-486c12369d913e1d/out/libaws_lc_0_46_0_crypto.a": "3ca5aff32f48eb44b7ea52288f786ed9a7c1c14ae50d22125473b1e551c4b8ab"
+  },
+  "all_match_before_and_production": true,
+  "interpretation": "new CC_ENABLE_DEBUG_OUTPUT isolated reproduction emitted matching native bytes; historical argv was not directly observed"
+}

@@ -1,0 +1,243 @@
+{
+  "repeats": 6,
+  "binaries_sha256": {
+    "pre_landing": "95b6aeca1cd42aa768d229e91cbb25cb6f7bb9c7b67377d8aee9317e7a7592aa",
+    "landed": "6b551ab5504839458e3fcf730f9634d5276c540c7fc1e1eb7b67c4edd53d4f65"
+  },
+  "loadavg_before_each_run": [],
+  "runs": [
+    {
+      "impl": "pre_landing",
+      "repeat": 0,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+        "bench",
+        "0"
+      ],
+      "loadavg_before": [
+        4.91357421875,
+        8.38330078125,
+        8.58203125
+      ],
+      "loadavg_after": [
+        5.00048828125,
+        8.34326171875,
+        8.56689453125
+      ]
+    },
+    {
+      "impl": "landed",
+      "repeat": 0,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/tlsed-inner-scan-audit",
+        "bench",
+        "0"
+      ],
+      "loadavg_before": [
+        5.00048828125,
+        8.34326171875,
+        8.56689453125
+      ],
+      "loadavg_after": [
+        5.00048828125,
+        8.34326171875,
+        8.56689453125
+      ]
+    },
+    {
+      "impl": "landed",
+      "repeat": 1,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/tlsed-inner-scan-audit",
+        "bench",
+        "1"
+      ],
+      "loadavg_before": [
+        5.00048828125,
+        8.34326171875,
+        8.56689453125
+      ],
+      "loadavg_after": [
+        4.919921875,
+        8.27099609375,
+        8.5400390625
+      ]
+    },
+    {
+      "impl": "pre_landing",
+      "repeat": 1,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+        "bench",
+        "1"
+      ],
+      "loadavg_before": [
+        4.919921875,
+        8.27099609375,
+        8.5400390625
+      ],
+      "loadavg_after": [
+        4.919921875,
+        8.27099609375,
+        8.5400390625
+      ]
+    },
+    {
+      "impl": "pre_landing",
+      "repeat": 2,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+        "bench",
+        "2"
+      ],
+      "loadavg_before": [
+        4.919921875,
+        8.27099609375,
+        8.5400390625
+      ],
+      "loadavg_after": [
+        4.84619140625,
+        8.19970703125,
+        8.51318359375
+      ]
+    },
+    {
+      "impl": "landed",
+      "repeat": 2,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/tlsed-inner-scan-audit",
+        "bench",
+        "2"
+      ],
+      "loadavg_before": [
+        4.84619140625,
+        8.19970703125,
+        8.51318359375
+      ],
+      "loadavg_after": [
+        4.84619140625,
+        8.19970703125,
+        8.51318359375
+      ]
+    },
+    {
+      "impl": "landed",
+      "repeat": 3,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/tlsed-inner-scan-audit",
+        "bench",
+        "3"
+      ],
+      "loadavg_before": [
+        4.84619140625,
+        8.19970703125,
+        8.51318359375
+      ],
+      "loadavg_after": [
+        4.84619140625,
+        8.19970703125,
+        8.51318359375
+      ]
+    },
+    {
+      "impl": "pre_landing",
+      "repeat": 3,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+        "bench",
+        "3"
+      ],
+      "loadavg_before": [
+        4.84619140625,
+        8.19970703125,
+        8.51318359375
+      ],
+      "loadavg_after": [
+        4.6181640625,
+        8.0966796875,
+        8.474609375
+      ]
+    },
+    {
+      "impl": "pre_landing",
+      "repeat": 4,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+        "bench",
+        "4"
+      ],
+      "loadavg_before": [
+        4.6181640625,
+        8.0966796875,
+        8.474609375
+      ],
+      "loadavg_after": [
+        4.6181640625,
+        8.0966796875,
+        8.474609375
+      ]
+    },
+    {
+      "impl": "landed",
+      "repeat": 4,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/tlsed-inner-scan-audit",
+        "bench",
+        "4"
+      ],
+      "loadavg_before": [
+        4.6181640625,
+        8.0966796875,
+        8.474609375
+      ],
+      "loadavg_after": [
+        4.568359375,
+        8.0283203125,
+        8.4482421875
+      ]
+    },
+    {
+      "impl": "landed",
+      "repeat": 5,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/tlsed-inner-scan-audit",
+        "bench",
+        "5"
+      ],
+      "loadavg_before": [
+        4.568359375,
+        8.0283203125,
+        8.4482421875
+      ],
+      "loadavg_after": [
+        4.568359375,
+        8.0283203125,
+        8.4482421875
+      ]
+    },
+    {
+      "impl": "pre_landing",
+      "repeat": 5,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/production_copy/target/release/tlsed-inner-scan-audit-production_copy",
+        "bench",
+        "5"
+      ],
+      "loadavg_before": [
+        4.568359375,
+        8.0283203125,
+        8.4482421875
+      ],
+      "loadavg_after": [
+        4.568359375,
+        8.0283203125,
+        8.4482421875
+      ]
+    }
+  ],
+  "sources": {
+    "crates/tls-core/src/protected.rs": "1c6351b1ebfb86516b20ac7738c51bde9cb049c0b407596833642a5db95a5fbe",
+    "crates/tls-crypto-awslc/src/lib.rs": "b1536efdf3d83ec1b7958290dd76b0843776b98fc557c36356e9c65f5b0f0e07",
+    "verification/experiments/inner-scan-audit/landed_check.py": "ab1b63cce452a92107203bb0fefba608ed37f1663a4aa4df151a9c62894f9797"
+  }
+}

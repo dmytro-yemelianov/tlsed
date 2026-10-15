@@ -1,0 +1,67 @@
+--- production/crates/tls-core/src/protected.rs
++++ wipe/src/protected.rs
+@@ -77,6 +77,14 @@
+         *byte ^= sequence_byte;
+     }
+     nonce
++}
++
++/// Erase caller bytes with aligned u128 stores, as `Reassembler::drop` does.
++fn wipe(bytes: &mut [u8]) {
++    let (head, words, tail) = bytemuck::pod_align_to_mut::<u8, u128>(bytes);
++    head.zeroize();
++    words.zeroize();
++    tail.zeroize();
+ }
+ 
+ fn decode_inner(inner: &[u8], limit: usize) -> Result<(ContentType, usize), ProtectedError> {
+@@ -147,7 +155,7 @@
+ 
+     fn fail<T>(&mut self, output: &mut [u8], error: ProtectedError) -> Result<T, ProtectedError> {
+         self.failed = true;
+-        output.zeroize();
++        wipe(output);
+         self.iv.zeroize();
+         drop(self.key.take());
+         Err(error)
+@@ -264,7 +272,7 @@
+ 
+     fn fail<T>(&mut self, output: &mut [u8], error: ProtectedError) -> Result<T, ProtectedError> {
+         self.failed = true;
+-        output.zeroize();
++        wipe(output);
+         self.iv.zeroize();
+         drop(self.key.take());
+         Err(error)
+@@ -318,7 +326,7 @@
+             Err(error) => return self.fail(output, error),
+         };
+         // Erase type, padding, decrypted trailing tag, and unused caller scratch.
+-        output[content_len..].zeroize();
++        wipe(&mut output[content_len..]);
+         Ok(Parse::Complete {
+             value: OpenedRecord {
+                 content_type,
+@@ -334,3 +342,22 @@
+         self.iv.zeroize();
+     }
+ }
++
++#[cfg(test)]
++mod candidate_equivalence {
++    use super::*;
++
++    #[test]
++    fn wipe_zeroes_exact_range() {
++        for offset in 0..32 {
++            for size in (0..=257).chain([1_023, 1_024, 1_025, 16_383, 16_384, 16_385]) {
++                let start = 16 + offset;
++                let mut data = [0xa5u8; 16_512];
++                let mut expected = [0xa5u8; 16_512];
++                expected[start..start + size].fill(0);
++                wipe(&mut data[start..start + size]);
++                assert!(data == expected, "size={size} offset={offset}");
++            }
++        }
++    }
++}

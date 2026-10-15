@@ -1,0 +1,128 @@
+--- production/crates/tls-core/src/protected.rs
++++ wipe_scan/src/protected.rs
+@@ -79,14 +79,31 @@
+     nonce
+ }
+ 
++/// Erase caller bytes with aligned u128 stores, as `Reassembler::drop` does.
++fn wipe(bytes: &mut [u8]) {
++    let (head, words, tail) = bytemuck::pod_align_to_mut::<u8, u128>(bytes);
++    head.zeroize();
++    words.zeroize();
++    tail.zeroize();
++}
++
++/// Index of the last nonzero byte. Zero blocks are skipped from the end, so long
++/// padding costs one comparison per block. Same result as `rposition(|&b| b != 0)`.
++const SCAN_BLOCK: usize = 64;
++
++fn last_nonzero(bytes: &[u8]) -> Option<usize> {
++    let mut end = bytes.len();
++    while end >= SCAN_BLOCK && bytes[end - SCAN_BLOCK..end] == [0u8; SCAN_BLOCK] {
++        end -= SCAN_BLOCK;
++    }
++    bytes[..end].iter().rposition(|&byte| byte != 0)
++}
++
+ fn decode_inner(inner: &[u8], limit: usize) -> Result<(ContentType, usize), ProtectedError> {
+     if inner.is_empty() || inner.len() > limit {
+         return Err(ProtectedError::InvalidInner);
+     }
+-    let index = inner
+-        .iter()
+-        .rposition(|&byte| byte != 0)
+-        .ok_or(ProtectedError::InvalidInner)?;
++    let index = last_nonzero(inner).ok_or(ProtectedError::InvalidInner)?;
+     if !valid_content_type(inner[index], index) {
+         return Err(ProtectedError::InvalidInner);
+     }
+@@ -147,7 +164,7 @@
+ 
+     fn fail<T>(&mut self, output: &mut [u8], error: ProtectedError) -> Result<T, ProtectedError> {
+         self.failed = true;
+-        output.zeroize();
++        wipe(output);
+         self.iv.zeroize();
+         drop(self.key.take());
+         Err(error)
+@@ -264,7 +281,7 @@
+ 
+     fn fail<T>(&mut self, output: &mut [u8], error: ProtectedError) -> Result<T, ProtectedError> {
+         self.failed = true;
+-        output.zeroize();
++        wipe(output);
+         self.iv.zeroize();
+         drop(self.key.take());
+         Err(error)
+@@ -318,7 +335,7 @@
+             Err(error) => return self.fail(output, error),
+         };
+         // Erase type, padding, decrypted trailing tag, and unused caller scratch.
+-        output[content_len..].zeroize();
++        wipe(&mut output[content_len..]);
+         Ok(Parse::Complete {
+             value: OpenedRecord {
+                 content_type,
+@@ -334,3 +351,62 @@
+         self.iv.zeroize();
+     }
+ }
++
++#[cfg(test)]
++mod candidate_equivalence {
++    use super::*;
++
++    #[test]
++    fn wipe_zeroes_exact_range() {
++        for offset in 0..32 {
++            for size in (0..=257).chain([1_023, 1_024, 1_025, 16_383, 16_384, 16_385]) {
++                let start = 16 + offset;
++                let mut data = [0xa5u8; 16_512];
++                let mut expected = [0xa5u8; 16_512];
++                expected[start..start + size].fill(0);
++                wipe(&mut data[start..start + size]);
++                assert!(data == expected, "size={size} offset={offset}");
++            }
++        }
++    }
++
++    #[test]
++    fn last_nonzero_matches_rposition() {
++        let mut state = 0x9E37_79B9_7F4A_7C15_u64;
++        let mut next = move || {
++            state ^= state << 13;
++            state ^= state >> 7;
++            state ^= state << 17;
++            state
++        };
++        let mut bytes = [0u8; 16_385];
++        for len in (0..=300).chain([1_023, 1_024, 4_095, 16_383, 16_384, 16_385]) {
++            assert_eq!(last_nonzero(&bytes[..len]), None, "zeros len={len}");
++            let step = if len <= 300 { 1 } else { 97 };
++            for pos in (0..len).step_by(step) {
++                bytes[pos] = 1;
++                assert_eq!(
++                    last_nonzero(&bytes[..len]),
++                    bytes[..len].iter().rposition(|&b| b != 0),
++                    "single len={len} pos={pos}"
++                );
++                bytes[pos] = 0;
++            }
++            for _ in 0..64 {
++                bytes[..len].fill(0);
++                if len > 0 {
++                    for _ in 0..(next() % 8) {
++                        let pos = (next() as usize) % len;
++                        bytes[pos] = (next() as u8) | 1;
++                    }
++                }
++                assert_eq!(
++                    last_nonzero(&bytes[..len]),
++                    bytes[..len].iter().rposition(|&b| b != 0),
++                    "random len={len}"
++                );
++            }
++            bytes[..len].fill(0);
++        }
++    }
++}

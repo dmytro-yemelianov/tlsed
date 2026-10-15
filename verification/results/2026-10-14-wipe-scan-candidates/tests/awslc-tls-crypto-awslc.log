@@ -1,0 +1,49 @@
+
+running 1 test
+test candidate_wipe::failed_seal_and_open_wipe_the_whole_buffer ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 5 tests
+test rfc7748_section_6_1_native_known_answer ... ok
+test x25519_rejects_low_order_zero_result_shares_and_wipes ... ok
+test fresh_pairs_agree_for_both_groups_and_correct_share_formats ... ok
+test p256_rejects_compressed_hybrid_infinity_and_invalid_points ... ok
+test wrong_peer_lengths_and_exact_output_lengths_wipe_all_supplied_bytes ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+
+running 12 tests
+test capabilities_and_seal_key_length_guards ... ok
+test nist_published_gcm_examples_1_and_2 ... ok
+test aes_gcm_zero_key_known_answers ... ok
+test every_suite_authenticates_ciphertext_aad_nonce_and_wipes_errors ... ok
+test rfc4231_hmac_case1_and_native_verification ... ok
+test rfc5869_appendix_a_sha256_vectors ... ok
+test rfc8439_section_2_8_2_aead ... ok
+test sha256_sha384_abc_known_answers ... ok
+test sha384_extract_expand_matches_native_opaque_extract ... ok
+test streaming_hash_snapshot_update_reset_and_output_guards ... ok
+test secret_output_length_guards_and_expand_limits ... ok
+test secure_random_smoke ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+
+running 5 tests
+test src/agreement.rs - agreement::AwsLcEphemeral (line 36) - compile fail ... ok
+test src/lib.rs - AwsLcKey (line 26) - compile fail ... ok
+test src/agreement.rs - agreement::AwsLcEphemeral (line 21) - compile fail ... ok
+test src/lib.rs - AwsLcKey (line 20) - compile fail ... ok
+test src/agreement.rs - agreement::AwsLcEphemeral (line 30) - compile fail ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+   Compiling tls-crypto-awslc v0.1.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/awslc/tls-crypto-awslc)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.80s
+     Running unittests src/lib.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/awslc/target/debug/deps/tls_crypto_awslc-9c1b0577d9f2a5b9)
+     Running tests/agreement.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/awslc/target/debug/deps/agreement-1b4bcf045c7faf3f)
+     Running tests/provider.rs (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/variants/awslc/target/debug/deps/provider-211d7c779b3845b9)
+   Doc-tests tls_crypto_awslc

@@ -1,0 +1,12 @@
+{
+  "sources": {
+    "Cargo.lock": "8cfcd8fd9ccd91220680c070d2c70064c63da41fb4646847e7a12dfe389c119b",
+    "crates/tls-core/Cargo.toml": "0754ddde697819126e201c12deda56db3eefb698798d9e6ab429f85c4052eeef",
+    "crates/tls-core/src/handshake.rs": "f61093423e9cc7cc8caccb1f7108ffe3d07f21a74ef619b8760800801cc1b6a5",
+    "crates/tls-client/src/lib.rs": "e2f81422f310a7f27e7d0e050de63a62c24e8d95c37b60f7fcf0a9133ca7fb8c",
+    "crates/tls-client/Cargo.toml": "7b9205624f8b687d3e68fc411e3d5fa9b928854d6eb2802d9cdae8d627e54a0b",
+    "crates/tls-bench/src/bin/client_compare.rs": "83c9c76ad29ba3519ba9625606226457e9b93f2aaeca0c71d1b0b39bc19ac771"
+  },
+  "binary_path": "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/client_compare_block8",
+  "binary_sha256": "84e7b355551e803a247a3d7725e7dd9771b37c09b5d14f06a1b2e07dd4b92144"
+}

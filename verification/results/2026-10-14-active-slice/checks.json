@@ -1,0 +1,91 @@
+{
+  "format": {
+    "command": [
+      "cargo",
+      "fmt",
+      "--all",
+      "--",
+      "--check"
+    ],
+    "exit_code": 0,
+    "passed": 0
+  },
+  "clippy": {
+    "command": [
+      "cargo",
+      "clippy",
+      "--locked",
+      "--workspace",
+      "--all-targets",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit_code": 0,
+    "passed": 0
+  },
+  "tests": {
+    "command": [
+      "cargo",
+      "test",
+      "--locked",
+      "--workspace",
+      "--all-targets"
+    ],
+    "exit_code": 0,
+    "passed": 109
+  },
+  "doctests": {
+    "command": [
+      "cargo",
+      "test",
+      "--locked",
+      "--workspace",
+      "--doc"
+    ],
+    "exit_code": 0,
+    "passed": 14
+  },
+  "client-release": {
+    "command": [
+      "cargo",
+      "test",
+      "--locked",
+      "--release",
+      "-p",
+      "tls-client",
+      "--tests"
+    ],
+    "exit_code": 0,
+    "passed": 21
+  },
+  "translation": {
+    "command": [
+      "python3",
+      "verification/check_translation.py"
+    ],
+    "exit_code": 0,
+    "passed": 0
+  },
+  "proof-sources": {
+    "command": [
+      "python3",
+      "verification/check_proof_sources.py"
+    ],
+    "exit_code": 0,
+    "passed": 0
+  },
+  "bench-build": {
+    "command": [
+      "cargo",
+      "build",
+      "--locked",
+      "--release",
+      "-p",
+      "tls-bench",
+      "--bins"
+    ],
+    "exit_code": 0,
+    "passed": 0
+  }
+}

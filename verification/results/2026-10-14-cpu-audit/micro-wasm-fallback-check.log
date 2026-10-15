@@ -1,0 +1,4 @@
+    Checking bytemuck v1.25.2
+    Checking zeroize v1.9.1
+    Checking tlsed-cpu-audit v0.0.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/verification/experiments/cpu-audit)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.43s

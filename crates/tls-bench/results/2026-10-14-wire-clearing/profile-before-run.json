@@ -1,0 +1,55 @@
+{
+  "binary_sha256": "d43098880aa34f03a0d589d637208c44ee9385ea6e7319a8c51b54ba5b3994ca",
+  "runs": [
+    {
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare_before_wire_clear",
+        "--only",
+        "bulk-tx-16384",
+        "--samples",
+        "10000",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed-first"
+      ],
+      "sample_argv": [
+        "/usr/bin/sample",
+        "63732",
+        "2",
+        "1",
+        "-file",
+        "crates/tls-bench/results/2026-10-14-wire-clearing/profile-before-tx.sample.txt"
+      ],
+      "sample_exit": 0,
+      "driver_exit": -15,
+      "termination": "deliberate after sample; partial CSV diagnostic only",
+      "rows": 856
+    },
+    {
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare_before_wire_clear",
+        "--only",
+        "bulk-rx-16384",
+        "--samples",
+        "10000",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed-first"
+      ],
+      "sample_argv": [
+        "/usr/bin/sample",
+        "63785",
+        "2",
+        "1",
+        "-file",
+        "crates/tls-bench/results/2026-10-14-wire-clearing/profile-before-rx.sample.txt"
+      ],
+      "sample_exit": 0,
+      "driver_exit": -15,
+      "termination": "deliberate after sample; partial CSV diagnostic only",
+      "rows": 715
+    }
+  ]
+}

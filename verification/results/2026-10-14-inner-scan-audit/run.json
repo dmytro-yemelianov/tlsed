@@ -1,0 +1,143 @@
+{
+  "binary_sha256": "79812fd3d41f92ee9399a556dfe851d3b0eb7db8ad348cec4f20ccb127579142",
+  "sources": {
+    "verification/experiments/inner-scan-audit/Cargo.toml": "0d7621541f48b1dc7b3c4e8706c008465c15504073b67dc3e5fcf24f41a394f5",
+    "verification/experiments/inner-scan-audit/Cargo.lock": "d7c034d15f4b40108b02f905b4b396566745c686a4b1912c74cecc725f37685d",
+    "verification/experiments/inner-scan-audit/src/main.rs": "a6790b6c752bcf6140f55f2e8c32901e71caf6e56dba88941f8cf3d127c2bb10",
+    "verification/experiments/inner-scan-audit/run.py": "0e2b097c3a331642d15e421132b31f4cce707a4ad7f97fa11c187541c672a1fc",
+    "Cargo.lock": "71fdec372ca4377446927976bed5a31024494b0daf01a7b26e05a9fa0b5389de",
+    "crates/tls-core/src/protected.rs": "33b69fec76ba3ae588afc5d8b32efff13edfeb1265993e195d8e06de746212f8",
+    "crates/tls-core/src/wire.rs": "bc4de0d0aa8c06333851c40188faf179181da9da5a1c879dd09dc12e269ece5e",
+    "crates/tls-crypto-awslc/src/lib.rs": "6d92c7dee64d1eb7625bd4e1e97100dcc572f601a58ae0fe03c1652d14553c70"
+  },
+  "host": {
+    "cpu": "Apple M5",
+    "macos": "27.2",
+    "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+    "power": "Now drawing from 'Battery Power'"
+  },
+  "design": {
+    "repeats": 6,
+    "samples": 60,
+    "warmups": 5,
+    "records_per_batch": 512,
+    "read_buffer": "active prefix = record length - 5, as tls-client/src/lib.rs passes plain[..record.len() - 5]",
+    "kernel_bytes_per_batch": 4194304,
+    "order": "cases and kernels rotate by repeat+sample+step",
+    "controls": "release, thin LTO, codegen-units=1; no concurrent build/test/profile during timing; no affinity or frequency lock"
+  },
+  "commands": [
+    {
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/tlsed-inner-scan-audit",
+        "bench",
+        "0"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/tlsed-inner-scan-audit",
+        "bench",
+        "1"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/tlsed-inner-scan-audit",
+        "bench",
+        "2"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/tlsed-inner-scan-audit",
+        "bench",
+        "3"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/tlsed-inner-scan-audit",
+        "bench",
+        "4"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/tlsed-inner-scan-audit",
+        "bench",
+        "5"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "profiles": [
+    {
+      "case": "long",
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/tlsed-inner-scan-audit",
+        "loop",
+        "long",
+        "6"
+      ],
+      "sample_exit": 0,
+      "driver_exit": 0,
+      "driver_stderr": "long: 6484 batches of 512",
+      "file": "verification/results/2026-10-14-inner-scan-audit/profile-long.sample.txt"
+    },
+    {
+      "case": "padmax",
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/tlsed-inner-scan-audit",
+        "loop",
+        "padmax",
+        "6"
+      ],
+      "sample_exit": 0,
+      "driver_exit": 0,
+      "driver_stderr": "padmax: 1174 batches of 512",
+      "file": "verification/results/2026-10-14-inner-scan-audit/profile-padmax.sample.txt"
+    },
+    {
+      "case": "tag_long",
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/tlsed-inner-scan-audit",
+        "loop",
+        "tag_long",
+        "6"
+      ],
+      "sample_exit": 0,
+      "driver_exit": 0,
+      "driver_stderr": "tag_long: 1123 batches of 512",
+      "file": "verification/results/2026-10-14-inner-scan-audit/profile-tag_long.sample.txt"
+    },
+    {
+      "case": "inner_padmax",
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/inner-scan-audit/release/tlsed-inner-scan-audit",
+        "loop",
+        "inner_padmax",
+        "6"
+      ],
+      "sample_exit": 0,
+      "driver_exit": 0,
+      "driver_stderr": "inner_padmax: 1107 batches of 512",
+      "file": "verification/results/2026-10-14-inner-scan-audit/profile-inner_padmax.sample.txt"
+    }
+  ],
+  "raw_csv_sha256": {
+    "comparison.csv": "d92ade37d3bf8a4a5bbd6d8167039c8c5b774ec37d73486f4ccf1763308d1b7a",
+    "decomposition.csv": "ca41498b77a8a1242c2a04e5ebfaf25222d25f013994c6875e36f493161c3d19",
+    "repeat-0.csv": "eb6725ac8dca2f6321208cfa24a80d832b07da00a1c6a81e99be79318213db3d",
+    "repeat-1.csv": "4008ce4a0f37906053e7a448fd3b0e4cf7d3fc72cc16ea2d9ac3e6b35ba07397",
+    "repeat-2.csv": "d13f9ba291dfc6b8fa149b695c864c4b45bebde9268db976af178223847e41c4",
+    "repeat-3.csv": "9503c91064bffd2cbec35a7616aaf76d172dcf73a3ccace3701b8de7584b8ae4",
+    "repeat-4.csv": "a2e1077af60f98fa80214a903ecbefaa8bfc283f8fc33d743044f8f4dd7b8801",
+    "repeat-5.csv": "be0c97c41626c93812c1d97573af2c2d7898c3716f08189a1cd5664164cc4340"
+  }
+}

@@ -1,0 +1,18 @@
+[package]
+name = "tls-core"
+description = "Experimental transport-independent TLS record and protocol-model foundations"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+bytemuck = { version = "=1.25.2", default-features = false }
+tls-crypto = { path = "../tls-crypto" }
+zeroize = { version = "=1.9.1", default-features = false }
+
+[dev-dependencies]
+tls-crypto-awslc = { path = "../tls-crypto-awslc" }
+
+[lints]
+workspace = true

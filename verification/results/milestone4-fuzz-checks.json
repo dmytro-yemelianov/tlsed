@@ -1,0 +1,28 @@
+{
+  "format": {
+    "command": [
+      "cargo",
+      "fmt",
+      "--manifest-path",
+      "fuzz/Cargo.toml",
+      "--all",
+      "--",
+      "--check"
+    ],
+    "exit_code": 0
+  },
+  "clippy": {
+    "command": [
+      "cargo",
+      "clippy",
+      "--manifest-path",
+      "fuzz/Cargo.toml",
+      "--locked",
+      "--bins",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit_code": 0
+  }
+}

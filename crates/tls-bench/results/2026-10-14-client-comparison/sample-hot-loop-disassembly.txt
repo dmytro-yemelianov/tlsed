@@ -1,0 +1,41 @@
+0000000100016220 t __RNvMs3_CshF0c9L9Hjou_14client_compareNtB5_6Client4read
+
+/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare:	file format mach-o arm64
+
+Disassembly of section __TEXT,__text:
+
+0000000100016220 <__RNvMs3_CshF0c9L9Hjou_14client_compareNtB5_6Client4read>:
+10001630c: f9026755    	str	x21, [x26, #0x4c8]
+100016310: eb1802bf    	cmp	x21, x24
+100016314: aa1903e3    	mov	x3, x25
+100016318: 54000121    	b.ne	0x10001633c <__RNvMs3_CshF0c9L9Hjou_14client_compareNtB5_6Client4read+0x11c>
+10001631c: 91130348    	add	x8, x26, #0x4c0
+100016320: b4000094    	cbz	x20, 0x100016330 <__RNvMs3_CshF0c9L9Hjou_14client_compareNtB5_6Client4read+0x110>
+100016324: 380016ff    	strb	wzr, [x23], #0x1
+100016328: f1000694    	subs	x20, x20, #0x1
+10001632c: 54ffffc1    	b.ne	0x100016324 <__RNvMs3_CshF0c9L9Hjou_14client_compareNtB5_6Client4read+0x104>
+100016330: 52800289    	mov	w9, #0x14               ; =20
+100016334: 3913f349    	strb	w9, [x26, #0x4fc]
+100016338: a9007d1f    	stp	xzr, xzr, [x8]
+
+00000001000164fc t __RNvMs3_CshF0c9L9Hjou_14client_compareNtB5_6Client4step
+
+/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare:	file format mach-o arm64
+
+Disassembly of section __TEXT,__text:
+
+00000001000164fc <__RNvMs3_CshF0c9L9Hjou_14client_compareNtB5_6Client4step>:
+1000199f8: f940dfe0    	ldr	x0, [sp, #0x1b8]
+1000199fc: f94053e9    	ldr	x9, [sp, #0xa0]
+100019a00: eb000129    	subs	x9, x9, x0
+100019a04: 54006f03    	b.lo	0x10001a7e4 <__RNvMs3_CshF0c9L9Hjou_14client_compareNtB5_6Client4step+0x42e8>
+100019a08: 540000a0    	b.eq	0x100019a1c <__RNvMs3_CshF0c9L9Hjou_14client_compareNtB5_6Client4step+0x3520>
+100019a0c: 8b00032a    	add	x10, x25, x0
+100019a10: 3800155f    	strb	wzr, [x10], #0x1
+100019a14: f1000529    	subs	x9, x9, #0x1
+100019a18: 54ffffc1    	b.ne	0x100019a10 <__RNvMs3_CshF0c9L9Hjou_14client_compareNtB5_6Client4step+0x3514>
+100019a1c: f90263f4    	str	x20, [sp, #0x4c0]
+100019a20: f90267f9    	str	x25, [sp, #0x4c8]
+100019a24: f9026be0    	str	x0, [sp, #0x4d0]
+100019a28: 17fffc18    	b	0x100018a88 <__RNvMs3_CshF0c9L9Hjou_14client_compareNtB5_6Client4step+0x258c>
+100019a2c: 9106c3e0    	add	x0, sp, #0x1b0

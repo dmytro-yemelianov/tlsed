@@ -1,0 +1,1932 @@
+{
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/16250384627782321289detect_compiler_family.c": {
+    "original_path": "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/16250384627782321289detect_compiler_family.c",
+    "sha256": null,
+    "retained_source_available": false
+  },
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/out-apple_core_services_check/2360857053700938866detect_compiler_family.c": {
+    "original_path": "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/out-apple_core_services_check/2360857053700938866detect_compiler_family.c",
+    "sha256": null,
+    "retained_source_available": false
+  },
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/out-apple_core_services_check/src/apple_core_services_check.c": {
+    "original_path": "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/out-apple_core_services_check/src/apple_core_services_check.c",
+    "sha256": null,
+    "retained_source_available": false
+  },
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/4157012866403563717detect_compiler_family.c": {
+    "original_path": "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/4157012866403563717detect_compiler_family.c",
+    "sha256": null,
+    "retained_source_available": false
+  },
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/out-c11/10125694279490494241detect_compiler_family.c": {
+    "original_path": "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/out-c11/10125694279490494241detect_compiler_family.c",
+    "sha256": null,
+    "retained_source_available": false
+  },
+  "aws-lc/tests/compiler_features_tests/c11.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/tests/compiler_features_tests/c11.c",
+    "sha256": "766c186a0e2d00a441d03618ae997ee87f3b8a4ac2e0e2b0e9ca503b3db040d4",
+    "retained_source_available": true
+  },
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/flag_check.c": {
+    "original_path": "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/flag_check.c",
+    "sha256": "65d2fad425e300ae19bd229a513aa7564086a7f0feb9405f806c70b2366ad59a",
+    "retained_source_available": true
+  },
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/out-stdalign_check/17902786774752476469detect_compiler_family.c": {
+    "original_path": "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/out-stdalign_check/17902786774752476469detect_compiler_family.c",
+    "sha256": null,
+    "retained_source_available": false
+  },
+  "aws-lc/tests/compiler_features_tests/stdalign_check.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/tests/compiler_features_tests/stdalign_check.c",
+    "sha256": "991b0a38b488aae5d0b48a7438235320322c0ad22341bba187505914436a2dc6",
+    "retained_source_available": true
+  },
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/out-builtin_swap_check/11845390477391382817detect_compiler_family.c": {
+    "original_path": "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/out-builtin_swap_check/11845390477391382817detect_compiler_family.c",
+    "sha256": null,
+    "retained_source_available": false
+  },
+  "aws-lc/tests/compiler_features_tests/builtin_swap_check.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/tests/compiler_features_tests/builtin_swap_check.c",
+    "sha256": "220b1a32fe0d914c3588e2103e993cfe7d7cc7f5513f6700133268ccdc1c81b7",
+    "retained_source_available": true
+  },
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/out-neon_sha3_check/4171455693910875616detect_compiler_family.c": {
+    "original_path": "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/out-neon_sha3_check/4171455693910875616detect_compiler_family.c",
+    "sha256": null,
+    "retained_source_available": false
+  },
+  "aws-lc/tests/compiler_features_tests/neon_sha3_check.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/tests/compiler_features_tests/neon_sha3_check.c",
+    "sha256": "101092cd9e6210063c44cf2569e80c8744b6e387713e2f3c32ac44290a0b533d",
+    "retained_source_available": true
+  },
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/17381863610681898470detect_compiler_family.c": {
+    "original_path": "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/17381863610681898470detect_compiler_family.c",
+    "sha256": null,
+    "retained_source_available": false
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_madd_n25519.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_madd_n25519.S",
+    "sha256": "0430534c63b676186fa8df2166dcec56c10f834a72b6cc992f5380296eaf8d11",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_madd_n25519_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_madd_n25519_alt.S",
+    "sha256": "50ff7a43a49bb7b8c54c7a59a6122e424979d8fd80f1a605b69e0cc3e43bd31e",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_mod_n25519.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_mod_n25519.S",
+    "sha256": "71dc366f0259bba6683086fa0b2a3b40baadbc097224f78b5360e8717653a2b0",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_neg_p25519.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_neg_p25519.S",
+    "sha256": "592ae93ebd2113c0277ab9725507869ae048ad290061b0f0c844d1667939baf1",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/curve25519_x25519base_byte.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/curve25519_x25519base_byte.S",
+    "sha256": "7a4d61f740fa6d6809a8982af28a2dafd1dcdf51da4ecc0be84e341fedac356f",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/curve25519_x25519base_byte_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/curve25519_x25519base_byte_alt.S",
+    "sha256": "f8c555ba9989f4cf2c5376db26b48c302ee0df695d2960a83933e96dbcfa1db7",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/curve25519_x25519_byte.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/curve25519_x25519_byte.S",
+    "sha256": "c99e77052afa785252e5364db4235f89b574610989ab8299aa21b7aca2bc0fdf",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/curve25519_x25519_byte_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/curve25519_x25519_byte_alt.S",
+    "sha256": "c44b7a1af90de5c413ef707d67da439e995ec23fd5801f7bf20956b2ec9e3339",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_decode.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_decode.S",
+    "sha256": "ef17d9b7490bca9c85efcd760c4f83b3bdb39aa86cfd42fc9f7fce14171b1d7f",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_decode_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_decode_alt.S",
+    "sha256": "a890081773f5a48194f6891b4a7555c7c6289d528c90b5057d225b783051c35f",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_encode.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_encode.S",
+    "sha256": "a71a6c3e21175bd2d122ed61a92d32f2a30f44c594715270568cd3fb281987d5",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_scalarmulbase.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_scalarmulbase.S",
+    "sha256": "2f274bb1cf7e233c4734ec336e11d0592e2c3acdf556bf13182ddf56e0492b68",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_scalarmulbase_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_scalarmulbase_alt.S",
+    "sha256": "b55827ca7f0e9a2d977512db8d4ecbcb0499f7294e068a1f4b1131bc96e50e2a",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_scalarmuldouble.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_scalarmuldouble.S",
+    "sha256": "7c67541ef72653ce392f521f3fd4f905c303009a525c0694c687e7414ab16534",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_scalarmuldouble_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_scalarmuldouble_alt.S",
+    "sha256": "d18ce8e5171301bb8693637ca829a143653450092f70509d12d7b7240f789db5",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/fastmul/bignum_emontredc_8n.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/fastmul/bignum_emontredc_8n.S",
+    "sha256": "3857968d4ea098bc90f1a8d0148bb71715432a15bd5ff24f49b48dd7ed5f1c49",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/fastmul/bignum_kmul_16_32.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/fastmul/bignum_kmul_16_32.S",
+    "sha256": "62dd8659d2fcb77adcfd17ab7830cf00cdf3299b153e17bfed6e059c537aeb68",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/fastmul/bignum_kmul_32_64.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/fastmul/bignum_kmul_32_64.S",
+    "sha256": "a3b0e1e7f869277b0d085b7a13845db081ca6f06c8fe37096fcfbb660acc9a22",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/fastmul/bignum_ksqr_16_32.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/fastmul/bignum_ksqr_16_32.S",
+    "sha256": "7518abf0adca23d234de92ea39941dc6a05d88e5eab350fd99b6dc58ff31292d",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/fastmul/bignum_ksqr_32_64.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/fastmul/bignum_ksqr_32_64.S",
+    "sha256": "5c54506e52a5318c1e64ea298127182a3922f85a6ebc3d2563cb083a427ef426",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/generic/bignum_copy_row_from_table.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/generic/bignum_copy_row_from_table.S",
+    "sha256": "ccc13ce3f9cc77076de3ddb406f042fa81c6f1967ed9597c9c998b00e24d1dd2",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/generic/bignum_copy_row_from_table_16.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/generic/bignum_copy_row_from_table_16.S",
+    "sha256": "dbb865b21730cfd59711ce0ca9a5996e43a9e2736e2aec8af58619c3c90ddfe9",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/generic/bignum_copy_row_from_table_32.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/generic/bignum_copy_row_from_table_32.S",
+    "sha256": "232635bcfd553c9363e27431b6171aac7ab921d0c388fe597c5ede36464d03db",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/generic/bignum_copy_row_from_table_8n.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/generic/bignum_copy_row_from_table_8n.S",
+    "sha256": "e59fd98e6dc7bcc8824f9a659b65afa010fef0008eca5808b676386ee3becc0b",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/generic/bignum_ge.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/generic/bignum_ge.S",
+    "sha256": "3ba83635319f3c75b02d99661b18286c6eb1b04691e2b40499bd5397a91eec79",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/generic/bignum_mul.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/generic/bignum_mul.S",
+    "sha256": "1f57afe5dcf9a0bc4dcdf8089b58d78fe13892ad1f3b4b137014b7b899eff6ff",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/generic/bignum_optsub.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/generic/bignum_optsub.S",
+    "sha256": "883e2976d86b77a39615b768f93e2bd6cbd0c2eb156829718e98f7c60ff6c54c",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/generic/bignum_sqr.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/generic/bignum_sqr.S",
+    "sha256": "59ad9e58c191801aa63ea7f09bcacbdccb801059399e2ee41b170008db720ccf",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p256/bignum_montinv_p256.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p256/bignum_montinv_p256.S",
+    "sha256": "339a8276bb1aa3721c2dc9f76abbd28b3d597983446427a68c39393a589ec650",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p256/p256_montjscalarmul.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p256/p256_montjscalarmul.S",
+    "sha256": "c3c11728f0be39460eac407c7839b888f23b039a2590266d1d848ec473ff32a0",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p256/p256_montjscalarmul_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p256/p256_montjscalarmul_alt.S",
+    "sha256": "2316c10874d72567868d90ef8a86dff00f58abdeb150630fc5967b824c720704",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_add_p384.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_add_p384.S",
+    "sha256": "8447286c9ae512d30bfd43db007fe9e46bb6c669f7bf5eef362f1b8b406f8e86",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_deamont_p384.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_deamont_p384.S",
+    "sha256": "07fc8fde902e9c595f9377c44a08f4c4e620d0d3964df5c2edd1a974abd28d8a",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_littleendian_6.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_littleendian_6.S",
+    "sha256": "4dd95dac2e3bf6916aa4ef6bee59c879735faf66045b1a8a7b6edbf811d4b3b5",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_montinv_p384.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_montinv_p384.S",
+    "sha256": "ad1b6d4c921d284e2b4819e4b83ee451571487fa52a558926b3ba9ce7a352a41",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_montmul_p384.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_montmul_p384.S",
+    "sha256": "bbbe66f0f71abf979086591a9463d05f48ffc4d0840c2a2ad4268dadf18cd12b",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_montmul_p384_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_montmul_p384_alt.S",
+    "sha256": "5b119f852fe2dc36f3eeaec1cfb4e056bd40b71739fac6a91bbf30200af3d7d8",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_montsqr_p384.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_montsqr_p384.S",
+    "sha256": "e151526b29b9a284ecbb374ad579f3aa9f9a9b8f64868e88d9f05f78e99367cc",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_montsqr_p384_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_montsqr_p384_alt.S",
+    "sha256": "303630570ee478bb568c76afd042284c6d5629a5235f0d0c430b173602d95caf",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_neg_p384.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_neg_p384.S",
+    "sha256": "b9bdab83dba5a3ccf1cf88a7c816f539cb1bb3f2aa1a95563437909e3c92bcbf",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_nonzero_6.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_nonzero_6.S",
+    "sha256": "b3595abd86597dff5ab80cb7afecf02f039b35845f46673f613146a1420b7530",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_sub_p384.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_sub_p384.S",
+    "sha256": "1076ebbe502f6ddff2d35b25f6584cca1f30b72bfae61b7faf02009c94e80ebe",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_tomont_p384.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/bignum_tomont_p384.S",
+    "sha256": "b009848911f51a15d7dc3ea610e794d54bcfffe9a37b202d8958648cdbdc4476",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/p384_montjdouble.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/p384_montjdouble.S",
+    "sha256": "7342ae474cb7d92629b07d155ccb65b4e67957f74e597f99da827fe462411d94",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/p384_montjdouble_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/p384_montjdouble_alt.S",
+    "sha256": "2c6a2405d21cee6227dd930281be6634dbdf64bf437f66e598c6771700f929f2",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/p384_montjscalarmul.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/p384_montjscalarmul.S",
+    "sha256": "156beecff3c1291de42b0cd67e9c8897b6b9ad6f8feb872dbef55f42eafc237b",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/p384_montjscalarmul_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p384/p384_montjscalarmul_alt.S",
+    "sha256": "6771e630aeeed57f543641c44dba60611acf3ed8a00ab1fa3c16132bc275aaae",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_add_p521.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_add_p521.S",
+    "sha256": "f3866df7bec7f70fb30715eeb5622603671876c5d1978816c111557e96416e97",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_fromlebytes_p521.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_fromlebytes_p521.S",
+    "sha256": "f3ec510fade748b469c320ea614e04a2818ba223fdbc3a81bf8fbeb8888f000f",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_inv_p521.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_inv_p521.S",
+    "sha256": "954cc29c9dc223cfce5085c8f1f7701b60e6fd85c94bf00275b3448243f3bcfb",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_mul_p521.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_mul_p521.S",
+    "sha256": "5a524305592ea101234ed2c8c2e01b888a071ec104bbc63c178931eef2e437f9",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_mul_p521_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_mul_p521_alt.S",
+    "sha256": "dd57d10846250d7b1faecdad370c94d1ea415509bddbdfd44fbeefef1844c9e5",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_neg_p521.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_neg_p521.S",
+    "sha256": "77cdd367c549ec86a998a8070a6c09697dfcae9490e4a8efffc84c73a134be39",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_sqr_p521.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_sqr_p521.S",
+    "sha256": "52860eb1bbe618afa1f6f3333127d9876aa343be2958de241fc9c817d50a9fbe",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_sqr_p521_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_sqr_p521_alt.S",
+    "sha256": "6dd9677b86efc62980fd7071d487d1cd9bafe421dc1bcf8d73164874c6488da4",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_sub_p521.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_sub_p521.S",
+    "sha256": "1ec5441d692fcaad41b37854b824cffebb143da0c71d9aabcfd35918726487de",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_tolebytes_p521.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/bignum_tolebytes_p521.S",
+    "sha256": "c8d25fc3532a445883dbcf9606f917ccc43d8b81b746c1e8babc782b0260c446",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/p521_jdouble.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/p521_jdouble.S",
+    "sha256": "4735fa62b0feb8928d7f9603bb8c30271106b5cc69ce18c9595fb3921c98294a",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/p521_jdouble_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/p521_jdouble_alt.S",
+    "sha256": "e7c159200a167fca89fdcfb56e58d7cfe9f9cda02408c65bb4e6de0b2690743e",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/p521_jscalarmul.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/p521_jscalarmul.S",
+    "sha256": "9f6aae9013c269d86c4eb0039ae9a234fd2a9b1a8e0b4a86a96ee78aad0eff98",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/p521_jscalarmul_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/p521/p521_jscalarmul_alt.S",
+    "sha256": "4e15b35d1883c5c7752c22c4c874b6aaf6da14ba96e08b87c11c8a2c414b6d74",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak2_f1600.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak2_f1600.S",
+    "sha256": "ef5e9cf5c681898b69758531aef32c223c110a048e8bfec291c23eb7f9eb193b",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak4_f1600_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak4_f1600_alt.S",
+    "sha256": "6e1820857720085a0eaae5c437c5be71b3663e06d80cc32310b9f841fdc673a8",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak4_f1600_alt2.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak4_f1600_alt2.S",
+    "sha256": "24b4bea1089d55b53d7a9ffb8ac5803e7c8657b300806d88bcbfb8d698af9196",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak_f1600.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak_f1600.S",
+    "sha256": "8cdedf1872f51f2334e640bebc27e6793ab3841ca9bb774f517c942fc9737a5c",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak_f1600_alt.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak_f1600_alt.S",
+    "sha256": "669fa8147424c0834dec3112d7bb6b146e9c955cb049d232b96116e17c2d9ef4",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak_f1600_alt2.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak_f1600_alt2.S",
+    "sha256": "8d7a85a4478161424bf1326fb57f58359a3b5a6e4dd259bf8ddd264ee47b3ea9",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-to-be-imported/arm/aes/aes-xts-dec.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-to-be-imported/arm/aes/aes-xts-dec.S",
+    "sha256": "03451eff7c9b742554a39a8c5cf7a0be8c62ced5c69a5ac815c5c5979b538d5c",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/s2n-bignum/s2n-bignum-to-be-imported/arm/aes/aes-xts-enc.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/s2n-bignum/s2n-bignum-to-be-imported/arm/aes/aes-xts-enc.S",
+    "sha256": "c9dded581917634047f3c0b2889ae34c67f055ae03bcd23a1f4b7681303aad27",
+    "retained_source_available": true
+  },
+  "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/2649652534939094986detect_compiler_family.c": {
+    "original_path": "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/cpu-audit/workspace/target/release/build/aws-lc-sys-1b4f30d4f471bf45/out/2649652534939094986detect_compiler_family.c",
+    "sha256": null,
+    "retained_source_available": false
+  },
+  "aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-base.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-base.c",
+    "sha256": "b2cc26010327c8656b46f1f8f535232481779431f42e55af9090c30325fdc314",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-gcd.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-gcd.c",
+    "sha256": "a765116ee03085d26594917312426d4322c7c3c1468a400592da5bc6ef2f517d",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-health.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-health.c",
+    "sha256": "2bba9859af2eecc346508724911db5dfa34e822f90660e5d173a3d1c64843c26",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-noise.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-noise.c",
+    "sha256": "6fdbc48eaa0d6150bf213083a7db1f6c924589104547e934dfe598a045c3a7a1",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-sha3.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-sha3.c",
+    "sha256": "77f29f80c5ad356ede05d61469afb4dd6c41bf226614ad5aaeefd6b6582e347e",
+    "retained_source_available": true
+  },
+  "aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-timer.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-timer.c",
+    "sha256": "765935f9f05ea8d9737b9a6d08e87200c21be352c11aac95f1e6163b6d417efd",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/asn1_lib.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/asn1_lib.c",
+    "sha256": "254d9ceb08e21303c35bc059e43ef0e9bbc8d57f273419867c456ebfac421e8a",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/asn1_par.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/asn1_par.c",
+    "sha256": "eee20684da9bded286df9c270696eae0faa9a5ac7aa1dc40ceea5cdaaa154941",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/asn_pack.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/asn_pack.c",
+    "sha256": "3229316bb9f8179cd019a1948bc731d5f7ccf39d1428e64ed354e3e45c2959b1",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/a_bitstr.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/a_bitstr.c",
+    "sha256": "ab06b4c8bdc2d8de06184ce13cabbef15870b120522eeb54fa095e2a41fc8fa8",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/a_bool.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/a_bool.c",
+    "sha256": "0901a398091af559c449647ca4c8baf1add8e8d6812de893a2d158708e05f1ed",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/a_d2i_fp.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/a_d2i_fp.c",
+    "sha256": "e93d5898c901196d7228299beb01558723ae17700af54c05c42afb09b2e607c8",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/a_dup.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/a_dup.c",
+    "sha256": "cb16f95e8a2ba77ed75f0cac06dbbf10fe8da2a2630e125142b4ff3bdb349b5a",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/a_gentm.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/a_gentm.c",
+    "sha256": "b43dcc0d1a3c1fb6c93c981d3f1bf89b74984e6a0b88e2911bc0cc4948e7851e",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/a_i2d_fp.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/a_i2d_fp.c",
+    "sha256": "fc7b8347c6ba0c0815ea7e9a0fe157bcc95608f8e84a581621145fc03d33fac5",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/a_int.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/a_int.c",
+    "sha256": "7d78a75f48f166d0170b230c1248194012b73269244a9be621ff2ef394281cee",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/a_mbstr.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/a_mbstr.c",
+    "sha256": "d20e6d3e45b121cfccaf37429c03fb2d5670d26edd7831fecbf83e57834f0146",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/a_object.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/a_object.c",
+    "sha256": "e0692c23b128709b627c92f7e6128f30cafb8074d851849d3af64c425d987e4c",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/a_octet.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/a_octet.c",
+    "sha256": "e14e731b3124dc46918c9f3b5cff89d921abc654a089b9ce7eb396c5bf6469b3",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/a_strex.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/a_strex.c",
+    "sha256": "1b7ac0c344048d4a54b30f3a6f3c3e0835d5ab1096c079d26c985c4f8a05577e",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/a_strnid.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/a_strnid.c",
+    "sha256": "554a54f6030d7b5561a8076e3e1cc754a629b69b9e48b3517051a71edcce93c6",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/a_time.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/a_time.c",
+    "sha256": "139b5ce8f607b5b54c6d5c74ccbb173ce44d5b5634977434ed35cf00d0f15f24",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/a_type.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/a_type.c",
+    "sha256": "0b348b71a397ff848634c82aed515fa8f8ed1692c61c40a38cc3a0414964bd44",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/a_utctm.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/a_utctm.c",
+    "sha256": "d5bbde9a5eb8ae44b32a0280f437a4ebc4341745bc593907627519955de47fea",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/a_utf8.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/a_utf8.c",
+    "sha256": "d58194a4a30bdf2e324cb50d33daee10d4af1be95a60abb6c0b7c1bcdc6c432a",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/f_int.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/f_int.c",
+    "sha256": "cb2de7ec3b95e30bb7a46c4bcc7f0040339d91179fd03b493bd70aeffbc6744a",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/f_string.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/f_string.c",
+    "sha256": "f4184bdda876cc49a5a99d363da723a250e88d9803aea964ba0e2ead2df76ab0",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/posix_time.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/posix_time.c",
+    "sha256": "8fb9292bcbed62fec342860c40acf75696ccbd356c4d20522907f93f01ddc2cc",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/tasn_dec.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/tasn_dec.c",
+    "sha256": "b3da856bc19e60f5e3bda41f2700c5abacc13f435b8f12dbc34f6c51b22053cf",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/tasn_enc.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/tasn_enc.c",
+    "sha256": "56b3dc91aaf033675b4e038c45ef45815b36317be1fc6bd8a429763a96a6cfd3",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/tasn_fre.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/tasn_fre.c",
+    "sha256": "208b7fefca23d1f06fb394493a8dfcd93885f7c120a772e14d6669dbc8f8b58c",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/tasn_new.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/tasn_new.c",
+    "sha256": "42f3d5f4759b786a3502406bf52b6ea39cee8873172abf9a215c6883377587e6",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/tasn_typ.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/tasn_typ.c",
+    "sha256": "1ea30d2dfa96a648607c7bd5f0f03461d08001f219e10626f845c15f8aa5dd10",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/asn1/tasn_utl.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/asn1/tasn_utl.c",
+    "sha256": "1517e64656b6439c60b5e3ce598b2181854a31ed15626f60672ab64944e31773",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/base64/base64.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/base64/base64.c",
+    "sha256": "08264ea7d99ff3be1a66eff84e350d5eccbe9c2804183d02717f62e8dda1884d",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bio/bio.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bio/bio.c",
+    "sha256": "15586c2bf4b4011a7e728496f9436673a07ec072f23ddc150d334e7588d93758",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bio/bio_addr.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bio/bio_addr.c",
+    "sha256": "1664746da745643d18cd69b4c16fb0691f651d5e9a7a994dc9c88d066c84a9f9",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bio/bio_mem.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bio/bio_mem.c",
+    "sha256": "2b7d98a2115287c7d947c76a5a9cffcbcc6c190fadd413167f0c1877f929bfe9",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bio/connect.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bio/connect.c",
+    "sha256": "d65203b65f725cf4ee15d2a23a4d8a24ebb65a81a64f18e5788b01939ab8b1e2",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bio/dgram.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bio/dgram.c",
+    "sha256": "2c43bdb826a2a013df14b73f774c7556fed671b305fc53c187f97890bf080cee",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bio/errno.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bio/errno.c",
+    "sha256": "c1cfedd7233685be8ecb0fa2a247fa960509b22a7e45615e08a1900e904927c0",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bio/fd.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bio/fd.c",
+    "sha256": "877203e5a0088d5bb5720d059cbddc710f827fe5bddfe14469d8b71dde8a6a90",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bio/file.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bio/file.c",
+    "sha256": "efd13235020c0c11bd9bb01e338d98f25142f9ebfc2e3b4e2082f379c66af6bb",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bio/hexdump.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bio/hexdump.c",
+    "sha256": "8d453e002baf740bff094d378e49fc09fabb38582afbaa87020a192a0d607051",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bio/md.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bio/md.c",
+    "sha256": "947111e82071feb05bd4af4b5ee672ac654ace2c8e2b0665ea88e125dada12e4",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bio/pair.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bio/pair.c",
+    "sha256": "04ec8d6e2377b3e0cd40bf7a326587ad1d417a03dc78e56c803871ad4a9e8e19",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bio/printf.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bio/printf.c",
+    "sha256": "ba6ba42c08f41c8bbebafd9acb8baec6c530eeeb58e3734b9c41c1a8e962f60b",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bio/socket.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bio/socket.c",
+    "sha256": "0faa49b06109a95e4791fe64bd735fb4687f5ea5a8cf0a66355a550c7e9027a3",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bio/socket_helper.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bio/socket_helper.c",
+    "sha256": "7ace99d36fab9a84c2d95632a45a8d5dfc4dd8cda68688bc093c47ac8e433183",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/blake2/blake2.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/blake2/blake2.c",
+    "sha256": "d6de9441aec6d9fd1b7102faec918625a85d93cf9405d0581fe64d6ee109b326",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bn_extra/bn_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bn_extra/bn_asn1.c",
+    "sha256": "f0a46cb7cd98c05b165da43f2d9f89ec6f0aefd31a8146da5540b6060c5dcda5",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bn_extra/convert.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bn_extra/convert.c",
+    "sha256": "1e8a574cb81d9d0e6ee110da05c01510f3f46c9c8e9d8b3a96af20b366828106",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/buf/buf.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/buf/buf.c",
+    "sha256": "e312b4049126e0aabefc355cc48519b4308b0fc154f9221fc11d0e33b6e5c032",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bytestring/asn1_compat.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bytestring/asn1_compat.c",
+    "sha256": "75646faa5c122d1f426e3c36b50de7fac07a5eb376cb48cb8a39f60e929fcc86",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bytestring/ber.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bytestring/ber.c",
+    "sha256": "38b5e0d9a47447f71436288475b83d99efd1ba56ad9de8e601fcb7d1a703e60f",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bytestring/cbb.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bytestring/cbb.c",
+    "sha256": "478dc66141ee46d864d5db491f140a8553ccc2af0ddcfc82e2154aceb167a585",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bytestring/cbs.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bytestring/cbs.c",
+    "sha256": "0b2adbb2e0b365e544fc70ff5bfe3b19017e653039a50d9fd9965574fa7fc545",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/bytestring/unicode.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/bytestring/unicode.c",
+    "sha256": "bedcf289076c9792fb1d9a8a9781566ea606d0ea3d3e3a2ecbe5585997a8508a",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/chacha/chacha.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/chacha/chacha.c",
+    "sha256": "6fd983e25d701ae54a817da48babef8262652c2e555d2bc0154df425ee134e73",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/cipher_extra/cipher_extra.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/cipher_extra/cipher_extra.c",
+    "sha256": "cba0f5da4efa201e0182a879135a00f8577640e66318478edea27635c0db92f8",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/cipher_extra/cts.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/cipher_extra/cts.c",
+    "sha256": "8dc3dbb3ea41af6ce2a836dcce8b7d44a9e92481d4c788acb5fcce51b5eebe6c",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/cipher_extra/derive_key.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/cipher_extra/derive_key.c",
+    "sha256": "5d5a970a47be15150bb751bfc5d7972dde8af55786ac6bdb0360b63d92803b12",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/cipher_extra/e_aesctrhmac.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/cipher_extra/e_aesctrhmac.c",
+    "sha256": "4dc415fcd7e93c6a94c9d59043c63afa9881852a9e0f6343ae63e31677166305",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/cipher_extra/e_aesgcmsiv.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/cipher_extra/e_aesgcmsiv.c",
+    "sha256": "23175bfe25722b6bc356ba656b38226481b401e314aed1dfbb48242e31ec7322",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/cipher_extra/e_aes_cbc_hmac_sha1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/cipher_extra/e_aes_cbc_hmac_sha1.c",
+    "sha256": "dc9319e9d7ea6bb02b067b42f48fe008c5e57ee55be09bf8447a10647ec192fb",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/cipher_extra/e_aes_cbc_hmac_sha256.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/cipher_extra/e_aes_cbc_hmac_sha256.c",
+    "sha256": "f6997df9ccd7496c6846c146c89247b957ccf7ff959bf589453ecefb2249b4ed",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/cipher_extra/e_chacha20poly1305.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/cipher_extra/e_chacha20poly1305.c",
+    "sha256": "c3c47e15625fee1455612fd5c3db53689b98670220b922972899b72fd6b396b3",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/cipher_extra/e_des.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/cipher_extra/e_des.c",
+    "sha256": "90d949ce6dd223a0af25eaaa42b6699893cc602067187dadfe5a9fb2cc3ee259",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/cipher_extra/e_null.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/cipher_extra/e_null.c",
+    "sha256": "005e6932b1332dbc688b8ecde8d20e50534947a426fadffd9d121fad940d4ec8",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/cipher_extra/e_rc2.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/cipher_extra/e_rc2.c",
+    "sha256": "75b88e241a272e63e4113bbc1a361db8349b8a876163da3d7083b5ef76f13b14",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/cipher_extra/e_rc4.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/cipher_extra/e_rc4.c",
+    "sha256": "2fc5f7713d11f2a468bc9d959f9dbee46c8e9cae75053da608b1627ece56f1f3",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/cipher_extra/e_tls.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/cipher_extra/e_tls.c",
+    "sha256": "14a4a2dca98d20ec6cddab7f91f935083c37cb03a7199bc52bf51bd97d2ed3f8",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/cipher_extra/tls_cbc.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/cipher_extra/tls_cbc.c",
+    "sha256": "2e259ed2ce96ea4444225b227156c4b5c9742ecc918211ce3215d2f14a2ea4bf",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/conf/conf.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/conf/conf.c",
+    "sha256": "2706a17bff97f3676fbe1fcf5801da7a817275c399fdd4a888e603be7f7fb1c4",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/console/console.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/console/console.c",
+    "sha256": "2aaf87d5a0ee9272268530cce53fec8f085b1ae3d3b9756438960833d983b70e",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/crypto.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/crypto.c",
+    "sha256": "0b80584265be6c71d6ea474c2f495dfcdde963d0fffd32ee29c157e5bfdd1d22",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/decrepit/bio/base64_bio.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/decrepit/bio/base64_bio.c",
+    "sha256": "528ee418a01d76ac0533f3c5007d169b8b90244eab9f5e394b3a4e55b4200743",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/decrepit/blowfish/blowfish.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/decrepit/blowfish/blowfish.c",
+    "sha256": "20518b7e2b9f7771bb63b52f866d0f8e5adb6decfe60bbf5ef78c58f593beba9",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/decrepit/cast/cast.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/decrepit/cast/cast.c",
+    "sha256": "565597fc3ed15d62c5cc9ab7eccdf39e1006e0f3b90187d42b5ed68657f63d04",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/decrepit/cast/cast_tables.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/decrepit/cast/cast_tables.c",
+    "sha256": "b70f1c75c3758fbc6380cbe5bcc6703b65c5f2b11a46f6b75de435ed44ca2101",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/decrepit/cfb/cfb.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/decrepit/cfb/cfb.c",
+    "sha256": "c52e4e5f26da667253b860d174ab2c5ec6f9fd27a992d82f3ab70952d9787bf5",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/decrepit/dh/dh_decrepit.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/decrepit/dh/dh_decrepit.c",
+    "sha256": "b4efa6ec1a914a3bd84c80dfece4cf5a20164901cee3b1659e5c21ee57fc82a4",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/decrepit/evp/evp_do_all.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/decrepit/evp/evp_do_all.c",
+    "sha256": "42932186c4bccf9ffc3e87f9e68a7eb45ec2e29b797fb4f6d6afcbe073912019",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/decrepit/obj/obj_decrepit.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/decrepit/obj/obj_decrepit.c",
+    "sha256": "474e906b1afb910de208cce748a037217a8ccbf1dd246017958a9f8fb2bbe0b7",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/decrepit/ripemd/ripemd.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/decrepit/ripemd/ripemd.c",
+    "sha256": "d1b9a0db4cafeccb3d5196b0068c5aaa30419d7f3b1214d4010172343f4da91d",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/decrepit/rsa/rsa_decrepit.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/decrepit/rsa/rsa_decrepit.c",
+    "sha256": "3b38924dc13be2bbfbb1fb0759414adb38ace2629170deacb96fbaa76c2efe4f",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/decrepit/x509/x509_decrepit.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/decrepit/x509/x509_decrepit.c",
+    "sha256": "0f11f2762faa2fbc0228b06ece3ec299665c003b9866dbd859cea695560c50fa",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/des/des.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/des/des.c",
+    "sha256": "9f07741f78008687afa36d223dcb5091bcdd1beb03c32967cf792e19b1e9308b",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/dh_extra/dh_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/dh_extra/dh_asn1.c",
+    "sha256": "7eaec7c5d351f07cb19cc7f53f031b7a7f364809121a8a52987d674d2a62dbe1",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/dh_extra/params.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/dh_extra/params.c",
+    "sha256": "f395ab4e195b1cba81dc9f8c84fc96bb77773e58ca0378e36f58c3456f2f6f44",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/digest_extra/digest_extra.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/digest_extra/digest_extra.c",
+    "sha256": "b534f8a8d124bd14bece6aebc1ebf7bacc383dc1b2df59c007253e6dc047e5d6",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/dsa/dsa.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/dsa/dsa.c",
+    "sha256": "83a87128f42b9d6c9cd6dc09616c3b5e983dfdd89180965cff3aad12ffa4f578",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/dsa/dsa_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/dsa/dsa_asn1.c",
+    "sha256": "b7e6c463dfce5904b603f23407e08aa87f5dd9c2b90148df4e3edc6d86d7753d",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ecdh_extra/ecdh_extra.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ecdh_extra/ecdh_extra.c",
+    "sha256": "0b9a5beb737d84ed2e2d40e679a8d8f50cd9535ded982c10feff6b00b54ba7b9",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ecdsa_extra/ecdsa_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ecdsa_extra/ecdsa_asn1.c",
+    "sha256": "5d05daff722e342c46294cdaa3af196fae55ca320d6dd9efc5096c5dd9d1fe4b",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ec_extra/ec_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ec_extra/ec_asn1.c",
+    "sha256": "9424c731e30b44d4ba91848c75f9885f0405c9d7013ff3a58e30c95f7b947e96",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ec_extra/ec_brainpool.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ec_extra/ec_brainpool.c",
+    "sha256": "b2c37d6d48eb24ca5fd265c9158d9e9ce9429e3ad97515872ef26561c8925024",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ec_extra/ec_derive.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ec_extra/ec_derive.c",
+    "sha256": "e1819e473b9eadd865571fb00a90fe57abf67b139f7d86bc7483066f4c8627f7",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ec_extra/hash_to_curve.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ec_extra/hash_to_curve.c",
+    "sha256": "8e06b0fe90f6fb68aabf665eafd366a630690aec0ffa4f37a76bd2d9a5426963",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/engine/engine.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/engine/engine.c",
+    "sha256": "6fdb0a46bcf906bcfe396aaa636c915cf21ba73f5c910ea497c91da18edcb47f",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/err/err.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/err/err.c",
+    "sha256": "a0939a55fdf37a0ac3580196ca5c2d278419f4d966b6257ada83c089bdb0b144",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/evp_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/evp_asn1.c",
+    "sha256": "c6b7fe542ce060ec53a89bf266614ce3e7dc350b1abda98e4d9038c8e848625f",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/print.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/print.c",
+    "sha256": "58061304c2cb242660f51efc476d28509ed9f7881d20df515b9992463cea9609",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/p_dh.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/p_dh.c",
+    "sha256": "acf53f6f8ade4f25ed4615054a9474dd408dc51fe4c84a97f6a9e95eca0d24a7",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/p_dh_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/p_dh_asn1.c",
+    "sha256": "e539d858c9b2f3b3728ad77a143829791fd07f20ea490d4be42fb9314dfeb516",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/p_dsa.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/p_dsa.c",
+    "sha256": "8f7791d367419ff6c656b62ee8f77582a371f3034d09e176462f2c84271b95c8",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/p_dsa_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/p_dsa_asn1.c",
+    "sha256": "51359c0861e91abae6e27b5dd831372f494d6fd16eee4f74a3b2d8000d8d17c9",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/p_ec_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/p_ec_asn1.c",
+    "sha256": "3d865c1bbdc69b9cf19ceb2b9574a30cd4c2d635729956594680f2d8a49ff8ca",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/p_ed25519_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/p_ed25519_asn1.c",
+    "sha256": "671fece2480b0224ad91e9f728c22d93f79ef5c3827b6fa8ccce0d585704a81c",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/p_hmac_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/p_hmac_asn1.c",
+    "sha256": "d638b538e6d65872b7340185ad71556ce2bc2e51ac641433833ef6d95404cc9e",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/p_kem_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/p_kem_asn1.c",
+    "sha256": "72db7512b8747d9d1144840f8bc2c2d7f52cb3c3c6ade657010ff3d37d023e72",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/p_methods.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/p_methods.c",
+    "sha256": "9c82edd3a70d191071cd559ffb17387283937475768bd07cede0533694033cde",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/p_pqdsa_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/p_pqdsa_asn1.c",
+    "sha256": "a7ced4a3414b8f5a20278e03f82994aaf238afedc6ff5b5b8285c1f962c8d1d3",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/p_rsa_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/p_rsa_asn1.c",
+    "sha256": "030952a9a62483848ee27283d913b3994dabeb9526ed0f417e32cee964f17d38",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/p_x25519.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/p_x25519.c",
+    "sha256": "34ae16da9cf4468af9e146f665ce28ad6e712d4a2c973da6cb9c4dcd7f4b4f49",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/p_x25519_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/p_x25519_asn1.c",
+    "sha256": "007031e4fe1dc4b96ef72ec7c4b11eb39fb848f7ffecb0692b4264f8e510d845",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/scrypt.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/scrypt.c",
+    "sha256": "d0a7db6e768008ffd80362b2b781267d867606b8debdbb089ff718da0e973824",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/evp_extra/sign.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/evp_extra/sign.c",
+    "sha256": "842b49b092ed8c0dc4e4ef5b40abd656f6996e3751b61b7187db5b63abcaa3bd",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ex_data.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ex_data.c",
+    "sha256": "c92c4291c8465cf3346c0da62b14b452a5a514b92d35cc66287d047714ece88b",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/bcm.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/bcm.c",
+    "sha256": "d28ef5bc9c77867c75d620a29d1f4979bf5a7ea2181ecbe3acfb1c451bb0f399",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/cpucap/cpucap.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/cpucap/cpucap.c",
+    "sha256": "302ca6040731b8510c7688bdbb0c95a89a7f32d73d31622f4487f687b7519192",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/hpke/hpke.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/hpke/hpke.c",
+    "sha256": "dfec92ea6be0d89eec538adbd55fa5426ce7d42e8fbe7a38ad84a88d7d2a064d",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/hrss/hrss.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/hrss/hrss.c",
+    "sha256": "3e3894ed1a2410832d6f3288c9779cbd8c52e8f23f941cd75b97f7156b3bb81a",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/keccak/keccak.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/keccak/keccak.c",
+    "sha256": "f56d97583672a82f27a85de2da5bc00f2ec6565c3c8c6cca904432b21c09fadf",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/lhash/lhash.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/lhash/lhash.c",
+    "sha256": "2b63ab0c2ac5882d2b1f98592327236442148a6d30184486a50ffc0723f46893",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/md4/md4.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/md4/md4.c",
+    "sha256": "a38d8f63d25ed6c88f3588c66512b7d9f7fa8b86ee64da436a16095d310a16b8",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/mem.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/mem.c",
+    "sha256": "88651b6d0b7e135980f97408815e2d357b2c39eabb563e241e795792d60fc3a1",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/obj/obj.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/obj/obj.c",
+    "sha256": "d6417d12091c52801e2f577b114e766f2cf2e5fc0779a27ffde1b8dd24da104b",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/obj/obj_xref.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/obj/obj_xref.c",
+    "sha256": "5cc91c017bda469872e06792c9df75255cf3b7efcc8ced991cfa61d12c67b729",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ocsp/ocsp_asn.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ocsp/ocsp_asn.c",
+    "sha256": "c79a1844fd6d2ae27b094a832fcba66a247c4687f047b5b33709f8ce249db282",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ocsp/ocsp_client.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ocsp/ocsp_client.c",
+    "sha256": "0cda275779c1f38772f70cc6e4ca4093a3e06263d93477093dfd401e004306db",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ocsp/ocsp_extension.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ocsp/ocsp_extension.c",
+    "sha256": "bff050ce1965ec5c6d28cb6e4f4efdc7499e2cef92edb818846f621cd9cc9149",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ocsp/ocsp_http.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ocsp/ocsp_http.c",
+    "sha256": "07ae3d09133483376d767f1e47c34f2fa006e529de2fb4ca1d8edc1fd0b45343",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ocsp/ocsp_lib.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ocsp/ocsp_lib.c",
+    "sha256": "0bb17454fa5aa788c5340f18d22512928a0226ebae610ce90dc853277c84c95d",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ocsp/ocsp_print.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ocsp/ocsp_print.c",
+    "sha256": "3827f6c56400689730b4c5a0c90e3aa2d5769a56730fc3fea8b5dcb6fa8f9958",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ocsp/ocsp_server.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ocsp/ocsp_server.c",
+    "sha256": "f55ee2c79a9a8747abec4b88e3c0cbc03c8f62bee6726997e9fd686ebf766869",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ocsp/ocsp_verify.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ocsp/ocsp_verify.c",
+    "sha256": "ceb60faafa694dc60a597328a26be9e772e6a7d73b00024d720565671f74af23",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/pem/pem_all.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/pem/pem_all.c",
+    "sha256": "6e4645e63ed75b9a6e733bcbdb1921c374d18daca4de0f59b979d7a0885da16d",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/pem/pem_info.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/pem/pem_info.c",
+    "sha256": "3396fa8340ce0c18c78d6e22832d230b85018439a01e25f4ae8af3362d4bb47b",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/pem/pem_lib.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/pem/pem_lib.c",
+    "sha256": "eb3da6106b43dcbe6d5ad7820e09f31fbc1b26c07fa1fec05ec8ceb5c32e900f",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/pem/pem_oth.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/pem/pem_oth.c",
+    "sha256": "0ed0b8666f08a2a701042c82505c5506cadcf4616663081b501db6524485368e",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/pem/pem_pk8.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/pem/pem_pk8.c",
+    "sha256": "83702950d351f6c5d468fa643faeb21f6f163c8ac292c5347c447b83b05ca63e",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/pem/pem_pkey.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/pem/pem_pkey.c",
+    "sha256": "32d79c3c4f170a905034b24866cec3a11b32ae3285053c3b2295268c909fc2fd",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/pem/pem_x509.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/pem/pem_x509.c",
+    "sha256": "f19356235066059e584efcb55a6de99c4dd4a81ad3cb7cb5322c850dfd4b0a26",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/pem/pem_xaux.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/pem/pem_xaux.c",
+    "sha256": "fef1eaf1a4902e70e5c7a019ecc37b23ddd07442532d5af853018d85c77b5e76",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/pkcs7/bio/cipher.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/pkcs7/bio/cipher.c",
+    "sha256": "eeebd05f3bda6dd3d8dd4eeb9575a144e14b4925688dff8a963c1280595fe2d8",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/pkcs7/pkcs7.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/pkcs7/pkcs7.c",
+    "sha256": "332e751f95a3331c22dc202186d8bb3265026fc2e0f8a821c6b24b03ab1528ac",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/pkcs7/pkcs7_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/pkcs7/pkcs7_asn1.c",
+    "sha256": "5cb16132b78a60812b5cd300f0fda923e39bbfcdae4b69fbb5cd5f955ce8d0ed",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/pkcs7/pkcs7_x509.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/pkcs7/pkcs7_x509.c",
+    "sha256": "e545f8093bc7fc4caffa401d23a8713c2ad82798279307a274feb6c1cc808d90",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/pkcs8/p5_pbev2.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/pkcs8/p5_pbev2.c",
+    "sha256": "39fdc20dcd689e613d523a550416b2aa859ebc6ba96ea48c89a0e32d69c21e58",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/pkcs8/pkcs8.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/pkcs8/pkcs8.c",
+    "sha256": "b2f4ad0baf99ef79cf7fd5cd8433a691792f53c8e7cc525c913926eb644b8f45",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/pkcs8/pkcs8_x509.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/pkcs8/pkcs8_x509.c",
+    "sha256": "ecef5fe17d2032ecc6dadecabfb87496017552fd9d47c6f5a5578980c3113e3d",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/poly1305/poly1305.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/poly1305/poly1305.c",
+    "sha256": "8053bb7a7a90d353be59f097e4a67e8585fdc647d7b383a54921d18de8e1c4a9",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/poly1305/poly1305_arm.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/poly1305/poly1305_arm.c",
+    "sha256": "2aa8a5ca359460360e59d8db42d6c845cc82c16fafe8eca1b8552171de70000b",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/poly1305/poly1305_vec.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/poly1305/poly1305_vec.c",
+    "sha256": "9ab063fccafd3fd331656940b62ceb776925815be528c22e03fb95e2c6b07eb5",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/pool/pool.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/pool/pool.c",
+    "sha256": "8b17c1801d12263046452132e608da79f0b2fccace8a1132ec77ce20b25ea6e4",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/rand_extra/ccrandomgeneratebytes.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/rand_extra/ccrandomgeneratebytes.c",
+    "sha256": "d79dcba26dc5c1f41bfe8432b6aca72239e5af5d16b736a0546cc750a5332acd",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/rand_extra/deterministic.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/rand_extra/deterministic.c",
+    "sha256": "cc16afdd4ac474b3e48aae23e580abec3e5b4c94ddc6628a01b7d953f1f2b4aa",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/rand_extra/getentropy.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/rand_extra/getentropy.c",
+    "sha256": "6b5c7368927210496d239cca503e2076edb1fded6cf1a707bf139e4081b0c3ea",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/rand_extra/rand_extra.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/rand_extra/rand_extra.c",
+    "sha256": "52a821465cce12f67ad44ce2fe4b3b73e834de4ccb4f30a524adf56188aec383",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/rand_extra/urandom.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/rand_extra/urandom.c",
+    "sha256": "c40a3af3a14208f7ad6b18f4542ae8fc506f11952e8b9969141f06d5a9d21313",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/rand_extra/vm_ube_fallback.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/rand_extra/vm_ube_fallback.c",
+    "sha256": "560307d200c83c6ed12bc707bf96e6311262a084e7e2aa93c8e77a0de4c4e3d8",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/rand_extra/windows.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/rand_extra/windows.c",
+    "sha256": "be20bf05b7d2a59b552b45e70ecb846ee54d4f0d31b36f48347d61e4695c24e9",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/rc4/rc4.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/rc4/rc4.c",
+    "sha256": "6b7dfd8ad9dc13e3d9377278287e8db4a440d56dc19d3a809b269f17c006ed04",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/refcount_c11.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/refcount_c11.c",
+    "sha256": "9c1c5312338cd7184299e6be63c0d3239b83dba9616ff5004ac3220a2528f884",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/refcount_lock.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/refcount_lock.c",
+    "sha256": "e931bd19e8c6d5f459259b3c22421d7aa3173626a631f4f4c3db33825162ee1e",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/refcount_win.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/refcount_win.c",
+    "sha256": "b5f95ecfc297de35fc288313eee2a5ad7997e9efb47bd3e78024cda529446ff2",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/rsa_extra/rsassa_pss_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/rsa_extra/rsassa_pss_asn1.c",
+    "sha256": "20c25eaf01379bf5b8918708b87f50bb403b83e738ce4265681ef1a28136fbe1",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/rsa_extra/rsa_asn1.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/rsa_extra/rsa_asn1.c",
+    "sha256": "2c14056d37e79145ff2354f71b8f151221dc17210409ede1e00a1174fb0c5693",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/rsa_extra/rsa_crypt.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/rsa_extra/rsa_crypt.c",
+    "sha256": "8d49174bf4b6242d7c4e84ce2b85e75b30457476c57970fe42ce0831395ab830",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/rsa_extra/rsa_print.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/rsa_extra/rsa_print.c",
+    "sha256": "7d7ba43c3706c5e80cad08171082183c31acf0a642bb79673bafb2e10ad78eda",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/siphash/siphash.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/siphash/siphash.c",
+    "sha256": "52d2d776f71319f49bcfcbec9390e03642226f34acde00ce00b7791a4c63e2bc",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/spake25519/spake25519.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/spake25519/spake25519.c",
+    "sha256": "571d1c592464c44d51c9f3b4dc2c506fc996a2cee4bd3374b0e76be34584a9a0",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/stack/stack.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/stack/stack.c",
+    "sha256": "c35252d6e3891606b8e2534a9d4b3f9828c14d087dc5d3c1a7700007cc6017bc",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/thread.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/thread.c",
+    "sha256": "2ef8fa2c459a3020019cc2cade049bbdeda79cae89e3025a8100996ef1d3bd86",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/thread_none.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/thread_none.c",
+    "sha256": "c8e8244f5f6944e0d8b689af547db48ed99f58f368173bc5b848ddf982f0bd13",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/thread_pthread.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/thread_pthread.c",
+    "sha256": "c49353243384e8c5483801f52c66aeff22f6d947e4b45502d08232d316cc5442",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/thread_win.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/thread_win.c",
+    "sha256": "4f7f67427229949279e2eb7b5d3896bf8f9da413e7f5f7ec28259d86aa9824dc",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/trust_token/pmbtoken.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/trust_token/pmbtoken.c",
+    "sha256": "5d97c0585bcd23ea0f951c3955d2127cd29229e56ade6b8f515c84f9f51a0a4f",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/trust_token/trust_token.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/trust_token/trust_token.c",
+    "sha256": "6d3b6edba02f2ead7f743c37ffed54fae7f9c8d9a3d756c55079f2d1558806a1",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/trust_token/voprf.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/trust_token/voprf.c",
+    "sha256": "ecd345c3eca799980849a42ba1f3116bcb122596e582317871e17e29547a5d08",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ube/fork_ube_detect.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ube/fork_ube_detect.c",
+    "sha256": "9a36a8836a0ea3f1a3f3816d2c854d29ef252ff197a533b7eb45aed57b7af9f8",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ube/ube.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ube/ube.c",
+    "sha256": "811d560b31deaf621be6909f7745d7735bf3fe81f1d08302d187eb12b5844625",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ube/vm_ube_detect.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ube/vm_ube_detect.c",
+    "sha256": "13864ab9400c3a818c013bfa1895264f14f5d269f95f435e576f0f821501d51a",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/ui/ui.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/ui/ui.c",
+    "sha256": "e5761fb8ae48bb354ed5662055e11a8391c008d5b021624dc54421b04e7a74c2",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/algorithm.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/algorithm.c",
+    "sha256": "68ed2f1369e6fd850cf25992938ad62f3d771b4949ec44c242dd0b8c0d4dce88",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/asn1_gen.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/asn1_gen.c",
+    "sha256": "8201e1e47757dddc94f59823b0503ee4d2d35e6d97391d18920c48391fbb036a",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/a_digest.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/a_digest.c",
+    "sha256": "5b1b9e663273ee915ed580c110c4741668e7914fba580b2a9e2c9ce10d8f089a",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/a_sign.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/a_sign.c",
+    "sha256": "d460909c94b80fd8d30612bc16a6c80535f96473093736dacaf621e438bc9384",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/a_verify.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/a_verify.c",
+    "sha256": "8c1359b20d5d6d27ba4901ec602ce325f60ad77d0951753367480820b338e2bc",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/by_dir.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/by_dir.c",
+    "sha256": "c945495f0de8a0d7fb600ee3f05de8686fe698db6347c74f8eb02e507c2dda6a",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/by_file.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/by_file.c",
+    "sha256": "5e5efedfe7a3e2aa8133c1351e4a1ea9d62eb1082bde431a016e4844039b870f",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/i2d_pr.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/i2d_pr.c",
+    "sha256": "c03169db4ca456fc5ae221614f8a5cede3e1a679c01f0f1435e7d9b78ee20c9a",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/name_print.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/name_print.c",
+    "sha256": "2637516b522c06fd6354238698a8047dd7f76d6785b50401b05dbbaffbe4303c",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/policy.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/policy.c",
+    "sha256": "9932325c965fe082de7424286bf6d5e565a1665f151a0258966d0873dfe9beda",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/rsa_pss.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/rsa_pss.c",
+    "sha256": "bb0e4462ad81635946f4e9b1d6383b8c5dff0d19108dc71bc439071a2b3f6998",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/t_crl.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/t_crl.c",
+    "sha256": "2bcf6f9dc2a92fd451747e4bd40c2376380f24ef638f37e44279621d8745cf68",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/t_req.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/t_req.c",
+    "sha256": "3245c05ebf3cb75b39859eb1b7aab7e9d610c41ff4cf3c3612647872af5334ca",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/t_x509.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/t_x509.c",
+    "sha256": "a9b63d3bccffa077e99bb45e94323ddd3e3671b03da0241c258629657f33c4a8",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/t_x509a.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/t_x509a.c",
+    "sha256": "1e43f777c445a0f1467b81e7449418017a557a23bfe06e090f80f5f6dad55fc9",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_akey.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_akey.c",
+    "sha256": "066d3f5c035eb09c51fa4e73db45bf0e277d9c2cb2f9e8f70e4e4a44419ce350",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_akeya.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_akeya.c",
+    "sha256": "f07fcbbf9e0f6f5468342bd84edbede49eddc963ba29d7a8ab7ff3b4aa3cb6ee",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_alt.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_alt.c",
+    "sha256": "6485470b8476d9eadfffb169796b27b5bf852692fd2f19ded439ba583c27341d",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_bcons.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_bcons.c",
+    "sha256": "8004ef1d0cbf1b56740b24efeecb1a967c19cc68b9a3aca40aaa4fa4afed2d96",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_bitst.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_bitst.c",
+    "sha256": "6c45446f6c1a688fdd9b69788b80b951c031b8af8cb65378bcce6c4564fd8af3",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_conf.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_conf.c",
+    "sha256": "a05b7b193461ece3362bca2f804e0b40a497951b82e9771740fb7ecbed883b85",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_cpols.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_cpols.c",
+    "sha256": "8834527b8277ad71e1158cdaf4ed8a41b3a209820d9c08618ed21c0a79855aea",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_crld.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_crld.c",
+    "sha256": "3d8749b84006b89dc6f0cd20b90530611351a2ba9368b4e82a44499d6849a541",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_enum.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_enum.c",
+    "sha256": "b74f73c9e3e2b34045eeb8c3599583df84037978fa0defe0a36173f7120d9de6",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_extku.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_extku.c",
+    "sha256": "2eb3ffaf8e04f2b5faf812d6bd6e7cbc349edcb8f69eec9590b8b5e8337380c7",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_genn.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_genn.c",
+    "sha256": "c21511e8634e26d77e273674b662506b1c3989b9247743f094cd45429679ce69",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_ia5.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_ia5.c",
+    "sha256": "168c7d86720e55c4ba8a7f0df33671cc0e7e355cc195ab03344cfef83899fa56",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_info.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_info.c",
+    "sha256": "ecf30f09db084e3c64965e55329097f726c75ccf8ba5f2c6177709174dd3a48b",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_int.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_int.c",
+    "sha256": "dd65cfa81b1746e829f86d0b88cf7fe40ddf100f6fe1852b4627cc50c5710883",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_lib.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_lib.c",
+    "sha256": "bb1c886e1b5f43cdac61126c8f585ac41e528d13b446a31a3b64d3d34c41e012",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_ncons.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_ncons.c",
+    "sha256": "d10cc48d97995651f8058c0b86979df38fdf3bceb9f058ec3f2e90c3cfa9725e",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_ocsp.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_ocsp.c",
+    "sha256": "e4b6f959e8625ade0fb3e92631845fc2fa805f335ac85a4484ca9b1c56af2e80",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_pcons.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_pcons.c",
+    "sha256": "d5f14533952b2357d80c379ff01abfec7d96eb835315eeceda216e9179c27372",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_pmaps.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_pmaps.c",
+    "sha256": "6761a0cf55a281711b7f208d86207253ae430b13c1cead2da5ba689e1e93e71a",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_prn.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_prn.c",
+    "sha256": "a669d721cbc9782571f9851a1b835ee25281975d4d91e9db3e6f4d6090d04740",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_purp.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_purp.c",
+    "sha256": "e643e0cad527d64d72c860de484a5f9a8ad9c249e33eef17c295fd2bfcc11a5b",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_skey.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_skey.c",
+    "sha256": "62712371ef7ef42f9c195d5d62f1eb52268474be7bbf9d555b04abd42c66a0b3",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/v3_utl.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/v3_utl.c",
+    "sha256": "ccd74926fd7b8cbb8e95676bde24b3673ee683ae5dac4377c899cbab8648be59",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509.c",
+    "sha256": "a3188db7f037ee1e9acd6e695046f6a57bc52b97376077525154cbffefe0d8f4",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509cset.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509cset.c",
+    "sha256": "1f7386f3b6010047e6dd24d16ee40187f04f98bb254630d6173cf42703b6f9b1",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509name.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509name.c",
+    "sha256": "f356e788558d78982ee46196fffac969a3d1574e865624f2f318c275efefe476",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509rset.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509rset.c",
+    "sha256": "59bd4c770e627564d6455499521ad6c58f79271969b6981fc4d96c1fd5b480e2",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509spki.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509spki.c",
+    "sha256": "e92b6301aeab05a228c336952702777012b0ae7861c8e554bec4a2ecd1e64d88",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509_att.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509_att.c",
+    "sha256": "a4ca1a0689d8d8418c3a03c183b3871d6fa78796e496e74dea65dfe449da9ed6",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509_cmp.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509_cmp.c",
+    "sha256": "a6b073a625a22c68043d3b3b67b9e8a6ec2b5c259e60969344a84ce101922d0c",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509_d2.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509_d2.c",
+    "sha256": "72fe6cfe059a74218be08d3c8a3e3b0276d343edf8a39db3e184b9fd02ae3168",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509_def.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509_def.c",
+    "sha256": "3ffa98c921926647dcb5b39e74b2e29c113588785f816d104b1ad0286ba160f7",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509_ext.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509_ext.c",
+    "sha256": "386004fe2261c4607b2c1474339297eba8957c1acc96b96513cb821ac4ce82ff",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509_lu.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509_lu.c",
+    "sha256": "228a6506983f9fcb0626e43211fae7ffea804855149504ccb4c64b73a032a638",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509_obj.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509_obj.c",
+    "sha256": "b336cea46f7329fe2acc2d187a64a7d84adb3022bf029d92dd279d4d51cdb399",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509_req.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509_req.c",
+    "sha256": "d044f92b0e50a75670737d27745abee26c883f41122a4d8ee6ef15890ef66028",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509_set.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509_set.c",
+    "sha256": "4911e037331f269ecc73ba5b09627ee188832967a9fd362605f59ec8e0bd6a72",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509_trs.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509_trs.c",
+    "sha256": "732f348d0c295fba392529746a48303a204a24127828b7819d53f8d0a4da8ab4",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509_txt.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509_txt.c",
+    "sha256": "ef6adc8088d7f83f672cd72d38c8f7db13bdf9e3a33ff800805503d8429beaea",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509_v3.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509_v3.c",
+    "sha256": "b2b8736ada9102edfda1222ed01bbeb7e882b062ec5a93936aa9ec69fd3ca3ad",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509_vfy.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509_vfy.c",
+    "sha256": "6df3b5d2eb42ec9cf539985b3ce09853504b26ccbddda93426392cc47a197d47",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x509_vpm.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x509_vpm.c",
+    "sha256": "259737b1601834032d088ae2638512370e7be260890f8fcc44b7fb6d11745f9b",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x_algor.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x_algor.c",
+    "sha256": "d63375c6e16b1f2987d0a45e3098953d848a0b83b187fed1ef05fd7938039f5e",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x_all.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x_all.c",
+    "sha256": "3d6013a890fa905a5b1aa44c6582da93e5da79155d786af8b86f1feffb9ac179",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x_attrib.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x_attrib.c",
+    "sha256": "b3579a135914ffa6068e46cebf21ce5209b72e7152f68efebb15597834cfe18d",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x_crl.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x_crl.c",
+    "sha256": "0bbbb05eb5beb4355fc906e6113a0a8cb98a64ab8d308c278a616f0a5a9653ab",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x_exten.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x_exten.c",
+    "sha256": "d6bb7abb18fb16d19a99b8edd5460896e3b48fbc066ff4974e5235dc7da5a657",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x_name.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x_name.c",
+    "sha256": "15975d972f250eb3f2488defe41bcc5eb7c2587aae805a36db3f0bf74c7ee091",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x_pubkey.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x_pubkey.c",
+    "sha256": "c2bd7b7fdb71f7045b78fd0bad7ac5d82176098ab8a20dbb8692d7b32cf2eb56",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x_req.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x_req.c",
+    "sha256": "53ed2deca1961aaeed820f8f68210ff56c767eca7ef066b9aa10ee72b787cf97",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x_sig.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x_sig.c",
+    "sha256": "5240bf9e3a482e14b0be28e8fdfa4fa730b77e494357a83250ad55ccc5a123b2",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x_spki.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x_spki.c",
+    "sha256": "a4cab3da811d907b6995119dede0b1af8d9a50995980964d64b82234d0395c85",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x_val.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x_val.c",
+    "sha256": "3d73925c19084ceec10cd460821dd0aaf1c9a28fb60eb03820f576b33505ce94",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x_x509.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x_x509.c",
+    "sha256": "bf3b5852548f2180349d7126c0502cd0d81a58229416894019ba066b52e94b25",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/x509/x_x509a.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/x509/x_x509a.c",
+    "sha256": "bbff8a63323f0dcc3ed07788ba7b484b1c344d6e2acab2734baf8c6cee84fed4",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/err_data.c": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/err_data.c",
+    "sha256": "0668f6e2a3057e3dd273c1c628ed0ba531c50db22c320fb5a681dcdbecf1fb7f",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_intt_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_intt_aarch64_asm.S",
+    "sha256": "894017eb7e52b41772ac864358377968a2164e03e6115fd1fc341c5479379e07",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_ntt_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_ntt_aarch64_asm.S",
+    "sha256": "da9735dc793ddfe9d2ab5a2d330f34e647773a06eb87ba169b2ba1f8f62de4b3",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_pointwise_montgomery_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_pointwise_montgomery_aarch64_asm.S",
+    "sha256": "d9c477e6a7cc7752af1b356ffa1bc76f135f6b1558f04f71bb46f621a8432807",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_polyvecl_pointwise_acc_montgomery_l4_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_polyvecl_pointwise_acc_montgomery_l4_aarch64_asm.S",
+    "sha256": "60de5761366824b07915dd8dbbb10d14395689878141564f2251afbc9e01c2f7",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_polyvecl_pointwise_acc_montgomery_l5_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_polyvecl_pointwise_acc_montgomery_l5_aarch64_asm.S",
+    "sha256": "51159edaf539528ff5269b28dc68df96e61fc4c9625473d15ccf973241809829",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_polyvecl_pointwise_acc_montgomery_l7_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_polyvecl_pointwise_acc_montgomery_l7_aarch64_asm.S",
+    "sha256": "522ce28652df2ae3140291fe8de2cc7b11d87deaa5fd6d106d11f30230abd449",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_polyz_unpack_17_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_polyz_unpack_17_aarch64_asm.S",
+    "sha256": "0a9f32d0094612fd7ff252294abe1252b9e142a6899a1980fcfc1043ec48ff00",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_polyz_unpack_19_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_polyz_unpack_19_aarch64_asm.S",
+    "sha256": "67d1a64b4df7aef64b486ed2f949390c59cd411bf17cd45b6c17c6809d661392",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_caddq_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_caddq_aarch64_asm.S",
+    "sha256": "b6b0d414d23cecc36d3a2d435b9fa9af31f8add3cc9be3a8f531c1386f0744c4",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_chknorm_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_chknorm_aarch64_asm.S",
+    "sha256": "2843ac7c06dbd7fb48691af9ae9cbcb9b36dd3176e00412b24fe5757e433bb4e",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_decompose_32_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_decompose_32_aarch64_asm.S",
+    "sha256": "87a1ac949a22c13ede9f96a5ce4e45b950a2a45c6996bff10bad3c6f89461854",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_decompose_88_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_decompose_88_aarch64_asm.S",
+    "sha256": "75c9bec9018d584754c1abe8b175c250abf2f193d4b63b4531711d41d36ac751",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_use_hint_32_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_use_hint_32_aarch64_asm.S",
+    "sha256": "90bef79e573e00d149f2e765e2ddb0e75caa986ebebda183f280fa160d533722",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_use_hint_88_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_use_hint_88_aarch64_asm.S",
+    "sha256": "2a2ec31f4a2f42da07bc3b2d4ac6f91da1345f9aeee698be424bf43a6b077ff3",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_rej_uniform_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_rej_uniform_aarch64_asm.S",
+    "sha256": "8b259c1f41e3f56ac4418c613df0eb3f28ce7bb53283fe157c58d44ccacb8bd9",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_rej_uniform_eta2_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_rej_uniform_eta2_aarch64_asm.S",
+    "sha256": "549e39739c5dfd713939ec866909782eec8db76fb9d616f6cf50cfafc5a7e5a7",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_rej_uniform_eta4_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_rej_uniform_eta4_aarch64_asm.S",
+    "sha256": "122ed0273fe036ad87a3a6b2b610438270ef4b3246d56395bd81d34655cf9672",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_intt_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_intt_aarch64_asm.S",
+    "sha256": "4225f0e99fe84682dfec8ef405d872ac5ae18770f12de52e2333583d40221a11",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_ntt_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_ntt_aarch64_asm.S",
+    "sha256": "6e605c8dedbba53d3fb7eccd48dd8926acdc2b2b7cb839b0031b6ce4d5904a37",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_polyvec_basemul_acc_montgomery_cached_k2_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_polyvec_basemul_acc_montgomery_cached_k2_aarch64_asm.S",
+    "sha256": "d9581130029d0f629d4da2db9ab38738ef176e82d25f14792bef0b0551dd571f",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_polyvec_basemul_acc_montgomery_cached_k3_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_polyvec_basemul_acc_montgomery_cached_k3_aarch64_asm.S",
+    "sha256": "bca4ffde69ef8508b280cf4e8e056a66e996ed73d7aa3dc7a3edf0f37e484517",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_polyvec_basemul_acc_montgomery_cached_k4_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_polyvec_basemul_acc_montgomery_cached_k4_aarch64_asm.S",
+    "sha256": "89f119001118c0ae3ffde5465763f532d14af5bc8147ab59e41cd88e4f6b1dd6",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_poly_mulcache_compute_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_poly_mulcache_compute_aarch64_asm.S",
+    "sha256": "f401641b42352723a668cfb20df2d15e46a40e88f8d950b00af689cd2d459d07",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_poly_reduce_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_poly_reduce_aarch64_asm.S",
+    "sha256": "7d6b27473386ee1c25ff4d35922b58f0878a59518f9a7d1de3de19d80696405f",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_poly_tobytes_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_poly_tobytes_aarch64_asm.S",
+    "sha256": "9664d41d48cd686afb0b4d88bb05f0deacc8df402625440da08b823ebc62aef1",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_poly_tomont_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_poly_tomont_aarch64_asm.S",
+    "sha256": "24bf6734b2d16fdefbfecff6f93c5babf4272a5c2d308bf176d7136ac2b7350d",
+    "retained_source_available": true
+  },
+  "aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_rej_uniform_aarch64_asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_rej_uniform_aarch64_asm.S",
+    "sha256": "e5da2deed83391c3fab116c88f1c3f571656751062a088f931e709612e8f313f",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/chacha/chacha-armv8.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/chacha/chacha-armv8.S",
+    "sha256": "5892819fb02729fba62ba88cd29fbbcebe576c05fdb6c56c12d104626ba31242",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/cipher_extra/chacha20_poly1305_armv8.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/cipher_extra/chacha20_poly1305_armv8.S",
+    "sha256": "17d07527b13c10c24d3eec341b664ac53e02ce73b67509892ba0c636169a1564",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/aesv8-armx.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/aesv8-armx.S",
+    "sha256": "9036ebdb581a629c3e6040891f3e5dfe300b718866d8c39bd52ba4b79316aa71",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/aesv8-gcm-armv8-unroll8.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/aesv8-gcm-armv8-unroll8.S",
+    "sha256": "a2325782841b5fb018447c2606e88fd35b24f372e0bb1c5c3e1b207a4e5d280b",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/aesv8-gcm-armv8.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/aesv8-gcm-armv8.S",
+    "sha256": "14da3d82e50d71e00f2d2d98484f624cb72a3a85215cead90a480bbee7bcc52b",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/armv8-mont.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/armv8-mont.S",
+    "sha256": "b090cede310cb9911b668fa1a1c8561d3bb1d650b0fb89e62168fd9d8093d1e9",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/bn-armv8.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/bn-armv8.S",
+    "sha256": "e2819caed2e516bc133ab00082ae6c4864780eb3d047e8fa511c9ec078983b82",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/ghash-neon-armv8.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/ghash-neon-armv8.S",
+    "sha256": "942c484d99c7e2069efd1a9391dd26953157e0265da21298b547dec6cac83522",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/ghashv8-armx.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/ghashv8-armx.S",
+    "sha256": "879a0c0e22a60a639a3e44d5068eb752f0b837af422458edc37aa08d6313ffa4",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/keccak1600-armv8.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/keccak1600-armv8.S",
+    "sha256": "1afe2d0f174f4528bfe8c045e4fc8e55428df6d24ee8c423b7f2c4df9a76ebf1",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/md5-armv8.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/md5-armv8.S",
+    "sha256": "64ee8cad565402852ec3f97d4b167eb21a8df84aa2bc7efa3d5c3182351cb42a",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/p256-armv8-asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/p256-armv8-asm.S",
+    "sha256": "254b5476e5fe5fdc369132fb98d285037a71a07a0efe8699475316287a9e5d24",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/p256_beeu-armv8-asm.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/p256_beeu-armv8-asm.S",
+    "sha256": "727cb7bcb4bbf29901511ba54d52795f7acb5f20c87e2a04e0e9dd99dd54d930",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/rndr-armv8.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/rndr-armv8.S",
+    "sha256": "90b6ea67593dc169494a81003797a71e8e88b420730ba0a2616099399a11efaf",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/sha1-armv8.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/sha1-armv8.S",
+    "sha256": "6e2aa650481f1ee201c9763c49a16eda5005802fd6ee9cfbee60d221c8c0474b",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/sha256-armv8.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/sha256-armv8.S",
+    "sha256": "3f42e87b9444ef901bea302f6ceb5b8dfb9df42f20bf1e570703dfd18e9fd18f",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/sha512-armv8.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/sha512-armv8.S",
+    "sha256": "61b7931b75a1f6767974ed814f69b547015dfa1f3f8b21cb61db6f989dadccdd",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/vpaes-armv8.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/vpaes-armv8.S",
+    "sha256": "9bf1c454ba53a7f6d0e7a7ad628e5e3be2438b3fb0d34883d1e58ef560d9f58c",
+    "retained_source_available": true
+  },
+  "aws-lc/generated-src/ios-aarch64/crypto/test/trampoline-armv8.S": {
+    "original_path": "/Users/dmytro/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.46.0/aws-lc/generated-src/ios-aarch64/crypto/test/trampoline-armv8.S",
+    "sha256": "08ecb1b62b69571985bc30fe9c33ad3518f854560f3439e82c445f368bfa48ad",
+    "retained_source_available": true
+  }
+}

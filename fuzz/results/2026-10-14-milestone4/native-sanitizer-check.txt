@@ -1,0 +1,23 @@
+AWS-LC native sanitizer diagnostic for final client_engine build
+Explicit sanitizer flags were not supplied by this campaign.
+CFLAGS: unset
+CXXFLAGS: unset
+AWS_LC_SYS_CFLAGS: unset
+fuzz/target/aarch64-apple-darwin/release/build/aws-lc-sys/2b5f5903c670e55c/run/stdout
+cargo:rerun-if-env-changed=AWS_LC_SYS_HOST_CFLAGS_aarch64_apple_darwin
+cargo:rerun-if-env-changed=AWS_LC_SYS_HOST_CFLAGS
+cargo:rerun-if-env-changed=HOST_CFLAGS_aarch64_apple_darwin
+cargo:rerun-if-env-changed=HOST_CFLAGS
+cargo:rerun-if-env-changed=AWS_LC_SYS_CFLAGS_aarch64_apple_darwin
+cargo:rerun-if-env-changed=AWS_LC_SYS_CFLAGS
+cargo:rerun-if-env-changed=CFLAGS_aarch64_apple_darwin
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+HOST_CFLAGS = None
+CFLAGS_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=CFLAGS_aarch64-apple-darwin
+CFLAGS_aarch64-apple-darwin = None
+fuzz/target/aarch64-apple-darwin/release/build/aws-lc-sys/7c64c783597f66a5/run/stdout
+fuzz/target/aarch64-apple-darwin/release/build/aws-lc-sys/2b5f5903c670e55c/out/libaws_lc_0_46_0_crypto.a: nm exit=0; undefined ASan/sanitizer references=0; sha256=dbd47032cbe028ddcfcd67a7490629fb224f5ae235691fdb5a593354d5b56f34
+fuzz/target/aarch64-apple-darwin/release/build/aws-lc-sys/7c64c783597f66a5/out/libaws_lc_0_46_0_crypto.a: nm exit=0; undefined ASan/sanitizer references=0; sha256=dbd47032cbe028ddcfcd67a7490629fb224f5ae235691fdb5a593354d5b56f34
+Native C/assembly ASan coverage is not established; Rust cargo-fuzz instrumentation only.

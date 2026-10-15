@@ -1,0 +1,84 @@
+{
+  "observed_utc": "2026-10-14T14:39:48.754991+00:00",
+  "scope": "read-only source/artifact audit plus process snapshot of root-launched new isolated audit build; not historical compiler argv",
+  "isolated_workspace": "target/cpu-audit/workspace",
+  "root_owns_builds": true,
+  "builds_launched_by_this_agent": false,
+  "source_packages": {
+    "aws-lc-sys-0.46.0": {
+      "git": {
+        "sha1": "9df497501436596d4da77109217806b3af7f56cb"
+      },
+      "path_in_vcs": "aws-lc-sys"
+    },
+    "aws-lc-rs-1.18.2": {
+      "git": {
+        "sha1": "9df497501436596d4da77109217806b3af7f56cb"
+      },
+      "path_in_vcs": "aws-lc-rs"
+    },
+    "rustls-0.23.45": {
+      "git": {
+        "sha1": "2976d90fd1c2db6b518700dd101b714069cfcb17"
+      },
+      "path_in_vcs": "rustls"
+    },
+    "zeroize-1.9.1": {
+      "git": {
+        "sha1": "34a6ebcb9b920ec7ae5809e470fce94fe7c0cb55"
+      },
+      "path_in_vcs": "zeroize"
+    },
+    "bytemuck-1.25.2": {
+      "git": {
+        "sha1": "f363643e951a7ac9e4b9921de982f2b0918902e3"
+      },
+      "path_in_vcs": ""
+    }
+  },
+  "aws_lc_gitlink": {
+    "name": "aws-lc",
+    "path": "aws-lc-sys/aws-lc",
+    "sha": "fa9bc8d6f7cfb2cf849b247fb06bbbfc41ecc9d6",
+    "size": 0,
+    "url": "https://api.github.com/repos/aws/aws-lc-rs/contents/aws-lc-sys/aws-lc?ref=9df497501436596d4da77109217806b3af7f56cb",
+    "html_url": "https://github.com/aws/aws-lc/tree/fa9bc8d6f7cfb2cf849b247fb06bbbfc41ecc9d6",
+    "git_url": "https://api.github.com/repos/aws/aws-lc/git/trees/fa9bc8d6f7cfb2cf849b247fb06bbbfc41ecc9d6",
+    "download_url": null,
+    "type": "submodule",
+    "submodule_git_url": "https://github.com/aws/aws-lc.git",
+    "_links": {
+      "self": "https://api.github.com/repos/aws/aws-lc-rs/contents/aws-lc-sys/aws-lc?ref=9df497501436596d4da77109217806b3af7f56cb",
+      "git": "https://api.github.com/repos/aws/aws-lc/git/trees/fa9bc8d6f7cfb2cf849b247fb06bbbfc41ecc9d6",
+      "html": "https://github.com/aws/aws-lc/tree/fa9bc8d6f7cfb2cf849b247fb06bbbfc41ecc9d6"
+    }
+  },
+  "retained_files_sha256": {
+    "native-commands.json": "4145a91ef98531f00bc63213bb8881e3300d7891dacf3212ac85f3d00547f907",
+    "native-flag-sets.json": "138f4265e9e100a8f07e6332855ac188358e1a536da8309f375a9c700faf5d1e",
+    "clone-native-before.json": "152ee4262eeb755ecd1dd38c9a4c10f3952a39131418fc2ac8767e028a2e15f7",
+    "native-archive-comparison.json": "4095dcdc3e011de5716101a7eee54c19ec75cde5e45c46162543acc2ac7fcf16",
+    "native-command-sourcehashes.json": "c3f4d592a61eeaabba372e7969faa36c913c43f52b109e562da2dab3ad4dc183",
+    "performance-constraints.md": "8a76b456fbb09bd32883e6557df758ca0ac903d07be301456d235024e4d02b66",
+    "native-flags-report.md": "f5f2726a4fcf9fb1293cb1bdebc6e10d751463b8a1159321c5e71fe2f202d22f",
+    "native-live-argv.txt": "5a0d45604e73dbc50abd2a5eac4f88ef14c79cd9c4039c8c89dde5966d02da27",
+    "aws-lc-submodule.json": "78c1ac9b7e740c0bcdcccd0468cec6764d861a04a54ee82f4b21089038f2d1e8",
+    "logging-build.log": "ff4c04048a628636881dff55f399cf0a860078c2297731e120ff5dd94b89e082",
+    "native-source-sha256.txt": "25ce3adee457405f2f4624430615a7776dc43daa63d6b38812f609a3dea96f27"
+  },
+  "native_process_snapshot_matches": 0,
+  "historical_archive_sha256": "3ca5aff32f48eb44b7ea52288f786ed9a7c1c14ae50d22125473b1e551c4b8ab",
+  "portability_note": "native-source-sha256 paths record original absolute registry locations; crate version + VCS SHA identify sources portably",
+  "logging_reproduction": {
+    "command_count": 437,
+    "category_counts": {
+      "compiler_probe": 19,
+      "archive_or_tool_query": 47,
+      "crypto_assembly": 115,
+      "jitterentropy": 6,
+      "crypto_c": 250
+    },
+    "archive_bytes_match": true,
+    "scope": "root-launched isolated clone build with CC_ENABLE_DEBUG_OUTPUT=1; parser launched no build; matching bytes, not historical argv observation"
+  }
+}

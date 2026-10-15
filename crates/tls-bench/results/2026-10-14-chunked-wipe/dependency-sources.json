@@ -1,0 +1,37 @@
+[
+  {
+    "package": "bytemuck-1.25.2",
+    "source_path": "src/lib.rs",
+    "git_commit": "f363643e951a7ac9e4b9921de982f2b0918902e3",
+    "snapshot": "crates/tls-bench/results/2026-10-14-chunked-wipe/dependency-bytemuck-1.25.2-src-lib.rs.txt",
+    "sha256": "d4256f4efdfaf8ef19dbcef82777e740dcb9f3b78d44c3836fec611b26294cce"
+  },
+  {
+    "package": "bytemuck-1.25.2",
+    "source_path": "src/pod.rs",
+    "git_commit": "f363643e951a7ac9e4b9921de982f2b0918902e3",
+    "snapshot": "crates/tls-bench/results/2026-10-14-chunked-wipe/dependency-bytemuck-1.25.2-src-pod.rs.txt",
+    "sha256": "7d6f8cb584e351d1f5f36496e2e43f7fd07fcfd792a8824424ead479acf49f56"
+  },
+  {
+    "package": "bytemuck-1.25.2",
+    "source_path": "src/anybitpattern.rs",
+    "git_commit": "f363643e951a7ac9e4b9921de982f2b0918902e3",
+    "snapshot": "crates/tls-bench/results/2026-10-14-chunked-wipe/dependency-bytemuck-1.25.2-src-anybitpattern.rs.txt",
+    "sha256": "bdfd777713c64422ad380c97cdc71a9c1e7e2f1881e546bade030bb6b50cdb93"
+  },
+  {
+    "package": "bytemuck-1.25.2",
+    "source_path": "src/no_uninit.rs",
+    "git_commit": "f363643e951a7ac9e4b9921de982f2b0918902e3",
+    "snapshot": "crates/tls-bench/results/2026-10-14-chunked-wipe/dependency-bytemuck-1.25.2-src-no_uninit.rs.txt",
+    "sha256": "2cf2b775c59b7b627d25745110ffa5e4625a126c98d8de60975c12aaebe1e1d4"
+  },
+  {
+    "package": "zeroize-1.9.1",
+    "source_path": "src/lib.rs",
+    "git_commit": "34a6ebcb9b920ec7ae5809e470fce94fe7c0cb55",
+    "snapshot": "crates/tls-bench/results/2026-10-14-chunked-wipe/dependency-zeroize-1.9.1-src-lib.rs.txt",
+    "sha256": "0ec1dcf0d7c33b0bab02f85d79d37f29bbb8f034f648513797859a7b37bca637"
+  }
+]

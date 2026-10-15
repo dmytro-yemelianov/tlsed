@@ -1,0 +1,52 @@
+{
+  "proof-sources": {
+    "command": [
+      "python3",
+      "verification/check_proof_sources.py"
+    ],
+    "cwd": ".",
+    "exit_code": 0
+  },
+  "translation": {
+    "command": [
+      "python3",
+      "verification/check_translation.py"
+    ],
+    "cwd": ".",
+    "exit_code": 0
+  },
+  "model-build": {
+    "command": [
+      "lake",
+      "build"
+    ],
+    "cwd": "lean",
+    "exit_code": 0
+  },
+  "linked-build": {
+    "command": [
+      "lake",
+      "build"
+    ],
+    "cwd": "verification/aeneas",
+    "exit_code": 0
+  },
+  "axioms": {
+    "command": [
+      "python3",
+      "verification/check_axioms.py"
+    ],
+    "cwd": ".",
+    "exit_code": 0
+  },
+  "models": {
+    "command": [
+      "python3",
+      "verification/check_models.py",
+      "--report",
+      "verification/results/model-comparison.json"
+    ],
+    "cwd": ".",
+    "exit_code": 0
+  }
+}

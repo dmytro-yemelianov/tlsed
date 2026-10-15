@@ -1,0 +1,87 @@
+name: Foundation checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  rust-and-lean:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Rust
+        run: rustup show
+      - name: Install Lean manager
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/leanprover/elan/v4.1.2/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Rust formatting and linting
+        run: |
+          cargo fmt --all -- --check
+          cargo clippy --locked --workspace --all-targets -- -D warnings
+          cargo fmt --manifest-path fuzz/Cargo.toml --all -- --check
+          cargo clippy --manifest-path fuzz/Cargo.toml --locked --bins -- -D warnings
+      - name: Rust regressions
+        run: |
+          cargo test --locked --workspace --all-targets
+          cargo test --locked --workspace --doc
+          cargo test --locked --release -p tls-client --tests
+      - name: Check Lean proofs
+        working-directory: lean
+        run: |
+          lake build
+          lake env lean AxiomAudit.lean
+      - name: Reject proof placeholders
+        run: python3 verification/check_proof_sources.py
+      - name: Verify retained Rust translation matches source
+        run: python3 verification/check_translation.py
+      - name: Prepare pinned linked-proof dependencies
+        run: python3 verification/aeneas/bootstrap_dependencies.py
+      - name: Check linked arithmetic proof
+        working-directory: verification/aeneas
+        run: |
+          lake exe cache get
+          lake build
+      - name: Audit theorem assumptions
+        run: python3 verification/check_axioms.py
+      - name: Compare executable models
+        run: python3 verification/check_models.py --report verification/results/model-comparison.json
+      - name: Authenticated baseline smoke run
+        run: cargo run --locked --release -p tls-bench -- --samples 3 --bulk-records 8
+      - name: Authenticated client comparison smoke
+        run: |
+          cargo run --locked --release -p tls-bench --bin client_compare -- --samples 2 --bulk-records 4
+          cargo run --locked --release -p tls-bench --bin pki_compare -- --samples 2 --iterations 4 --warmup 2
+      - uses: actions/upload-artifact@v4
+        with:
+          name: model-comparison
+          path: |
+            verification/results/model-comparison.json
+            verification/results/axiom-audit.json
+
+  fuzz-smoke:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned fuzz toolchain and runner
+        run: |
+          rustup toolchain install nightly-2026-09-17 --profile minimal
+          cargo install cargo-fuzz --version 0.13.1 --locked
+      - name: Short reproducible fuzz campaigns
+        run: |
+          cargo +nightly-2026-09-17 fuzz run record_parser -- -runs=10000 -seed=71513
+          cargo +nightly-2026-09-17 fuzz run fragmented_records -- -runs=10000 -seed=71513
+          cargo +nightly-2026-09-17 fuzz run auth_counter -- -runs=10000 -seed=71513
+          cargo +nightly-2026-09-17 fuzz run handshake_reassembly -- -runs=10000 -seed=71513
+          cargo +nightly-2026-09-17 fuzz run protected_records -- -runs=10000 -seed=71513
+          cargo +nightly-2026-09-17 fuzz run transcript_labels -- -runs=10000 -seed=71513
+          mkdir -p fuzz/corpus/bounded_server_pki
+          cp fuzz/results/2026-10-14-milestone3/pki-seeds/seed-* fuzz/corpus/bounded_server_pki/
+          cargo +nightly-2026-09-17 fuzz run bounded_server_pki -- -runs=10000 -seed=71513
+          mkdir -p fuzz/corpus/client_engine
+          cp fuzz/results/2026-10-14-milestone4/client-engine-seeds/* fuzz/corpus/client_engine/
+          cargo +nightly-2026-09-17 fuzz run client_engine -- -runs=10000 -max_len=4096 -seed=71513

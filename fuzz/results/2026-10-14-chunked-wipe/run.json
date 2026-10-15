@@ -1,0 +1,24 @@
+{
+  "command": [
+    "cargo",
+    "+nightly-2026-09-17",
+    "fuzz",
+    "run",
+    "client_engine",
+    "fuzz/corpus/client_engine_chunked_wipe",
+    "--",
+    "-max_total_time=15",
+    "-max_len=4096",
+    "-seed=71515"
+  ],
+  "exit_code": 0,
+  "seed": 71515,
+  "requested_seconds": 15,
+  "max_len": 4096,
+  "initial_retained_seeds": 28,
+  "initial_corpus": "fresh copy of retained28 seeds; no generated corpus reused",
+  "native_c_assembly_asan_coverage": "not established",
+  "binary_sha256": "39b69f26ddbf23d670afdc50036441290d35c43aa1254023219060c63e69a6a1",
+  "executions": 23054,
+  "observed_seconds": 16
+}

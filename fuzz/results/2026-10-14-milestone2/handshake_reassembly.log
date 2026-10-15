@@ -1,0 +1,18 @@
+   Compiling tls-core-fuzz v0.0.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/fuzz)
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.73s
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.01s
+     Running `fuzz/target/aarch64-apple-darwin/release/handshake_reassembly -artifact_prefix=/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/fuzz/artifacts/handshake_reassembly/ -max_total_time=10 -max_len=4096 /Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/fuzz/corpus/handshake_reassembly`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 301673991
+INFO: Loaded 1 modules   (1468 inline 8-bit counters): 1468 [0x10288ff70, 0x10289052c), 
+INFO: Loaded 1 PC tables (1468 PCs): 1468 [0x102890530,0x1028960f0), 
+INFO:      150 files found in /Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/fuzz/corpus/handshake_reassembly
+INFO: seed corpus: files: 150 min: 1b max: 259b total: 4346b rss: 36Mb
+#151	INITED cov: 246 ft: 512 corp: 111/2897b exec/s: 0 rss: 39Mb
+#1622	NEW    cov: 247 ft: 513 corp: 112/2904b lim: 275 exec/s: 0 rss: 41Mb L: 7/259 MS: 1 InsertByte-
+#4948	NEW    cov: 248 ft: 514 corp: 113/2911b lim: 307 exec/s: 0 rss: 43Mb L: 7/259 MS: 1 InsertByte-
+#196368	REDUCE cov: 248 ft: 514 corp: 113/2910b lim: 2202 exec/s: 196368 rss: 157Mb L: 5/259 MS: 5 CrossOver-ChangeASCIIInt-EraseBytes-ChangeBit-InsertByte-
+#524288	pulse  cov: 248 ft: 514 corp: 113/2910b lim: 4096 exec/s: 174762 rss: 349Mb
+#1048576	pulse  cov: 248 ft: 514 corp: 113/2910b lim: 4096 exec/s: 174762 rss: 532Mb
+#1829643	DONE   cov: 248 ft: 514 corp: 113/2910b lim: 4096 exec/s: 166331 rss: 535Mb
+Done 1829643 runs in 11 second(s)

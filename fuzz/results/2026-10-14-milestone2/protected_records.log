@@ -1,0 +1,22 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on build directory
+   Compiling tls-core-fuzz v0.0.0 (/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/fuzz)
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.82s
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.01s
+     Running `fuzz/target/aarch64-apple-darwin/release/protected_records -artifact_prefix=/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/fuzz/artifacts/protected_records/ -max_total_time=10 -max_len=20000 /Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/fuzz/corpus/protected_records`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 224469606
+INFO: Loaded 1 modules   (10430 inline 8-bit counters): 10430 [0x1029af500, 0x1029b1dbe), 
+INFO: Loaded 1 PC tables (10430 PCs): 10430 [0x1029b1dc0,0x1029da9a0), 
+INFO:       29 files found in /Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/fuzz/corpus/protected_records
+INFO: seed corpus: files: 29 min: 5b max: 150b total: 381b rss: 37Mb
+#31	INITED cov: 227 ft: 281 corp: 25/361b exec/s: 0 rss: 38Mb
+#105	NEW    cov: 228 ft: 282 corp: 26/365b lim: 150 exec/s: 0 rss: 39Mb L: 4/150 MS: 4 ChangeByte-ShuffleBytes-CrossOver-EraseBytes-
+#322	REDUCE cov: 228 ft: 282 corp: 26/363b lim: 150 exec/s: 0 rss: 40Mb L: 2/150 MS: 2 ShuffleBytes-EraseBytes-
+#2358	REDUCE cov: 228 ft: 282 corp: 26/362b lim: 164 exec/s: 0 rss: 47Mb L: 1/150 MS: 1 EraseBytes-
+#16384	pulse  cov: 228 ft: 282 corp: 26/362b lim: 302 exec/s: 8192 rss: 91Mb
+#32768	pulse  cov: 228 ft: 282 corp: 26/362b lim: 462 exec/s: 6553 rss: 103Mb
+#62093	DONE   cov: 228 ft: 282 corp: 26/362b lim: 752 exec/s: 5644 rss: 183Mb
+Done 62093 runs in 11 second(s)

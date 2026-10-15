@@ -1,0 +1,125 @@
+[
+  {
+    "label": "format",
+    "argv": [
+      "cargo",
+      "fmt",
+      "--all",
+      "--",
+      "--check"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "clippy",
+    "argv": [
+      "cargo",
+      "clippy",
+      "--locked",
+      "--workspace",
+      "--all-targets",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "tests",
+    "argv": [
+      "cargo",
+      "test",
+      "--locked",
+      "--workspace",
+      "--all-targets"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "doctests",
+    "argv": [
+      "cargo",
+      "test",
+      "--locked",
+      "--workspace",
+      "--doc"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "client-release",
+    "argv": [
+      "cargo",
+      "test",
+      "--locked",
+      "--release",
+      "-p",
+      "tls-client",
+      "--tests"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "bench-build",
+    "argv": [
+      "cargo",
+      "build",
+      "--locked",
+      "--release",
+      "-p",
+      "tls-bench",
+      "--bins"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "proof-source",
+    "argv": [
+      "python3",
+      "verification/check_proof_sources.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "translation-freshness",
+    "argv": [
+      "python3",
+      "verification/check_translation.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "rust-lean-models",
+    "argv": [
+      "python3",
+      "verification/check_models.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "standalone-lean-and-axiom-audit",
+    "executor": "lean_proofs",
+    "commands": [
+      "cd lean && lake build",
+      "python3 verification/check_proof_sources.py",
+      "python3 verification/check_axioms.py"
+    ],
+    "exit_code": 0,
+    "theorems": 168,
+    "model": 147,
+    "linked": 21,
+    "evidence": "axiom-audit.json"
+  },
+  {
+    "label": "isolated-helper-miri",
+    "exit_code": 0,
+    "targets": [
+      "aarch64-apple-darwin",
+      "i686-unknown-linux-gnu",
+      "powerpc64-unknown-linux-gnu"
+    ],
+    "cases_each": 2304,
+    "scope": "exact copied production helper body, guarded ranges; not full endpoint/compiler erasure",
+    "evidence": "miri-checks.json"
+  }
+]

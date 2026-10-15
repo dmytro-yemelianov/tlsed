@@ -1,0 +1,11 @@
+[package]
+name="wipe-probe"
+version="0.0.0"
+edition="2024"
+[workspace]
+[dependencies]
+zeroize={version="=1.9.1",default-features=false}
+bytemuck={version="=1.25.2",default-features=false}
+[profile.release]
+lto="thin"
+codegen-units=1

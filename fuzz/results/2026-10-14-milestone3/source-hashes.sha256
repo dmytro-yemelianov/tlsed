@@ -1,0 +1,7 @@
+e19162665a0b1afba54d250bfd17ee18644cdcfd26debdb568f182edb6f331dc  crates/tls-core/src/key_schedule.rs
+822595c1edcad75fe5f5dd2d522cd45ba3f310b90eaa7a043e982a3ad9bfac89  crates/tls-core/src/transcript.rs
+3991c4d8898c0e010726df2f57f5be4203edf4b44abba084ce0fb02afc4c710b  crates/tls-crypto/src/lib.rs
+f9a0ce2045f395a297e4b57f4fd664749a0fc86e27e5c5eff3232f2369329e7d  crates/tls-crypto-awslc/src/lib.rs
+89f104e0630a223a5fd5999f6a4a41911cd5c04383fe6c61bd2db3594b1fe3c0  fuzz/fuzz_targets/transcript_labels.rs
+879bdc6e59e247011fb385023beb6894f9c8fb15d5b6488c7c1717b5e6f8c4d6  fuzz/results/2026-10-14-milestone3/fuzz-manifest.run.toml
+0c4daa446658aabb2a95e4a1f97504d7a16615e28a68bb63df6e7b3797f1dc6a  fuzz/results/2026-10-14-milestone3/fuzz-lock.run.txt
