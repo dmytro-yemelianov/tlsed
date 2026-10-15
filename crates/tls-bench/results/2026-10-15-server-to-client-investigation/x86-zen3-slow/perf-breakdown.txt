@@ -1,0 +1,9 @@
+tlsed   AES-GCM (ghash/aesni)     67.52%     423.6 ms       8171 ns/record
+tlsed   memmove/memcpy            14.99%      94.0 ms       1814 ns/record
+tlsed   total task-clock    627.3 ms      12101 ns/record
+rustls  AES-GCM (ghash/aesni)     45.20%     427.9 ms       8253 ns/record
+rustls  memmove/memcpy            43.72%     413.8 ms       7983 ns/record
+rustls  total task-clock    946.6 ms      18260 ns/record
+gap (rustls - tlsed) total: 319.3 ms
+gap in AES-GCM (ghash/aesni)   :      4.3 ms
+gap in memmove/memcpy          :    319.8 ms

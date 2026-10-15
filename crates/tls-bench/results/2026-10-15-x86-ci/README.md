@@ -1,6 +1,6 @@
 # x86 benchmarks in GitHub Actions, 2026-10-15
 
-**Caveat on the server-to-client 16 KiB row.** The 0.56 below reproduces on two of three x86 runners. On the third it is 0.99, and separate processes there give 1.02. The row reflects runner state, and the cause is not established. See `../2026-10-15-server-to-client-investigation/README.md`. The other rows were checked on one or two runners only.
+**Caveat on the server-to-client 16 KiB row.** The 0.56 below reproduces on both EPYC 9V74 runners. Other x86 runners give 0.70 (EPYC 7763) and 0.99 (EPYC 9V45). On the EPYC 7763 the gap is memory copying in rustls's read path, measured with perf and callgrind; see `../2026-10-15-server-to-client-investigation/README.md`. The other rows were checked on one or two runners only.
 
 Question: do the macOS results (Apple M5) hold on x86-64, and does the padded-record cost fall as the landed erasure and scan predict?
 
@@ -32,7 +32,7 @@ Fragment-64 (`client-comparison/aes128-x25519-fragment64/`): c → s 64 B 0.843,
 
 What holds: the handshake and lifecycle are at parity with rustls, as on macOS. Small bulk records (64 B and 1 KiB) are faster than rustls in both directions: 5–15% here, 6–13% on macOS.
 
-What did not hold: **server → client at 16 KiB was 0.56 on this runner and 0.88 on macOS.** The three repeats agreed tightly (raw per-sample times in `client-comparison/aes128-x25519/repeat-*.csv`: TLSed about 0.68 ms per 128 records, rustls about 1.23 ms, in every repeat). The same combined measurement gives 0.56 on another slow runner, and 0.99 on a fast one, where separate processes also give parity. The investigation README has the evidence and the open questions.
+What did not hold: **server → client at 16 KiB was 0.56 on this runner and 0.88 on macOS.** The three repeats agreed tightly (raw per-sample times in `client-comparison/aes128-x25519/repeat-*.csv`: TLSed about 0.68 ms per 128 records, rustls about 1.23 ms, in every repeat). The same measurement gives 0.56 on the second EPYC 9V74 runner, 0.70 on an EPYC 7763 runner, and 0.99 on an EPYC 9V45 runner. The investigation README has the evidence.
 
 ## Padded records: inner-scan audit (`padded-x86.csv`)
 
