@@ -1,0 +1,48 @@
+name: x86 benchmarks
+
+# Manual only. Runs on GitHub-hosted x86-64 runners, which are shared virtual machines:
+# timings here are indicative, not a substitute for a quiet dedicated host. The host
+# description is recorded with the results so runs can be compared like with like.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  bench-x86:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record host
+        run: |
+          uname -a
+          lscpu | head -25
+          nproc
+          cat /proc/loadavg
+      - name: Install pinned Rust
+        run: rustup show
+      - name: Build bench binaries
+        run: cargo build --locked --release -p tls-bench --bins
+      - name: Paired TLSed vs rustls, primary and fragment-64 profiles
+        run: |
+          python3 crates/tls-bench/compare_clients.py \
+            --output "$RUNNER_TEMP/client-comparison" \
+            --repeats 3 --samples 50 --bulk-records 128 \
+            --only-profiles aes128-x25519,aes128-x25519-fragment64
+      - name: Padded-record and failure-path timings
+        run: |
+          cargo build --manifest-path verification/experiments/inner-scan-audit/Cargo.toml --release --bins
+          verification/experiments/inner-scan-audit/target/release/tlsed-inner-scan-audit bench 0 > "$RUNNER_TEMP/padded-x86.csv"
+      - name: Save host and results
+        run: |
+          lscpu > "$RUNNER_TEMP/host-lscpu.txt"
+          cp -r "$RUNNER_TEMP/client-comparison" "$RUNNER_TEMP/results-client-comparison" || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bench-x86
+          path: |
+            ${{ runner.temp }}/client-comparison
+            ${{ runner.temp }}/padded-x86.csv
+            ${{ runner.temp }}/host-lscpu.txt
