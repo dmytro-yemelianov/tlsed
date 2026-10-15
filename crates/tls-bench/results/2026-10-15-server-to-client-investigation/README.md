@@ -10,6 +10,7 @@ On x86, the server-to-client 16 KiB ratio (TLSed ÷ rustls) depends on the runne
 | `38709562536` | EPYC 9V74 | 0.558 (0.557–0.562) | not run | 5,363 / 9,631 |
 | `38710051326` | EPYC 7763 | 0.697 | 0.685 (10,962 / 15,989) | 11,121 / 16,010 |
 | `38708921581` | EPYC 9V45 | 0.991 (0.961–0.993) | 1.02 (2,719 / 2,667) | 2,721 / 2,816 |
+| `38712799344` | Xeon Platinum 8370C | 1.042 (1.019–1.061) | not run | 5,403 / 5,222 at 16,645-byte fragments |
 
 Ratios in the combined column are the median of per-repeat ratios from `comparison.csv`. Per-record values are the medians from the same file, divided by 128 records per sample.
 
@@ -74,12 +75,12 @@ Separate processes, two repeats, TLSed ÷ rustls, server-to-client 16 KiB:
 | 4,096 | 1.08, 1.08 | 0.95, 0.91 |
 | 1,024 | 1.03, 1.01 | 0.84, 0.94 |
 
-Smaller fragments raise rustls's copy volume, but on these two hosts the time ratio stays between 0.84 and 1.08 and shows no trend with fragment size. Copy throughput was not measured on these hosts, so the reason is not established. The large penalty appeared on the slow EPYC runners, where copies are expensive. A sweep on one of those runners would show whether the gap follows the byte counts there, and that needs a dispatch that lands on one.
+Smaller fragments raise rustls's copy volume, but on these two hosts the time ratio stays between 0.84 and 1.08 and shows no trend with fragment size. The same sweep on an x86 runner (Xeon Platinum 8370C, run `38712799344`, `x86-fragment-sweep-xeon-8370c/`) gives TLSed ÷ rustls of 1.035 at 16,645 bytes, 1.052 at 4,096 and 0.948 at 1,024, again with no trend. This runner has parity with rustls at every fragment size, so the byte counts do not produce a penalty there either. Copy throughput was not measured on these hosts, so the reason is not established. The large penalty appeared on the slow EPYC runners, where copies are expensive. A sweep on one of those runners would show whether the gap follows the byte counts there, and that needs a dispatch that lands on one.
 
 ## Open questions
 
 - Why copy throughput on the EPYC 7763 and 9V74 hosts is roughly a third of TLSed's copy throughput on the same host. Rustls's copies may land in cold memory, because it allocates a new buffer per record, but nothing here measures cache state at the copy.
-- The fragment sweep on a slow EPYC runner, to see whether the time gap widens at small fragments as the byte counts predict.
+- The fragment sweep on a slow EPYC runner, to see whether the time gap widens at small fragments as the byte counts predict. The sweep has run on the Xeon 8370C (no trend) but not on an EPYC runner, and the EPYC 7763 is the one where the penalty is memmove-bound.
 - Profiles of the EPYC 9V74 slow runners, to confirm the copy signature there directly.
 
 ## Other findings
@@ -103,5 +104,6 @@ Smaller fragments raise rustls's copy volume, but on these two hosts the time ra
 - `x86-baseline/`: EPYC 9V74 run (`38709562536`): pre-landing and current padded records, combined primary comparison.
 - `mac-process-check/`: macOS combined and separate runs, three repeats each.
 - `linux-arm64/`: separate-process runs, the padded-record baseline check, cachegrind summaries and strace counts.
+- `x86-fragment-sweep-xeon-8370c/`: the Xeon 8370C run (`38712799344`): bench output, the combined comparison, and the fragment sweep.
 - `copy-volume/`: the copy-counting shim source, raw runs at each fragment and sample count, and `per-record.txt`.
 - `fragment-sweep/`: separate-process timings on Linux arm64 and macOS at three fragment sizes, two repeats each.

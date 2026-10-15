@@ -32,7 +32,8 @@
 - Padded-запис коштує 1.23× long-запису. На macOS після landing це 1.27×, до landing було 5.9×. Пре-landing базової лінії на x86 немає, бо workflow міряє лише поточне дерево.
 
 **Відкрите:**
-- Відкрито для server→client 16 KiB: скільки байтів копіює rustls і чи дорожча кожна копія (вимір за розміром копії); чи змінює розбіжність `--fragment` (якщо `DeframerVecBuffer::discard` зсуває цілі записи); профіль на EPYC 9V74, щоб підтвердити сигнатуру копій там.
+- Байти копій (LD_PRELOAD-лічильник, Linux arm64): на запис 16 KiB rustls копіює ~128 KB, TLSed ~83 KB; при фрагментах 1 KiB — 233 KB проти 94 KB. Час не слідує за байтами на Linux arm64 і macOS (0.84–1.08) та на Xeon 8370C (0.95–1.05 при трьох розмірах фрагментів). Велика розбіжність — на EPYC 7763, де копії повільні (~16 GB/s для rustls проти ~46 GB/s для TLSed, приблизно).
+- Відкрито для server→client 16 KiB: чому копії rustls на EPYC повільніші (холодна пам'ять на запис, не виміряно); профіль на EPYC 9V74 для підтвердження; вимір на EPYC з `fragment_sweep`.
 - Пре-landing baseline для x86 зроблено (`baseline/prelanding.diff`, вхід `baseline` у `bench-x86.yml`). На повільному раннері (`38709562536`) padmax 0.310, inner_padmax 0.318, tag_long 0.454 від попередньої вартості; long без змін (1.02). Сирі дані — `crates/tls-bench/results/2026-10-15-server-to-client-investigation/x86-baseline/`.
 - Формальна відповідність `IsLastNonzeroBelow` і `rposition` на рівні бібліотеки Rust: не зроблено.
 - PR #2 відкрито для `8323c19`–`19a13a5` у `main`; рішення про злиття за вами.
