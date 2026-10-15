@@ -11,6 +11,10 @@ on:
         description: "Profile the server-to-client 16 KiB path per client (perf, callgrind, faults)"
         type: boolean
         default: false
+      baseline:
+        description: "Also time the pre-landing padded baseline (HEAD with prelanding.diff applied)"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -72,6 +76,18 @@ jobs:
           done
           grep -h minor_faults "$DD"/*.err > "$DD/minor-faults.txt" || true
           cat "$DD/minor-faults.txt" || true
+      - name: Pre-landing padded baseline
+        if: ${{ inputs.baseline }}
+        run: |
+          B="$RUNNER_TEMP/baseline"
+          mkdir -p "$B"
+          git archive HEAD | tar -x -C "$B"
+          patch -d "$B" -p1 < "$B/verification/experiments/inner-scan-audit/baseline/prelanding.diff"
+          cargo build --manifest-path "$B/verification/experiments/inner-scan-audit/Cargo.toml" \
+            --release --bin tlsed-inner-scan-audit
+          "$B/verification/experiments/inner-scan-audit/target/release/tlsed-inner-scan-audit" bench 0 \
+            > "$RUNNER_TEMP/padded-prelanding.csv"
+          git rev-parse HEAD > "$RUNNER_TEMP/baseline-source-head.txt"
       - name: Save host and results
         run: |
           lscpu > "$RUNNER_TEMP/host-lscpu.txt"
@@ -88,3 +104,10 @@ jobs:
         with:
           name: deep-dive-x86
           path: ${{ runner.temp }}/deep-dive
+      - uses: actions/upload-artifact@v4
+        if: ${{ inputs.baseline }}
+        with:
+          name: baseline-x86
+          path: |
+            ${{ runner.temp }}/padded-prelanding.csv
+            ${{ runner.temp }}/baseline-source-head.txt

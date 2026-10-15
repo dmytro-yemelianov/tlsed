@@ -1,0 +1,7 @@
+   Compiling tlsed-inner-scan-audit v0.0.0 (/base/verification/experiments/inner-scan-audit)
+    Finished `release` profile [optimized] target(s) in 21.19s
+cp: cannot stat '/tgt/release/tlsed-inner-scan-audit': No such file or directory
+   Compiling tlsed-inner-scan-audit v0.0.0 (/head/verification/experiments/inner-scan-audit)
+    Finished `release` profile [optimized] target(s) in 17.43s
+BOTH_BUILT
+FINISHED

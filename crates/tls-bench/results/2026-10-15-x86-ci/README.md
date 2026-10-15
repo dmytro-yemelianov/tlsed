@@ -1,5 +1,7 @@
 # x86 benchmarks in GitHub Actions, 2026-10-15
 
+**Correction.** The server-to-client 16 KiB row below (0.56) does not reproduce. A second runner gives 0.99 for the same combined measurement and 1.02 with separate processes. The row reflects that runner's state, not a property of the clients. See `../2026-10-15-server-to-client-investigation/README.md`. The other rows were not re-checked against a second runner.
+
 Question: do the macOS results (Apple M5) hold on x86-64, and does the padded-record cost fall as the landed erasure and scan predict?
 
 Run: [`bench-x86` workflow, run 38702456224](https://github.com/dmytro-yemelianov/tlsed/actions/runs/38702456224), `workflow_dispatch` on `main` at `8dc154a` (the merge of PR #1). Runner: `ubuntu-24.04`, GitHub-hosted.
@@ -30,7 +32,7 @@ Fragment-64 (`client-comparison/aes128-x25519-fragment64/`): c → s 64 B 0.843,
 
 What holds: the handshake and lifecycle are at parity with rustls, as on macOS. Small bulk records (64 B and 1 KiB) are faster than rustls in both directions: 5–15% here, 6–13% on macOS.
 
-What does not hold: **server → client at 16 KiB is 0.56 here and 0.88 on macOS.** The three repeats agree tightly (raw per-sample times in `client-comparison/aes128-x25519/repeat-*.csv`: TLSed about 0.68 ms per 128 records, rustls about 1.23 ms, in every repeat). So this is a stable difference on this platform, not noise. We have not identified the cause. Candidates to check before reading anything into it: AWS-LC's AES-GCM path on this CPU (AVX-512 and VAES are present here, which may change the rustls read path), and the rustls client's buffer handling for large reads. Until that is checked, do not present 0.56 as an x86 advantage.
+What did not hold: **server → client at 16 KiB was 0.56 on this runner and 0.88 on macOS.** The three repeats agreed tightly (raw per-sample times in `client-comparison/aes128-x25519/repeat-*.csv`: TLSed about 0.68 ms per 128 records, rustls about 1.23 ms, in every repeat). A second runner gives 0.99, so the difference belongs to this machine's state, not to the clients. The investigation README has the evidence and the checks that were rejected.
 
 ## Padded records: inner-scan audit (`padded-x86.csv`)
 
