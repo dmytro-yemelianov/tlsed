@@ -1,6 +1,6 @@
 name = "tlsed_linked_arithmetic"
 version = "0.1.0"
-defaultTargets = ["Proof", "ReassemblyProof", "ProtectedProof", "KeyScheduleProof", "ClientProof"]
+defaultTargets = ["Proof", "ReassemblyProof", "ProtectedProof", "ScanProof", "KeyScheduleProof", "ClientProof"]
 
 [leanOptions]
 warningAsError = true
@@ -33,6 +33,9 @@ name = "ReassemblyProof"
 
 [[lean_lib]]
 name = "ProtectedProof"
+
+[[lean_lib]]
+name = "ScanProof"
 
 [[lean_lib]]
 name = "KeyScheduleProof"

@@ -1,0 +1,24 @@
+==387== Cachegrind, a cache and branch-prediction profiler
+==387== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==387== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==387== Command: /tgt/release/client_compare --impl tlsed --only bulk-rx-16384 --samples 3 --bulk-records 128
+==387== 
+--387-- Warning: Cannot auto-detect cache config, using defaults.
+--387--          Run with -v to see.
+minor_faults,tlsed,356
+==387== 
+==387== I   refs:      538,971,712
+==387== I1  misses:        444,921
+==387== LLi misses:         52,827
+==387== I1  miss rate:        0.08%
+==387== LLi miss rate:        0.01%
+==387== 
+==387== D   refs:      239,326,727  (172,694,762 rd   + 66,631,965 wr)
+==387== D1  misses:      5,018,514  (  3,050,221 rd   +  1,968,293 wr)
+==387== LLd misses:         87,167  (     47,886 rd   +     39,281 wr)
+==387== D1  miss rate:         2.1% (        1.8%     +        3.0%  )
+==387== LLd miss rate:         0.0% (        0.0%     +        0.1%  )
+==387== 
+==387== LL refs:         5,463,435  (  3,495,142 rd   +  1,968,293 wr)
+==387== LL misses:         139,994  (    100,713 rd   +     39,281 wr)
+==387== LL miss rate:          0.0% (        0.0%     +        0.1%  )

@@ -1,0 +1,74 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 838  of event 'task-clock:ppp'
+# Event count (approx.): 167633520
+#
+# Overhead  Symbol                                                                                                                        IPC   [IPC Coverage]
+# ........  ............................................................................................................................  ....................
+#
+    22.32%  [.] aws_lc_0_46_0_aes_gcm_decrypt_avx512                                                                                      -      -            
+    21.24%  [.] __memmove_avx512_unaligned_erms                                                                                           -      -            
+    19.21%  [.] aws_lc_0_46_0_aes_gcm_encrypt_avx512                                                                                      -      -            
+     6.80%  [.] client_compare::measure                                                                                                   -      -            
+     6.68%  [.] __memcmp_evex_movbe                                                                                                       -      -            
+     3.34%  [.] rol64                                                                                                                     -      -            
+     2.39%  [.] jent_keccakp_chi                                                                                                          -      -            
+     2.27%  [.] __memset_avx512_unaligned_erms                                                                                            -      -            
+     1.79%  [.] aws_lc_0_46_0_gcm_gmult_avx512                                                                                            -      -            
+     1.43%  [.] jent_keccakp_theta                                                                                                        -      -            
+     0.95%  [.] jent_keccakp_pi                                                                                                           -      -            
+     0.72%  [.] jent_memaccess                                                                                                            -      -            
+     0.72%  [.] skip_iv_len_12_init_IV                                                                                                    -      -            
+     0.60%  [.] <client_compare::Transport>::pump                                                                                         -      -            
+     0.60%  [.] <rustls::vecbuf::ChunkVecBuffer>::write_to                                                                                -      -            
+     0.60%  [.] aws_lc_0_46_0_CRYPTO_gcm128_finish                                                                                        -      -            
+     0.60%  [.] jent_keccakp_rho                                                                                                          -      -            
+     0.48%  [.] <rustls::crypto::aws_lc_rs::tls13::GcmMessageEncrypter as rustls::crypto::cipher::MessageEncrypter>::encrypt              -      -            
+     0.48%  [.] aead_aes_gcm_seal_scatter_impl                                                                                            -      -            
+     0.48%  [.] jent_lag_insert                                                                                                           -      -            
+     0.36%  [.] <rustls::msgs::message::outbound::PrefixedPayload>::with_capacity                                                         -      -            
+     0.36%  [.] aead_aes_gcm_open_gather_impl                                                                                             -      -            
+     0.36%  [.] ptr_to_le32                                                                                                               -      -            
+     0.24%  [.] <aws_lc_rs::aead::unbound_key::UnboundKey>::seal_in_place_append_tag::<rustls::msgs::message::outbound::PrefixedPayload>  -      -            
+     0.24%  [.] <client_compare::Queue as std::io::Write>::write_vectored                                                                 -      -            
+     0.24%  [.] <rustls::common_state::CommonState>::queue_tls_message                                                                    -      -            
+     0.24%  [.] <tls_crypto_awslc::AwsLcKey as tls_crypto::AeadKey>::open_in_place                                                        -      -            
+     0.24%  [.] Lcurve25519_x25519_scalarloop                                                                                             -      -            
+     0.24%  [.] jent_get_nstime                                                                                                           -      -            
+     0.24%  [.] jent_keccakp_iota                                                                                                         -      -            
+     0.24%  [.] tls_core::wire::parse_header                                                                                              -      -            
+     0.24%  [.] uint32rotl                                                                                                                -      -            
+     0.12%  [.] <aws_lc_rs::agreement::PrivateKey>::compute_public_key                                                                    -      -            
+     0.12%  [.] <client_compare::Client>::step                                                                                            -      -            
+     0.12%  [.] <rustls::crypto::aws_lc_rs::tls13::AwsLcHkdf as rustls::crypto::tls13::Hkdf>::expander_for_okm                            -      -            
+     0.12%  [.] <rustls::msgs::message::outbound::OutboundChunks>::copy_to_vec                                                            -      -            
+     0.12%  [.] <tls_core::handshake::Reassembler>::note_other_record                                                                     -      -            
+     0.12%  [.] <tls_core::transcript::Transcript<tls_crypto_awslc::AwsLcHashContext>>::append                                            -      -            
+     0.12%  [.] __ecp_nistz256_mul_montx                                                                                                  -      -            
+     0.12%  [.] __ecp_nistz256_sub_fromx                                                                                                  -      -            
+     0.12%  [.] _dl_debug_state                                                                                                           -      -            
+     0.12%  [.] _dl_relocate_object                                                                                                       -      -            
+     0.12%  [.] aws_lc_0_46_0_CRYPTO_gcm128_setiv                                                                                         -      -            
+     0.12%  [.] aws_lc_0_46_0_CRYPTO_gcm128_tag                                                                                           -      -            
+     0.12%  [.] aws_lc_0_46_0_CRYPTO_memcmp                                                                                               -      -            
+     0.12%  [.] aws_lc_0_46_0_EVP_AEAD_CTX_open                                                                                           -      -            
+     0.12%  [.] aws_lc_0_46_0_EVP_AEAD_CTX_open_gather                                                                                    -      -            
+     0.12%  [.] aws_lc_0_46_0_beeu_mod_inverse_vartime                                                                                    -      -            
+     0.12%  [.] aws_lc_0_46_0_crypto_gcm_avx512_enabled                                                                                   -      -            
+     0.12%  [.] aws_lc_0_46_0_jent_sha3_update                                                                                            -      -            
+     0.12%  [.] aws_lc_0_46_0_jent_stuck                                                                                                  -      -            
+     0.12%  [.] ecp_nistz256_point_addx                                                                                                   -      -            
+     0.12%  [.] jent_keccakp_1600                                                                                                         -      -            
+     0.12%  [.] memcpy@plt                                                                                                                -      -            
+     0.12%  [.] tls_core::protected::wipe                                                                                                 -      -            
+     0.12%  [.] tls_core::wire::parse_record                                                                                              -      -            
+     0.12%  [.] xoshiro128starstar                                                                                                        -      -            
+     0.12%  [k] 0xffffffffa0622e14                                                                                                        -      -            
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

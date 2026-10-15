@@ -1,0 +1,98 @@
+--------------------------------------------------------------------------------
+Profile data file '/home/runner/work/_temp/deep-dive/tlsed.callgrind' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 155826535
+Trigger: Program termination
+Profiled target:  target/release/client_compare --impl tlsed --only bulk-rx-16384 --samples 5 --bulk-records 128 (PID 6591, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+696,555,387 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+113,002,560 (16.22%)  ???:rol64 [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+105,599,366 (15.16%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 93,159,032 (13.37%)  ???:_aesni_ctr32_ghash_6x [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+ 80,075,952 (11.50%)  ???:jent_keccakp_chi [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+ 67,606,704 ( 9.71%)  ???:jent_keccakp_theta [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+ 43,837,200 ( 6.29%)  ???:jent_keccakp_rho [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+ 42,391,593 ( 6.09%)  ???:xoshiro128starstar [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+ 24,938,496 ( 3.58%)  ???:jent_keccakp_pi [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+ 22,392,492 ( 3.21%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 13,420,556 ( 1.93%)  ???:jent_memaccess [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+ 11,513,766 ( 1.65%)  ???:uint32rotl [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+  8,015,008 ( 1.15%)  ???:__ecp_nistz256_mul_montq [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+  7,220,268 ( 1.04%)  ???:aws_lc_0_46_0_curve25519_x25519_alt [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+  7,176,312 ( 1.03%)  ???:ptr_to_le32 [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+  5,958,711 ( 0.86%)  ???:aws_lc_0_46_0_sha256_block_data_order_avx [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+  4,109,411 ( 0.59%)  ???:client_compare::measure [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+  4,015,750 ( 0.58%)  ???:__ecp_nistz256_sqr_montq [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+  3,994,056 ( 0.57%)  ???:jent_keccakp_1600 [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+  3,117,312 ( 0.45%)  ???:jent_keccakp_iota [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+  2,814,268 ( 0.40%)  ./string/../sysdeps/x86_64/multiarch/memcmp-avx2-movbe.S:__memcmp_avx2_movbe [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  2,622,114 ( 0.38%)  ???:ptr_to_le64 [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+  2,467,872 ( 0.35%)  ???:jent_sha3_fill_state [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+  2,006,862 ( 0.29%)  ???:aws_lc_0_46_0_curve25519_x25519base_alt [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+  1,475,476 ( 0.21%)  ???:aws_lc_0_46_0_jent_sha3_update [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+  1,315,602 ( 0.19%)  ???:jent_sha3_init [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+  1,058,838 ( 0.15%)  ???:aws_lc_0_46_0_ecp_nistz256_point_double [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+  1,034,535 ( 0.15%)  ???:jent_get_nstime [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    942,152 ( 0.14%)  ???:le32_to_ptr [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    758,659 ( 0.11%)  ???:jent_get_nstime_internal [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    701,643 ( 0.10%)  ???:jent_lag_insert [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    634,478 ( 0.09%)  ???:__ecp_nistz256_sub_fromq [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    556,357 ( 0.08%)  ???:aws_lc_0_46_0_jent_sha3_final [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    555,456 ( 0.08%)  ???:__ecp_nistz256_mul_by_2q [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    553,040 ( 0.08%)  ???:<client_compare::Client>::step [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    539,435 ( 0.08%)  ???:jent_hash_time [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    513,216 ( 0.07%)  ???:aws_lc_0_46_0_ecp_nistz256_ord_sqr_mont [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    480,715 ( 0.07%)  ???:aws_lc_0_46_0_aes_hw_ctr32_encrypt_blocks [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    429,638 ( 0.06%)  ???:aws_lc_0_46_0_ecp_nistz256_point_add [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    423,732 ( 0.06%)  ???:<rustls::vecbuf::ChunkVecBuffer>::write_to [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    357,368 ( 0.05%)  ???:le64_to_ptr [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    344,402 ( 0.05%)  ???:aws_lc_0_46_0_beeu_mod_inverse_vartime [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    337,412 ( 0.05%)  ???:aws_lc_0_46_0_ecp_nistz256_point_add_affine [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    335,916 ( 0.05%)  ???:aws_lc_0_46_0_gcm_gmult_avx [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    333,610 ( 0.05%)  ???:aws_lc_0_46_0_aes_hw_encrypt [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    330,496 ( 0.05%)  ???:_aesni_ctr32_6x [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    283,309 ( 0.04%)  ???:aws_lc_0_46_0_ecp_nistz256_avx2_select_w7 [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    282,762 ( 0.04%)  ???:aws_lc_0_46_0_aesni_gcm_encrypt [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    282,528 ( 0.04%)  ???:aws_lc_0_46_0_bn_mul_mont_nohw [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    277,728 ( 0.04%)  ???:__ecp_nistz256_add_toq [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    245,960 ( 0.04%)  ???:ecp_nistz256_avx2_select_w5 [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    242,385 ( 0.03%)  ???:core::ptr::drop_glue::<tls_client::ClientConnection> [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    239,510 ( 0.03%)  ???:aws_lc_0_46_0_gcm_ghash_avx [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    230,564 ( 0.03%)  ???:aws_lc_0_46_0_jent_measure_jitter [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    224,443 ( 0.03%)  ./malloc/./malloc/malloc.c:_int_malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    220,038 ( 0.03%)  ???:aead_aes_gcm_seal_scatter_impl [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    213,528 ( 0.03%)  ???:aead_aes_gcm_open_gather_impl [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    207,100 ( 0.03%)  ???:__ecp_nistz256_subq [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    198,814 ( 0.03%)  ???:<rustls::crypto::aws_lc_rs::tls13::GcmMessageEncrypter as rustls::crypto::cipher::MessageEncrypter>::encrypt [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    188,408 ( 0.03%)  ???:<client_compare::Transport>::pump [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    175,001 ( 0.03%)  ???:aws_lc_0_46_0_SHA256_Update [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    174,504 ( 0.03%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    170,880 ( 0.02%)  ???:aws_lc_0_46_0_CRYPTO_gcm128_decrypt_ctr32 [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    166,656 ( 0.02%)  ???:aws_lc_0_46_0_CRYPTO_gcm128_aad [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+    166,304 ( 0.02%)  ???:aws_lc_0_46_0_jent_stuck [/home/runner/work/tlsed/tlsed/target/release/client_compare]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memcmp-avx2-movbe.S
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+

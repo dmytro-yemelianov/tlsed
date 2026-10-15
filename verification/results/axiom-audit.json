@@ -1,5 +1,5 @@
 {
-  "theorems_audited": 168,
+  "theorems_audited": 171,
   "allowed_foundations": [
     "Classical.choice",
     "Quot.sound",
@@ -107,6 +107,21 @@
       "propext"
     ],
     "Tls13.Linked.valid_content_type_refines": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Tls13.Scan.IsLastNonzeroBelow.unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Tls13.Scan.last_nonzero_refines": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Tls13.Scan.last_nonzero_spec": [
       "Classical.choice",
       "Quot.sound",
       "propext"

@@ -1,0 +1,8 @@
+per bulk record, slope between 5 and 15 samples (removes handshake and warm-up bytes)
+fragment    impl  copy calls/rec    bytes/rec
+   16645   tlsed            10.4        82597
+   16645  rustls            18.9       127676
+    4096   tlsed            16.0        86732
+    4096  rustls            17.9       127655
+    1024   tlsed            28.0        93917
+    1024  rustls            45.7       233204

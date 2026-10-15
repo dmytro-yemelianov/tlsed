@@ -13,6 +13,7 @@ AUDITS = (
     (ROOT / "verification/aeneas", "Proof.lean"),
     (ROOT / "verification/aeneas", "ReassemblyProof.lean"),
     (ROOT / "verification/aeneas", "ProtectedProof.lean"),
+    (ROOT / "verification/aeneas", "ScanProof.lean"),
     (ROOT / "verification/aeneas", "KeyScheduleProof.lean"),
     (ROOT / "verification/aeneas", "ClientProof.lean"),
 )

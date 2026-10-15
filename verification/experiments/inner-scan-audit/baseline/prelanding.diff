@@ -1,0 +1,189 @@
+--- a/crates/tls-core/src/protected.rs
++++ b/crates/tls-core/src/protected.rs
+@@ -77,55 +77,16 @@
+         *byte ^= sequence_byte;
+     }
+     nonce
+-}
+-
+-/// Erase caller bytes with aligned u128 stores, as `Reassembler::drop` does.
+-fn wipe(bytes: &mut [u8]) {
+-    let (head, words, tail) = bytemuck::pod_align_to_mut::<u8, u128>(bytes);
+-    head.zeroize();
+-    words.zeroize();
+-    tail.zeroize();
+-}
+-
+-/// Last nonzero byte, skipping zero blocks from the end. Each block is tested with an OR
+-/// reduction over a 64-byte sub-slice, using index loops only.
+-const SCAN_BLOCK: usize = 64;
+-
+-fn block_is_zero(bytes: &[u8], start: usize) -> bool {
+-    let block = &bytes[start..start + SCAN_BLOCK];
+-    let mut acc: u8 = 0;
+-    let mut i = 0;
+-    while i < SCAN_BLOCK {
+-        acc |= block[i];
+-        i += 1;
+-    }
+-    acc == 0
+-}
+-
+-fn last_nonzero(bytes: &[u8]) -> Option<usize> {
+-    let mut end = bytes.len();
+-    while end >= SCAN_BLOCK && block_is_zero(bytes, end - SCAN_BLOCK) {
+-        end -= SCAN_BLOCK;
+-    }
+-    last_nonzero_below(bytes, end)
+ }
+ 
+-fn last_nonzero_below(bytes: &[u8], end: usize) -> Option<usize> {
+-    let mut i = end;
+-    while i > 0 {
+-        i -= 1;
+-        if bytes[i] != 0 {
+-            return Some(i);
+-        }
+-    }
+-    None
+-}
+-
+ fn decode_inner(inner: &[u8], limit: usize) -> Result<(ContentType, usize), ProtectedError> {
+     if inner.is_empty() || inner.len() > limit {
+         return Err(ProtectedError::InvalidInner);
+     }
+-    let index = last_nonzero(inner).ok_or(ProtectedError::InvalidInner)?;
++    let index = inner
++        .iter()
++        .rposition(|&byte| byte != 0)
++        .ok_or(ProtectedError::InvalidInner)?;
+     if !valid_content_type(inner[index], index) {
+         return Err(ProtectedError::InvalidInner);
+     }
+@@ -186,7 +147,7 @@
+ 
+     fn fail<T>(&mut self, output: &mut [u8], error: ProtectedError) -> Result<T, ProtectedError> {
+         self.failed = true;
+-        wipe(output);
++        output.zeroize();
+         self.iv.zeroize();
+         drop(self.key.take());
+         Err(error)
+@@ -303,7 +264,7 @@
+ 
+     fn fail<T>(&mut self, output: &mut [u8], error: ProtectedError) -> Result<T, ProtectedError> {
+         self.failed = true;
+-        wipe(output);
++        output.zeroize();
+         self.iv.zeroize();
+         drop(self.key.take());
+         Err(error)
+@@ -357,7 +318,7 @@
+             Err(error) => return self.fail(output, error),
+         };
+         // Erase type, padding, decrypted trailing tag, and unused caller scratch.
+-        wipe(&mut output[content_len..]);
++        output[content_len..].zeroize();
+         Ok(Parse::Complete {
+             value: OpenedRecord {
+                 content_type,
+@@ -371,64 +332,5 @@
+ impl<K: AeadKey> Drop for ProtectedReader<K> {
+     fn drop(&mut self) {
+         self.iv.zeroize();
+-    }
+-}
+-
+-#[cfg(test)]
+-mod equivalence {
+-    use super::*;
+-
+-    #[test]
+-    fn wipe_zeroes_exact_range() {
+-        for offset in 0..32 {
+-            for size in (0..=257).chain([1_023, 1_024, 1_025, 16_383, 16_384, 16_385]) {
+-                let start = 16 + offset;
+-                let mut data = [0xa5u8; 16_512];
+-                let mut expected = [0xa5u8; 16_512];
+-                expected[start..start + size].fill(0);
+-                wipe(&mut data[start..start + size]);
+-                assert!(data == expected, "size={size} offset={offset}");
+-            }
+-        }
+     }
+-
+-    #[test]
+-    fn last_nonzero_matches_rposition() {
+-        let mut state = 0x9E37_79B9_7F4A_7C15_u64;
+-        let mut next = move || {
+-            state ^= state << 13;
+-            state ^= state >> 7;
+-            state ^= state << 17;
+-            state
+-        };
+-        let mut bytes = [0u8; 16_385];
+-        for len in (0..=300).chain([1_023, 1_024, 4_095, 16_383, 16_384, 16_385]) {
+-            assert_eq!(last_nonzero(&bytes[..len]), None, "zeros len={len}");
+-            let step = if len <= 300 { 1 } else { 97 };
+-            for pos in (0..len).step_by(step) {
+-                bytes[pos] = 1;
+-                assert_eq!(
+-                    last_nonzero(&bytes[..len]),
+-                    bytes[..len].iter().rposition(|&b| b != 0),
+-                    "single len={len} pos={pos}"
+-                );
+-                bytes[pos] = 0;
+-            }
+-            for _ in 0..64 {
+-                bytes[..len].fill(0);
+-                if len > 0 {
+-                    for _ in 0..(next() % 8) {
+-                        let pos = (next() as usize) % len;
+-                        bytes[pos] = (next() as u8) | 1;
+-                    }
+-                }
+-                assert_eq!(
+-                    last_nonzero(&bytes[..len]),
+-                    bytes[..len].iter().rposition(|&b| b != 0),
+-                    "random len={len}"
+-                );
+-            }
+-            bytes[..len].fill(0);
+-        }
+-    }
+ }
+--- a/crates/tls-crypto-awslc/src/lib.rs
++++ b/crates/tls-crypto-awslc/src/lib.rs
+@@ -32,14 +32,6 @@
+ pub struct AwsLcKey {
+     suite: CipherSuite,
+     key: aead::LessSafeKey,
+-}
+-
+-/// Erase caller bytes with aligned u128 stores, as `Reassembler::drop` does.
+-fn wipe(bytes: &mut [u8]) {
+-    let (head, words, tail) = bytemuck::pod_align_to_mut::<u8, u128>(bytes);
+-    head.zeroize();
+-    words.zeroize();
+-    tail.zeroize();
+ }
+ 
+ impl AeadKey for AwsLcKey {
+@@ -73,7 +65,7 @@
+             Ok(total)
+         })();
+         if result.is_err() {
+-            wipe(buffer);
++            buffer.zeroize();
+         }
+         result
+     }
+@@ -99,7 +91,7 @@
+         // The provider may modify the buffer before reporting an invalid tag.
+         // Wipe even the tag and every supplied byte on every returned error.
+         if result.is_err() {
+-            wipe(buffer);
++            buffer.zeroize();
+         }
+         result
+     }

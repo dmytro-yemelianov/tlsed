@@ -1,0 +1,17 @@
+minor_faults,tlsed,135
+copy_calls,92727
+copy_bytes,224112164
+hist_log2,0,4922
+hist_log2,1,361
+hist_log2,2,23939
+hist_log2,3,11102
+hist_log2,4,10499
+hist_log2,5,9599
+hist_log2,6,1711
+hist_log2,7,33
+hist_log2,8,6960
+hist_log2,9,154
+hist_log2,10,385
+hist_log2,11,2560
+hist_log2,12,10262
+hist_log2,14,10240

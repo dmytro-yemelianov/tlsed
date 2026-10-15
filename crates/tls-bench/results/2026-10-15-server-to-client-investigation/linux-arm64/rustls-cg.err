@@ -1,0 +1,24 @@
+==388== Cachegrind, a cache and branch-prediction profiler
+==388== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==388== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==388== Command: /tgt/release/client_compare --impl rustls --only bulk-rx-16384 --samples 3 --bulk-records 128
+==388== 
+--388-- Warning: Cannot auto-detect cache config, using defaults.
+--388--          Run with -v to see.
+minor_faults,rustls_strict,366
+==388== 
+==388== I   refs:      533,906,607
+==388== I1  misses:        591,368
+==388== LLi misses:         52,175
+==388== I1  miss rate:        0.11%
+==388== LLi miss rate:        0.01%
+==388== 
+==388== D   refs:      236,339,500  (171,869,422 rd   + 64,470,078 wr)
+==388== D1  misses:      4,724,103  (  3,125,299 rd   +  1,598,804 wr)
+==388== LLd misses:         66,984  (     48,083 rd   +     18,901 wr)
+==388== D1  miss rate:         2.0% (        1.8%     +        2.5%  )
+==388== LLd miss rate:         0.0% (        0.0%     +        0.0%  )
+==388== 
+==388== LL refs:         5,315,471  (  3,716,667 rd   +  1,598,804 wr)
+==388== LL misses:         119,159  (    100,258 rd   +     18,901 wr)
+==388== LL miss rate:          0.0% (        0.0%     +        0.0%  )

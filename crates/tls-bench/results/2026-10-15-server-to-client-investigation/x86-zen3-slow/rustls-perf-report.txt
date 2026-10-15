@@ -1,0 +1,104 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 4K of event 'task-clock:ppp'
+# Event count (approx.): 946589280
+#
+# Overhead  Symbol                                                                                                                        IPC   [IPC Coverage]
+# ........  ............................................................................................................................  ....................
+#
+    43.72%  [.] __memmove_avx_unaligned_erms                                                                                              -      -            
+    42.94%  [.] _aesni_ctr32_ghash_6x                                                                                                     -      -            
+     1.67%  [.] __memcmp_avx2_movbe                                                                                                       -      -            
+     1.42%  [.] __memset_avx2_unaligned_erms                                                                                              -      -            
+     1.16%  [.] rol64                                                                                                                     -      -            
+     0.70%  [.] <client_compare::Client>::step                                                                                            -      -            
+     0.61%  [.] jent_keccakp_chi                                                                                                          -      -            
+     0.53%  [.] jent_keccakp_theta                                                                                                        -      -            
+     0.51%  [.] aws_lc_0_46_0_aes_hw_encrypt                                                                                              -      -            
+     0.46%  [.] rustls::msgs::message::outbound::read_opaque_message_header                                                               -      -            
+     0.36%  [.] aws_lc_0_46_0_gcm_gmult_clmul                                                                                             -      -            
+     0.32%  [.] aead_aes_gcm_seal_scatter_impl                                                                                            -      -            
+     0.32%  [.] jent_memaccess                                                                                                            -      -            
+     0.27%  [.] <rustls::msgs::deframer::buffers::DeframerVecBuffer>::read                                                                -      -            
+     0.27%  [.] jent_keccakp_pi                                                                                                           -      -            
+     0.27%  [.] xoshiro128starstar                                                                                                        -      -            
+     0.25%  [.] jent_keccakp_rho                                                                                                          -      -            
+     0.21%  [.] <rustls::vecbuf::ChunkVecBuffer>::write_to                                                                                -      -            
+     0.21%  [.] aead_aes_gcm_open_gather_impl                                                                                             -      -            
+     0.19%  [.] <rustls::crypto::aws_lc_rs::tls13::GcmMessageEncrypter as rustls::crypto::cipher::MessageEncrypter>::encrypt              -      -            
+     0.19%  [.] aws_lc_0_46_0_aesni_gcm_encrypt                                                                                           -      -            
+     0.17%  [.] aws_lc_0_46_0_CRYPTO_gcm128_finish                                                                                        -      -            
+     0.17%  [.] aws_lc_0_46_0_aes_hw_ctr32_encrypt_blocks                                                                                 -      -            
+     0.15%  [.] aws_lc_0_46_0_gcm_ghash_avx                                                                                               -      -            
+     0.15%  [.] uint32rotl                                                                                                                -      -            
+     0.13%  [.] <client_compare::Transport>::pump                                                                                         -      -            
+     0.11%  [.] <aws_lc_rs::aead::unbound_key::UnboundKey>::open_within                                                                   -      -            
+     0.11%  [.] <core::io::cursor::Cursor<&[u8]> as std::io::Read>::read                                                                  -      -            
+     0.11%  [.] <rustls::common_state::CommonState>::take_received_plaintext                                                              -      -            
+     0.11%  [.] _int_realloc                                                                                                              -      -            
+     0.08%  [.] <client_compare::Queue as std::io::Write>::write_vectored                                                                 -      -            
+     0.08%  [.] <rustls::common_state::CommonState>::current_io_state                                                                     -      -            
+     0.08%  [.] <rustls::msgs::message::outbound::OutboundOpaqueMessage>::encode                                                          -      -            
+     0.06%  [.] <aws_lc_rs::aead::unbound_key::UnboundKey>::seal_in_place_append_tag::<rustls::msgs::message::outbound::PrefixedPayload>  -      -            
+     0.06%  [.] <rustls::msgs::message::outbound::PrefixedPayload>::with_capacity                                                         -      -            
+     0.06%  [.] <rustls::record_layer::RecordLayer>::encrypt_outgoing                                                                     -      -            
+     0.06%  [.] _int_free                                                                                                                 -      -            
+     0.06%  [.] _int_malloc                                                                                                               -      -            
+     0.06%  [.] aws_lc_0_46_0_CRYPTO_memcmp                                                                                               -      -            
+     0.06%  [.] jent_keccakp_1600                                                                                                         -      -            
+     0.06%  [.] jent_keccakp_iota                                                                                                         -      -            
+     0.06%  [.] le32_to_ptr                                                                                                               -      -            
+     0.06%  [.] ptr_to_le32                                                                                                               -      -            
+     0.06%  [.] realloc                                                                                                                   -      -            
+     0.04%  [.] <alloc::raw_vec::RawVecInner<_>>::reserve::do_reserve_and_handle::<alloc::alloc::Global>                                  -      -            
+     0.04%  [.] <rustls::common_state::CommonState>::send_appdata_encrypt                                                                 -      -            
+     0.04%  [.] <rustls::crypto::aws_lc_rs::tls13::GcmMessageDecrypter as rustls::crypto::cipher::MessageDecrypter>::decrypt              -      -            
+     0.04%  [.] <rustls::msgs::message::outbound::OutboundChunks>::copy_to_vec                                                            -      -            
+     0.04%  [.] <rustls::vecbuf::ChunkVecBuffer>::read                                                                                    -      -            
+     0.04%  [.] Lcurve25519_x25519_scalarloop                                                                                             -      -            
+     0.04%  [.] __ecp_nistz256_mul_montx                                                                                                  -      -            
+     0.04%  [.] __ecp_nistz256_sqr_montx                                                                                                  -      -            
+     0.04%  [.] aws_lc_0_46_0_CRYPTO_gcm128_encrypt_ctr32                                                                                 -      -            
+     0.04%  [.] aws_lc_0_46_0_CRYPTO_gcm128_setiv                                                                                         -      -            
+     0.04%  [.] aws_lc_0_46_0_EVP_AEAD_CTX_open_gather                                                                                    -      -            
+     0.04%  [.] aws_lc_0_46_0_sha256_block_data_order_hw                                                                                  -      -            
+     0.04%  [.] cfree@GLIBC_2.2.5                                                                                                         -      -            
+     0.04%  [.] client_compare::measure                                                                                                   -      -            
+     0.04%  [.] jent_get_nstime                                                                                                           -      -            
+     0.04%  [.] jent_get_nstime_internal                                                                                                  -      -            
+     0.02%  [.] <rustls::client::client_conn::ClientConfig>::find_cipher_suite                                                            -      -            
+     0.02%  [.] <rustls::client::client_conn::connection::ClientConnection>::new                                                          -      -            
+     0.02%  [.] <rustls::msgs::deframer::buffers::DeframerVecBuffer>::discard                                                             -      -            
+     0.02%  [.] <rustls::msgs::handshake::SingleProtocolName as rustls::msgs::codec::Codec>::encode                                       -      -            
+     0.02%  [.] Lbignum_montinv_p256_midloop                                                                                              -      -            
+     0.02%  [.] __ecp_nistz256_subx                                                                                                       -      -            
+     0.02%  [.] _aesni_ctr32_6x                                                                                                           -      -            
+     0.02%  [.] _int_free_maybe_consolidate                                                                                               -      -            
+     0.02%  [.] aead_aes_gcm_tls13_seal_scatter                                                                                           -      -            
+     0.02%  [.] aws_lc_0_46_0_EVP_AEAD_CTX_seal                                                                                           -      -            
+     0.02%  [.] aws_lc_0_46_0_HMAC_Init_ex                                                                                                -      -            
+     0.02%  [.] aws_lc_0_46_0_aesni_gcm_decrypt                                                                                           -      -            
+     0.02%  [.] aws_lc_0_46_0_crypto_gcm_avx512_enabled                                                                                   -      -            
+     0.02%  [.] aws_lc_0_46_0_gcm_init_avx                                                                                                -      -            
+     0.02%  [.] aws_lc_0_46_0_jent_sha3_update                                                                                            -      -            
+     0.02%  [.] core::fmt::write                                                                                                          -      -            
+     0.02%  [.] do_lookup_x                                                                                                               -      -            
+     0.02%  [.] handle_amd                                                                                                                -      -            
+     0.02%  [.] le64_to_ptr                                                                                                               -      -            
+     0.02%  [.] malloc                                                                                                                    -      -            
+     0.02%  [.] ptr_to_le64                                                                                                               -      -            
+     0.02%  [.] std::io::default_read_exact::<rustls::conn::connection::Reader>                                                           -      -            
+     0.02%  [.] unlink_chunk.isra.0                                                                                                       -      -            
+     0.02%  [.] x509_parser::extensions::parse_extensions_envelope                                                                        -      -            
+     0.02%  [k] 0xffffffff87d2e94d                                                                                                        -      -            
+     0.02%  [k] 0xffffffff88096abb                                                                                                        -      -            
+     0.02%  [k] 0xffffffff880ecad5                                                                                                        -      -            
+     0.02%  [.] 0x0000000000000bfb                                                                                                        -      -            
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#
