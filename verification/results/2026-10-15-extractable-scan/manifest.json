@@ -1,0 +1,25 @@
+{
+  "host": {
+    "cpu": "Apple M5",
+    "os": "macOS 27.2",
+    "rustc": "1.98.1",
+    "power": "AC"
+  },
+  "repeats": 6,
+  "kernels": {
+    "samples_per_repeat": 60,
+    "warmups": 5,
+    "bench_order": "rotated per sample"
+  },
+  "e2e": {
+    "binaries_sha256": {
+      "pre_landing": "production_copy variant, built 2026-10-14 from pre-landing sources",
+      "extractable": "59cbdd5f9df427caff2d68fbaa67d8e8979ac937adc980c81cedf5f3cfa5bb68"
+    },
+    "order": "alternates by repeat"
+  },
+  "source": {
+    "protected_rs_sha256_at_head": "d51a602e4a1381fd350747334c8efc389ef36a3a0d56968fe785fe2e98b731a2"
+  },
+  "load_records": "e2e/load.txt (uptime before each run)"
+}

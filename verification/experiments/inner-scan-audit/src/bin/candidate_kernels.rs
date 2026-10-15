@@ -25,7 +25,7 @@ type Scan = fn(&[u8]) -> Option<usize>;
 type Wipe = fn(&mut [u8]);
 type Batch = Box<dyn Fn(usize) -> u128>;
 
-/// Verbatim production expression from `decode_inner` (protected.rs:86-89).
+/// Pre-landing scan from `decode_inner`: the reference every candidate must match.
 fn scan_production(inner: &[u8]) -> Option<usize> {
     inner.iter().rposition(|&byte| byte != 0)
 }
@@ -52,7 +52,7 @@ fn scan_block64(inner: &[u8]) -> Option<usize> {
     scan_blocks::<64>(inner)
 }
 
-/// Verbatim production expression from the tail wipe (protected.rs:321).
+/// Pre-landing tail wipe: `zeroize` over the caller's bytes, the reference for the aligned wipe.
 fn wipe_production(bytes: &mut [u8]) {
     bytes.zeroize();
 }
@@ -65,8 +65,85 @@ fn wipe_aligned(bytes: &mut [u8]) {
     tail.zeroize();
 }
 
+/// Extractable candidates: index loops only, no slice equality, no iterator adaptors.
+fn block_zero_or(bytes: &[u8], start: usize) -> bool {
+    let mut acc: u8 = 0;
+    let mut i = 0;
+    while i < 64 {
+        acc |= bytes[start + i];
+        i += 1;
+    }
+    acc == 0
+}
+
+fn block_zero_sub(bytes: &[u8], start: usize) -> bool {
+    let block = &bytes[start..start + 64];
+    let mut acc: u8 = 0;
+    let mut i = 0;
+    while i < 64 {
+        acc |= block[i];
+        i += 1;
+    }
+    acc == 0
+}
+
+fn block_zero_exit(bytes: &[u8], start: usize) -> bool {
+    let mut i = 0;
+    while i < 64 {
+        if bytes[start + i] != 0 {
+            return false;
+        }
+        i += 1;
+    }
+    true
+}
+
+fn scan_x_or(inner: &[u8]) -> Option<usize> {
+    let mut end = inner.len();
+    while end >= 64 && block_zero_or(inner, end - 64) {
+        end -= 64;
+    }
+    last_nonzero_bytes(inner, end)
+}
+
+fn scan_x_sub(inner: &[u8]) -> Option<usize> {
+    let mut end = inner.len();
+    while end >= 64 && block_zero_sub(inner, end - 64) {
+        end -= 64;
+    }
+    last_nonzero_bytes(inner, end)
+}
+
+fn scan_x_exit(inner: &[u8]) -> Option<usize> {
+    let mut end = inner.len();
+    while end >= 64 && block_zero_exit(inner, end - 64) {
+        end -= 64;
+    }
+    last_nonzero_bytes(inner, end)
+}
+
+fn scan_x_bytewise(inner: &[u8]) -> Option<usize> {
+    last_nonzero_bytes(inner, inner.len())
+}
+
+/// Largest index below `end` holding a nonzero byte.
+fn last_nonzero_bytes(bytes: &[u8], end: usize) -> Option<usize> {
+    let mut i = end;
+    while i > 0 {
+        i -= 1;
+        if bytes[i] != 0 {
+            return Some(i);
+        }
+    }
+    None
+}
+
 fn validate_scans() {
-    let candidates: [(&str, Scan); 4] = [
+    let candidates: [(&str, Scan); 8] = [
+        ("x_or", scan_x_or),
+        ("x_sub", scan_x_sub),
+        ("x_exit", scan_x_exit),
+        ("x_bytewise", scan_x_bytewise),
         ("block8", scan_block8),
         ("block16", scan_block16),
         ("block32", scan_block32),
@@ -143,8 +220,12 @@ fn wipe_batch(wipe: Wipe, len: usize, iterations: usize) -> u128 {
 }
 
 fn batches() -> Vec<(String, usize, Batch)> {
-    let scans: [(&str, Scan); 5] = [
+    let scans: [(&str, Scan); 9] = [
         ("production", scan_production),
+        ("x_or", scan_x_or),
+        ("x_sub", scan_x_sub),
+        ("x_exit", scan_x_exit),
+        ("x_bytewise", scan_x_bytewise),
         ("block8", scan_block8),
         ("block16", scan_block16),
         ("block32", scan_block32),
