@@ -83,5 +83,5 @@ jobs:
           cp fuzz/results/2026-10-14-milestone3/pki-seeds/seed-* fuzz/corpus/bounded_server_pki/
           cargo +nightly-2026-09-17 fuzz run bounded_server_pki -- -runs=10000 -seed=71513
           mkdir -p fuzz/corpus/client_engine
-          cp fuzz/results/2026-10-14-milestone4/client-engine-seeds/seed-* fuzz/corpus/client_engine/
+          cp fuzz/results/2026-10-14-milestone4/client-engine-seeds/* fuzz/corpus/client_engine/
           cargo +nightly-2026-09-17 fuzz run client_engine -- -runs=10000 -max_len=4096 -seed=71513
