@@ -554,11 +554,40 @@ fn main() -> Result<()> {
         "rustls-first" => [Implementation::Rustls, Implementation::Tlsed],
         _ => return Err("invalid order".into()),
     };
+    // Diagnostic isolation only: measure one client in its own process.
+    let implementation = option("--impl", "both")?;
+    if !matches!(implementation.as_str(), "both" | "tlsed" | "rustls") {
+        return Err("invalid implementation filter".into());
+    }
     println!("implementation,workload,direction,payload_bytes,iterations,sample,elapsed_ns");
     for kind in kinds {
+        let selected = matches!(
+            (implementation.as_str(), kind),
+            ("both", _) | ("tlsed", Implementation::Tlsed) | ("rustls", Implementation::Rustls)
+        );
+        if !selected {
+            continue;
+        }
+        let before = minor_faults();
         measure(kind, &config, samples, records, fragment, &only)?;
+        if let (Some(before), Some(after)) = (before, minor_faults()) {
+            eprintln!("minor_faults,{},{}", kind.name(), after - before);
+        }
     }
     Ok(())
+}
+
+/// Minor page faults of this process so far, from `/proc/self/stat` (field 10).
+#[cfg(target_os = "linux")]
+fn minor_faults() -> Option<u64> {
+    let stat = std::fs::read_to_string("/proc/self/stat").ok()?;
+    let after_comm = stat.rsplit_once(')')?.1;
+    after_comm.split_whitespace().nth(7)?.parse().ok()
+}
+
+#[cfg(not(target_os = "linux"))]
+fn minor_faults() -> Option<u64> {
+    None
 }
 
 #[cfg(test)]

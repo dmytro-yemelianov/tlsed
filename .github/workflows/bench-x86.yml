@@ -6,6 +6,11 @@ name: x86 benchmarks
 
 on:
   workflow_dispatch:
+    inputs:
+      deep_dive:
+        description: "Profile the server-to-client 16 KiB path per client (perf, callgrind, faults)"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -35,6 +40,38 @@ jobs:
         run: |
           cargo build --manifest-path verification/experiments/inner-scan-audit/Cargo.toml --release --bins
           verification/experiments/inner-scan-audit/target/release/tlsed-inner-scan-audit bench 0 > "$RUNNER_TEMP/padded-x86.csv"
+      - name: Deep dive, server-to-client 16 KiB per client
+        if: ${{ inputs.deep_dive }}
+        run: |
+          DD="$RUNNER_TEMP/deep-dive"
+          BIN=target/release/client_compare
+          mkdir -p "$DD"
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq linux-tools-common linux-tools-generic valgrind \
+            || echo "tool install incomplete"
+          sudo sysctl -w kernel.perf_event_paranoid=-1 || true
+          for impl in tlsed rustls; do
+            # Timing: one client per process, so no other client's allocations or caches.
+            $BIN --impl $impl --only bulk-rx-16384 --samples 100 --bulk-records 128 \
+              > "$DD/$impl-timing.csv" 2> "$DD/$impl-timing.err"
+            # CPU samples over the same workload, longer so the profile has enough samples.
+            if perf --version > /dev/null 2>&1; then
+              perf record -F 4999 -o "$DD/$impl.perf" -- \
+                $BIN --impl $impl --only bulk-rx-16384 --samples 400 --bulk-records 128 \
+                > /dev/null 2> "$DD/$impl-perf-record.err" || true
+              perf report -i "$DD/$impl.perf" --stdio --no-children --sort symbol 2>/dev/null \
+                | head -150 > "$DD/$impl-perf-report.txt" || true
+            fi
+            # Exact instruction counts, independent of timing noise.
+            if command -v valgrind > /dev/null 2>&1; then
+              valgrind --tool=callgrind --callgrind-out-file="$DD/$impl.callgrind" \
+                $BIN --impl $impl --only bulk-rx-16384 --samples 5 --bulk-records 128 \
+                > /dev/null 2> "$DD/$impl-valgrind.err" || true
+              callgrind_annotate "$DD/$impl.callgrind" > "$DD/$impl-callgrind.txt" 2> /dev/null || true
+            fi
+          done
+          grep -h minor_faults "$DD"/*.err > "$DD/minor-faults.txt" || true
+          cat "$DD/minor-faults.txt" || true
       - name: Save host and results
         run: |
           lscpu > "$RUNNER_TEMP/host-lscpu.txt"
@@ -46,3 +83,8 @@ jobs:
             ${{ runner.temp }}/client-comparison
             ${{ runner.temp }}/padded-x86.csv
             ${{ runner.temp }}/host-lscpu.txt
+      - uses: actions/upload-artifact@v4
+        if: ${{ inputs.deep_dive }}
+        with:
+          name: deep-dive-x86
+          path: ${{ runner.temp }}/deep-dive
