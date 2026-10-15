@@ -21,10 +21,14 @@ The bootstrap uses locked git revisions and shallow fetches. It is useful when
 full-history GitHub clones fail. `lake exe cache get` obtains mathlib build
 artifacts for the locked version; Lake then builds/checks the proof and Aeneas
 backend. `Proof.lean`, `ReassemblyProof.lean`, `ProtectedProof.lean`,
-`KeyScheduleProof.lean` and `ClientProof.lean` print twenty-one
+`ScanProof.lean`, `KeyScheduleProof.lean` and `ClientProof.lean` print twenty-four
 theorem dependency audits during checking. `python3 verification/check_axioms.py`
-from the root enforces standard-only foundational assumptions across all 168
+from the root enforces standard-only foundational assumptions across all 171
 model/linked theorem audits and retains the complete dependency report.
+`ScanProof.lean` proves the loops of `protected::last_nonzero` (block skipping and
+the bytewise scan) against `IsLastNonzeroBelow`, the specification of
+`rposition` on a prefix. It states total correctness: the function returns `ok`,
+never fails, and the result satisfies the specification, which determines it uniquely.
 Warnings are errors for this project's proof/model/generated files.
 
 ## Regenerate from production Rust
