@@ -74,6 +74,30 @@ fn measure(size: usize, footprint: usize, mode: &str) -> Vec<f64> {
     out
 }
 
+/// Copies between two fixed regions of one buffer, the destination `8192 + offset` bytes past
+/// the source, with the source aligned to 4 KiB. With `offset = 0` the two addresses share their
+/// low 12 bits (4 KiB aliasing); other offsets do not.
+fn measure_alias(size: usize, offset: usize) -> Vec<f64> {
+    let mut raw = vec![1u8; size + offset + 8192 + 4096 + 8192];
+    let base = raw.as_ptr() as usize;
+    let src = ((base + 4095) & !4095) - base;
+    let dst = src + 8192 + offset;
+    let ops = (TARGET_BYTES / size).max(4096);
+    let mut out = Vec::with_capacity(REPEATS);
+    for repeat in 0..=REPEATS {
+        let start = Instant::now();
+        for _ in 0..ops {
+            raw.copy_within(src..src + size, dst);
+        }
+        let elapsed = start.elapsed().as_nanos() as f64;
+        black_box(&raw);
+        if repeat > 0 {
+            out.push(elapsed / (ops * size) as f64);
+        }
+    }
+    out
+}
+
 fn median(mut values: Vec<f64>) -> f64 {
     values.sort_by(|a, b| a.total_cmp(b));
     values[values.len() / 2]
@@ -89,8 +113,26 @@ fn main() {
     };
     let size: usize = option("--size", "16384").parse().expect("size");
     let mode = option("--mode", "dst");
-    if !matches!(mode.as_str(), "dst" | "src" | "both") {
+    if !matches!(mode.as_str(), "dst" | "src" | "both" | "alias") {
         panic!("invalid mode");
+    }
+    if mode == "alias" {
+        println!("mode,size,offset,buffers,ns_per_byte_median,ns_per_byte_min,ns_per_byte_max");
+        for offset in option("--offsets", "0,64,1024,2048").split(',') {
+            let offset: usize = offset.parse().expect("offset");
+            let samples = measure_alias(size, offset);
+            let (min, max) = (
+                samples.iter().copied().fold(f64::INFINITY, f64::min),
+                samples.iter().copied().fold(f64::NEG_INFINITY, f64::max),
+            );
+            println!(
+                "alias,{size},{offset},1,{:.5},{:.5},{:.5}",
+                median(samples),
+                min,
+                max
+            );
+        }
+        return;
     }
     let footprints: Vec<usize> = option("--footprints", "16384,262144,4194304,67108864,268435456")
         .split(',')

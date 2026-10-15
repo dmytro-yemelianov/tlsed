@@ -117,6 +117,7 @@ jobs:
             for mode in dst both; do
               target/release/copy_footprint --size $size --mode $mode > "$CT/copy-$mode-$size.csv"
             done
+            target/release/copy_footprint --size $size --mode alias > "$CT/alias-$size.csv"
           done
           for rep in 0 1 2; do
             if [ $((rep % 2)) -eq 0 ]; then order="tlsed rustls"; else order="rustls tlsed"; fi
