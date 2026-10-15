@@ -1,0 +1,219 @@
+{
+  "repeats": 6,
+  "samples_per_repeat": 100,
+  "bulk_records_per_sample": 256,
+  "assurance": "authenticated client + identical rustls server pair; shared strict tls-pki policy",
+  "fresh_process_per_repeat": true,
+  "order": "alternates by repeat",
+  "binary_sha256": {
+    "client_compare": "2d90458c7a5c634cc67157ed9f038c68d9f351a756818d3891fb83140704da0c",
+    "pki_compare": "3adb2237214b9e3b8dbce455c08add02c7913123af099773db0ce8b376462514"
+  },
+  "commands": [
+    {
+      "profile": "aes128-x25519",
+      "repeat": 0,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 1,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 2,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 3,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 4,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "tlsed-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 5,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "100",
+        "--bulk-records",
+        "256",
+        "--order",
+        "rustls-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "pki",
+      "repeat": 0,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/pki_compare",
+        "--samples",
+        "100",
+        "--iterations",
+        "256",
+        "--warmup",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "pki",
+      "repeat": 1,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/pki_compare",
+        "--samples",
+        "100",
+        "--iterations",
+        "256",
+        "--warmup",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "pki",
+      "repeat": 2,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/pki_compare",
+        "--samples",
+        "100",
+        "--iterations",
+        "256",
+        "--warmup",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "pki",
+      "repeat": 3,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/pki_compare",
+        "--samples",
+        "100",
+        "--iterations",
+        "256",
+        "--warmup",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "pki",
+      "repeat": 4,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/pki_compare",
+        "--samples",
+        "100",
+        "--iterations",
+        "256",
+        "--warmup",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "pki",
+      "repeat": 5,
+      "argv": [
+        "/Users/dmytro/.superset/worktrees/tlsed/gregarious-arthropod-d698612e/target/release/pki_compare",
+        "--samples",
+        "100",
+        "--iterations",
+        "256",
+        "--warmup",
+        "20"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "controls": "no concurrent agent compilation/fuzzing; affinity/frequency/scheduler isolation unavailable"
+}
