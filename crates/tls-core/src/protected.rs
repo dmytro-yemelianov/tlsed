@@ -87,16 +87,38 @@ fn wipe(bytes: &mut [u8]) {
     tail.zeroize();
 }
 
-/// Index of the last nonzero byte. Zero blocks are skipped from the end, so long
-/// padding costs one comparison per block. Same result as `rposition(|&b| b != 0)`.
+/// Last nonzero byte, skipping zero blocks from the end. Each block is tested with an OR
+/// reduction over a 64-byte sub-slice, using index loops only.
 const SCAN_BLOCK: usize = 64;
+
+fn block_is_zero(bytes: &[u8], start: usize) -> bool {
+    let block = &bytes[start..start + SCAN_BLOCK];
+    let mut acc: u8 = 0;
+    let mut i = 0;
+    while i < SCAN_BLOCK {
+        acc |= block[i];
+        i += 1;
+    }
+    acc == 0
+}
 
 fn last_nonzero(bytes: &[u8]) -> Option<usize> {
     let mut end = bytes.len();
-    while end >= SCAN_BLOCK && bytes[end - SCAN_BLOCK..end] == [0u8; SCAN_BLOCK] {
+    while end >= SCAN_BLOCK && block_is_zero(bytes, end - SCAN_BLOCK) {
         end -= SCAN_BLOCK;
     }
-    bytes[..end].iter().rposition(|&byte| byte != 0)
+    last_nonzero_below(bytes, end)
+}
+
+fn last_nonzero_below(bytes: &[u8], end: usize) -> Option<usize> {
+    let mut i = end;
+    while i > 0 {
+        i -= 1;
+        if bytes[i] != 0 {
+            return Some(i);
+        }
+    }
+    None
 }
 
 fn decode_inner(inner: &[u8], limit: usize) -> Result<(ContentType, usize), ProtectedError> {

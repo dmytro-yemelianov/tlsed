@@ -5,7 +5,8 @@
     "tls_core::protected::inner_length",
     "tls_core::protected::valid_content_type",
     "tls_core::key_schedule::hkdf_label_encoded_len",
-    "tls_core::client_policy::client_phase_next"
+    "tls_core::client_policy::client_phase_next",
+    "tls_core::protected::last_nonzero"
   ],
   "tools": {
     "aeneas": "557eff83ecef5083b98a52a94ca7fae63d6c1dab",
@@ -18,9 +19,9 @@
     "crates/tls-core/src/schedule.rs": "d3a47dbb6042b57c353653574bd853768e8b5e357cf84a59cc0742ea03999d3c",
     "crates/tls-core/src/lib.rs": "87512e2e4aed950c405d3b85e8471d32961979da92f308c11713395a029d4a6d",
     "crates/tls-core/src/handshake.rs": "b768ad6cab8c2c2133b76a1a0b491f8243902b21547296fdd782d054aac5a238",
-    "crates/tls-core/src/protected.rs": "1c6351b1ebfb86516b20ac7738c51bde9cb049c0b407596833642a5db95a5fbe",
+    "crates/tls-core/src/protected.rs": "d51a602e4a1381fd350747334c8efc389ef36a3a0d56968fe785fe2e98b731a2",
     "crates/tls-core/src/key_schedule.rs": "e19162665a0b1afba54d250bfd17ee18644cdcfd26debdb568f182edb6f331dc",
     "crates/tls-core/src/client_policy.rs": "b98ffdce06266d3edff7b752f79b19e4a69e02ce848742eec038cfcaa510d9c0",
-    "verification/aeneas/generated/TlsCore.lean": "2792a5bf598e64e7a4ff234af59011c8ca5d9246bc3d8c71736837eb807f9fb7"
+    "verification/aeneas/generated/TlsCore.lean": "70bf73c0827f7e8c06c0c278749e4c0c041f83d2a7a7b2ad1f954ebff5e66606"
   }
 }

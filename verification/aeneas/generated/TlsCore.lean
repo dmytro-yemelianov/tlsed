@@ -1262,6 +1262,112 @@ def protected.valid_content_type
   | 23#uscalar => ok true
   | _ => ok false
 
+/-- [tls_core::protected::SCAN_BLOCK]
+    Source: 'crates/tls-core/src/protected.rs', lines 92:0-92:29 -/
+@[global_simps, irreducible] def protected.SCAN_BLOCK : Std.Usize := 64#usize
+
+/-- [tls_core::protected::block_is_zero]: loop body 0:
+    Source: 'crates/tls-core/src/protected.rs', lines 98:4-101:5 -/
+@[rust_loop_body]
+def protected.block_is_zero_loop.body
+  (block : Slice Std.U8) (acc : Std.U8) (i : Std.Usize) :
+  Result (ControlFlow (Std.U8 × Std.Usize) Std.U8)
+  := do
+  if i < protected.SCAN_BLOCK
+  then
+    let i1 ← Slice.index_usize block i
+    let acc1 ← lift (acc ||| i1)
+    let i2 ← i + 1#usize
+    ok (cont (acc1, i2))
+  else ok (done acc)
+
+/-- [tls_core::protected::block_is_zero]: loop 0:
+    Source: 'crates/tls-core/src/protected.rs', lines 98:4-101:5 -/
+@[rust_loop]
+def protected.block_is_zero_loop
+  (block : Slice Std.U8) (acc : Std.U8) (i : Std.Usize) : Result Std.U8 := do
+  loop
+    (fun (acc1, i1) => protected.block_is_zero_loop.body block acc1 i1)
+    (acc, i)
+
+/-- [tls_core::protected::block_is_zero]:
+    Source: 'crates/tls-core/src/protected.rs', lines 94:0-103:1 -/
+def protected.block_is_zero
+  (bytes : Slice Std.U8) (start : Std.Usize) : Result Bool := do
+  let i ← start + protected.SCAN_BLOCK
+  let block ←
+    core.slice.index.Slice.index (core.slice.index.SliceIndexRangeUsizeSlice
+      Std.U8) bytes { start, «end» := i }
+  let acc ← protected.block_is_zero_loop block 0#u8 0#usize
+  ok (acc = 0#u8)
+
+/-- [tls_core::protected::last_nonzero_below]: loop body 0:
+    Source: 'crates/tls-core/src/protected.rs', lines 115:4-122:1 -/
+@[rust_loop_body]
+def protected.last_nonzero_below_loop.body
+  (bytes : Slice Std.U8) (i : Std.Usize) :
+  Result (ControlFlow Std.Usize (Option Std.Usize))
+  := do
+  if i > 0#usize
+  then
+    let i1 ← i - 1#usize
+    let i2 ← Slice.index_usize bytes i1
+    if i2 != 0#u8
+    then ok (done (some i1))
+    else ok (cont i1)
+  else ok (done none)
+
+/-- [tls_core::protected::last_nonzero_below]: loop 0:
+    Source: 'crates/tls-core/src/protected.rs', lines 115:4-122:1 -/
+@[rust_loop]
+def protected.last_nonzero_below_loop
+  (bytes : Slice Std.U8) (i : Std.Usize) : Result (Option Std.Usize) := do
+  loop
+    (fun i1 => protected.last_nonzero_below_loop.body bytes i1)
+    i
+
+/-- [tls_core::protected::last_nonzero_below]:
+    Source: 'crates/tls-core/src/protected.rs', lines 113:0-122:1 -/
+@[reducible]
+def protected.last_nonzero_below
+  (bytes : Slice Std.U8) («end» : Std.Usize) :
+  Result (Option Std.Usize)
+  := do
+  protected.last_nonzero_below_loop bytes «end»
+
+/-- [tls_core::protected::last_nonzero]: loop body 0:
+    Source: 'crates/tls-core/src/protected.rs', lines 107:4-109:5 -/
+@[rust_loop_body]
+def protected.last_nonzero_loop.body
+  (bytes : Slice Std.U8) («end» : Std.Usize) :
+  Result (ControlFlow Std.Usize Std.Usize)
+  := do
+  if «end» >= protected.SCAN_BLOCK
+  then
+    let i ← «end» - protected.SCAN_BLOCK
+    let b ← protected.block_is_zero bytes i
+    if b
+    then ok (cont i)
+    else ok (done «end»)
+  else ok (done «end»)
+
+/-- [tls_core::protected::last_nonzero]: loop 0:
+    Source: 'crates/tls-core/src/protected.rs', lines 107:4-109:5 -/
+@[rust_loop]
+def protected.last_nonzero_loop
+  (bytes : Slice Std.U8) («end» : Std.Usize) : Result Std.Usize := do
+  loop
+    (fun end1 => protected.last_nonzero_loop.body bytes end1)
+    «end»
+
+/-- [tls_core::protected::last_nonzero]:
+    Source: 'crates/tls-core/src/protected.rs', lines 105:0-111:1 -/
+def protected.last_nonzero
+  (bytes : Slice Std.U8) : Result (Option Std.Usize) := do
+  let «end» := Slice.len bytes
+  let end1 ← protected.last_nonzero_loop bytes «end»
+  protected.last_nonzero_below bytes end1
+
 /-- [tls_core::schedule::record_count]:
     Source: 'crates/tls-core/src/schedule.rs', lines 8:0-13:1
     Visibility: public -/

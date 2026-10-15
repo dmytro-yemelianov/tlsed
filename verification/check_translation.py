@@ -24,7 +24,8 @@ FILES = ("crates/tls-core/src/schedule.rs", "crates/tls-core/src/lib.rs",
 COMPONENTS = ("tls_core::schedule::record_count", "tls_core::handshake::checked_handshake_total",
               "tls_core::protected::inner_length", "tls_core::protected::valid_content_type",
               "tls_core::key_schedule::hkdf_label_encoded_len",
-              "tls_core::client_policy::client_phase_next")
+              "tls_core::client_policy::client_phase_next",
+              "tls_core::protected::last_nonzero")
 PINS = {"aeneas": "557eff83ecef5083b98a52a94ca7fae63d6c1dab",
         "charon": "c8f15d7d658c86a95658f71ad99cddd4be002e04"}
 
