@@ -1,0 +1,5 @@
+mode,size,offset,buffers,ns_per_byte_median,ns_per_byte_min,ns_per_byte_max
+alias,1024,0,1,0.00883,0.00731,0.00896
+alias,1024,64,1,0.00822,0.00739,0.01062
+alias,1024,1024,1,0.00782,0.00769,0.00794
+alias,1024,2048,1,0.00783,0.00776,0.00802

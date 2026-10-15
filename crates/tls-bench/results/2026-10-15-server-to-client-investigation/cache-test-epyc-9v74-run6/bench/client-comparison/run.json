@@ -1,0 +1,177 @@
+{
+  "repeats": 3,
+  "samples_per_repeat": 50,
+  "bulk_records_per_sample": 128,
+  "assurance": "authenticated client + identical rustls server pair; shared strict tls-pki policy",
+  "fresh_process_per_repeat": true,
+  "order": "alternates by repeat",
+  "binary_sha256": {
+    "client_compare": "ac7e7e4f8c4dadba26e9aa46030c6826bee3f0c3797c84f427419535c26e4f19",
+    "pki_compare": "7dffb4a7b3756a3319fa17b7c8d33a2c271031b51a9960940a6a8ca0d385992a"
+  },
+  "commands": [
+    {
+      "profile": "aes128-x25519",
+      "repeat": 0,
+      "argv": [
+        "/home/runner/work/tlsed/tlsed/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "50",
+        "--bulk-records",
+        "128",
+        "--order",
+        "tlsed-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 1,
+      "argv": [
+        "/home/runner/work/tlsed/tlsed/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "50",
+        "--bulk-records",
+        "128",
+        "--order",
+        "rustls-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519",
+      "repeat": 2,
+      "argv": [
+        "/home/runner/work/tlsed/tlsed/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "16645",
+        "--samples",
+        "50",
+        "--bulk-records",
+        "128",
+        "--order",
+        "tlsed-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519-fragment64",
+      "repeat": 0,
+      "argv": [
+        "/home/runner/work/tlsed/tlsed/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "64",
+        "--samples",
+        "50",
+        "--bulk-records",
+        "128",
+        "--order",
+        "tlsed-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519-fragment64",
+      "repeat": 1,
+      "argv": [
+        "/home/runner/work/tlsed/tlsed/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "64",
+        "--samples",
+        "50",
+        "--bulk-records",
+        "128",
+        "--order",
+        "rustls-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "aes128-x25519-fragment64",
+      "repeat": 2,
+      "argv": [
+        "/home/runner/work/tlsed/tlsed/target/release/client_compare",
+        "--suite",
+        "aes128",
+        "--group",
+        "x25519",
+        "--fragment",
+        "64",
+        "--samples",
+        "50",
+        "--bulk-records",
+        "128",
+        "--order",
+        "tlsed-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "pki",
+      "repeat": 0,
+      "argv": [
+        "/home/runner/work/tlsed/tlsed/target/release/pki_compare",
+        "--samples",
+        "50",
+        "--iterations",
+        "128",
+        "--warmup",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "pki",
+      "repeat": 1,
+      "argv": [
+        "/home/runner/work/tlsed/tlsed/target/release/pki_compare",
+        "--samples",
+        "50",
+        "--iterations",
+        "128",
+        "--warmup",
+        "20"
+      ],
+      "exit_code": 0
+    },
+    {
+      "profile": "pki",
+      "repeat": 2,
+      "argv": [
+        "/home/runner/work/tlsed/tlsed/target/release/pki_compare",
+        "--samples",
+        "50",
+        "--iterations",
+        "128",
+        "--warmup",
+        "20"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "controls": "no concurrent agent compilation/fuzzing; affinity/frequency/scheduler isolation unavailable"
+}
