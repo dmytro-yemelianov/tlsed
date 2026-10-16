@@ -1,5 +1,17 @@
 # Server-to-client 16 KiB, x86: investigation, 2026-10-15
 
+## Status: closed 2026-10-16
+
+**Conclusions**
+
+1. **The x86 ratio is not a fixed number.** Eight runs on four CPU models give TLSed ÷ rustls of 0.55 (EPYC 9V74), 0.70 (EPYC 7763), 0.99 (EPYC 9V45) and 1.04–1.08 (two Xeons). The number depends on the host and on how many connections the bench uses.
+2. **The 0.56 is a single-connection effect on the EPYC 9V74.** With one connection, rustls takes about twice TLSed's time per record (ratio 0.54). With 16 or more connections the two clients are equal (0.95–0.99). The standard bench uses one connection.
+3. **Where the single-connection time goes (EPYC):** `memmove`/`memcpy` accounts for the whole CPU-time gap (on two 9V74 runs and one 7763 run). AES-GCM does the same work for both clients.
+4. **Ruled out** on the hardware tested: instruction count, simulated cache misses, syscalls, minor page faults, process mode, and 4 KiB aliasing (EPYC 9V74, Xeon 8573C, Mac). Copy cost does rise once the footprint exceeds the caches, but the single-connection penalty occurs with hot buffers, so footprint is not its cause.
+5. **Still open:** why rustls's copies are slow with one connection on the EPYC 9V74, and why the penalty goes away with more connections. Answering this needs a dedicated host, because shared runners cannot be controlled.
+
+**Recommendation for future reports:** state the CPU model and the connection count with every x86 ratio, and do not draw a conclusion from one runner.
+
 ## Result
 
 On x86, the server-to-client 16 KiB ratio (TLSed ÷ rustls) depends on the runner's CPU, and rustls is the side that gets slower. The extra cost is memory copying, not AES-GCM and not process mode. The copy-time gap is measured on one runner (EPYC 7763), and the signature matches on the other slow runners, but those runners were not profiled.
